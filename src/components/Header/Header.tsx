@@ -52,7 +52,7 @@ const Header = () => {
                                     e.preventDefault();
                                     setActiveLink(item.id);
                                 }}
-                                className={`cursor-pointer rounded-full p-3 hover:text-white/80 ${activeLink === item.id ? "bg-white/20" : ""}`}
+                                className={`cursor-pointer rounded-full p-3 hover:text-[#ffbe0bff] hover:underline ${activeLink === item.id ? "bg-white/20" : ""}`}
                             >
                                 {item.label}
                             </Link>
