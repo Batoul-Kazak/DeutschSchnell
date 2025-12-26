@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+:root{
+    --amber-gold: #ffbe0bff;
+--blaze-orange: #fb5607ff;
+--neon-pink: #ff006eff;
+--blue-violet: #8338ecff;
+--azure-blue: #3a86ffff;
+
+--ink-black: #03071eff;
+--night-bordeaux: #370617ff;
+--black-cherry: #6a040fff;
+--oxblood: #9d0208ff;
+--brick-ember: #d00000ff;
+--red-ochre: #dc2f02ff;
+--cayenne-red: #e85d04ff;
+--deep-saffron: #f48c06ff;
+--orange: #faa307ff;
+--amber-flame: #ffba08ff;
+}
+
+/* Regular */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Bold */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}

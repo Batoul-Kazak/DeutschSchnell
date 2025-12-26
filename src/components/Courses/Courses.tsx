@@ -1,0 +1,61 @@
+
+import { useState } from "react";
+import courseA1Image from "../../../public/images/course-01.jpg"
+import { useCourses } from "../../hooks/useCourses";
+import { getCourseImage } from "../../utils/courseImage";
+const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
+
+const Courses = () => {
+    const { data: courses = [], isLoading, error } = useCourses();
+    const [selectedCourse, setSelectedCourse] = useState("A1");
+
+    if (isLoading) return <div>Loading...</div>
+    if (error) return <div>{error.message}</div>
+
+    const grouped = courses.reduce((acc, lesson) => {
+        if (!acc[lesson.course]) acc[lesson.course] = [];
+        acc[lesson.course].push(lesson);
+        return acc;
+    }, {})
+
+    const selectedCourseLessons = grouped[selectedCourse] || [];
+
+    function handleSelectLesson(level: string) {
+        setSelectedCourse(level)
+    }
+
+    return <section id="courses" className="flex flex-col gap-10 pt-20 cursor-pointer place-content-center place-items-center">
+        <h2 className="font-bold text-indigo-600 uppercase ">German Courses by Level</h2>
+        <h1 className="text-4xl font-bold text-gray-900">Lessons</h1>
+        <div className="flex gap-10 px-10 py-3 font-bold bg-gray-300 rounded-full justify-between w-[40%]">
+            {levels.map((level) => <button onClick={() => handleSelectLesson(level)} key={level} className={`text-xl ${selectedCourse === level ? "text-white bg-indigo-400 p-2 px-5 rounded-full hover:text-white" : ""} transition-colors hover:text-indigo-600`}>{level}</button>)}
+        </div>
+        <div className="grid grid-cols-3 gap-10 px-15">
+            {selectedCourseLessons.length > 0 && selectedCourseLessons.map(lesson => (
+                <div className="p-5 px-0 bg-gray-300 rounded-3xl w-[20rem] hover:scale-105 transition-transform duration-500 hover:shadow-[0_4px_12px_rgba(0.8,0.8,0.8,0.6)] shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
+                    <div className="relative">
+                        {/* <div className="absolute w-full h-10 bg-indigo-600 z-2 -top-5"></div> */}
+                        <img src={getCourseImage(selectedCourse)} alt={`German Course ${selectedCourse}`} className="object-cover z-5 rounded-3xl " />
+                        <div className="absolute right-0 p-4 pl-6 font-bold text-white bg-indigo-600 rounded-bl-full -top-5">{lesson.time}</div>
+                        <div className="absolute left-0 px-6 font-bold py-2 rounded-tr-xl rounded-br-xl bg-[#ff006eff] text-white bottom-7">completed</div>
+                    </div>
+                    <div className="flex flex-col flex-wrap gap-2 py-5 px-7">
+                        <h1 className="text-xl font-bold">{lesson.lessons}: <span className="text-indigo-600">{lesson.title}</span></h1>
+                        {/* <div className="h-[1px] w-full bg-gray-700"></div> */}
+                        <p className="pt-2 text-sm text-pretty">{lesson.description}</p>
+                        <div className="flex flex-col gap-2">
+                            <p className="font-bold text-gray-800">Skills you will learn:</p>
+                            <p className="flex gap-2">{lesson.skills.map((skill: string) => <span key={skill} className="p-3 rounded-full py-2 hover:scale-105 hover:bg-white hover:shadow-lg hover:text-indigo-600 transition-all cursor-pointer text-xs font-bold text-white bg-[#fb5607ff]">{skill}</span>)}</p>
+                        </div>
+                        <div className="flex flex-col gap-2">
+                            <p className="font-bold text-gray-800">Tags:</p>
+                            <p className="flex gap-2">{lesson.tags.map((tags: string) => <span className="p-3 rounded-full text-xs text-white py-2 hover:scale-105 hover:bg-white hover:shadow-lg hover:text-indigo-600 transition-all cursor-pointer font-bold bg-[#3a86ffff]" key={tags}>{tags}</span>)}</p>
+                        </div>
+                    </div>
+                </div>
+            ))}
+        </div>
+    </section>
+}
+
+export default Courses;
