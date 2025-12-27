@@ -2,6 +2,7 @@ import { Search } from "@mui/icons-material";
 import deutschSchnellIcon from "../../../public/icons/deutschionary_logo.svg"
 import { useEffect, useState } from "react";
 import { Link } from "react-scroll"
+import { motion } from "framer-motion"
 
 const navItems = [
     { id: "home", label: "Home" },
@@ -29,11 +30,19 @@ const Header = () => {
     return <header style={{ backgroundColor: "rgb(123,106,218)" }}>
         <div style={isFixed ? { zIndex: 100 } : {}} className={`${isFixed ? "fixed top-0 left-0" : ""} flex justify-between w-full p-5 px-20 text-white bg-indigo-600 rounded-tl-none rounded-tr-none rounded-3xl place-items-center`}>
 
-            <div className="flex gap-5">
-                <h1 className="flex gap-2 text-2xl font-bold text-white uppercase place-items-center">
+            <div
+                className="flex gap-5">
+                <motion.h1
+                    initial={{ rotate: "0deg" }}
+                    animate={{ rotate: "360deg" }}
+                    transition={{
+                        duration: 1,
+                        ease: "anticipate"
+                    }}
+                    className="flex gap-2 text-2xl font-bold text-white uppercase place-items-center">
                     <img src={deutschSchnellIcon} alt="logo" className="w-10 h-10" />
                     DeutschSchnell
-                </h1>
+                </motion.h1>
                 <div className="w-[1px] h-8 bg-slate-400"></div>
                 <div className="relative">
                     <input type="search" className="p-2 pl-5 bg-transparent rounded-full w-200" placeholder="Type Something" />

@@ -50,7 +50,7 @@ function HeroSection() {
 
     const currentSlide = slides[currentIndex];
 
-    return <div className="text-white flex place-content-center place-items-center p-[5rem]" style={{ ...imageStyles, backgroundImage: `url(${heroSectionBackground})` }}>
+    return <div id="home" className="text-white flex place-content-center place-items-center p-[5rem]" style={{ ...imageStyles, backgroundImage: `url(${heroSectionBackground})` }}>
         <div className="flex flex-col gap-3 p-10 place-self-end">
             <button onClick={goToPrevious} className="p-4 transition rounded-full bg-white/30 hover:bg-white/50">
                 <KeyboardArrowLeft />
