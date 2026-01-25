@@ -56,10 +56,7 @@ const Header = () => {
                                 to={item.id}
                                 smooth={true}
                                 duration={1000}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    setActiveLink(item.id);
-                                }}
+                                onClick={() => setActiveLink(item.id)}
                                 className={`cursor-pointer rounded-full p-3 hover:text-[#ffbe0bff] hover:underline ${activeLink === item.id ? "bg-white/20" : ""}`}
                             >
                                 {item.label}

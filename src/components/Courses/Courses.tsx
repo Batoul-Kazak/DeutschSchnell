@@ -1,6 +1,5 @@
 
 import { useState } from "react";
-import courseA1Image from "../../../public/images/course-01.jpg"
 import { useCourses } from "../../hooks/useCourses";
 import { getCourseImage } from "../../utils/courseImage";
 import heroSectionBackground from "../../../public/images/banner-bg.jpg"
@@ -14,6 +13,17 @@ const imageStyles = {
     backgroundBlendMode: "darken"
 }
 
+interface Lesson {
+    id: string;
+    course: string;
+    lessons: string;
+    time: string;
+    title: string;
+    skills: string[];
+    tags: string[];
+    completed: boolean;
+    description: string;
+}
 
 const levels = ['A1', 'A2', 'B1', 'B2', 'C1'];
 
@@ -24,7 +34,7 @@ const Courses = () => {
     if (isLoading) return <div>Loading...</div>
     if (error) return <div>{error.message}</div>
 
-    const grouped = courses.reduce((acc, lesson) => {
+    const grouped = courses.reduce((acc: Record<string, Lesson[]>, lesson: Lesson) => {
         if (!acc[lesson.course]) acc[lesson.course] = [];
         acc[lesson.course].push(lesson);
         return acc;
@@ -44,7 +54,7 @@ const Courses = () => {
                 {levels.map((level) => <button onClick={() => handleSelectLesson(level)} key={level} className={`text-xl ${selectedCourse === level ? "text-white bg-indigo-400 p-2 px-5 rounded-full hover:text-white" : ""} transition-colors hover:text-indigo-600`}>{level}</button>)}
             </div>
             <div className="grid grid-cols-3 gap-10 px-15">
-                {selectedCourseLessons.length > 0 && selectedCourseLessons.length > 0 && selectedCourseLessons.map(lesson => {
+                {selectedCourseLessons.length > 0 && selectedCourseLessons.length > 0 && selectedCourseLessons.map((lesson: Lesson) => {
                     const lessonNumber = lesson.lessons.replace("Lesson ", "").trim();
 
                     return (

@@ -60,7 +60,7 @@ function HeroSection() {
         </div>
         <div className="overflow-hidden w-[60rem] h-[50rem] relative">
             <div className="flex h-full transition-transform duration-700 ease-in-out" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-                {slides.map((slide, index) => (
+                {slides.map(currentSlide => (
                     <div className="flex flex-col items-start justify-between gap-10 p-20 overflow-hidden shrink-0 w-[60rem] rounded-3xl" style={{ ...imageStyles, backgroundImage: `url(${currentSlide.image})` }}>
 
                         <div className="w-auto p-3 py-2 uppercase rounded-full bg-indig0 ">Our Courses</div>

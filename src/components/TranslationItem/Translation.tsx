@@ -18,6 +18,11 @@ const fetchWordDefinition = async ({ language, currentWord }: { language: string
     return data;
 }
 
+interface DictionaryForm {
+    word: string;
+    tags: string[];
+}
+
 interface TranslationProps {
     currentWord: string; language: string;
 }
@@ -49,11 +54,11 @@ const Translation = ({ language }: TranslationProps) => {
             {isLoading && <div>Searching...</div>}
             {error && <div>Error {(error as Error).message}</div>}
 
-            {wordData && wordData.entries?.[0].forms?.map((form, index) => (
+            {wordData && wordData.entries?.[0].forms?.map((form: DictionaryForm, index: number) => (
                 <div key={index}>
                     <strong>Form: {index + 1}</strong> <code>{form.word}</code>
                     <div className='flex gap-5'>
-                        Tags: {form.tags.map((tag, i) => (
+                        Tags: {form.tags.map((tag: string, i: number) => (
                             <span key={i}>{tag}</span>
                         ))}
                     </div>

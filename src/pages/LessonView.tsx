@@ -38,28 +38,28 @@ const WORD_TYPES = [
     { key: "interjections", label: "Interjections", type: "Interjection" },
 ];
 
-const fetchLesson = async (courseId: string, lessonId: string) => {
-    const res = await fetch("/data/db.json");
+// const fetchLesson = async (courseId: string, lessonId: string) => {
+//     const res = await fetch("/data/db.json");
 
-    if (!res.ok) {
-        throw new Error("Failed to fetch lessons");
-    }
+//     if (!res.ok) {
+//         throw new Error("Failed to fetch lessons");
+//     }
 
-    const lessons = await res.json();
-    console.log(lessons);
+//     const lessons = await res.json();
+//     console.log(lessons);
 
-    const fullLessonTitle = `Lesson ${lessonId}`;
+//     const fullLessonTitle = `Lesson ${lessonId}`;
 
-    const found = lessons.find(
-        (l: any) => l.course === courseId && l.lessons === fullLessonTitle
-    );
+//     const found = lessons.find(
+//         (l: any) => l.course === courseId && l.lessons === fullLessonTitle
+//     );
 
-    if (!found) {
-        throw new Error("Lesson not found");
-    }
+//     if (!found) {
+//         throw new Error("Lesson not found");
+//     }
 
-    return found;
-};
+//     return found;
+// };
 
 
 const LessonView = () => {

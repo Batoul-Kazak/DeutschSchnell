@@ -1,6 +1,5 @@
 import Contactus from "./components/ContactUs/Contactus";
 import Courses from "./components/Courses/Courses";
-import Button from "./components/customizedComponents/Button";
 import Events from "./components/Events/Events";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";

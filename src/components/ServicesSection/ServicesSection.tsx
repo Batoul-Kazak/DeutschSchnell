@@ -55,15 +55,15 @@ const germanFaqs = [
 
 const ServicesSection = () => {
     const [expanded, setExpanded] = useState("");
-    const [openedIndex, setOpenedIndex] = useState(null);
+    const [openedIndex, setOpenedIndex] = useState<number | null>(null);
 
-    const toggleExpand = (id) => {
+    const toggleExpand = (id: string) => {
         setExpanded(id);
         console.log('expanded', expanded);
     };
 
-    const toggelPanel = (index) => {
-        setOpenedIndex(openedIndex => openedIndex === index ? null : index)
+    const toggelPanel = (index: number) => {
+        setOpenedIndex(prev => prev === index ? null : index)
     }
 
     return <section id="services" className="flex flex-col place-content-center place-items-center">
