@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 import { useQuery } from '@tanstack/react-query';
-import { data } from 'react-router-dom';
 
 const fetchWordDefinition = async ({ language, currentWord }: { language: string, currentWord: string }) => {
     const response = await fetch(`https://freedictionaryapi.com/api/v1/entries/${language}/${currentWord.trim()}?translations=true`);

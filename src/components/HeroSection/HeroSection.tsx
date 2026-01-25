@@ -1,7 +1,6 @@
 
-import heroSectionImage from "../../../public/images/banner-item-01.jpg"
 import heroSectionBackground from "../../../public/images/banner-bg.jpg"
-import { ArrowCircleLeftRounded, ArrowLeft, ArrowLeftOutlined, ArrowLeftRounded, ArrowLeftSharp, ArrowLeftTwoTone, KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material"
+import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material"
 
 import img1 from "../../../public/images/banner-item-01.jpg"
 import img2 from "../../../public/images/banner-item-02.jpg"
@@ -64,7 +63,7 @@ function HeroSection() {
                 {slides.map((slide, index) => (
                     <div className="flex flex-col items-start justify-between gap-10 p-20 overflow-hidden shrink-0 w-[60rem] rounded-3xl" style={{ ...imageStyles, backgroundImage: `url(${currentSlide.image})` }}>
 
-                        <div className="w-auto p-3 py-2 uppercase bg-indig0 rounded-full ">Our Courses</div>
+                        <div className="w-auto p-3 py-2 uppercase rounded-full bg-indig0 ">Our Courses</div>
                         <h1 className="text-5xl font-bold">
                             {currentSlide.headline.split('*').map((part, i) => <span key={i} className="block">{part.trim()}</span>)}
                         </h1>

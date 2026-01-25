@@ -1,7 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Header from "../components/Header/Header";
 import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 type Word = { german: string; english: string; type: string };

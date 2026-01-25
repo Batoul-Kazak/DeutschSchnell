@@ -1,4 +1,4 @@
-import { ArrowCircleUpTwoTone, ArrowUpward } from '@mui/icons-material';
+import { ArrowUpward } from '@mui/icons-material';
 import { useState, useEffect } from 'react';
 
 const BackToTopButton = () => {
