@@ -9,19 +9,19 @@ const benefits = [
         id: "learning-paths",
         image: img1,
         title: "Personalized Learning Paths",
-        description: "Lessons and quizzes automatically adjust to your current level, personal goals, and learning progress, helping you learn faster and stay motivated every step of the way."
+        description: "Lessons and quizzes automatically adjust to your current level."
     },
     {
         id: "instant-feedback",
         image: img2,
         title: "Instant Feedback with Clear Explanations",
-        description: "Receive real-time corrections on grammar, pronunciation, and sentence structure, along with helpful explanations that turn mistakes into learning opportunities."
+        description: "Receive real-time corrections on grammar, pronunciation."
     },
     {
         id: "real-practice",
         image: img3,
         title: "Confidence Through Real-Life Practice",
-        description: "Build fluency by practicing everyday situations like ordering food, attending job interviews, or writing emails, plus official-style mock exams to feel fully prepared."
+        description: "Build fluency by practicing everyday situations like ordering food. "
     }
 ];
 
@@ -80,9 +80,9 @@ const ServicesSection = () => {
                     <div className="flex flex-col justify-between h-full">
                         <h3 className="text-xl font-bold ">{section.title}</h3>
                         <p className={`py-5 ${expanded == section.id ? "line-clamp-none" : "line-clamp-3"}`}>{section.description}</p>
-                        <button onClick={() => toggleExpand(section.id)} className="font-bold px-5 w-[10rem] mt-5 py-3 text-violet transition bg-white rounded-full hover:bg-indigo-600 hover:text-white">
-                            {expanded == section.id ? "Show Less" : "Show More"}
-                        </button>
+                        {/* <button onClick={() => toggleExpand(section.id)} className="font-bold px-5 w-[10rem] mt-5 py-3 text-violet transition bg-white rounded-full hover:bg-indigo-600 hover:text-white"> */}
+                        {/* {expanded == section.id ? "Show Less" : "Show More"} */}
+                        {/* </button> */}
                     </div>
                 </div>
             ))}

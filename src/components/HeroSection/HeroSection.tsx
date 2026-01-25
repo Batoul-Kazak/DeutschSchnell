@@ -47,7 +47,7 @@ function HeroSection() {
         setCurrentIndex((prev) => prev === slides.length - 1 ? 0 : prev + 1);
     }
 
-    const currentSlide = slides[currentIndex];
+    // const currentSlide = slides[currentIndex];
 
     return <div id="home" className="text-white flex place-content-center place-items-center p-[5rem]" style={{ ...imageStyles, backgroundImage: `url(${heroSectionBackground})` }}>
         <div className="flex flex-col gap-3 p-10 place-self-end">
