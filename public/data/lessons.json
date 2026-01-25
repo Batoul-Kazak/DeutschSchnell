@@ -1,0 +1,195 @@
+[
+  {
+    "id": "a1-l1-8f3b",
+    "course": "A1",
+    "lessons": "Lesson 1",
+    "time": "42min",
+    "title": "Greetings and Introductions",
+    "skills": ["listening", "speaking", "reading"],
+    "tags": ["vocabulary", "dialogue", "pronunciation", "culture"],
+    "completed": false,
+    "description": "Learn essential greetings, how to introduce yourself, and ask simple questions like 'How are you?' in everyday German conversations.",
+    "contents": {
+      "phrases": [
+        { "german": "Hallo!", "translation": "Hello!" },
+        { "german": "Guten Tag!", "translation": "Good day! (formal)" },
+        { "german": "Guten Morgen!", "translation": "Good morning!" },
+        {
+          "german": "Wie geht es dir?",
+          "translation": "How are you? (informal)"
+        },
+        {
+          "german": "Wie geht es Ihnen?",
+          "translation": "How are you? (formal)"
+        },
+        {
+          "german": "Mir geht es gut, danke.",
+          "translation": "I’m fine, thank you."
+        },
+        { "german": "Und dir?", "translation": "And you? (informal)" },
+        { "german": "Ich heiße Anna.", "translation": "My name is Anna." },
+        {
+          "german": "Wie heißt du?",
+          "translation": "What’s your name? (informal)"
+        },
+        { "german": "Freut mich!", "translation": "Nice to meet you!" },
+        {
+          "german": "Wo wohnst du?",
+          "translation": "Where do you live? (informal)"
+        },
+        {
+          "german": "Ich wohne in Berlin.",
+          "translation": "I live in Berlin."
+        },
+        {
+          "german": "Ich komme aus Ägypten.",
+          "translation": "I come from Egypt."
+        },
+        {
+          "german": "Was machst du beruflich?",
+          "translation": "What do you do for work? (informal)"
+        },
+        { "german": "Ich bin Lehrerin.", "translation": "I am a teacher." }
+      ],
+      "words": [
+        { "german": "Hallo", "translation": "hello", "type": "interjection" },
+        { "german": "Tag", "translation": "day", "type": "noun (m)" },
+        { "german": "Morgen", "translation": "morning", "type": "noun (m)" },
+        { "german": "gehen", "translation": "to go", "type": "verb" },
+        { "german": "es", "translation": "it", "type": "pronoun" },
+        { "german": "gut", "translation": "good", "type": "adjective" },
+        {
+          "german": "danke",
+          "translation": "thank you",
+          "type": "interjection"
+        },
+        { "german": "heißen", "translation": "to be called", "type": "verb" },
+        { "german": "Name", "translation": "name", "type": "noun (m)" },
+        {
+          "german": "wohnen",
+          "translation": "to live (reside)",
+          "type": "verb"
+        },
+        { "german": "Berlin", "translation": "Berlin", "type": "proper noun" },
+        { "german": "kommen", "translation": "to come", "type": "verb" },
+        { "german": "aus", "translation": "from", "type": "preposition" },
+        { "german": "Ägypten", "translation": "Egypt", "type": "proper noun" },
+        { "german": "Beruf", "translation": "profession", "type": "noun (m)" },
+        {
+          "german": "Lehrerin",
+          "translation": "female teacher",
+          "type": "noun (f)"
+        },
+        {
+          "german": "Student",
+          "translation": "student (male)",
+          "type": "noun (m)"
+        },
+        {
+          "german": "Studentin",
+          "translation": "student (female)",
+          "type": "noun (f)"
+        },
+        { "german": "unten", "translation": "downstairs", "type": "adverb" },
+        {
+          "german": "kennen",
+          "translation": "to know (a person)",
+          "type": "verb"
+        },
+        {
+          "german": "Kollege",
+          "translation": "colleague (male)",
+          "type": "noun (m)"
+        },
+        {
+          "german": "Kollegin",
+          "translation": "colleague (female)",
+          "type": "noun (f)"
+        },
+        {
+          "german": "Professor",
+          "translation": "professor (male)",
+          "type": "noun (m)"
+        },
+        {
+          "german": "Professorin",
+          "translation": "professor (female)",
+          "type": "noun (f)"
+        }
+      ],
+      "dialogue": {
+        "title": "Meeting a New Neighbor",
+        "lines": [
+          {
+            "speaker": "Anna",
+            "german": "Hallo! Ich heiße Anna. Und du?",
+            "translation": "Hello! My name is Anna. And you?"
+          },
+          {
+            "speaker": "Lukas",
+            "german": "Hallo Anna! Ich bin Lukas. Freut mich!",
+            "translation": "Hello Anna! I’m Lukas. Nice to meet you!"
+          },
+          {
+            "speaker": "Anna",
+            "german": "Freut mich auch! Wo wohnst du?",
+            "translation": "Nice to meet you too! Where do you live?"
+          },
+          {
+            "speaker": "Lukas",
+            "german": "Ich wohne im zweiten Stock. Und du?",
+            "translation": "I live on the second floor. And you?"
+          },
+          {
+            "speaker": "Anna",
+            "german": "Ich wohne unten, im Erdgeschoss.",
+            "translation": "I live downstairs, on the ground floor."
+          },
+          {
+            "speaker": "Lukas",
+            "german": "Ah, verstehe! Bist du neu hier?",
+            "translation": "Ah, I see! Are you new here?"
+          },
+          {
+            "speaker": "Anna",
+            "german": "Ja, ich bin seit einer Woche hier.",
+            "translation": "Yes, I’ve been here for a week."
+          }
+        ]
+      },
+      "grammarTips": [
+        {
+          "title": "Formal vs. Informal",
+          "explanation": "Use 'du' with friends/family. Use 'Sie' (capitalized) with strangers, elders, or in professional settings. Example: 'Wie geht es dir?' (informal) vs. 'Wie geht es Ihnen?' (formal)."
+        },
+        {
+          "title": "Verb Position",
+          "explanation": "In main clauses, the conjugated verb is always the second element. Example: 'Ich heiße Anna.' (I am called Anna.)"
+        },
+        {
+          "title": "Gender & Articles",
+          "explanation": "German nouns have gender: der (m), die (f), das (n). 'Die Lehrerin' (f), 'der Student' (m). Learn nouns with their articles!"
+        }
+      ],
+      "exercises": [
+        {
+          "type": "matching",
+          "instruction": "Match German phrases to their English translations."
+        },
+        {
+          "type": "fill-in",
+          "instruction": "Complete the dialogue: 'Hallo! Ich ___ Anna.'"
+        },
+        {
+          "type": "pronunciation",
+          "instruction": "Repeat after the audio: 'Wie geht es dir?'"
+        },
+        {
+          "type": "role-play",
+          "instruction": "Practice introducing yourself to a partner."
+        }
+      ],
+      "culturalNote": "In Germany, it’s common to greet people in shops or elevators with 'Guten Tag'. Handshakes are standard when meeting someone for the first time. Always use formal 'Sie' until invited to use 'du'."
+    }
+  }
+]

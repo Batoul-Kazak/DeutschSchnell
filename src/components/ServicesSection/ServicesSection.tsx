@@ -6,16 +6,19 @@ import { Add, Minimize } from "@mui/icons-material";
 
 const benefits = [
     {
+        id: "learning-paths",
         image: img1,
         title: "Personalized Learning Paths",
         description: "Lessons and quizzes automatically adjust to your current level, personal goals, and learning progress, helping you learn faster and stay motivated every step of the way."
     },
     {
+        id: "instant-feedback",
         image: img2,
         title: "Instant Feedback with Clear Explanations",
         description: "Receive real-time corrections on grammar, pronunciation, and sentence structure, along with helpful explanations that turn mistakes into learning opportunities."
     },
     {
+        id: "real-practice",
         image: img3,
         title: "Confidence Through Real-Life Practice",
         description: "Build fluency by practicing everyday situations like ordering food, attending job interviews, or writing emails, plus official-style mock exams to feel fully prepared."
@@ -51,14 +54,12 @@ const germanFaqs = [
 ];
 
 const ServicesSection = () => {
-    const [expanded, setExpanded] = useState({});
+    const [expanded, setExpanded] = useState("");
     const [openedIndex, setOpenedIndex] = useState(null);
 
-    const toggleExpand = (index) => {
-        setExpanded(prev => ({
-            ...prev,
-            [index]: !prev[index]
-        }));
+    const toggleExpand = (id) => {
+        setExpanded(id);
+        console.log('expanded', expanded);
     };
 
     const toggelPanel = (index) => {
@@ -69,30 +70,30 @@ const ServicesSection = () => {
         <div className="grid grid-cols-1 px-20 py-20 gap-[7rem] md:grid-cols-3 min-h-[30rem]">
             {benefits.map((section, i) => (
                 <div
-                    key={i}
+                    key={section.id}
                     className="relative flex flex-col p-8 pt-[7rem] bg-black/15 rounded-3xl"
                 >
-                    <div className="absolute bg-indigo-600 rounded-full p-[3rem] top-[-4rem] right-[-4rem]">
-                        <img src={section.image} alt={`service-${i}`} className="w-25 h-25" />
+                    <div className="absolute bg-violet rounded-full p-[3rem] top-[-4rem] right-[-4rem]">
+                        <img src={section.image} alt={`service-${i}`} className="w-20 h-20" />
                     </div>
 
                     <div className="flex flex-col justify-between h-full">
                         <h3 className="text-xl font-bold ">{section.title}</h3>
-                        <p className={`py-5 ${expanded[i] ? "line-clamp-none" : "line-clamp-3"}`}>{section.description}</p>
-                        <button onClick={() => toggleExpand(i)} className="font-bold px-5 w-[10rem] mt-5 py-3 text-indigo-600 transition bg-white rounded-full hover:bg-indigo-600 hover:text-white">
-                            {expanded[i] ? "Show Less" : "Show More"}
+                        <p className={`py-5 ${expanded == section.id ? "line-clamp-none" : "line-clamp-3"}`}>{section.description}</p>
+                        <button onClick={() => toggleExpand(section.id)} className="font-bold px-5 w-[10rem] mt-5 py-3 text-violet transition bg-white rounded-full hover:bg-indigo-600 hover:text-white">
+                            {expanded == section.id ? "Show Less" : "Show More"}
                         </button>
                     </div>
                 </div>
             ))}
         </div>
         <div className="flex place-content-center place-items-center place-self-center w-[80%]">
-            <div className="flex flex-col gap-8 px-10 bg-indigo-600 py-[5rem] rounded-[3rem] w-[50%]">
+            <div className="flex flex-col gap-8 px-10 bg-violet py-[5rem] rounded-[3rem] w-[50%]">
                 {germanFaqs.map((item, i) => (
                     <div key={item.id} className="flex flex-col gap-5 font-bold bg-white rounded-3xl place-content-center place-items-center px-7">
                         <div className="flex justify-between w-full gap-5 mt-5 align-middle place-items-center">
                             <p className={`${openedIndex === i ? "text-indigo-600" : "text-gray-950"}`}>{item.question}</p>
-                            <button onClick={() => toggelPanel(i)} className="flex p-1 text-white bg-indigo-600 rounded-full cursor-pointer place-content-center place-items-center">
+                            <button onClick={() => toggelPanel(i)} className="flex p-1 text-white rounded-full cursor-pointer bg-violet place-content-center place-items-center">
                                 {openedIndex === i ? <Minimize /> :
                                     <Add />}
                             </button>
@@ -107,7 +108,7 @@ const ServicesSection = () => {
                 <h3 className="text-2xl font-bold text-indigo-600">About us</h3>
                 <h1 className="text-4xl font-bold">What make us the best academy online?</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
-                <button className="w-[10rem] px-4 py-3 font-bold text-indigo-600 bg-white rounded-full transition-all hover:bg-indigo-600 hover:text-white">Discover More</button>
+                <button className="w-[10rem] px-4 py-3 font-bold text-violet bg-white rounded-full transition-all hover:bg-indigo-600 hover:text-white">Discover More</button>
             </div>
         </div>
     </section>

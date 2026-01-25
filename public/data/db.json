@@ -1,0 +1,543 @@
+{
+  "lessons": [
+    {
+      "id": 1,
+      "course": "A1",
+      "lessonNumber": 1,
+      "lessons": "Lesson 1",
+      "title": "Greetings and Introductions",
+      "description": "This lesson will teach you essential German vocabulary, basic grammar structures, and simple spoken sentences through practical dialogues. You’ll learn how to greet others, introduce yourself, ask and answer basic personal questions, and use polite expressions in everyday conversations.",
+      "time": "15 min",
+      "skills": ["Speaking", "Listening", "Vocabulary"],
+      "tags": ["A1", "Beginner", "Daily Phrases"],
+      "words": [
+        { "german": "Hallo", "english": "Hello", "type": "Interjection" },
+        { "german": "Morgen", "english": "Morning", "type": "Noun" },
+        { "german": "Tag", "english": "Day", "type": "Noun" },
+        { "german": "Abend", "english": "Evening", "type": "Noun" },
+        { "german": "Nacht", "english": "Night", "type": "Noun" },
+        { "german": "Tschüss", "english": "Bye", "type": "Interjection" },
+        { "german": "Name", "english": "Name", "type": "Noun" },
+        { "german": "Vorname", "english": "First name", "type": "Noun" },
+        { "german": "Nachname", "english": "Last name", "type": "Noun" },
+        { "german": "Freund", "english": "Friend (male)", "type": "Noun" },
+        { "german": "Freundin", "english": "Friend (female)", "type": "Noun" },
+        { "german": "Herr", "english": "Mr.", "type": "Noun" },
+        { "german": "Frau", "english": "Mrs./Ms.", "type": "Noun" },
+        { "german": "danke", "english": "Thank you", "type": "Interjection" },
+        { "german": "Ja", "english": "Yes", "type": "Interjection" },
+        { "german": "Nein", "english": "No", "type": "Interjection" },
+        { "german": "und", "english": "and", "type": "Conjunction" },
+        { "german": "oder", "english": "or", "type": "Conjunction" },
+        { "german": "auch", "english": "also", "type": "Adverb" },
+        { "german": "woher", "english": "from where", "type": "Adverb" },
+        { "german": "heute", "english": "today", "type": "Adverb" },
+        { "german": "gern", "english": "gladly", "type": "Adverb" },
+        { "german": "Deutschland", "english": "Germany", "type": "Noun" },
+        { "german": "Österreich", "english": "Austria", "type": "Noun" },
+        { "german": "Schweiz", "english": "Switzerland", "type": "Noun" },
+        { "german": "Land", "english": "Country", "type": "Noun" },
+        { "german": "Stadt", "english": "City", "type": "Noun" },
+        { "german": "Sprache", "english": "Language", "type": "Noun" },
+        { "german": "Deutsch", "english": "German (language)", "type": "Noun" },
+        {
+          "german": "Englisch",
+          "english": "English (language)",
+          "type": "Noun"
+        },
+        {
+          "german": "Französisch",
+          "english": "French (language)",
+          "type": "Noun"
+        },
+        {
+          "german": "Spanisch",
+          "english": "Spanish (language)",
+          "type": "Noun"
+        },
+        { "german": "Alter", "english": "Age", "type": "Noun" },
+        { "german": "Jahre", "english": "Years", "type": "Noun" },
+        { "german": "gehen", "english": "to go", "type": "Verb" },
+        { "german": "heißen", "english": "to be called", "type": "Verb" },
+        { "german": "kommen", "english": "to come", "type": "Verb" },
+        { "german": "sein", "english": "to be", "type": "Verb" },
+        { "german": "heiße", "english": "am called", "type": "Verb" },
+        { "german": "bin", "english": "am", "type": "Verb" },
+        { "german": "heißt", "english": "is called", "type": "Verb" },
+        {
+          "german": "aus",
+          "english": "from (country/city)",
+          "type": "Preposition"
+        },
+        { "german": "in", "english": "in", "type": "Preposition" },
+        { "german": "mit", "english": "with", "type": "Preposition" },
+        { "german": "auf", "english": "on", "type": "Preposition" },
+        { "german": "groß", "english": "big/tall", "type": "Adjective" },
+        { "german": "freundlich", "english": "friendly", "type": "Adjective" },
+        { "german": "gut", "english": "good", "type": "Adjective" },
+        { "german": "alt", "english": "old", "type": "Adjective" },
+        { "german": "jung", "english": "young", "type": "Adjective" }
+      ],
+      "dialogue": [
+        { "person": "A", "german": "Hallo!", "english": "Hello!" },
+        {
+          "person": "B",
+          "german": "Hallo! Wie geht es dir?",
+          "english": "Hello! How are you?"
+        },
+        {
+          "person": "A",
+          "german": "Mir geht es gut, danke! Und dir?",
+          "english": "I’m good, thank you! And you?"
+        },
+        {
+          "person": "B",
+          "german": "Auch gut, danke!",
+          "english": "Also good, thank you!"
+        },
+        {
+          "person": "A",
+          "german": "Ich heiße Anna. Wie heißt du?",
+          "english": "My name is Anna. What’s your name?"
+        },
+        {
+          "person": "B",
+          "german": "Ich heiße Ben. Freut mich!",
+          "english": "My name is Ben. Nice to meet you!"
+        },
+        {
+          "person": "A",
+          "german": "Freut mich auch! Kommst du aus Deutschland?",
+          "english": "Nice to meet you too! Are you from Germany?"
+        },
+        {
+          "person": "B",
+          "german": "Nein, ich komme aus der Schweiz. Und du?",
+          "english": "No, I’m from Switzerland. And you?"
+        },
+        {
+          "person": "A",
+          "german": "Ich komme aus Österreich. Ist das dein erster Tag hier?",
+          "english": "I’m from Austria. Is this your first day here?"
+        },
+        {
+          "person": "B",
+          "german": "Ja! Heute ist mein erster Tag. Und bei dir?",
+          "english": "Yes! Today is my first day. And for you?"
+        },
+        {
+          "person": "A",
+          "german": "Nein, ich bin schon zwei Tage hier. Die Stadt ist groß und freundlich.",
+          "english": "No, I’ve already been here two days. The city is big and friendly."
+        },
+        {
+          "person": "B",
+          "german": "Ja, die Stadt ist wirklich groß! Ich wohne in einem kleinen Hotel.",
+          "english": "Yes, the city is really big! I live in a small hotel."
+        },
+        {
+          "person": "A",
+          "german": "Sprichst du nur Deutsch?",
+          "english": "Do you speak only German?"
+        },
+        {
+          "person": "B",
+          "german": "Nein, ich spreche auch Englisch und ein bisschen Spanisch.",
+          "english": "No, I also speak English and a little Spanish."
+        },
+        {
+          "person": "A",
+          "german": "Verstehst du alles gut?",
+          "english": "Do you understand everything well?"
+        },
+        {
+          "person": "B",
+          "german": "Fast alles! Manchmal ist es schwer, aber ich lerne gern.",
+          "english": "Almost everything! Sometimes it’s hard, but I like learning."
+        },
+        {
+          "person": "A",
+          "german": "Ich bin jung, erst zwanzig Jahre alt. Und du?",
+          "english": "I’m young, only twenty years old. And you?"
+        },
+        {
+          "person": "B",
+          "german": "Ich bin auch jung – dreiundzwanzig Jahre alt.",
+          "english": "I’m also young – twenty-three years old."
+        },
+        {
+          "person": "A",
+          "german": "Hast du hier Freunde?",
+          "english": "Do you have friends here?"
+        },
+        {
+          "person": "B",
+          "german": "Noch nicht. Aber du bist jetzt mein Freund!",
+          "english": "Not yet. But you are my friend now!"
+        },
+        {
+          "person": "A",
+          "german": "Tschüss! Wir sehen uns morgen?",
+          "english": "Bye! See you tomorrow?"
+        },
+        {
+          "person": "B",
+          "german": "Ja, morgen! Guten Abend!",
+          "english": "Yes, tomorrow! Good evening!"
+        },
+        { "person": "A", "german": "Gute Nacht!", "english": "Good night!" },
+        {
+          "person": "B",
+          "german": "Gute Nacht, Anna!",
+          "english": "Good night, Anna!"
+        }
+      ],
+      "grammars": [
+        {
+          "title": "Personal Pronouns",
+          "type": "pronouns",
+          "rows": [
+            { "de": "ich", "en": "I" },
+            { "de": "du", "en": "you (informal)" },
+            { "de": "er", "en": "he" },
+            { "de": "sie", "en": "she" },
+            { "de": "es", "en": "it" },
+            { "de": "wir", "en": "we" },
+            { "de": "ihr", "en": "you (plural, informal)" },
+            { "de": "sie", "en": "they" },
+            { "de": "Sie", "en": "you (formal)" }
+          ]
+        },
+        {
+          "title": "Present Tense Verbs (Regular & Key Irregular)",
+          "type": "verbs",
+          "note": "Examples: heißen (to be called), kommen (to come), sein (to be)",
+          "rows": [
+            {
+              "pronoun": "ich",
+              "heißen": "heiße",
+              "kommen": "komme",
+              "sein": "bin"
+            },
+            {
+              "pronoun": "du",
+              "heißen": "heißt",
+              "kommen": "kommst",
+              "sein": "bist"
+            },
+            {
+              "pronoun": "er/sie/es",
+              "heißen": "heißt",
+              "kommen": "kommt",
+              "sein": "ist"
+            },
+            {
+              "pronoun": "wir",
+              "heißen": "heißen",
+              "kommen": "kommen",
+              "sein": "sind"
+            },
+            {
+              "pronoun": "ihr",
+              "heißen": "heißt",
+              "kommen": "kommt",
+              "sein": "seid"
+            },
+            {
+              "pronoun": "sie/Sie",
+              "heißen": "heißen",
+              "kommen": "kommen",
+              "sein": "sind"
+            }
+          ]
+        },
+        {
+          "title": "Possessive Pronouns (Nominative, Masculine Form)",
+          "type": "possessive",
+          "note": "Used before masculine nouns (e.g., mein Freund)",
+          "rows": [
+            { "pronoun": "ich", "possessive": "mein", "en": "my" },
+            { "pronoun": "du", "possessive": "dein", "en": "your (inf.)" },
+            { "pronoun": "er", "possessive": "sein", "en": "his" },
+            { "pronoun": "sie", "possessive": "ihr", "en": "her" },
+            { "pronoun": "es", "possessive": "sein", "en": "its" },
+            { "pronoun": "wir", "possessive": "unser", "en": "our" },
+            {
+              "pronoun": "ihr",
+              "possessive": "euer",
+              "en": "your (pl., inf.)"
+            },
+            { "pronoun": "sie", "possessive": "ihr", "en": "their" },
+            { "pronoun": "Sie", "possessive": "Ihr", "en": "your (formal)" }
+          ]
+        },
+        {
+          "title": "Basic Adjective-Noun Agreement (Nominative, Singular)",
+          "type": "adjective-agreement",
+          "note": "Adjectives before nouns change slightly. At A1, focus on 'ein' and 'kein' patterns.",
+          "rows": [
+            {
+              "article": "ein",
+              "masculine": "ein guter Mann",
+              "feminine": "eine gute Frau",
+              "neuter": "ein gutes Kind",
+              "translation": "a good man / woman / child"
+            },
+            {
+              "article": "kein",
+              "masculine": "kein großer Hund",
+              "feminine": "keine kleine Katze",
+              "neuter": "kein freundliches Tier",
+              "translation": "no big dog / small cat / friendly animal"
+            },
+            {
+              "article": "(definite)",
+              "masculine": "der junge Mann",
+              "feminine": "die nette Frau",
+              "neuter": "das kleine Kind",
+              "translation": "the young man / nice woman / small child"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "course": "A1",
+      "lessonNumber": 2,
+      "lessons": "Lesson 2",
+      "title": "Daily Routines and Time Expressions",
+      "description": "This lesson introduces vocabulary and sentence structures related to daily activities, telling time, and forming simple present tense sentences. You’ll learn how to describe your routine, ask and tell the time, and use basic adverbs of frequency in everyday German conversations.",
+      "time": "15 min",
+      "skills": ["Speaking", "Listening", "Grammar", "Vocabulary"],
+      "tags": ["A1", "Beginner", "Daily Life", "Time"],
+      "words": [
+        { "german": "Uhr", "english": "o’clock / clock", "type": "Noun" },
+        { "german": "Minute", "english": "minute", "type": "Noun" },
+        { "german": "Stunde", "english": "hour", "type": "Noun" },
+        { "german": "Tag", "english": "day", "type": "Noun" },
+        { "german": "Woche", "english": "week", "type": "Noun" },
+        { "german": "Montag", "english": "Monday", "type": "Noun" },
+        { "german": "Dienstag", "english": "Tuesday", "type": "Noun" },
+        { "german": "Mittwoch", "english": "Wednesday", "type": "Noun" },
+        { "german": "Donnerstag", "english": "Thursday", "type": "Noun" },
+        { "german": "Freitag", "english": "Friday", "type": "Noun" },
+        { "german": "Samstag", "english": "Saturday", "type": "Noun" },
+        { "german": "Sonntag", "english": "Sunday", "type": "Noun" },
+        { "german": "Morgen", "english": "morning", "type": "Noun" },
+        { "german": "Mittag", "english": "noon / midday", "type": "Noun" },
+        { "german": "Abend", "english": "evening", "type": "Noun" },
+        { "german": "Nacht", "english": "night", "type": "Noun" },
+        { "german": "früh", "english": "early", "type": "Adverb" },
+        { "german": "spät", "english": "late", "type": "Adverb" },
+        { "german": "jetzt", "english": "now", "type": "Adverb" },
+        { "german": "immer", "english": "always", "type": "Adverb" },
+        { "german": "oft", "english": "often", "type": "Adverb" },
+        { "german": "manchmal", "english": "sometimes", "type": "Adverb" },
+        { "german": "selten", "english": "rarely", "type": "Adverb" },
+        { "german": "nie", "english": "never", "type": "Adverb" },
+        { "german": "aufstehen", "english": "to get up", "type": "Verb" },
+        {
+          "german": "frühstücken",
+          "english": "to have breakfast",
+          "type": "Verb"
+        },
+        { "german": "arbeiten", "english": "to work", "type": "Verb" },
+        { "german": "lernen", "english": "to learn / study", "type": "Verb" },
+        { "german": "essen", "english": "to eat", "type": "Verb" },
+        { "german": "trinken", "english": "to drink", "type": "Verb" },
+        { "german": "gehen", "english": "to go", "type": "Verb" },
+        { "german": "kommen", "english": "to come", "type": "Verb" },
+        { "german": "schlafen", "english": "to sleep", "type": "Verb" },
+        { "german": "sehen", "english": "to see / watch", "type": "Verb" },
+        { "german": "lesen", "english": "to read", "type": "Verb" },
+        { "german": "um", "english": "at (time)", "type": "Preposition" },
+        {
+          "german": "von ... bis",
+          "english": "from ... to (time)",
+          "type": "Preposition"
+        },
+        { "german": "nach", "english": "after", "type": "Preposition" },
+        { "german": "vor", "english": "before", "type": "Preposition" },
+        { "german": "beschäftigt", "english": "busy", "type": "Adjective" },
+        { "german": "müde", "english": "tired", "type": "Adjective" },
+        {
+          "german": "frei",
+          "english": "free / off (work)",
+          "type": "Adjective"
+        }
+      ],
+      "dialogue": [
+        {
+          "person": "A",
+          "german": "Guten Morgen!",
+          "english": "Good morning!"
+        },
+        {
+          "person": "B",
+          "german": "Guten Morgen! Wie spät ist es?",
+          "english": "Good morning! What time is it?"
+        },
+        {
+          "person": "A",
+          "german": "Es ist halb acht.",
+          "english": "It’s half past seven."
+        },
+        {
+          "person": "B",
+          "german": "Ah, ich stehe normalerweise um sieben Uhr auf.",
+          "english": "Ah, I usually get up at seven o’clock."
+        },
+        {
+          "person": "A",
+          "german": "Was machst du am Morgen?",
+          "english": "What do you do in the morning?"
+        },
+        {
+          "person": "B",
+          "german": "Ich frühstücke und gehe dann zur Arbeit.",
+          "english": "I have breakfast and then go to work."
+        },
+        {
+          "person": "A",
+          "german": "Wann arbeitest du?",
+          "english": "When do you work?"
+        },
+        {
+          "person": "B",
+          "german": "Von acht bis fünf. Und du?",
+          "english": "From eight to five. And you?"
+        },
+        {
+          "person": "A",
+          "german": "Ich lerne Deutsch von neun bis zwölf. Danach esse ich zu Mittag.",
+          "english": "I study German from nine to twelve. After that, I eat lunch."
+        },
+        {
+          "person": "B",
+          "german": "Liest du auch Bücher?",
+          "english": "Do you also read books?"
+        },
+        {
+          "person": "A",
+          "german": "Ja, oft abends. Ich lese gern Romane.",
+          "english": "Yes, often in the evenings. I like reading novels."
+        },
+        {
+          "person": "B",
+          "german": "Siehst du fern?",
+          "english": "Do you watch TV?"
+        },
+        {
+          "person": "A",
+          "german": "Manchmal. Aber nie nach zehn Uhr – ich bin dann müde.",
+          "english": "Sometimes. But never after ten o’clock – I’m tired then."
+        },
+        {
+          "person": "B",
+          "german": "Ich schlafe immer vor elf Uhr.",
+          "english": "I always sleep before eleven o’clock."
+        },
+        {
+          "person": "A",
+          "german": "Bist du am Wochenende beschäftigt?",
+          "english": "Are you busy on weekends?"
+        },
+        {
+          "person": "B",
+          "german": "Nein, am Samstag und Sonntag bin ich frei.",
+          "english": "No, I’m free on Saturday and Sunday."
+        },
+        {
+          "person": "A",
+          "german": "Was machst du dann?",
+          "english": "What do you do then?"
+        },
+        {
+          "person": "B",
+          "german": "Ich treffe Freunde oder gehe spazieren.",
+          "english": "I meet friends or go for a walk."
+        },
+        {
+          "person": "A",
+          "german": "Klingt schön! Bis später!",
+          "english": "Sounds nice! See you later!"
+        },
+        {
+          "person": "B",
+          "german": "Bis später! Viel Erfolg beim Lernen!",
+          "english": "See you later! Good luck with your studying!"
+        }
+      ],
+      "grammars": [
+        {
+          "title": "Telling Time",
+          "type": "time",
+          "rows": [
+            {
+              "expression": "Es ist drei Uhr.",
+              "meaning": "It’s three o’clock."
+            },
+            {
+              "expression": "Es ist Viertel nach zwei.",
+              "meaning": "It’s a quarter past two."
+            },
+            {
+              "expression": "Es ist halb fünf.",
+              "meaning": "It’s half past four."
+            },
+            {
+              "expression": "Es ist Viertel vor sieben.",
+              "meaning": "It’s a quarter to seven."
+            },
+            {
+              "expression": "Es ist zehn nach aott.",
+              "meaning": "It’s ten past eight."
+            },
+            {
+              "expression": "Es ist zwanzig vor neun.",
+              "meaning": "It’s twenty to nine."
+            }
+          ]
+        },
+        {
+          "title": "Simple Present Tense (Regular Verbs)",
+          "type": "verbs-regular",
+          "note": "Most verbs follow this pattern. Example: lernen (to learn)",
+          "rows": [
+            { "pronoun": "ich", "form": "lerne" },
+            { "pronoun": "du", "form": "lernst" },
+            { "pronoun": "er/sie/es", "form": "lernt" },
+            { "pronoun": "wir", "form": "lernen" },
+            { "pronoun": "ihr", "form": "lernt" },
+            { "pronoun": "sie/Sie", "form": "lernen" }
+          ]
+        },
+        {
+          "title": "Adverbs of Frequency",
+          "type": "frequency",
+          "note": "Placed before the main verb (except with 'sein')",
+          "examples": [
+            "Ich lerne **immer** Deutsch.",
+            "Er **schläft nie** spät.",
+            "Wir sind **oft** müde.",
+            "Sie arbeitet **manchmal** am Wochenende."
+          ]
+        },
+        {
+          "title": "Days of the Week & Time Phrases",
+          "type": "time-phrases",
+          "rows": [
+            { "german": "am Montag", "english": "on Monday" },
+            { "german": "jeden Tag", "english": "every day" },
+            { "german": "am Wochenende", "english": "on the weekend" },
+            { "german": "morgens", "english": "in the morning" },
+            { "german": "mittags", "english": "at noon" },
+            { "german": "abends", "english": "in the evening" },
+            { "german": "nachts", "english": "at night" }
+          ]
+        }
+      ]
+    }
+  ]
+}

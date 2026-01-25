@@ -13,7 +13,7 @@ const events = [
 ]
 
 const Events = () => {
-    return <div className="flex flex-col gap-10 place-content-center place-items-center">
+    return <div id="events" className="flex flex-col gap-10 place-content-center place-items-center">
         <h2 className="font-bold text-indigo-600 uppercase">Schedule</h2>
         <h1 className="pb-20 text-4xl font-bold">Upcoming Events</h1>
         <div className="flex flex-col gap-[7rem]">
@@ -42,7 +42,7 @@ const Events = () => {
                         <p className="font-bold text-indigo-600">${item.price}</p>
                     </div>
                     <div className="relative">
-                        <div className="absolute -right-5 rounded-tr-2xl rounded-br-2xl top-0 bottom-0 translate-y-[-50%] rounded-tl-full rounded-bl-full w-[4rem] bg-indigo-600 h-[10rem] flex place-content-center place-items-center text-white">
+                        <div className="absolute -right-5 rounded-tr-2xl rounded-br-2xl top-0 bottom-0 translate-y-[-50%] rounded-tl-full rounded-bl-full w-[4rem] bg- h-[10rem] flex place-content-center place-items-center text-white">
                             <KeyboardArrowRight />
                         </div>
                     </div>

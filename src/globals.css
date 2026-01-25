@@ -3,13 +3,20 @@
 @tailwind components;
 
 :root{
-    --amber-gold: #ffbe0bff;
---blaze-orange: #fb5607ff;
---neon-pink: #ff006eff;
---blue-violet: #8338ecff;
---azure-blue: #3a86ffff;
+    /* --amber-gold: #ffbe0bff; */
+/* --blaze-orange: #fb5607ff; */
+/* --neon-pink: #ff006eff; */
+/* --blue-violet: #8338ecff; */
+/* --azure-blue: #3a86ffff; */
 
---ink-black: #03071eff;
+--blue-violet: #8338ecff;
+--blue: #6ad9da;
+--red: #da7b6a;
+--yellow: #c9da6a; 
+
+
+
+/* --ink-black: #03071eff;
 --night-bordeaux: #370617ff;
 --black-cherry: #6a040fff;
 --oxblood: #9d0208ff;
@@ -18,7 +25,7 @@
 --cayenne-red: #e85d04ff;
 --deep-saffron: #f48c06ff;
 --orange: #faa307ff;
---amber-flame: #ffba08ff;
+--amber-flame: #ffba08ff; */
 }
 
 /* Regular */

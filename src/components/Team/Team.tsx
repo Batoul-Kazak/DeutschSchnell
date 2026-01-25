@@ -114,7 +114,7 @@ const Team = () => {
                     <h1 className="text-xl text-[#222] font-bold">{member.name}</h1>
                     <div className="flex gap-2">
                         {icons.map((icon, idx) => (
-                            <div key={idx} className="p-2 text-indigo-600 transition duration-300 bg-white rounded-full cursor-pointer hover:bg-indigo-600 hover:text-white" aria-label={`${member.name} on ${icon.label}`}>{icon.icon}</div>
+                            <div key={idx} className="p-2 text-violet transition duration-300 bg-white rounded-full cursor-pointer hover:bg-indigo-600 hover:text-white" aria-label={`${member.name} on ${icon.label}`}>{icon.icon}</div>
                         ))}
                     </div>
                 </div>
@@ -128,8 +128,8 @@ const Team = () => {
                     <p className="text-gray-600">You can search free CSS templates on Google using different keywords such as templatemo portfolio, templatemo gallery, templatemo blue color, etc.</p>
                 </div>
             </div>
-            <div className="absolute left-[10%] top-[38%] translate-y-[-50%] z-10 bg-indigo-600 overflow-hidden  w-[40rem] h-[20rem] rounded-3xl">
-                <div className="flex text-white transition-transform duration-700 ease-in-out bg-indigo-600 rounded-3xl" style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}>
+            <div className="absolute left-[10%] top-[38%] translate-y-[-50%] z-10 bg-violet overflow-hidden  w-[40rem] h-[20rem] rounded-3xl">
+                <div className="flex text-white transition-transform duration-700 ease-in-out bg-violet rounded-3xl" style={{ transform: `translateX(-${currentTestimonial * 100}%)` }}>
                     {testimonials.map(item => (
                         <div className="w-[40rem]  p-20 flex flex-col gap-10 overflow-hidden flex-shrink-0">
                             <p className="font-serif text-xl italic font-extralight">"{item.quote}"</p>

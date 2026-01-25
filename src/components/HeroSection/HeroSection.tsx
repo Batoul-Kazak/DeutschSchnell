@@ -18,21 +18,21 @@ const imageStyles = {
 
 const slides = [
     {
-        title: "Everything Is Easier",
-        headline: "Learn Smarter,* Not Harder* With AI-Powered* Guidance",
-        description: "Sholar is free Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti, deserunt repellendus eveniet autem architecto illo ad quis possimus soluta odio voluptate. Ullam, ad!",
+        title: "Alles Wird Einfacher",
+        headline: "Lernen Sie Intelligenter,* Nicht Härter* Mit KI-Unterstützung*",
+        description: "Sholar ist kostenlos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro corrupti, deserunt repellendus eveniet autem architecto illo ad quis possimus soluta odio voluptate. Ullam, ad!",
         image: img1
     },
     {
-        title: "Build Smarter",
-        headline: "Your Success *Starts With* the Right* Teacher",
-        description: "Leverage modern tools and workflows to accelerate your development cycle and deliver better results faster.",
+        title: "Lernen Sie Effektiver",
+        headline: "Ihr Erfolg *Beginnt Mit* Dem Richtigen* Lehrer",
+        description: "Nutzen Sie moderne Methoden und interaktive Übungen, um schneller Deutsch zu sprechen, zu schreiben und zu verstehen mit sofortigem Feedback und personalisiertem Lernpfad.",
         image: img2
     },
     {
-        title: "Scale with Confidence",
-        headline: "Education That Adapts* to You* Not the Other* Way Around",
-        description: "Our platform grows with you — from solo projects to enterprise-grade applications.",
+        title: "Wachsen Sie Mit Sicherheit",
+        headline: "Deutschunterricht, Der Sich* An Sie* Anpasst Nicht Umgekehrt*",
+        description: "Unsere Plattform begleitet Sie vom A1-Niveau bis hin zu fließendem B2/C1 mit kultursensiblen Inhalten, echten Dialogen und praxisnahen Szenarien.",
         image: img3
     }
 ];
@@ -64,13 +64,13 @@ function HeroSection() {
                 {slides.map((slide, index) => (
                     <div className="flex flex-col items-start justify-between gap-10 p-20 overflow-hidden shrink-0 w-[60rem] rounded-3xl" style={{ ...imageStyles, backgroundImage: `url(${currentSlide.image})` }}>
 
-                        <div className="w-auto p-3 py-2 uppercase bg-indigo-600 rounded-full ">Our Courses</div>
+                        <div className="w-auto p-3 py-2 uppercase bg-indig0 rounded-full ">Our Courses</div>
                         <h1 className="text-5xl font-bold">
                             {currentSlide.headline.split('*').map((part, i) => <span key={i} className="block">{part.trim()}</span>)}
                         </h1>
                         <p className="w-[70%]">
                             {currentSlide.description}</p>
-                        <button className="p-5 text-indigo-600 bg-white rounded-full ">Request Demo</button>
+                        <button className="p-5 font-bold text-indigo-600 transition duration-300 bg-white rounded-full hover:scale-105">Apply</button>
                     </div>
                 ))}
             </div>

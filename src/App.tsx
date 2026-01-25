@@ -8,6 +8,8 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import TabbedComponent from "./components/TabbedComponent/TabbedComponent";
 import Team from "./components/Team/Team";
+import Translation from "./components/TranslationItem/Translation";
+import LessonView from "./pages/LessonView";
 
 
 export default function App() {
@@ -16,13 +18,15 @@ export default function App() {
         <HeroSection />
         <ServicesSection />
         <Courses />
-        {/* <TabbedComponent /> */}
         <Team />
         <div className="flex flex-col gap-20">
 
             <Events />
             <Contactus />
         </div>
+        {/* <Translation word="Hund" language="de" /> */}
+        {/* <LessonView /> */}
         <Footer />
+        {/* <TabbedComponent /> */}
     </div>;
 }

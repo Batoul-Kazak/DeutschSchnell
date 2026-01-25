@@ -35,7 +35,7 @@ const Button = React.forwardRef<HTMLButtonElement, CustomButtonProps>(
         // Variant styles — now with explicit border + background
         const variantClasses = {
             primary:
-                'bg-orange-600 border-indigo-700 text-white hover:bg-indigo-700 hover:border-indigo-800 active:bg-indigo-800 active:border-transparent focus:ring-indigo-500 focus:ring-offset-white dark:focus:ring-offset-gray-900',
+                'bg-red border-indigo-700 text-white hover:bg-violet hover:border-indigo-800 active:bg-indigo-800 active:border-transparent focus:ring-indigo-500 focus:ring-offset-white dark:focus:ring-offset-gray-900',
             secondary:
                 'bg-black border-gray-300 text-gray-800 hover:bg-gray-50 hover:border-gray-400 active:bg-gray-100 active:border-transparent focus:ring-gray-500 focus:ring-offset-white dark:bg-gray-800 dark:border-gray-600 dark:text-gray-100 dark:hover:bg-gray-700 dark:hover:border-gray-500 dark:active:bg-gray-700 dark:active:border-transparent dark:focus:ring-offset-gray-900',
             ghost:

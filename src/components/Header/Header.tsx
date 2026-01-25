@@ -11,7 +11,7 @@ const navItems = [
     { id: "tests", label: "Tests" },
     { id: "team", label: "Team" },
     { id: "events", label: "Events" },
-    { id: "register_now", label: "Register Now!" }
+    { id: "contactus", label: "Register Now!" }
 ];
 
 const Header = () => {
@@ -28,8 +28,7 @@ const Header = () => {
     }, [isFixed])
 
     return <header style={{ backgroundColor: "rgb(123,106,218)" }}>
-        <div style={isFixed ? { zIndex: 100 } : {}} className={`${isFixed ? "fixed top-0 left-0" : ""} flex justify-between w-full p-5 px-20 text-white bg-indigo-600 rounded-tl-none rounded-tr-none rounded-3xl place-items-center`}>
-
+        <div style={isFixed ? { zIndex: 100 } : {}} className={`${isFixed ? "fixed top-0 left-0" : ""} flex justify-between  w-full p-5 px-20 text-white bg-violet rounded-tl-none rounded-tr-none rounded-3xl place-items-center`}>
             <div
                 className="flex gap-5">
                 <motion.h1
