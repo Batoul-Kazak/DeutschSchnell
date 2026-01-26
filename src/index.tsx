@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./globals.css";
 import NotFound from "./pages/NotFound.tsx";
 import LessonView from "./pages/LessonView.tsx";
+import Test from "./components/Test/Test.tsx";
 
 const queryClient = new QueryClient();
 
@@ -19,7 +20,7 @@ createRoot(document.getElementById("root")!).render(
                     <Route index path="/" Component={App} />
                     <Route path="*" Component={NotFound} />
                     <Route path="/courses/:courseId/:lessonId" Component={LessonView} />
-                    <Route path="/tests/" />
+                    <Route path="/tests" Component={Test} />
                 </Routes>
             </BrowserRouter>
         </StrictMode >

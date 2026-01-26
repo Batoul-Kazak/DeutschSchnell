@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
 
 type Word = { german: string; english: string; type: string };
@@ -111,7 +111,7 @@ const LessonView = () => {
     if (error) return <div>Error loading lesson</div>
 
     return <div className="relative flex flex-col gap-20 p-10 pt-20 place-items-center">
-        <button className="absolute px-4 py-2 font-bold text-white top-2 left-2 bg-yellow">Go Back to Home Page</button>
+        <Link to="/" className="absolute px-4 py-2 font-bold text-white top-2 left-2 bg-yellow">Go Back to Home Page</Link>
         <h1 className="text-4xl">Lesson 1: <span className="text-[2.4rem] text-red font-bold">Greetings and Introductions</span> </h1>
         <p className="text-xl">This lesson will teach you essential German vocabulary, basic grammar structures, and simple spoken sentences through practical dialogues. You’ll learn how to greet others, introduce yourself, ask and answer basic personal questions, and use polite expressions in everyday conversations.</p>
         <div className="flex flex-col w-full gap-5">

@@ -1,14 +1,15 @@
 import { Search } from "@mui/icons-material";
 import deutschSchnellIcon from "../../../public/icons/deutschionary_logo.svg"
 import { useEffect, useState } from "react";
-import { Link } from "react-scroll"
+import { Link as ScrollLink } from "react-scroll"
+import { Link as RouterLink } from "react-router-dom";
 import { motion } from "framer-motion"
-
+//
 const navItems = [
     { id: "home", label: "Home" },
     { id: "services", label: "Services" },
     { id: "courses", label: "Courses" },
-    { id: "tests", label: "Tests" },
+    // { id: "tests", label: "Tests" },
     { id: "team", label: "Team" },
     { id: "events", label: "Events" },
     { id: "contactus", label: "Register Now!" }
@@ -52,7 +53,7 @@ const Header = () => {
                 <ul className="flex justify-between w-full place-content-center place-items-center">
                     {navItems.map((item) => (
                         <li key={item.id}>
-                            <Link
+                            <ScrollLink
                                 to={item.id}
                                 smooth={true}
                                 duration={1000}
@@ -60,9 +61,10 @@ const Header = () => {
                                 className={`cursor-pointer rounded-full p-3 hover:text-[#ffbe0bff] hover:underline ${activeLink === item.id ? "bg-white/20" : ""}`}
                             >
                                 {item.label}
-                            </Link>
+                            </ScrollLink>
                         </li>
                     ))}
+                    <li><RouterLink to="/tests">Tests</RouterLink></li>
                 </ul>
             </div>
         </div>
