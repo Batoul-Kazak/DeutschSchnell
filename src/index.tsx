@@ -8,6 +8,7 @@ import "./globals.css";
 import NotFound from "./pages/NotFound.tsx";
 import LessonView from "./pages/LessonView.tsx";
 import SelectLevelInterface from "./components/Test/SelectLevelInterface.tsx";
+import Tests from "./components/Test/Test.tsx";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ createRoot(document.getElementById("root")!).render(
                     <Route path="*" Component={NotFound} />
                     <Route path="/courses/:courseId/:lessonId" Component={LessonView} />
                     <Route path="/tests" Component={SelectLevelInterface} />
+                    <Route path="/tests/:level" Component={Tests} />
                 </Routes>
             </BrowserRouter>
         </StrictMode >

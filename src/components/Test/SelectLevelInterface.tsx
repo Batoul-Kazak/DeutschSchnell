@@ -1,4 +1,6 @@
-import { Link } from "react-router-dom";
+import { createContext, useContext, useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+import { AppContext } from "../../App";
 
 interface LevelConfig {
     id: 'A1' | 'A2';
@@ -32,6 +34,12 @@ const LEVELS: LevelConfig[] = [
 ];
 
 export default function SelectLevelInterface() {
+    const navigate = useNavigate();
+
+    const handleSelect = (levelConfig: LevelConfig) => {
+        navigate(`/tests/${levelConfig.id}`);
+    };
+
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-yellow">
             <div className="absolute top-0 left-0 w-full h-24 bg-violet opacity-10"></div>
@@ -46,26 +54,27 @@ export default function SelectLevelInterface() {
                 </p>
 
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
-                    {LEVELS.map((level) => (
-                        <Link key={level.id} to={`/tests/${level.id}`} className="block">
+                    {LEVELS.map((level_) => (
+                        <div key={level_.id}
+                            onClick={() => handleSelect(level_)}>
                             <div
-                                className={`overflow-hidden transition-all duration-300 transform bg-white border-4 shadow-xl rounded-3xl border-${level.color} hover:shadow-2xl hover:-translate-y-2`}
+                                className={`overflow-hidden transition-all duration-300 transform bg-white border-4 shadow-xl rounded-3xl border-${level_.color} hover:shadow-2xl hover:-translate-y-2`}
                             >
-                                <div className={`p-6 text-center bg-${level.color}`}>
+                                <div className={`p-6 text-center bg-${level_.color}`}>
                                     <span className="inline-block px-4 py-1 text-sm font-semibold text-white rounded-full bg-white/20 backdrop-blur-sm">
-                                        {level.label}
+                                        {level_.label}
                                     </span>
-                                    <h2 className="mt-3 text-3xl font-bold text-white">{level.title}</h2>
+                                    <h2 className="mt-3 text-3xl font-bold text-white">{level_.title}</h2>
                                 </div>
                                 <div className="p-6 text-gray-700">
-                                    <p className="mb-4">{level.description}</p>
+                                    <p className="mb-4">{level_.description}</p>
                                     <div className="flex items-center justify-between text-sm text-gray-500">
-                                        <span>⏱️ {level.timeMinutes} Minuten</span>
-                                        <span>❓ {level.questionCount} Fragen</span>
+                                        <span>⏱️ {level_.timeMinutes} Minuten</span>
+                                        <span>❓ {level_.questionCount} Fragen</span>
                                     </div>
                                 </div>
                             </div>
-                        </Link>
+                        </div>
                     ))}
                 </div>
 

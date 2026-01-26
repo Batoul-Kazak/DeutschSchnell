@@ -1,4 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
+import { useQuery } from '@tanstack/react-query';
+import { Link, useNavigate, useParams } from 'react-router-dom';
+import { AppContext } from "../../App";
+
 interface Answer {
     id: string;
     text: string;
@@ -9,62 +13,48 @@ interface Question {
     text: string;
     answers: Answer[];
     correctAnswerId: string;
+    marks?: number;
 }
 
-const QUESTIONS: Question[] = [
-    {
-        id: "q1",
-        text: "Wie sagt man 'Hello' auf Deutsch?",
-        answers: [
-            { id: "a1", text: "Hallo" },
-            { id: "a2", text: "Tschüss" },
-            { id: "a3", text: "Danke" },
-            { id: "a4", text: "Bitte" },
-        ],
-        correctAnswerId: "a1",
-    },
-    {
-        id: "q2",
-        text: "Was bedeutet 'Buch' auf Englisch?",
-        answers: [
-            { id: "a1", text: "Pen" },
-            { id: "a2", text: "Book" },
-            { id: "a3", text: "Table" },
-            { id: "a4", text: "Chair" },
-        ],
-        correctAnswerId: "a2",
-    },
-    {
-        id: "q3",
-        text: "Welches Wort ist ein Verb?",
-        answers: [
-            { id: "a1", text: "Haus" },
-            { id: "a2", text: "Schön" },
-            { id: "a3", text: "Laufen" },
-            { id: "a4", text: "Blau" },
-        ],
-        correctAnswerId: "a3",
-    },
-    {
-        id: "q4",
-        text: "Wie lautet die Pluralform von 'Kind'?",
-        answers: [
-            { id: "a1", text: "Kinder" },
-            { id: "a2", text: "Kindes" },
-            { id: "a3", text: "Kinds" },
-            { id: "a4", text: "Kindern" },
-        ],
-        correctAnswerId: "a1",
-    },
-];
-
-const DURATION_MINUTES = 10;
-
 export default function Tests() {
+    // const { level } = useContext(AppContext);
+    const { level } = useParams<{ level: 'A1' | 'A2' }>();
+    const navigate = useNavigate();
+
+    const { data, isLoading, error } = useQuery({
+        queryKey: ['testData', level],
+        queryFn: async () => {
+            const res = await fetch('/data/german-test.json');
+            if (!res.ok) throw new Error('Failed to load test data');
+            return res.json() as Promise<{
+                A1: { timeLimitMinutes: number; questions: Question[] };
+                A2: { timeLimitMinutes: number; questions: Question[] };
+            }>;
+        },
+        staleTime: Infinity,
+        enabled: !!level,
+    });
+
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [selectedAnswers, setSelectedAnswers] = useState<Record<string, string>>({});
-    const [timeLeft, setTimeLeft] = useState(DURATION_MINUTES * 60);
     const [isFinished, setIsFinished] = useState(false);
+    const [timeLeft, setTimeLeft] = useState(0);
+
+    useEffect(() => {
+        setCurrentQuestionIndex(0);
+        setSelectedAnswers({});
+        setIsFinished(false);
+        setTimeLeft(0);
+    }, [level]);
+
+    useEffect(() => {
+        if (data && !isLoading && !error) {
+            const levelData = data[level];
+            if (levelData) {
+                setTimeLeft(levelData.timeLimitMinutes * 60);
+            }
+        }
+    }, [data, isLoading, error, level]);
 
     useEffect(() => {
         if (timeLeft <= 0 || isFinished) return;
@@ -84,7 +74,11 @@ export default function Tests() {
     }, [timeLeft, isFinished]);
 
     const handleAnswerSelect = (answerId: string) => {
-        const questionId = QUESTIONS[currentQuestionIndex].id;
+        if (!data) return;
+        const questions = data[level]?.questions || [];
+        if (currentQuestionIndex >= questions.length) return;
+
+        const questionId = questions[currentQuestionIndex].id;
         setSelectedAnswers((prev) => ({
             ...prev,
             [questionId]: answerId,
@@ -92,7 +86,9 @@ export default function Tests() {
     };
 
     const goToNext = () => {
-        if (currentQuestionIndex < QUESTIONS.length - 1) {
+        if (!data) return;
+        const questions = data[level]?.questions || [];
+        if (currentQuestionIndex < questions.length - 1) {
             setCurrentQuestionIndex((prev) => prev + 1);
         }
     };
@@ -107,34 +103,67 @@ export default function Tests() {
         setIsFinished(true);
     };
 
+    const reset = () => {
+        window.location.reload();
+    };
+
     const formatTime = (seconds: number): string => {
         const mins = Math.floor(seconds / 60);
         const secs = seconds % 60;
         return `${mins.toString().padStart(2, "0")}:${secs.toString().padStart(2, "0")}`;
     };
 
+    if (isLoading) {
+        return (
+            <div className="flex items-center justify-center min-h-screen bg-yellow">
+                <div className="text-violet">Lädt {level}-Test...</div>
+            </div>
+        );
+    }
+
+    if (error || !data || !data[level]) {
+        return (
+            <div className="flex items-center justify-center min-h-screen bg-yellow">
+                <div className="text-red">Fehler: {level}-Daten nicht gefunden.</div>
+            </div>
+        );
+    }
+
+    const levelData = data[level];
+    const QUESTIONS = levelData.questions;
     const currentQuestion = QUESTIONS[currentQuestionIndex];
     const selectedAnswerId = selectedAnswers[currentQuestion.id];
 
     if (isFinished) {
-        const correctCount = QUESTIONS.filter(
-            (q) => selectedAnswers[q.id] === q.correctAnswerId
-        ).length;
-        const score = Math.round((correctCount / QUESTIONS.length) * 100);
+        let totalMarks = 0;
+        let earnedMarks = 0;
+
+        QUESTIONS.forEach((q) => {
+            const qMarks = q.marks ?? 1;
+            totalMarks += qMarks;
+            if (selectedAnswers[q.id] === q.correctAnswerId) {
+                earnedMarks += qMarks;
+            }
+        });
+
+        const score = totalMarks > 0 ? Math.round((earnedMarks / totalMarks) * 100) : 0;
 
         return (
-            <div className="flex items-center justify-center min-h-screen p-4 ">
+            <div className="flex items-center justify-center min-h-screen p-4 bg-yellow">
                 <div className="w-full max-w-md p-8 text-center bg-white shadow-xl rounded-2xl">
-                    <h2 className="mb-4 text-2xl font-bold text-violet">Test Abgeschlossen!</h2>
+                    <h2 className="mb-4 text-2xl font-bold text-violet">{level} Test Abgeschlossen!</h2>
                     <div className="mb-2 text-5xl font-bold text-blue">{score}%</div>
                     <p className="mb-6 text-gray-700">
-                        {correctCount} von {QUESTIONS.length} Fragen richtig beantwortet.
+                        {earnedMarks} von {totalMarks} Punkten
                     </p>
                     <button
-                        onClick={() => window.location.reload()}
+                        onClick={reset}
                         className="px-6 py-2 text-white transition rounded-full bg-blue hover:opacity-90"
                     >
                         Neustarten
+                    </button>
+                    <button onClick={() => navigate('/')} className="px-6 py-2 ml-10 text-white transition rounded-full bg-blue hover:opacity-90">
+                        Zur Startseite
                     </button>
                 </div>
             </div>
@@ -142,9 +171,9 @@ export default function Tests() {
     }
 
     return (
-        <div className="min-h-screen p-4 md:p-6">
+        <div className="min-h-screen p-4 bg-yellow md:p-6">
             <div className="flex items-center justify-between mb-6">
-                <h1 className="text-2xl font-bold text-violet">Deutsch Test</h1>
+                <h1 className="text-2xl font-bold text-violet">{level} Deutsch Test</h1>
                 <div className="px-4 py-2 font-mono font-bold text-white rounded-lg bg-red">
                     {formatTime(timeLeft)}
                 </div>
@@ -222,4 +251,3 @@ export default function Tests() {
         </div>
     );
 }
-

@@ -1,6 +1,6 @@
 {
   "A1": {
-    "timeLimitMinutes": 15,
+    "timeLimitMinutes": 25,
     "questions": [
       {
         "id": "a1-q1",
@@ -60,16 +60,196 @@
           { "id": "d", "text": "gehe" }
         ],
         "correctAnswerId": "c",
+        "marks": 2
+      },
+      {
+        "id": "a1-q6",
+        "text": "Was bedeutet 'die Schule'?",
+        "answers": [
+          { "id": "a", "text": "Hospital" },
+          { "id": "b", "text": "School" },
+          { "id": "c", "text": "Office" },
+          { "id": "d", "text": "Park" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "a1-q7",
+        "text": "Welcher Satz ist richtig?",
+        "answers": [
+          { "id": "a", "text": "Ich wohne in Berlin." },
+          { "id": "b", "text": "Ich wohnen in Berlin." },
+          { "id": "c", "text": "Ich wohnt in Berlin." },
+          { "id": "d", "text": "Ich wohne Berlin." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a1-q8",
+        "text": "Wie sagt man 'Thank you'?",
+        "answers": [
+          { "id": "a", "text": "Bitte" },
+          { "id": "b", "text": "Danke" },
+          { "id": "c", "text": "Entschuldigung" },
+          { "id": "d", "text": "Tschüss" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "a1-q9",
+        "text": "Was ist das Gegenteil von 'groß'?",
+        "answers": [
+          { "id": "a", "text": "klein" },
+          { "id": "b", "text": "lang" },
+          { "id": "c", "text": "schön" },
+          { "id": "d", "text": "alt" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 1
+      },
+      {
+        "id": "a1-q10",
+        "text": "Vervollständige: 'Das ist ___ Buch.'",
+        "answers": [
+          { "id": "a", "text": "ein" },
+          { "id": "b", "text": "eine" },
+          { "id": "c", "text": "der" },
+          { "id": "d", "text": "die" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a1-q11",
+        "text": "Wie fragt man nach dem Namen?",
+        "answers": [
+          { "id": "a", "text": "Wie alt bist du?" },
+          { "id": "b", "text": "Woher kommst du?" },
+          { "id": "c", "text": "Wie heißt du?" },
+          { "id": "d", "text": "Was machst du?" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 2
+      },
+      {
+        "id": "a1-q12",
+        "text": "Was bedeutet 'essen'?",
+        "answers": [
+          { "id": "a", "text": "to drink" },
+          { "id": "b", "text": "to eat" },
+          { "id": "c", "text": "to sleep" },
+          { "id": "d", "text": "to walk" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "a1-q13",
+        "text": "Welches ist ein Getränk?",
+        "answers": [
+          { "id": "a", "text": "Brot" },
+          { "id": "b", "text": "Wasser" },
+          { "id": "c", "text": "Apfel" },
+          { "id": "d", "text": "Käse" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "a1-q14",
+        "text": "Setze ein: 'Er ___ Fußball.'",
+        "answers": [
+          { "id": "a", "text": "spielt" },
+          { "id": "b", "text": "spielst" },
+          { "id": "c", "text": "spielen" },
+          { "id": "d", "text": "spiele" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a1-q15",
+        "text": "Wie sagt man 'I live in Munich'?",
+        "answers": [
+          { "id": "a", "text": "Ich lebe in München." },
+          { "id": "b", "text": "Ich wohne in München." },
+          { "id": "c", "text": "Ich bin in München." },
+          { "id": "d", "text": "Ich komme in München." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a1-q16",
+        "text": "Was ist 'die Familie' auf Englisch?",
+        "answers": [
+          { "id": "a", "text": "Friend" },
+          { "id": "b", "text": "Family" },
+          { "id": "c", "text": "Neighbor" },
+          { "id": "d", "text": "Colleague" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "a1-q17",
+        "text": "Welche Farbe ist 'rot'?",
+        "answers": [
+          { "id": "a", "text": "Blue" },
+          { "id": "b", "text": "Green" },
+          { "id": "c", "text": "Red" },
+          { "id": "d", "text": "Yellow" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 1
+      },
+      {
+        "id": "a1-q18",
+        "text": "Vervollständige: 'Ich habe ___ Bruder.'",
+        "answers": [
+          { "id": "a", "text": "ein" },
+          { "id": "b", "text": "eine" },
+          { "id": "c", "text": "einen" },
+          { "id": "d", "text": "der" }
+        ],
+        "correctAnswerId": "c",
         "marks": 3
+      },
+      {
+        "id": "a1-q19",
+        "text": "Wie sagt man 'See you later'?",
+        "answers": [
+          { "id": "a", "text": "Guten Tag" },
+          { "id": "b", "text": "Bis später" },
+          { "id": "c", "text": "Gute Reise" },
+          { "id": "d", "text": "Herzlichen Glückwunsch" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a1-q20",
+        "text": "Was passt nicht? (Thema: Lebensmittel)",
+        "answers": [
+          { "id": "a", "text": "Milch" },
+          { "id": "b", "text": "Brot" },
+          { "id": "c", "text": "Auto" },
+          { "id": "d", "text": "Käse" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 2
       }
     ]
   },
   "A2": {
-    "timeLimitMinutes": 20,
+    "timeLimitMinutes": 35,
     "questions": [
       {
         "id": "a2-q1",
-        "text": "Welcher Satz ist korrekt?",
+        "text": "Welcher Satz ist korrekt im Perfekt?",
         "answers": [
           { "id": "a", "text": "Ich habe gestern ins Kino gegangen." },
           { "id": "b", "text": "Ich bin gestern ins Kino gegangen." },
@@ -101,7 +281,7 @@
           { "id": "d", "text": "hätte" }
         ],
         "correctAnswerId": "a",
-        "marks": 3
+        "marks": 2
       },
       {
         "id": "a2-q4",
@@ -125,7 +305,187 @@
           { "id": "d", "text": "Ich nehme einen Kaffee." }
         ],
         "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q6",
+        "text": "Welcher Satz verwendet den Dativ korrekt?",
+        "answers": [
+          { "id": "a", "text": "Ich gebe der Frau das Buch." },
+          { "id": "b", "text": "Ich gebe die Frau das Buch." },
+          { "id": "c", "text": "Ich gebe den Frau das Buch." },
+          { "id": "d", "text": "Ich gebe das Frau das Buch." }
+        ],
+        "correctAnswerId": "a",
         "marks": 3
+      },
+      {
+        "id": "a2-q7",
+        "text": "Was ist die Vergangenheitsform von 'sehen'?",
+        "answers": [
+          { "id": "a", "text": "sah" },
+          { "id": "b", "text": "gesehen" },
+          { "id": "c", "text": "sieht" },
+          { "id": "d", "text": "sehen" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q8",
+        "text": "Welche Präposition passt? 'Ich interessiere mich ___ Musik.'",
+        "answers": [
+          { "id": "a", "text": "für" },
+          { "id": "b", "text": "über" },
+          { "id": "c", "text": "mit" },
+          { "id": "d", "text": "von" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q9",
+        "text": "Was bedeutet 'sich beeilen'?",
+        "answers": [
+          { "id": "a", "text": "to rest" },
+          { "id": "b", "text": "to hurry up" },
+          { "id": "c", "text": "to complain" },
+          { "id": "d", "text": "to decide" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a2-q10",
+        "text": "Welcher Satz ist höflich?",
+        "answers": [
+          { "id": "a", "text": "Gib mir das Buch!" },
+          { "id": "b", "text": "Kannst du mir das Buch geben?" },
+          { "id": "c", "text": "Du gibst mir das Buch." },
+          { "id": "d", "text": "Ich will das Buch." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a2-q11",
+        "text": "Vervollständige: 'Er hat sich ___ den Film angesehen.'",
+        "answers": [
+          { "id": "a", "text": "an" },
+          { "id": "b", "text": "auf" },
+          { "id": "c", "text": "bei" },
+          { "id": "d", "text": "—" }
+        ],
+        "correctAnswerId": "d",
+        "marks": 3
+      },
+      {
+        "id": "a2-q12",
+        "text": "Was ist kein Trennbares Verb?",
+        "answers": [
+          { "id": "a", "text": "anrufen" },
+          { "id": "b", "text": "verstehen" },
+          { "id": "c", "text": "aufstehen" },
+          { "id": "d", "text": "mitnehmen" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "a2-q13",
+        "text": "Wie sagt man 'I have been living here since 2020'?",
+        "answers": [
+          { "id": "a", "text": "Ich wohne hier seit 2020." },
+          { "id": "b", "text": "Ich habe hier seit 2020 gewohnt." },
+          { "id": "c", "text": "Ich wohnte hier seit 2020." },
+          { "id": "d", "text": "Ich lebe hier von 2020." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q14",
+        "text": "Welches Wort ist feminin?",
+        "answers": [
+          { "id": "a", "text": "der Tisch" },
+          { "id": "b", "text": "das Fenster" },
+          { "id": "c", "text": "die Tür" },
+          { "id": "d", "text": "der Stuhl" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 2
+      },
+      {
+        "id": "a2-q15",
+        "text": "Was passt? 'Ich freue mich ___ das Wochenende.'",
+        "answers": [
+          { "id": "a", "text": "auf" },
+          { "id": "b", "text": "für" },
+          { "id": "c", "text": "über" },
+          { "id": "d", "text": "an" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q16",
+        "text": "Welcher Satz ist im Konjunktiv II?",
+        "answers": [
+          { "id": "a", "text": "Ich gehe ins Kino." },
+          { "id": "b", "text": "Ich ginge ins Kino." },
+          { "id": "c", "text": "Ich ging ins Kino." },
+          { "id": "d", "text": "Ich bin ins Kino gegangen." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "a2-q17",
+        "text": "Was bedeutet 'aussehen'?",
+        "answers": [
+          { "id": "a", "text": "to look out" },
+          { "id": "b", "text": "to appear / to look like" },
+          { "id": "c", "text": "to exit" },
+          { "id": "d", "text": "to watch" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a2-q18",
+        "text": "Welche Antwort ist falsch? (zu: 'Wohin gehst du?')",
+        "answers": [
+          { "id": "a", "text": "Ich gehe in die Schule." },
+          { "id": "b", "text": "Zum Bahnhof." },
+          { "id": "c", "text": "Ich gehe spazieren." },
+          { "id": "d", "text": "Nach Hause." }
+        ],
+        "correctAnswerId": "c",
+        "marks": 3
+      },
+      {
+        "id": "a2-q19",
+        "text": "Vervollständige: 'Je mehr ich lerne, ___ besser spreche ich Deutsch.'",
+        "answers": [
+          { "id": "a", "text": "desto" },
+          { "id": "b", "text": "so" },
+          { "id": "c", "text": "wie" },
+          { "id": "d", "text": "als" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "a2-q20",
+        "text": "Was ist typisch für eine deutsche Begrüßung unter Freunden?",
+        "answers": [
+          { "id": "a", "text": "Drei Küsse auf die Wange" },
+          { "id": "b", "text": "Handschlag oder Umarmung" },
+          { "id": "c", "text": "Verbeugung" },
+          { "id": "d", "text": "Nicken ohne Blickkontakt" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
       }
     ]
   }
