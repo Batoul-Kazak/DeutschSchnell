@@ -1,0 +1,132 @@
+{
+  "A1": {
+    "timeLimitMinutes": 15,
+    "questions": [
+      {
+        "id": "a1-q1",
+        "text": "Wie sagt man 'Good morning' auf Deutsch?",
+        "answers": [
+          { "id": "a", "text": "Guten Morgen" },
+          { "id": "b", "text": "Gute Nacht" },
+          { "id": "c", "text": "Guten Tag" },
+          { "id": "d", "text": "Hallo" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 1
+      },
+      {
+        "id": "a1-q2",
+        "text": "Was ist 'der Hund' auf Englisch?",
+        "answers": [
+          { "id": "a", "text": "Cat" },
+          { "id": "b", "text": "Dog" },
+          { "id": "c", "text": "Bird" },
+          { "id": "d", "text": "Fish" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "a1-q3",
+        "text": "Welches Wort passt? 'Ich ___ Anna.'",
+        "answers": [
+          { "id": "a", "text": "heiße" },
+          { "id": "b", "text": "bin" },
+          { "id": "c", "text": "habe" },
+          { "id": "d", "text": "wohne" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a1-q4",
+        "text": "Wie antwortet man auf 'Wie geht es dir?'",
+        "answers": [
+          { "id": "a", "text": "Ja, danke." },
+          { "id": "b", "text": "Mir geht es gut." },
+          { "id": "c", "text": "Ich bin müde." },
+          { "id": "d", "text": "Auf Wiedersehen!" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a1-q5",
+        "text": "Setze das Verb ein: 'Wir ___ nach Hause.' (gehen)",
+        "answers": [
+          { "id": "a", "text": "geht" },
+          { "id": "b", "text": "gehst" },
+          { "id": "c", "text": "gehen" },
+          { "id": "d", "text": "gehe" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 3
+      }
+    ]
+  },
+  "A2": {
+    "timeLimitMinutes": 20,
+    "questions": [
+      {
+        "id": "a2-q1",
+        "text": "Welcher Satz ist korrekt?",
+        "answers": [
+          { "id": "a", "text": "Ich habe gestern ins Kino gegangen." },
+          { "id": "b", "text": "Ich bin gestern ins Kino gegangen." },
+          { "id": "c", "text": "Ich gehe gestern ins Kino." },
+          { "id": "d", "text": "Ich ging gestern ins Kino." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a2-q2",
+        "text": "Was bedeutet 'trotzdem'?",
+        "answers": [
+          { "id": "a", "text": "However" },
+          { "id": "b", "text": "Therefore" },
+          { "id": "c", "text": "Because" },
+          { "id": "d", "text": "Although" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 1
+      },
+      {
+        "id": "a2-q3",
+        "text": "Vervollständige: 'Wenn ich Zeit ___, helfe ich dir.'",
+        "answers": [
+          { "id": "a", "text": "habe" },
+          { "id": "b", "text": "hatte" },
+          { "id": "c", "text": "haben" },
+          { "id": "d", "text": "hätte" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "a2-q4",
+        "text": "Welches ist kein Modalverb?",
+        "answers": [
+          { "id": "a", "text": "können" },
+          { "id": "b", "text": "müssen" },
+          { "id": "c", "text": "wollen" },
+          { "id": "d", "text": "gehen" }
+        ],
+        "correctAnswerId": "d",
+        "marks": 2
+      },
+      {
+        "id": "a2-q5",
+        "text": "Wie sagt man 'I would like to order a coffee'?",
+        "answers": [
+          { "id": "a", "text": "Ich möchte einen Kaffee bestellen." },
+          { "id": "b", "text": "Ich will einen Kaffee bestellen." },
+          { "id": "c", "text": "Ich bestelle einen Kaffee." },
+          { "id": "d", "text": "Ich nehme einen Kaffee." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      }
+    ]
+  }
+}

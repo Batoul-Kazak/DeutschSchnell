@@ -1,6 +1,4 @@
 import { useState, useEffect } from "react";
-
-// Define types
 interface Answer {
     id: string;
     text: string;
@@ -145,7 +143,6 @@ export default function Tests() {
 
     return (
         <div className="min-h-screen p-4 md:p-6">
-            {/* Header with Timer */}
             <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-bold text-violet">Deutsch Test</h1>
                 <div className="px-4 py-2 font-mono font-bold text-white rounded-lg bg-red">
@@ -153,7 +150,6 @@ export default function Tests() {
                 </div>
             </div>
 
-            {/* Progress Bar — starts at 0% */}
             <div className="w-full bg-gray-300 rounded-full h-2.5 mb-8">
                 <div
                     className="bg-blue h-2.5 rounded-full transition-all duration-300"
@@ -163,7 +159,6 @@ export default function Tests() {
                 ></div>
             </div>
 
-            {/* Questions Container */}
             <div className="overflow-hidden bg-white shadow-lg rounded-2xl">
                 <div className="h-[400px] overflow-y-auto p-6">
                     <h2 className="mb-6 text-xl font-semibold text-violet">
@@ -187,7 +182,6 @@ export default function Tests() {
                     </div>
                 </div>
 
-                {/* Navigation Buttons */}
                 <div className="flex justify-between p-6 bg-gray-100">
                     <button
                         onClick={goToPrevious}
@@ -228,3 +222,4 @@ export default function Tests() {
         </div>
     );
 }
+
