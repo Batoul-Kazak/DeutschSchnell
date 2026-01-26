@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 
-// Define level config
 interface LevelConfig {
-    id: 'A1' | 'A2'; // extend to 'B1' | 'B2' later if needed
+    id: 'A1' | 'A2';
     label: string;
     title: string;
     description: string;
     timeMinutes: number;
     questionCount: number;
-    color: 'blue' | 'violet'; // matches your Tailwind theme
+    color: 'blue' | 'violet';
 }
 
 const LEVELS: LevelConfig[] = [
@@ -30,22 +29,11 @@ const LEVELS: LevelConfig[] = [
         questionCount: 25,
         color: 'violet',
     },
-    // Add more levels here later!
-    // {
-    //   id: 'B1',
-    //   label: 'Mittelstufe',
-    //   title: 'B1',
-    //   description: 'Komplexe Texte, flüssige Gespräche.',
-    //   timeMinutes: 25,
-    //   questionCount: 30,
-    //   color: 'red', // if you add red to your theme
-    // },
 ];
 
 export default function SelectLevelInterface() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen p-4 bg-yellow">
-            {/* Decorative Top Accent */}
             <div className="absolute top-0 left-0 w-full h-24 bg-violet opacity-10"></div>
 
             <div className="w-full max-w-2xl text-center">
@@ -57,7 +45,6 @@ export default function SelectLevelInterface() {
                     Wähle dein Niveau und starte den Test!
                 </p>
 
-                {/* Dynamically rendered level cards */}
                 <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
                     {LEVELS.map((level) => (
                         <Link key={level.id} to={`/tests/${level.id}`} className="block">
@@ -92,7 +79,6 @@ export default function SelectLevelInterface() {
                 </div>
             </div>
 
-            {/* Decorative Bottom Accent */}
             <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-blue opacity-10 -z-10"></div>
         </div>
     );
