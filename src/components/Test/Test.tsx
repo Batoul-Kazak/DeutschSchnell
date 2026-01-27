@@ -72,6 +72,8 @@ export default function Tests() {
         return () => clearInterval(timer);
     }, [timeLeft, isFinished]);
 
+
+
     const handleAnswerSelect = (answerId: string) => {
         if (!data) return;
         const questions = data[level]?.questions || [];
@@ -131,6 +133,34 @@ export default function Tests() {
     const currentQuestion = QUESTIONS[currentQuestionIndex];
     const selectedAnswerId = selectedAnswers[currentQuestion.id];
 
+    useEffect(() => {
+        if (isFinished) return;
+
+        const handleKeyDown = (e: KeyboardEvent) => {
+            if (!['ArrowLeft', 'ArrowRight', 'Enter', ' '].includes(e.key)) return;
+
+            e.preventDefault();
+
+            if (e.key === 'ArrowLeft') {
+                goToPrevious();
+            }
+            else if (e.key === 'ArrowRight' || e.key === 'Enter' || e.key === ' ') {
+                if (!selectedAnswerId) {
+                    return;
+                }
+
+                if (currentQuestionIndex === QUESTIONS.length - 1) {
+                    handleSubmit();
+                } else {
+                    goToNext();
+                }
+            }
+        };
+
+        window.addEventListener('keydown', handleKeyDown);
+        return () => window.removeEventListener('keydown', handleKeyDown);
+    }, [currentQuestionIndex, selectedAnswerId, isFinished, QUESTIONS.length]);
+
     if (isFinished) {
         let totalMarks = 0;
         let earnedMarks = 0;
@@ -151,16 +181,16 @@ export default function Tests() {
                     <h2 className="mb-4 text-2xl font-bold text-my-violet">{level} Test Abgeschlossen!</h2>
                     <div className="mb-2 text-5xl font-bold text-my-blue">{score}%</div>
                     <p className="mb-6 text-gray-700">
-                        {earnedMarks} von {totalMarks} Punkten
+                        {earnedMarks} from {totalMarks} Points
                     </p>
                     <button
                         onClick={reset}
                         className="px-6 py-2 text-white transition rounded-full bg-my-blue hover:opacity-90"
                     >
-                        Neustarten
+                        Restart
                     </button>
                     <button onClick={() => navigate('/')} className="px-6 py-2 ml-10 text-white transition rounded-full bg-my-blue hover:opacity-90">
-                        Zur Startseite
+                        To Main Menu
                     </button>
                 </div>
             </div>
@@ -168,27 +198,28 @@ export default function Tests() {
     }
 
     return (
-        <div className="min-h-screen p-4 md:p-6">
+        <div className="min-h-screen p-4 md:p-6 custom-scrollbar">
             <div className="flex items-center justify-between mb-6">
                 <h1 className="text-2xl font-bold text-my-violet">{level} Deutsch Test</h1>
                 <div className="px-4 py-2 font-mono font-bold text-white rounded-lg bg-my-red">
                     {formatTime(timeLeft)}
                 </div>
             </div>
+            <hr className="h-1 bg-my-violet" />
 
-            <div className="w-full bg-gray-300 rounded-full h-2.5 mb-8">
+            <div className="w-full mb-8 bg-gray-300 rounded-full">
                 <div
-                    className="bg-my-blue h-2.5 rounded-full transition-all duration-300"
+                    className="transition-all duration-300 rounded-full bg-my-blue"
                     style={{
                         width: `${(currentQuestionIndex / QUESTIONS.length) * 100}%`,
                     }}
                 ></div>
             </div>
 
-            <div className="overflow-hidden bg-white shadow-lg rounded-2xl">
-                <div className="h-[400px] overflow-y-auto p-6">
+            <div className="overflow-hidden rounded-2xl">
+                <div className="p-6 ">
                     <h2 className="mb-6 text-xl font-semibold text-my-violet">
-                        Frage {currentQuestionIndex + 1} von {QUESTIONS.length}
+                        Question {currentQuestionIndex + 1} from {QUESTIONS.length}
                     </h2>
                     <p className="mb-8 text-lg text-gray-800">{currentQuestion.text}</p>
 
@@ -212,35 +243,35 @@ export default function Tests() {
                     <button
                         onClick={goToPrevious}
                         disabled={currentQuestionIndex === 0}
-                        className={`px-6 py-2 rounded-lg font-medium ${currentQuestionIndex === 0
-                            ? "bg-gray-300 text-gray-500 cursor-not-allowed"
-                            : "bg-gray-400 text-white hover:bg-gray-500"
+                        className={`px-6 py-2 rounded-lg text-white  font-bold ${currentQuestionIndex === 0
+                            ? "bg-my-violet cursor-not-allowed"
+                            : "bg-my-violet  hover:bg-gray-500"
                             }`}
                     >
-                        Vorherige
+                        Previous
                     </button>
 
                     {currentQuestionIndex === QUESTIONS.length - 1 ? (
                         <button
                             onClick={handleSubmit}
                             disabled={!selectedAnswerId}
-                            className={`px-6 py-2 rounded-lg font-medium ${!selectedAnswerId
-                                ? "bg-my-blue/50 text-white cursor-not-allowed"
+                            className={`px-6 py-2 rounded-lg font-bold ${!selectedAnswerId
+                                ? "bg-my-blue/95 text-white cursor-not-allowed"
                                 : "bg-my-blue text-white hover:opacity-90"
                                 }`}
                         >
-                            Abschließen
+                            Finish
                         </button>
                     ) : (
                         <button
                             onClick={goToNext}
                             disabled={!selectedAnswerId}
-                            className={`px-6 py-2 rounded-lg font-medium ${!selectedAnswerId
-                                ? "bg-my-blue/50 text-white cursor-not-allowed"
-                                : "bg-my-blue text-white hover:opacity-90"
+                            className={`px-6 py-2 font-bold rounded-lg ${!selectedAnswerId
+                                ? "bg-my-blue/50 text-gray-800 cursor-not-allowed"
+                                : "bg-my-blue text-gray-900 hover:opacity-90"
                                 }`}
                         >
-                            Nächste
+                            Next
                         </button>
                     )}
                 </div>
