@@ -1,3 +1,4 @@
+
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -6,10 +7,11 @@ export default {
         sans: ['Open Sans', 'sans-serif'],
       },
       colors: {
-        violet: '#7b6ada',
-        blue: '#6AD9DA',
-        red: '#DA7B6A',
-        yellow: '#C9DA6A',
+        'my-yellow': '#C9DA6A',
+        'my-violet': '#7b6ada',
+        'my-blue': '#6AD9DA',
+        'my-red': '#DA7B6A',
+        'my-orange': '#FF9E44',
       },
     },
   },

@@ -488,5 +488,382 @@
         "marks": 2
       }
     ]
+  },
+  "B1": {
+    "timeLimitMinutes": 50,
+    "questions": [
+      {
+        "id": "b1-q1",
+        "text": "Welcher Satz ist grammatikalisch korrekt?",
+        "answers": [
+          { "id": "a", "text": "Ich habe gesagt, dass ich müde bin." },
+          { "id": "b", "text": "Ich habe gesagt, dass ich bin müde." },
+          { "id": "c", "text": "Ich habe gesagt, dass bin ich müde." },
+          { "id": "d", "text": "Ich habe gesagt, dass ich war müde." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b1-q2",
+        "text": "Was bedeutet: 'Das hätte ich mir früher denken können!'?",
+        "answers": [
+          { "id": "a", "text": "I should have thought of that earlier!" },
+          { "id": "b", "text": "I will think about it later." },
+          { "id": "c", "text": "I’m proud I figured it out." },
+          { "id": "d", "text": "I don’t understand this problem." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b1-q3",
+        "text": "Vervollständige: 'Er freut sich ___ seinen Geburtstag.'",
+        "answers": [
+          { "id": "a", "text": "auf" },
+          { "id": "b", "text": "für" },
+          { "id": "c", "text": "über" },
+          { "id": "d", "text": "an" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b1-q4",
+        "text": "Welcher Satz verwendet das Passiv richtig?",
+        "answers": [
+          { "id": "a", "text": "Das Buch wird von vielen Schülern gelesen." },
+          { "id": "b", "text": "Das Buch liest von vielen Schülern." },
+          { "id": "c", "text": "Das Buch wurde von viele Schülern gelesen." },
+          { "id": "d", "text": "Das Buch ist gelesen worden von Schülern." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "b1-q5",
+        "text": "Was ist die richtige Form im Präteritum? 'Sie ___ gestern krank.'",
+        "answers": [
+          { "id": "a", "text": "war" },
+          { "id": "b", "text": "ist gewesen" },
+          { "id": "c", "text": "hatte" },
+          { "id": "d", "text": "wurde" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b1-q6",
+        "text": "Welche Antwort passt am besten? A: 'Hast du das Projekt schon fertig?' B: '___, aber fast.'",
+        "answers": [
+          { "id": "a", "text": "Ja" },
+          { "id": "b", "text": "Nein" },
+          { "id": "c", "text": "Vielleicht" },
+          { "id": "d", "text": "Eigentlich" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b1-q7",
+        "text": "Welches Wort ist ein Modalpartikel?",
+        "answers": [
+          { "id": "a", "text": "schnell" },
+          { "id": "b", "text": "doch" },
+          { "id": "c", "text": "sehr" },
+          { "id": "d", "text": "immer" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b1-q8",
+        "text": "Vervollständige: 'Ich wünschte, ich ___ mehr Zeit.'",
+        "answers": [
+          { "id": "a", "text": "habe" },
+          { "id": "b", "text": "hätte" },
+          { "id": "c", "text": "hatte" },
+          { "id": "d", "text": "würde haben" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "b1-q9",
+        "text": "Was bedeutet 'sich beeilen' im Satz: 'Beeil dich, sonst verpassen wir den Zug!'?",
+        "answers": [
+          { "id": "a", "text": "to relax" },
+          { "id": "b", "text": "to hurry up" },
+          { "id": "c", "text": "to wait" },
+          { "id": "d", "text": "to check the time" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "b1-q10",
+        "text": "Welcher Satz ist im Konjunktiv I?",
+        "answers": [
+          { "id": "a", "text": "Er sagt, er sei müde." },
+          { "id": "b", "text": "Er sagte, er wäre müde." },
+          { "id": "c", "text": "Er ist müde." },
+          { "id": "d", "text": "Er würde müde sein." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "b1-q11",
+        "text": "Welche Präposition verlangt den Genitiv?",
+        "answers": [
+          { "id": "a", "text": "wegen" },
+          { "id": "b", "text": "mit" },
+          { "id": "c", "text": "für" },
+          { "id": "d", "text": "gegen" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b1-q12",
+        "text": "Vervollständige: 'Trotz ___ Regens sind wir spazieren gegangen.'",
+        "answers": [
+          { "id": "a", "text": "dem" },
+          { "id": "b", "text": "den" },
+          { "id": "c", "text": "des" },
+          { "id": "d", "text": "der" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 3
+      },
+      {
+        "id": "b1-q13",
+        "text": "Was ist kein trennbares Verb?",
+        "answers": [
+          { "id": "a", "text": "anfangen" },
+          { "id": "b", "text": "vergessen" },
+          { "id": "c", "text": "aufhören" },
+          { "id": "d", "text": "mitbringen" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b1-q14",
+        "text": "Wie drückt man Zustimmung höflich aus?",
+        "answers": [
+          { "id": "a", "text": "Genau!" },
+          { "id": "b", "text": "Da haben Sie völlig recht." },
+          { "id": "c", "text": "Klar!" },
+          { "id": "d", "text": "Stimmt!" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b1-q15",
+        "text": "Welcher Satz enthält einen Relativsatz?",
+        "answers": [
+          { "id": "a", "text": "Das ist der Mann, der mir geholfen hat." },
+          { "id": "b", "text": "Der Mann hat mir geholfen." },
+          { "id": "c", "text": "Ich helfe dem Mann." },
+          { "id": "d", "text": "Hilf dem Mann!" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b1-q16",
+        "text": "Was bedeutet 'eigentlich' in: 'Was machst du eigentlich beruflich?'",
+        "answers": [
+          { "id": "a", "text": "actually / by the way" },
+          { "id": "b", "text": "exactly" },
+          { "id": "c", "text": "formally" },
+          { "id": "d", "text": "secretly" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b1-q17",
+        "text": "Vervollständige: 'Je mehr du übst, ___ besser wirst du.'",
+        "answers": [
+          { "id": "a", "text": "desto" },
+          { "id": "b", "text": "so" },
+          { "id": "c", "text": "wie" },
+          { "id": "d", "text": "als" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b1-q18",
+        "text": "Welche Antwort ist falsch? (zu: 'Warum kommst du nicht mit?')",
+        "answers": [
+          { "id": "a", "text": "Ich habe keine Lust." },
+          { "id": "b", "text": "Weil ich müde bin." },
+          { "id": "c", "text": "Ich muss noch arbeiten." },
+          { "id": "d", "text": "Denn ich bin beschäftigt." }
+        ],
+        "correctAnswerId": "d",
+        "marks": 3
+      },
+      {
+        "id": "b1-q19",
+        "text": "Welches Adjektiv passt? 'Das war eine ___ Erfahrung.'",
+        "answers": [
+          { "id": "a", "text": "unvergessliche" },
+          { "id": "b", "text": "unvergesslicher" },
+          { "id": "c", "text": "unvergessliches" },
+          { "id": "d", "text": "unvergesslich" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b1-q20",
+        "text": "Was ist die indirekte Rede von: 'Ich gehe morgen ins Kino.'?",
+        "answers": [
+          { "id": "a", "text": "Er sagte, er geht morgen ins Kino." },
+          { "id": "b", "text": "Er sagte, er gehe morgen ins Kino." },
+          { "id": "c", "text": "Er sagte, er ging morgen ins Kino." },
+          { "id": "d", "text": "Er sagte, er ist morgen ins Kino gegangen." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "b1-q21",
+        "text": "Welcher Satz ist höflich formuliert?",
+        "answers": [
+          { "id": "a", "text": "Gib mir mal das Formular!" },
+          { "id": "b", "text": "Könnten Sie mir bitte das Formular geben?" },
+          { "id": "c", "text": "Ich brauche das Formular jetzt." },
+          { "id": "d", "text": "Wo ist das Formular?" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b1-q22",
+        "text": "Was bedeutet 'aussehen' im Satz: 'Er sieht heute müde aus.'?",
+        "answers": [
+          { "id": "a", "text": "to look like" },
+          { "id": "b", "text": "to appear / to seem" },
+          { "id": "c", "text": "to watch carefully" },
+          { "id": "d", "text": "to dress up" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b1-q23",
+        "text": "Vervollständige: 'Ich habe mich ___ die Prüfung vorbereitet.'",
+        "answers": [
+          { "id": "a", "text": "auf" },
+          { "id": "b", "text": "für" },
+          { "id": "c", "text": "über" },
+          { "id": "d", "text": "an" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b1-q24",
+        "text": "Welches Verb ist reflexiv?",
+        "answers": [
+          { "id": "a", "text": "gehen" },
+          { "id": "b", "text": "freuen" },
+          { "id": "c", "text": "machen" },
+          { "id": "d", "text": "haben" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b1-q25",
+        "text": "Was ist typisch für eine formelle E-Mail?",
+        "answers": [
+          { "id": "a", "text": "Liebe Anna," },
+          { "id": "b", "text": "Hi zusammen!" },
+          { "id": "c", "text": "Sehr geehrte Damen und Herren," },
+          { "id": "d", "text": "Hey du!" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 2
+      },
+      {
+        "id": "b1-q26",
+        "text": "Welcher Satz ist im Plusquamperfekt?",
+        "answers": [
+          { "id": "a", "text": "Ich hatte gegessen, bevor er kam." },
+          { "id": "b", "text": "Ich habe gegessen, bevor er kam." },
+          { "id": "c", "text": "Ich aß, bevor er kam." },
+          { "id": "d", "text": "Ich esse, bevor er kommt." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "b1-q27",
+        "text": "Was passt nicht zum Thema 'Umwelt'?",
+        "answers": [
+          { "id": "a", "text": "Recycling" },
+          { "id": "b", "text": "Klimawandel" },
+          { "id": "c", "text": "Verschwendung" },
+          { "id": "d", "text": "Gehaltserhöhung" }
+        ],
+        "correctAnswerId": "d",
+        "marks": 2
+      },
+      {
+        "id": "b1-q28",
+        "text": "Vervollständige: 'Würdest du mir helfen, wenn ich ___?'",
+        "answers": [
+          { "id": "a", "text": "frage" },
+          { "id": "b", "text": "fragen würde" },
+          { "id": "c", "text": "gefragt habe" },
+          { "id": "d", "text": "fragen" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "b1-q29",
+        "text": "Welche Aussage drückt Zweifel aus?",
+        "answers": [
+          { "id": "a", "text": "Das ist sicher richtig." },
+          { "id": "b", "text": "Vielleicht hast du recht." },
+          { "id": "c", "text": "Ich weiß es genau." },
+          { "id": "d", "text": "Natürlich!" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b1-q30",
+        "text": "Was ist die korrekte Reihenfolge der Satzteile? 'gestern – ich – weil – krank – war – nicht – zur Arbeit – gegangen – bin'",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Ich bin gestern nicht zur Arbeit gegangen, weil ich krank war."
+          },
+          {
+            "id": "b",
+            "text": "Weil ich krank war, bin ich gestern nicht zur Arbeit gegangen."
+          },
+          {
+            "id": "c",
+            "text": "Ich bin nicht gegangen zur Arbeit gestern, weil ich war krank."
+          },
+          {
+            "id": "d",
+            "text": "Gestern ich bin nicht zur Arbeit gegangen, weil krank ich war."
+          }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      }
+    ]
   }
 }

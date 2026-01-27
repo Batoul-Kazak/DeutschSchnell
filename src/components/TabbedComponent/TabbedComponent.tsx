@@ -22,7 +22,7 @@ const TabbedComponent: React.FC = () => {
                     <button
                         key={tab.id}
                         className={`px-4 py-2 font-medium text-sm rounded-t-lg transition-colors duration-200 ${activeTab === tab.id
-                            ? 'text-blue-600 bg-white dark:bg-gray-800 dark:text-blue-400 border-b-2 border-blue-500'
+                            ? 'text-my-blue-600 bg-white dark:bg-gray-800 dark:text-my-blue-400 border-b-2 border-my-blue-500'
                             : 'text-black hover:text-gray-700 dark:text-black dark:hover:text-black'
                             }`}
                         onClick={() => setActiveTab(tab.id)}

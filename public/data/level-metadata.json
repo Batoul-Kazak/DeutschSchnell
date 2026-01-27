@@ -1,0 +1,42 @@
+{
+  "A1": {
+    "label": "Beginner",
+    "title": "A1",
+    "description": "Basic greetings, simple sentences, everyday vocabulary.",
+    "timeMinutes": 25,
+    "questionCount": 20,
+    "color": "#2E7D32"
+  },
+  "A2": {
+    "label": "Elementary",
+    "title": "A2",
+    "description": "Past tense, modal verbs, longer conversations.",
+    "timeMinutes": 35,
+    "questionCount": 25,
+    "color": "#1565C0"
+  },
+  "B1": {
+    "label": "Intermediate",
+    "title": "B1",
+    "description": "Complex sentences, reported speech, expressing opinions.",
+    "timeMinutes": 50,
+    "questionCount": 30,
+    "color": "#0097A7"
+  },
+  "B2": {
+    "label": "Upper Intermediate",
+    "title": "B2",
+    "description": "Nuanced language, formal texts, forming hypotheses.",
+    "timeMinutes": 60,
+    "questionCount": 35,
+    "color": "#E65100"
+  },
+  "C1": {
+    "label": "Advanced",
+    "title": "C1",
+    "description": "Fluent expression, idiomatic phrases, academic topics.",
+    "timeMinutes": 75,
+    "questionCount": 40,
+    "color": "#6A1B9A"
+  }
+}

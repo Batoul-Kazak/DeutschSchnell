@@ -73,14 +73,14 @@ const ServicesSection = () => {
                     key={section.id}
                     className="relative flex flex-col p-8 pt-[7rem] bg-black/15 rounded-3xl"
                 >
-                    <div className="absolute bg-violet rounded-full p-[3rem] top-[-4rem] right-[-4rem]">
+                    <div className="absolute bg-my-violet rounded-full p-[3rem] top-[-4rem] right-[-4rem]">
                         <img src={section.image} alt={`service-${i}`} className="w-20 h-20" />
                     </div>
 
                     <div className="flex flex-col justify-between h-full">
                         <h3 className="text-xl font-bold ">{section.title}</h3>
                         <p className={`py-5 ${expanded == section.id ? "line-clamp-none" : "line-clamp-3"}`}>{section.description}</p>
-                        {/* <button onClick={() => toggleExpand(section.id)} className="font-bold px-5 w-[10rem] mt-5 py-3 text-violet transition bg-white rounded-full hover:bg-indigo-600 hover:text-white"> */}
+                        {/* <button onClick={() => toggleExpand(section.id)} className="font-bold px-5 w-[10rem] mt-5 py-3 text-my-violet transition bg-white rounded-full hover:bg-indigo-600 hover:text-white"> */}
                         {/* {expanded == section.id ? "Show Less" : "Show More"} */}
                         {/* </button> */}
                     </div>
@@ -88,12 +88,12 @@ const ServicesSection = () => {
             ))}
         </div>
         <div className="flex place-content-center place-items-center place-self-center w-[80%]">
-            <div className="flex flex-col gap-8 px-10 bg-violet py-[5rem] rounded-[3rem] w-[50%]">
+            <div className="flex flex-col gap-8 px-10 bg-my-violet py-[5rem] rounded-[3rem] w-[50%]">
                 {germanFaqs.map((item, i) => (
                     <div key={item.id} className="flex flex-col gap-5 font-bold bg-white rounded-3xl place-content-center place-items-center px-7">
                         <div className="flex justify-between w-full gap-5 mt-5 align-middle place-items-center">
                             <p className={`${openedIndex === i ? "text-indigo-600" : "text-gray-950"}`}>{item.question}</p>
-                            <button onClick={() => toggelPanel(i)} className="flex p-1 text-white rounded-full cursor-pointer bg-violet place-content-center place-items-center">
+                            <button onClick={() => toggelPanel(i)} className="flex p-1 text-white rounded-full cursor-pointer bg-my-violet place-content-center place-items-center">
                                 {openedIndex === i ? <Minimize /> :
                                     <Add />}
                             </button>
@@ -108,7 +108,7 @@ const ServicesSection = () => {
                 <h3 className="text-2xl font-bold text-indigo-600">About us</h3>
                 <h1 className="text-4xl font-bold">What make us the best academy online?</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
-                <button className="w-[10rem] px-4 py-3 font-bold text-violet bg-white rounded-full transition-all hover:bg-indigo-600 hover:text-white">Discover More</button>
+                <button className="w-[10rem] px-4 py-3 font-bold text-my-violet bg-white rounded-full transition-all hover:bg-indigo-600 hover:text-white">Discover More</button>
             </div>
         </div>
     </section>

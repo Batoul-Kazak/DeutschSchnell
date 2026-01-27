@@ -1,7 +1,7 @@
 import { useState, useEffect, useContext } from "react";
 import { useQuery } from '@tanstack/react-query';
-import { Link, useNavigate, useParams } from 'react-router-dom';
-import { AppContext } from "../../App";
+import { useNavigate, useParams } from 'react-router-dom';
+import NotFound from "../../pages/NotFound";
 
 interface Answer {
     id: string;
@@ -17,7 +17,6 @@ interface Question {
 }
 
 export default function Tests() {
-    // const { level } = useContext(AppContext);
     const { level } = useParams<{ level: 'A1' | 'A2' }>();
     const navigate = useNavigate();
 
@@ -115,17 +114,15 @@ export default function Tests() {
 
     if (isLoading) {
         return (
-            <div className="flex items-center justify-center min-h-screen bg-yellow">
-                <div className="text-violet">Lädt {level}-Test...</div>
+            <div className="flex items-center justify-center min-h-screen bg-my-yellow">
+                <div className="text-my-violet">Lädt {level}-Test...</div>
             </div>
         );
     }
 
     if (error || !data || !data[level]) {
         return (
-            <div className="flex items-center justify-center min-h-screen bg-yellow">
-                <div className="text-red">Fehler: {level}-Daten nicht gefunden.</div>
-            </div>
+            <NotFound />
         );
     }
 
@@ -149,20 +146,20 @@ export default function Tests() {
         const score = totalMarks > 0 ? Math.round((earnedMarks / totalMarks) * 100) : 0;
 
         return (
-            <div className="flex items-center justify-center min-h-screen p-4 bg-yellow">
+            <div className="flex items-center justify-center min-h-screen p-4 bg-my-red">
                 <div className="w-full max-w-md p-8 text-center bg-white shadow-xl rounded-2xl">
-                    <h2 className="mb-4 text-2xl font-bold text-violet">{level} Test Abgeschlossen!</h2>
-                    <div className="mb-2 text-5xl font-bold text-blue">{score}%</div>
+                    <h2 className="mb-4 text-2xl font-bold text-my-violet">{level} Test Abgeschlossen!</h2>
+                    <div className="mb-2 text-5xl font-bold text-my-blue">{score}%</div>
                     <p className="mb-6 text-gray-700">
                         {earnedMarks} von {totalMarks} Punkten
                     </p>
                     <button
                         onClick={reset}
-                        className="px-6 py-2 text-white transition rounded-full bg-blue hover:opacity-90"
+                        className="px-6 py-2 text-white transition rounded-full bg-my-blue hover:opacity-90"
                     >
                         Neustarten
                     </button>
-                    <button onClick={() => navigate('/')} className="px-6 py-2 ml-10 text-white transition rounded-full bg-blue hover:opacity-90">
+                    <button onClick={() => navigate('/')} className="px-6 py-2 ml-10 text-white transition rounded-full bg-my-blue hover:opacity-90">
                         Zur Startseite
                     </button>
                 </div>
@@ -171,17 +168,17 @@ export default function Tests() {
     }
 
     return (
-        <div className="min-h-screen p-4 bg-yellow md:p-6">
+        <div className="min-h-screen p-4 md:p-6">
             <div className="flex items-center justify-between mb-6">
-                <h1 className="text-2xl font-bold text-violet">{level} Deutsch Test</h1>
-                <div className="px-4 py-2 font-mono font-bold text-white rounded-lg bg-red">
+                <h1 className="text-2xl font-bold text-my-violet">{level} Deutsch Test</h1>
+                <div className="px-4 py-2 font-mono font-bold text-white rounded-lg bg-my-red">
                     {formatTime(timeLeft)}
                 </div>
             </div>
 
             <div className="w-full bg-gray-300 rounded-full h-2.5 mb-8">
                 <div
-                    className="bg-blue h-2.5 rounded-full transition-all duration-300"
+                    className="bg-my-blue h-2.5 rounded-full transition-all duration-300"
                     style={{
                         width: `${(currentQuestionIndex / QUESTIONS.length) * 100}%`,
                     }}
@@ -190,7 +187,7 @@ export default function Tests() {
 
             <div className="overflow-hidden bg-white shadow-lg rounded-2xl">
                 <div className="h-[400px] overflow-y-auto p-6">
-                    <h2 className="mb-6 text-xl font-semibold text-violet">
+                    <h2 className="mb-6 text-xl font-semibold text-my-violet">
                         Frage {currentQuestionIndex + 1} von {QUESTIONS.length}
                     </h2>
                     <p className="mb-8 text-lg text-gray-800">{currentQuestion.text}</p>
@@ -201,8 +198,8 @@ export default function Tests() {
                                 key={answer.id}
                                 onClick={() => handleAnswerSelect(answer.id)}
                                 className={`w-full text-left p-4 rounded-xl border-2 transition-all ${selectedAnswerId === answer.id
-                                    ? "border-blue bg-blue/10"
-                                    : "border-gray-300 hover:border-blue/70"
+                                    ? "border-my-blue bg-my-blue/10"
+                                    : "border-gray-300 hover:border-my-blue/70"
                                     }`}
                             >
                                 {answer.text}
@@ -228,8 +225,8 @@ export default function Tests() {
                             onClick={handleSubmit}
                             disabled={!selectedAnswerId}
                             className={`px-6 py-2 rounded-lg font-medium ${!selectedAnswerId
-                                ? "bg-blue/50 text-white cursor-not-allowed"
-                                : "bg-blue text-white hover:opacity-90"
+                                ? "bg-my-blue/50 text-white cursor-not-allowed"
+                                : "bg-my-blue text-white hover:opacity-90"
                                 }`}
                         >
                             Abschließen
@@ -239,8 +236,8 @@ export default function Tests() {
                             onClick={goToNext}
                             disabled={!selectedAnswerId}
                             className={`px-6 py-2 rounded-lg font-medium ${!selectedAnswerId
-                                ? "bg-blue/50 text-white cursor-not-allowed"
-                                : "bg-blue text-white hover:opacity-90"
+                                ? "bg-my-blue/50 text-white cursor-not-allowed"
+                                : "bg-my-blue text-white hover:opacity-90"
                                 }`}
                         >
                             Nächste
