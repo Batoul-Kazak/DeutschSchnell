@@ -7,8 +7,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import "./globals.css";
 import NotFound from "./pages/NotFound.tsx";
 import LessonView from "./pages/LessonView.tsx";
-import SelectLevelInterface from "./components/Test/SelectLevelInterface.tsx";
-import Tests from "./components/Test/Test.tsx";
+import SelectLevelInterface from "./pages/Test/SelectLevelInterface.tsx";
+import Tests from "./pages/Test/Test.tsx";
 
 const queryClient = new QueryClient();
 

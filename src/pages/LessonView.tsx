@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
+// import backgroundImg from "./../../public/background1.jpg"
 
 type Word = { german: string; english: string; type: string };
 type DialogueLine = { person: string; german: string; english: string };
@@ -110,7 +111,20 @@ const LessonView = () => {
     if (isLoading) return <div>Loading...</div>
     if (error) return <div>Error loading lesson</div>
 
-    return <div className="relative flex flex-col gap-20 p-10 pt-20 place-items-center">
+    return <div className="relative flex flex-col gap-20 p-10 pt-20 text-white place-items-center"
+    >
+        <div
+            className="absolute inset-0 -z-10"
+            style={{
+                backgroundImage: 'url(/images/background1.jpg)',
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                backgroundAttachment: 'fixed',
+            }}
+        />
+
+        <div className="absolute inset-0 -z-10 bg-black/70"></div>
         <Link to="/" className="absolute px-4 py-2 font-bold text-white top-2 left-2 bg-my-yellow">Go Back to Home Page</Link>
         <h1 className="text-4xl">Lesson 1: <span className="text-[2.4rem] text-my-red font-bold">Greetings and Introductions</span> </h1>
         <p className="text-xl">This lesson will teach you essential German vocabulary, basic grammar structures, and simple spoken sentences through practical dialogues. You’ll learn how to greet others, introduce yourself, ask and answer basic personal questions, and use polite expressions in everyday conversations.</p>
@@ -129,7 +143,7 @@ const LessonView = () => {
 
             <div className="flex flex-col gap-5 pt-10 place-content-center place-items-center">
                 <h2 className="text-3xl font-bold text-my-violet">Dialogue</h2>
-                <p className="p-5 text-gray-800">Two people, Anna (A) and Ben (B), meet and greet each other in German. They exchange basic introductions sharing their names, countries of origin (Austria and Switzerland), ages, and languages spoken. They comment on the city, their first day, and express friendly interest in one another. The conversation ends with polite goodbyes for the evening and night. The dialogue covers essential A1-level phrases for greetings, self-introduction, and simple everyday questions.</p>
+                <p className="p-5 ">Two people, Anna (A) and Ben (B), meet and greet each other in German. They exchange basic introductions sharing their names, countries of origin (Austria and Switzerland), ages, and languages spoken. They comment on the city, their first day, and express friendly interest in one another. The conversation ends with polite goodbyes for the evening and night. The dialogue covers essential A1-level phrases for greetings, self-introduction, and simple everyday questions.</p>
                 <div className="flex flex-col gap-5 sm:w-[80%]">
                     {lesson?.dialogue.map((item, i) =>
                         <div className={`  flex flex-col ${item.person === 'A' ? "place-self-start" : " place-self-end"} `}>
@@ -137,7 +151,7 @@ const LessonView = () => {
                                 <div className={`w-[3rem] h-[3rem] ${item.person === 'A' ? "border-l-rose-700" : "border-l-my-blue-700"} border-[10px] hover:scale-110 cursor-pointer transition duration-300 flex place-content-center place-items-center font-bold bg-my-red-500 rounded-full`}>{item.person}</div>
                                 <div className={`p-4 rounded-3xl hover:scale-105 transition duration-300 shadow-2xl ${i % 2 == 0 ? "bg-my-red text-white" : "bg-my-yellow"} `}>
                                     <div className="text-xl">{item.german}</div>
-                                    <div className={i % 2 == 0 ? "text-gray-300" : "text-gray-700"}>{item.english}</div>
+                                    <div className={i % 2 == 0 ? "" : ""}>{item.english}</div>
                                 </div>
                             </div>
                         </div>
@@ -148,8 +162,8 @@ const LessonView = () => {
                 <h2 className="text-3xl font-bold text-my-violet">Grammar</h2>
                 {lesson?.grammars.map((section, idx) => (
                     <div key={idx} className="mb-10">
-                        <h3 className="mb-3 text-xl font-bold text-my-blue">{section.title}</h3>
-                        {section.note && <p className="mb-2 text-sm text-gray-600">{section.note}</p>}
+                        <h3 className="mb-3 text-xl font-bold text-my-blue/80">{section.title}</h3>
+                        {section.note && <p className="mb-2 text-sm ">{section.note}</p>}
 
                         <div className="overflow-x-auto">
                             <table className="min-w-full border border-gray-200">
@@ -164,7 +178,7 @@ const LessonView = () => {
                                 </thead>
                                 <tbody>
                                     {section.rows.map((row, i) => (
-                                        <tr key={i} className={i % 2 === 0 ? "bg-white" : "text-violetbg-my-violet text-white"}>
+                                        <tr key={i} className={i % 2 === 0 ? "bg-my-violet/60" : "text-violet bg-my-violet/80 text-white"}>
                                             {Object.values(row).map((val, j) => (
                                                 <td key={j} className="px-3 py-2 border">
                                                     {val}
