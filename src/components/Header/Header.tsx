@@ -210,7 +210,6 @@
 // }
 
 
-// src/components/Header/Header.tsx
 import { Search } from '@mui/icons-material';
 import deutschSchnellIcon from '../../../public/icons/deutschionary_logo.svg';
 import { useEffect, useState } from 'react';

@@ -2,7 +2,7 @@ import { useQuery } from '@tanstack/react-query';
 import { useNavigate, useParams } from 'react-router-dom';
 import NotFound from '../NotFound';
 import { useTestLogic } from '../../hooks/useTestLogic';
-import bannerImage from "./../../../public/images/banner-bg.jpg"
+import deutschSchnellIcon from '../../../public/icons/deutschionary_logo.svg';
 
 export default function Tests() {
     const { level } = useParams<{ level: string }>();
@@ -51,7 +51,7 @@ export default function Tests() {
                 <div
                     className="absolute inset-0 -z-10"
                     style={{
-                        backgroundImage: 'url(/images/banner-bg.jpg)',
+                        backgroundImage: 'url(/images/C2.jpg)',
                         backgroundSize: 'cover',
                         backgroundPosition: 'center',
                         backgroundRepeat: 'no-repeat',
@@ -66,14 +66,14 @@ export default function Tests() {
     }
 
     if (error || !data || !data[level]) {
-        return <NotFound />;
+        return <NotFound message="Sorry the requested test in unavaliable for now, we are working on adding more tests!" link="tests" buttonText="Go Back to Tests Page" />;
     }
 
     if (isFinished) {
         const { score, earned, total } = getResult();
         return (
             <div className="flex items-center justify-center min-h-screen p-4" style={{
-                backgroundImage: `url(${bannerImage})`,
+                backgroundImage: `url(/images/C2.jpg)`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -108,7 +108,7 @@ export default function Tests() {
             <div
                 className="absolute inset-0 -z-10"
                 style={{
-                    backgroundImage: 'url(/images/background3.jpg)',
+                    backgroundImage: 'url(/images/C2.jpg)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
@@ -118,7 +118,9 @@ export default function Tests() {
 
             <div className="absolute inset-0 -z-10 bg-black/70"></div>
             <div className="flex items-center justify-between mb-6">
-                <h1 className="text-2xl font-bold text-violet-200">{level} German Test</h1>
+                <h1 className="flex items-center content-center gap-3 text-2xl font-bold text-violet-200">
+                    <img src={deutschSchnellIcon} alt="logo" className="w-10 h-10" />
+                    {level} German Test</h1>
                 <div className="px-4 py-2 font-mono font-bold text-white rounded-lg bg-my-red">
                     {formatTime(timeLeft)}
                 </div>

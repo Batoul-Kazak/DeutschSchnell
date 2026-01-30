@@ -57,7 +57,7 @@ export default function SelectLevelInterface() {
             <div
                 className="fixed inset-0 -z-10"
                 style={{
-                    backgroundImage: 'url(/images/background4.jpg)',
+                    backgroundImage: 'url(/images/background2.jpg)',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     backgroundRepeat: 'no-repeat',
@@ -66,7 +66,7 @@ export default function SelectLevelInterface() {
             />
 
             {/* Dark overlay */}
-            <div className="fixed inset-0 -z-10 bg-black/70"></div>
+            <div className="fixed inset-0 -z-10 bg-black/50"></div>
 
             {/* Content container */}
             <div className="flex flex-col items-center justify-center min-h-screen p-4">
@@ -85,7 +85,7 @@ export default function SelectLevelInterface() {
                                 className="cursor-pointer"
                             >
                                 <div
-                                    className={`overflow-hidden transition-all duration-300 transform h-[300px] shadow-[0_0_30px_8px_rgba(255,255,255,0.6),0_0_60px_12px_rgba(255,255,255,0.4)] bg-white border-4 rounded-3xl hover:-translate-y-2`}
+                                    className={`overflow-hidden transition-all duration-300 transform h-[300px]  bg-white border-4 rounded-3xl hover:-translate-y-2`}
                                     style={{ border: `5px solid ${level.color}` }}
                                 >
                                     <div className={`p-6 text-center`} style={{ backgroundColor: level.color }}>
