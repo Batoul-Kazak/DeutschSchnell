@@ -125,11 +125,11 @@ const LessonView = () => {
         />
 
         <div className="absolute inset-0 -z-10 bg-black/70"></div>
-        <Link to="/" className="absolute px-4 py-2 font-bold text-white top-2 left-2 bg-my-yellow">Go Back to Home Page</Link>
+        <Link to="/" className="absolute px-4 py-2 font-bold text-white top-2 left-2 bg-my-violet">Go Back to Home Page</Link>
         <h1 className="text-4xl">Lesson 1: <span className="text-[2.4rem] text-my-red font-bold">Greetings and Introductions</span> </h1>
         <p className="text-xl">This lesson will teach you essential German vocabulary, basic grammar structures, and simple spoken sentences through practical dialogues. You’ll learn how to greet others, introduce yourself, ask and answer basic personal questions, and use polite expressions in everyday conversations.</p>
         <div className="flex flex-col w-full gap-5">
-            <h2 className="text-3xl font-bold text-my-violet">Vocabulary you will learn:</h2>
+            <h2 className="text-3xl font-bold text-my-orange">Vocabulary you will learn:</h2>
             <div className="flex w-full gap-5 py-2 font-bold rounded-lg text-my-violet text-violetbg-my-violet place-content-center place-items-center">
                 {WORD_TYPES.map(({ key, label }) =>
                     <button key={key} onClick={() => setWordsFilter(key)} className={`px-4 py-1 rounded-full ${wordsFilter === key ? "bg-my-red text-white" : "bg-white"} `}>{label}</button>
@@ -142,7 +142,7 @@ const LessonView = () => {
                 </div>) : "No words."}</div>
 
             <div className="flex flex-col gap-5 pt-10 place-content-center place-items-center">
-                <h2 className="text-3xl font-bold text-my-violet">Dialogue</h2>
+                <h2 className="text-3xl font-bold text-my-orange">Dialogue</h2>
                 <p className="p-5 ">Two people, Anna (A) and Ben (B), meet and greet each other in German. They exchange basic introductions sharing their names, countries of origin (Austria and Switzerland), ages, and languages spoken. They comment on the city, their first day, and express friendly interest in one another. The conversation ends with polite goodbyes for the evening and night. The dialogue covers essential A1-level phrases for greetings, self-introduction, and simple everyday questions.</p>
                 <div className="flex flex-col gap-5 sm:w-[80%]">
                     {lesson?.dialogue.map((item, i) =>
@@ -159,10 +159,10 @@ const LessonView = () => {
                 </div>
             </div>
             <div className="flex flex-col gap-10">
-                <h2 className="text-3xl font-bold text-my-violet">Grammar</h2>
+                <h2 className="text-3xl font-bold text-my-orange">Grammar</h2>
                 {lesson?.grammars.map((section, idx) => (
                     <div key={idx} className="mb-10">
-                        <h3 className="mb-3 text-xl font-bold text-my-blue/80">{section.title}</h3>
+                        <h3 className="mb-3 text-xl font-bold text-my-orange">{section.title}</h3>
                         {section.note && <p className="mb-2 text-sm ">{section.note}</p>}
 
                         <div className="overflow-x-auto">

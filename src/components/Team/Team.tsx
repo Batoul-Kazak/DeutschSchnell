@@ -101,10 +101,10 @@ const Team = () => {
         <div className="flex gap-10 place-content-center place-items-center">
 
             {teamMembers.map((member) => (
-                <div key={member.id} className="relative pt-[7rem] p-5 bg-gray-100 shadow-md h-[20rem] w-[15rem] rounded-3xl place-content-center place-items-center flex gap-5 flex-col">
+                <div key={member.id} className="relative pt-[7rem] p-5 bg-gray-200 shadow-md h-[20rem] w-[15rem] rounded-3xl place-content-center place-items-center flex gap-5 flex-col">
                     <img src={member.image} alt={member.name} className="w-[12rem] hover:-translate-y-5 transition duration-300 hover:cursor-pointer h-[12rem] rounded-full absolute -top-[7rem] left-[50%] translate-x-[-50%]" />
                     <h2 className="text-center text-indigo-600 ">{member.role}</h2>
-                    <h1 className="text-xl text-[#222] font-bold">{member.name}</h1>
+                    <h1 className="text-xl font-bold text-my-red">{member.name}</h1>
                     <div className="flex gap-2">
                         {icons.map((icon, idx) => (
                             <div key={idx} className="p-2 transition duration-300 bg-white rounded-full cursor-pointer text-my-violet hover:bg-indigo-600 hover:text-white" aria-label={`${member.name} on ${icon.label}`}>{icon.icon}</div>

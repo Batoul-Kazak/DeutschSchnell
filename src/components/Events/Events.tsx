@@ -31,15 +31,15 @@ const Events = () => {
                     </div>
                     <div className="flex flex-col gap-1">
                         <p className="text-gray-500">Date:</p>
-                        <p className="font-bold text-indigo-600">{item.date}</p>
+                        <p className="font-bold text-my-red">{item.date}</p>
                     </div>
                     <div className="flex flex-col gap-1">
                         <p className="text-gray-500">Duration:</p>
-                        <p className="font-bold text-indigo-600">{item.duration}</p>
+                        <p className="font-bold text-my-orange">{item.duration}</p>
                     </div>
                     <div className="flex flex-col gap-1">
                         <p className="text-gray-500">Price:</p>
-                        <p className="font-bold text-indigo-600">${item.price}</p>
+                        <p className="font-bold text-my-blue">${item.price}</p>
                     </div>
                     <div className="relative">
                         <div className="absolute -right-5 rounded-tr-2xl rounded-br-2xl top-0 bottom-0 translate-y-[-50%] rounded-tl-full rounded-bl-full w-[4rem] bg- h-[10rem] flex place-content-center place-items-center text-white">

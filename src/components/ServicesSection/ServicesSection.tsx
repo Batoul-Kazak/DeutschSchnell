@@ -78,7 +78,7 @@ const ServicesSection = () => {
                     </div>
 
                     <div className="flex flex-col justify-between h-full">
-                        <h3 className="text-xl font-bold ">{section.title}</h3>
+                        <h3 className="text-xl font-bold text-indigo-800">{section.title}</h3>
                         <p className={`py-5 ${expanded == section.id ? "line-clamp-none" : "line-clamp-3"}`}>{section.description}</p>
                         {/* <button onClick={() => toggleExpand(section.id)} className="font-bold px-5 w-[10rem] mt-5 py-3 text-my-violet transition bg-white rounded-full hover:bg-indigo-600 hover:text-white"> */}
                         {/* {expanded == section.id ? "Show Less" : "Show More"} */}
