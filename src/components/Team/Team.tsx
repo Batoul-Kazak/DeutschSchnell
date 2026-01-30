@@ -5,13 +5,6 @@ import memberImg_3 from "../../../public/images/member-03.jpg"
 import memberImg_4 from "../../../public/images/member-04.jpg"
 import { useState } from "react"
 
-// const imageStyles = {
-//     backgroundPosition: "center",
-//     backgroundRepeat: "no-repeat",
-//     backgroundSize: "cover",
-//     backgroundBlendMode: "darken"
-// }
-
 const teamMembers = [
     {
 

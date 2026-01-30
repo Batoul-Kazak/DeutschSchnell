@@ -18,7 +18,6 @@ export const AppContext = createContext<{
 
 export default function App() {
 
-
     return (
         // <AppContext.Provider value={ }>
         <div className="relative">

@@ -48,6 +48,18 @@ export default function Tests() {
     if (isLoading) {
         return (
             <div className="flex items-center justify-center min-h-screen bg-my-yellow">
+                <div
+                    className="absolute inset-0 -z-10"
+                    style={{
+                        backgroundImage: 'url(/images/banner-bg.jpg)',
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                        backgroundAttachment: 'fixed',
+                    }}
+                />
+
+                <div className="absolute inset-0 -z-10 bg-black/70"></div>
                 <div className="text-my-violet">Loading {level} test...</div>
             </div>
         );
