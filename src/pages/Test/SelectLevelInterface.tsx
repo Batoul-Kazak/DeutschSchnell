@@ -1,6 +1,5 @@
 import { useQuery } from '@tanstack/react-query';
 import { Link, useNavigate } from 'react-router-dom';
-import bannerImage from "./../../../public/images/banner-bg.jpg"
 
 interface LevelMetadata {
     label: string;

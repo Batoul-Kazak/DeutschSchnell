@@ -251,10 +251,46 @@ export default function Header() {
                         initial={{ rotate: '0deg' }}
                         animate={{ rotate: '360deg' }}
                         transition={{ duration: 1, ease: 'anticipate' }}
-                        className="flex gap-2 text-2xl font-bold text-white uppercase place-items-center"
+                        className="flex items-center gap-2 font-bold uppercase"
                     >
                         <img src={deutschSchnellIcon} alt="logo" className="w-10 h-10" />
-                        DeutschSchnell
+
+                        <span className="tracking-[-0.05em]">
+                            {Array.from("DeutschSchnell").map((char, index) => {
+                                const gradientColors = [
+                                    '#000000',
+                                    '#222222',
+                                    '#444444',
+                                    '#660000',
+                                    '#880000',
+                                    '#aa0000',
+                                    '#cc0000',
+                                    '#e63900',
+                                    '#ff4500',
+                                    '#ff6300',
+                                    '#ff7700',
+                                    '#ff8c00',
+                                    '#ffa500',
+                                    '#ffb733',
+                                    '#ffc966',
+                                    '#ffd700',
+                                    '#ffe033',
+                                    '#ffea66',
+                                    '#fff0b3'
+                                ];
+                                const color = gradientColors[index % gradientColors.length];
+
+                                return (
+                                    <span
+                                        key={index}
+                                        className="text-2xl"
+                                        style={{ color }}
+                                    >
+                                        {char}
+                                    </span>
+                                );
+                            })}
+                        </span>
                     </motion.h1>
                     <div className="w-[1px] h-8 bg-slate-400"></div>
 
