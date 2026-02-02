@@ -87,8 +87,8 @@ const ServicesSection = () => {
                 </div>
             ))}
         </div>
-        <div className="flex place-content-center place-items-center place-self-center w-[80%]">
-            <div className="flex flex-col gap-8 px-10 bg-my-violet py-[5rem] rounded-[3rem] w-[50%]">
+        <div className="flex md:flex-row flex-col-reverse  place-content-center place-items-center place-self-center w-full p-[1rem] md:p-[2rem]">
+            <div className="flex flex-col gap-8 px-10 bg-my-violet py-[5rem] rounded-[3rem] md:w-[65%] lg:w-[50%]">
                 {germanFaqs.map((item, i) => (
                     <div key={item.id} className="flex flex-col gap-5 font-bold bg-white rounded-3xl place-content-center place-items-center px-7">
                         <div className="flex justify-between w-full gap-5 mt-5 align-middle place-items-center">
@@ -104,7 +104,7 @@ const ServicesSection = () => {
                     </div>
                 ))}
             </div>
-            <div className="flex flex-col gap-10 p-10 pl-20 bg-gray-200 place-content-center w-[50%]">
+            <div className="flex flex-col gap-10 p-10 pl-20 bg-gray-200 place-content-center rounded-t-[1rem] rounded-b-[5rem] md:pl-5 md:w-[35%] lg:w-[50%]">
                 <h3 className="text-2xl font-bold text-indigo-600">About us</h3>
                 <h1 className="text-4xl font-bold">What make us the best academy online?</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
