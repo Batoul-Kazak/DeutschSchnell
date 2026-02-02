@@ -67,18 +67,18 @@ const ServicesSection = () => {
     }
 
     return <section id="services" className="flex flex-col place-content-center place-items-center">
-        <div className="grid grid-cols-1 px-20 py-20 gap-[7rem] md:grid-cols-3 min-h-[30rem]">
+        <div className="grid grid-cols-1 md:px-20 py-20 lg:gap-[7rem] gap-[2rem]  md:gap-[2rem] md:grid-cols-3 min-h-[30rem]">
             {benefits.map((section, i) => (
                 <div
                     key={section.id}
-                    className="relative flex flex-col p-8 pt-[7rem] bg-black/15 rounded-3xl"
+                    className="relative flex flex-col p-4 md:p-8 sm:pt-[2rem] md:pt-[5rem] bg-black/15 rounded-3xl"
                 >
-                    <div className="absolute bg-my-violet rounded-full p-[3rem] top-[-4rem] right-[-4rem]">
+                    <div className="absolute bg-my-violet rounded-full p-[1rem] top-[-1rem]  right-[-1rem] lg:p-[3rem] lg:top-[-4rem] lg:right-[-4rem]">
                         <img src={section.image} alt={`service-${i}`} className="w-20 h-20" />
                     </div>
 
-                    <div className="flex flex-col justify-between h-full">
-                        <h3 className="text-xl font-bold text-indigo-800">{section.title}</h3>
+                    <div className="flex flex-col justify-between h-full max-w-[80%]">
+                        <h3 className="text-xl font-bold text-indigo-800 ">{section.title}</h3>
                         <p className={`py-5 ${expanded == section.id ? "line-clamp-none" : "line-clamp-3"}`}>{section.description}</p>
                         {/* <button onClick={() => toggleExpand(section.id)} className="font-bold px-5 w-[10rem] mt-5 py-3 text-my-violet transition bg-white rounded-full hover:bg-indigo-600 hover:text-white"> */}
                         {/* {expanded == section.id ? "Show Less" : "Show More"} */}
