@@ -1,7 +1,7 @@
 import { ArrowUpward } from '@mui/icons-material';
 import { useState, useEffect } from 'react';
 
-const BackToTopButton = () => {
+const BackToTopButton = ({ color = "bg-my-violet" }) => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -29,7 +29,7 @@ const BackToTopButton = () => {
             <button
                 onClick={scrollToTop}
                 aria-label="Back to top"
-                className="fixed w-16 h-16 text-lg font-bold text-white transition-all duration-300 border-2 border-gray-500 rounded-full shadow-lg bg-my-blue-600 bg-my-violet bottom-6 right-6 hover:bg-my-blue-700 focus:outline-none focus:ring-2 focus:ring-my-blue-500"
+                className={`fixed w-16 h-16 text-lg font-bold z-[1000] text-white transition-all duration-300 border-2 border-gray-500 rounded-full shadow-lg bg-my-blue-600 bg-${color} bottom-6 right-6 hover:bg-my-blue-700 focus:outline-none focus:ring-2 focus:ring-my-blue-500`}
             >
                 <ArrowUpward />
             </button>

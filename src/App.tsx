@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import Team from "./components/Team/Team";
+import BackToTopButton from "./components/BackToTopButton/BackToTopButton";
 
 export const AppContext = createContext<{
     level: string;
@@ -35,6 +36,7 @@ export default function App() {
             {/* <LessonView /> */}
             <Footer />
             {/* <TabbedComponent /> */}
+            <BackToTopButton color="my-blue" />
         </div>
         // </AppContext.Provider>
     )

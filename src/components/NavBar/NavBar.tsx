@@ -55,7 +55,7 @@ export default function Navbar() {
         <header style={{ backgroundColor: 'rgb(123,106,218)' }}>
             <div
                 style={isFixed ? { zIndex: 100 } : {}}
-                className={`${isFixed ? 'fixed  z-[1000] top-0 left-0' : ''} flex md:flex-row md:h-[100px] place-content-center place-items-center lg:h-auto flex-row justify-between w-full p-5 lg:px-20  text-white bg-my-violet rounded-tl-none rounded-tr-none rounded-3xl place-items-center`}
+                className={`${isFixed ? 'fixed  z-[1000] top-0 left-0' : ''} flex md:flex-row md:h-[100px] place-content-center place-items-center lg:h-auto flex-row justify-between w-full p-5 lg:px-20  text-white bg-my-violet rounded-tl-none rounded-tr-none rounded-3xl `}
             >
                 <div className="flex gap-5 hover:cursor-pointer min-w-[100px]" >
                     <Link to="/">
@@ -126,10 +126,12 @@ export default function Navbar() {
                 <HamburgerIcon isOpen={isHamburgerIconOpen} setIsOpen={setHamburgerIconOpen} />
             </div>
 
+            {isHamburgerIconOpen && <div className="absolute inset-0 bg-[#000000a8] z-[90]" onClick={() => setHamburgerIconOpen(false)}></div>}
+
             <div className={`md:hidden w-[70%] sm:w-[30%] z-[200] bg-my-violet/90 h-full text-white fixed top-[13%] pt-20 transition-all duration-300 right-0 ${isHamburgerIconOpen ? "translate-x-0" : "translate-x-[100%]"} `}>
                 <ul className='flex flex-col w-full '>
                     {navItems.map(item => (
-                        <li key={item.id} className={`w-full p-4 cursor-pointer hover:bg-my-violet/80 ${activeLink === item.id ? 'bg-white/20' : ''
+                        <li key={item.id} className={`w-full p-4 cursor-pointer hover:bg-my-red/70 ${activeLink === item.id ? 'bg-my-orange font-bold' : ''
                             }`}>
                             <ScrollLink
                                 to={item.id}
