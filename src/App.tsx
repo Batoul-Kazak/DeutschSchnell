@@ -3,7 +3,7 @@ import Contactus from "./components/ContactUs/Contactus";
 import Courses from "./components/Courses/Courses";
 import Events from "./components/Events/Events";
 import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import Team from "./components/Team/Team";
@@ -21,7 +21,7 @@ export default function App() {
     return (
         // <AppContext.Provider value={ }>
         <div className="relative">
-            <Header />
+            <Navbar />
             <HeroSection />
             <ServicesSection />
             <Courses />
