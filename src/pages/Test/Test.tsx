@@ -47,9 +47,10 @@ export default function Tests() {
 
     if (isLoading) {
         return (
-            <div className="flex items-center justify-center min-h-screen bg-my-yellow">
+            <div className="relative flex items-center justify-center min-h-screen overflow-hidden bg-my-yellow">
+                {/* Background Image */}
                 <div
-                    className="absolute inset-0 -z-10"
+                    className="absolute inset-0 -z-20"
                     style={{
                         backgroundImage: 'url(/images/C2.jpg)',
                         backgroundSize: 'cover',
@@ -59,8 +60,27 @@ export default function Tests() {
                     }}
                 />
 
+                {/* Dark Overlay */}
                 <div className="absolute inset-0 -z-10 bg-black/70"></div>
-                <div className="text-my-violet">Loading {level} test...</div>
+
+                {/* Loading Content */}
+                <div className="flex flex-col items-center gap-6 px-6 text-center">
+                    {/* Animated Spinner */}
+                    <div className="relative">
+                        <div className="w-16 h-16 border-4 border-transparent rounded-full border-t-my-violet animate-spin"></div>
+                        <div className="absolute inset-0 w-16 h-16 border-4 border-transparent rounded-full opacity-50 border-b-white animate-spin"></div>
+                    </div>
+
+                    {/* Text */}
+                    <div className="text-xl font-bold tracking-wide text-white md:text-2xl">
+                        Loading {level} test...
+                    </div>
+
+                    {/* Subtle Pulse Bar (optional) */}
+                    <div className="w-32 h-1 overflow-hidden rounded-full bg-my-violet/30">
+                        <div className="w-1/3 h-full bg-my-violet animate-pulse"></div>
+                    </div>
+                </div>
             </div>
         );
     }

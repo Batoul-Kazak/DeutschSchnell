@@ -46,7 +46,7 @@ const Courses = () => {
         setSelectedCourse(level)
     }
 
-    return <section id="courses" className="flex flex-col gap-10 pt-20 pb-[15rem] cursor-pointer px-2 sm:px-10">
+    return <section id="courses" className="flex flex-col gap-10 pt-20 pb-[15rem] cursor-pointer sm:px-10">
         <div className="flex flex-col gap-10 place-content-center place-items-center">
             <h2 className="font-bold text-indigo-600 uppercase ">German Courses by Level</h2>
             <h1 className="text-4xl font-bold text-gray-900">Lessons</h1>
@@ -70,13 +70,13 @@ const Courses = () => {
                                     <h1 className="text-xl font-bold">{lesson.lessons}: <span className="text-indigo-600">{lesson.title}</span></h1>
                                     {/* <div className="h-[1px] w-full bg-gray-700"></div> */}
                                     <p className="pt-2 text-sm text-pretty">{lesson.description}</p>
-                                    <div className="flex flex-col gap-2 md:flex-row sm:flex-row">
+                                    <div className="flex flex-col gap-2 ">
                                         <p className="font-bold text-gray-800">Skills you will learn:</p>
-                                        <p className="flex gap-2">{lesson.skills.map((skill: string) => <span key={skill} className="p-3 py-2 text-xs font-bold text-white transition-all rounded-full cursor-pointer hover:scale-105 hover:bg-white hover:shadow-lg hover:text-indigo-600 bg-my-red">{skill}</span>)}</p>
+                                        <p className="flex gap-2">{lesson.skills.map((skill: string) => <span key={skill} className="p-2 text-xs font-bold text-white transition-all rounded-full cursor-pointer hover:bg-white hover:shadow-lg hover:text-indigo-600 bg-my-red">{skill}</span>)}</p>
                                     </div>100% Speak Confidently After 30 Lessons
                                     <div className="flex flex-col gap-2 md:flex-row sm:flex-row">
                                         <p className="font-bold text-gray-800">Tags:</p>
-                                        <p className="flex flex-col w-auto gap-2 ">{lesson.tags.map((tags: string) => <span className="p-3 py-2 text-xs font-bold text-white transition-all rounded-full cursor-pointer hover:scale-105 hover:bg-white hover:shadow-lg hover:text-indigo-600 bg-my-blue" key={tags}>{tags}</span>)}</p>
+                                        <p className="flex flex-wrap w-auto gap-2 ">{lesson.tags.map((tags: string) => <span className="p-2 text-xs font-bold text-white transition-all rounded-full cursor-pointer hover:bg-white hover:shadow-lg hover:text-indigo-600 bg-my-blue" key={tags}>{tags}</span>)}</p>
                                     </div>
                                 </div>
                             </div>
@@ -85,12 +85,12 @@ const Courses = () => {
                 })}
             </div>
         </div>
-        <div className="relative flex justify-between sm:px-[10rem] py-[7rem] rounded-tr-full rounded-br-full w-[95%]" style={{ ...imageStyles, backgroundImage: `url(${heroSectionBackground})` }}>
+        <div className="relative place-self-start justify-between -ml-10 sm:px-[2rem] lg:px-[10rem] py-[7rem] rounded-tr-full rounded-br-full hidden flex-wrap sm:flex md:w-[95%]" style={{ ...imageStyles, backgroundImage: `url(${heroSectionBackground})` }}>
             <div className="absolute top-0 z-20 left-70" style={{ ...imageStyles, backgroundImage: (`url(${curve})`) }}></div>
-            <p className="flex flex-col text-white gap-7"><span className="text-5xl font-extrabold">92%</span>Pass Rate <br /> on Goethe Exams</p>
-            <p className="flex flex-col text-white gap-7"><span className="text-5xl font-extrabold">98%</span>Speak Confidently <br /> After 30 Lessons</p>
-            <p className="flex flex-col text-white gap-7"><span className="text-5xl font-extrabold">75%</span> Non-European Students</p>
-            <p className="flex flex-col text-white gap-7"><span className="text-5xl font-extrabold">4.9/5</span>Avg Rating from <br /> 500+ Reviews</p>
+            <p className="flex flex-col text-white gap-7"><span className="text-5xl font-extrabold text-red-100 [text-shadow:0_2px_4px_rgba(255,255,255,1)]">92%</span>Pass Rate <br /> on Goethe Exams</p>
+            <p className="flex flex-col text-white gap-7"><span className="text-5xl font-extrabold text-red-100 [text-shadow:0_2px_4px_rgba(255,255,255,1)]">98%</span>Speak Confidently <br /> After 30 Lessons</p>
+            <p className="flex flex-col text-white gap-7"><span className="text-5xl font-extrabold text-red-100 [text-shadow:0_2px_4px_rgba(255,255,255,1)]">75%</span> Non-European Students</p>
+            <p className="flex flex-col text-white gap-7"><span className="text-5xl font-extrabold text-red-100 [text-shadow:0_2px_4px_rgba(255,255,255,1)]">4.9</span>Avg Rating from <br /> 500+ Reviews</p>
         </div>
     </section >
 }

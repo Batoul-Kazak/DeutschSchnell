@@ -1,6 +1,6 @@
 import { Search, Visibility } from '@mui/icons-material';
 import deutschSchnellIcon from '../../../public/icons/deutschionary_logo.svg';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 import { Link, Link as RouterLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
@@ -29,16 +29,7 @@ const gradientColors = [
     '#fff0b3'
 ];
 
-const navItems = [
-    { id: 'home', label: 'Home' },
-    { id: 'services', label: 'Services' },
-    { id: 'courses', label: 'Courses' },
-    { id: 'team', label: 'Team' },
-    { id: 'events', label: 'Events' },
-    { id: 'contactus', label: 'Register Now!' },
-];
-
-export default function Navbar() {
+export default function Navbar({ navItems, isShowSearch, children = <div></div> }) {
     const [activeLink, setActiveLink] = useState<string>('');
     const [isFixed, setIsFixed] = useState<boolean>(false);
     const { query, setQuery, results, showResults, setShowResults, searchRef, handleSelect } = useSearch();
@@ -88,8 +79,10 @@ export default function Navbar() {
                     </Link>
                 </div>
 
+
                 <div className="w-[1px] h-8 bg-slate-400 hidden lg:block"></div>
-                <div className='hidden search md:block sm:block'>
+                <div>{children}</div>
+                {isShowSearch && <div className='hidden search md:block sm:block'>
                     <SearchBar
                         query={query}
                         onQueryChange={setQuery}
@@ -99,7 +92,7 @@ export default function Navbar() {
                         onResultSelect={handleSelect}
                         searchRef={searchRef}
                     />
-                </div>
+                </div>}
 
                 <div className="lg:max-w-[50%] max-w-[300px] hidden md:block place-self-start nav-links">
                     <ul className="flex flex-wrap justify-between w-full place-content-center place-items-center">
@@ -128,17 +121,18 @@ export default function Navbar() {
 
             {isHamburgerIconOpen && <div className="absolute inset-0 bg-[#000000a8] z-[90]" onClick={() => setHamburgerIconOpen(false)}></div>}
 
-            <div className={`md:hidden w-[70%] sm:w-[30%] z-[200] bg-my-violet/90 h-full text-white fixed top-[13%] pt-20 transition-all duration-300 right-0 ${isHamburgerIconOpen ? "translate-x-0" : "translate-x-[100%]"} `}>
+            <div className={`md:hidden w-[70%] sm:w-[30%] z-[200] bg-my-violet/90 h-full text-white fixed top-0 pt-20 transition-all duration-[750ms] right-0 ${isHamburgerIconOpen ? "translate-x-0" : "translate-x-[100%]"} `}>
+                <HamburgerIcon isOpen={isHamburgerIconOpen} setIsOpen={setHamburgerIconOpen} className='absolute w-10 h-10 top-10 right-10' />
                 <ul className='flex flex-col w-full '>
                     {navItems.map(item => (
-                        <li key={item.id} className={`w-full p-4 cursor-pointer hover:bg-my-red/70 ${activeLink === item.id ? 'bg-my-orange font-bold' : ''
-                            }`}>
+                        <li key={item.id} className={`w-full  cursor-pointer
+                            `}>
                             <ScrollLink
                                 to={item.id}
                                 smooth={true}
                                 duration={1000}
                                 onClick={() => setActiveLink(item.id)}
-                                className={` rounded-full p-3  w-full `}
+                                className={` p-3 block w-full text-left hover:bg-my-red/70 ${activeLink === item.id ? 'bg-my-orange font-bold' : ''}`}
                             >
                                 {item.label}
                             </ScrollLink>
@@ -165,6 +159,7 @@ export const HamburgerIcon = ({ isOpen = false, setIsOpen, className = "w-6 h-6"
                     y="2.5"
                     width="15"
                     height="3"
+                    rx="1"
                     fill="#000000"
                     animate={{ translateX: isOpen ? 1 : 0 }}
                     transition={{ duration: 0.15 }}
@@ -175,7 +170,8 @@ export const HamburgerIcon = ({ isOpen = false, setIsOpen, className = "w-6 h-6"
                     y="5.5"
                     width="15"
                     height="3"
-                    fill="#880000"
+                    rx="1"
+                    fill="#cc0000"
                     animate={{
                         translateX: isOpen ? -3 : 0,
                         // opacity: isOpen ? 0 : 1
@@ -188,7 +184,8 @@ export const HamburgerIcon = ({ isOpen = false, setIsOpen, className = "w-6 h-6"
                     y="8.5"
                     width="15"
                     height="3"
-                    fill="#e63900"
+                    rx="1"
+                    fill="#ffa500"
                     animate={{ translateX: isOpen ? -5 : 0 }}
                     transition={{ duration: 0.15 }}
                 />

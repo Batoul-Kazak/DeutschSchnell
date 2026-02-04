@@ -9,19 +9,19 @@ const benefits = [
         id: "learning-paths",
         image: img1,
         title: "Personalized Learning Paths",
-        description: "Lessons and quizzes automatically adjust to your current level."
+        description: "Your journey adapts in real time lessons and quizzes evolve based on your progress, strengths, and areas to improve, ensuring you’re always learning at the right pace."
     },
     {
         id: "instant-feedback",
         image: img2,
         title: "Instant Feedback with Clear Explanations",
-        description: "Receive real-time corrections on grammar, pronunciation."
+        description: "Get immediate, actionable corrections on grammar, pronunciation, and word choice complete with simple, easy-to-understand explanations that help you learn from every mistake."
     },
     {
         id: "real-practice",
         image: img3,
         title: "Confidence Through Real-Life Practice",
-        description: "Build fluency by practicing everyday situations like ordering food. "
+        description: "Gain real-world fluency by practicing authentic scenarios like ordering coffee, asking for directions, or making small talk so you can speak confidently beyond the classroom."
     }
 ];
 
@@ -49,69 +49,61 @@ const germanFaqs = [
     {
         id: "5",
         question: "Can I access the platform on mobile?",
-        answer: "Yes, DeutschSchnell works seamlessly on phones, tablets, and desktops — so you can learn anytime, anywhere."
+        answer: "Yes, DeutschSchnell works seamlessly on phones, tablets, and desktops   so you can learn anytime, anywhere."
     }
 ];
-
 const ServicesSection = () => {
-    const [expanded, setExpanded] = useState("");
-    const [openedIndex, setOpenedIndex] = useState<number | null>(null);
+    const [expandedId, setExpandedId] = useState<string | null>(null);
 
     const toggleExpand = (id: string) => {
-        setExpanded(id);
-        console.log('expanded', expanded);
+        setExpandedId(expandedId === id ? null : id);
     };
 
-    const toggelPanel = (index: number) => {
-        setOpenedIndex(prev => prev === index ? null : index)
-    }
+    return (
+        <section id="services" className="flex flex-col items-center justify-center">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-3 px-4 md:px-10 py-20 min-h-[30rem]">
+                {benefits.map((section) => (
+                    <div className="bg-gradient-to-t from-my-violet/40 to-white/40 rounded-3xl">
+                        <div className="pb-4 bg-gradient-to-t from-my-violet/50 to-white/50 rounded-3xl">
+                            <div
+                                key={section.id}
+                                className="relative p-4 rounded-3xl bg-gradient-to-t from-my-violet/50 to-gray-100/50 md:p-8"
+                            >
+                                <div className="absolute p-4 rounded-full bg-my-violet -top-6 -right-6 lg:p-8 lg:-top-12 lg:-right-12">
+                                    <img src={section.image} alt={`service-${section.id}`} className="w-20 h-20" />
+                                </div>
 
-    return <section id="services" className="flex flex-col place-content-center place-items-center">
-        <div className="grid grid-cols-1 md:px-20 py-20 lg:gap-[7rem] gap-[2rem]  md:gap-[2rem] md:grid-cols-3 min-h-[30rem]">
-            {benefits.map((section, i) => (
-                <div
-                    key={section.id}
-                    className="relative flex flex-col p-4 md:p-8 sm:pt-[2rem] md:pt-[5rem] bg-black/15 rounded-3xl"
-                >
-                    <div className="absolute bg-my-violet rounded-full p-[1rem] top-[-1rem]  right-[-1rem] lg:p-[3rem] lg:top-[-4rem] lg:right-[-4rem]">
-                        <img src={section.image} alt={`service-${i}`} className="w-20 h-20" />
-                    </div>
+                                <div className="flex flex-col h-full pt-12">
+                                    <h3 className="text-xl font-bold text-indigo-800">{section.title}</h3>
 
-                    <div className="flex flex-col justify-between h-full max-w-[80%]">
-                        <h3 className="text-xl font-bold text-indigo-800 ">{section.title}</h3>
-                        <p className={`py-5 ${expanded == section.id ? "line-clamp-none" : "line-clamp-3"}`}>{section.description}</p>
-                        {/* <button onClick={() => toggleExpand(section.id)} className="font-bold px-5 w-[10rem] mt-5 py-3 text-my-violet transition bg-white rounded-full hover:bg-indigo-600 hover:text-white"> */}
-                        {/* {expanded == section.id ? "Show Less" : "Show More"} */}
-                        {/* </button> */}
-                    </div>
-                </div>
-            ))}
-        </div>
-        <div className="flex md:flex-row flex-col-reverse  place-content-center place-items-center place-self-center w-full p-[1rem] md:p-[2rem]">
-            <div className="flex flex-col gap-8 px-10 bg-my-violet py-[5rem] rounded-[3rem] md:w-[65%] lg:w-[50%]">
-                {germanFaqs.map((item, i) => (
-                    <div key={item.id} className="flex flex-col gap-5 font-bold bg-white rounded-3xl place-content-center place-items-center px-7">
-                        <div className="flex justify-between w-full gap-5 mt-5 align-middle place-items-center">
-                            <p className={`${openedIndex === i ? "text-indigo-600" : "text-gray-950"}`}>{item.question}</p>
-                            <button onClick={() => toggelPanel(i)} className="flex p-1 text-white rounded-full cursor-pointer bg-my-violet place-content-center place-items-center">
-                                {openedIndex === i ? <Minimize /> :
-                                    <Add />}
-                            </button>
-                        </div>
-                        <div className={`max-w-[20rem] overflow-hidden place-content-start place-items-start transition-all  duration-300 ease-in-out ${openedIndex === i ? " opacity-100 pb-7" : "min-h-0 opacity-0"}`}>
-                            {openedIndex === i ? item.answer : ""}
+                                    <div className="mt-4 text-gray-800">
+                                        <div
+                                            className={`overflow-hidden transition-all duration-300 ease-in-out ${expandedId === section.id
+                                                ? 'max-h-[300px]'
+                                                : 'max-h-16'
+                                                }`}
+                                        >
+                                            {section.description}
+                                        </div>
+
+                                        {(section.description.split(' ').length > 25 || expandedId !== section.id) && (
+                                            <button
+                                                onClick={() => toggleExpand(section.id)}
+                                                className="block mt-2 font-medium text-white  md:block sm:hidden hover:underline"
+                                            >
+                                                {expandedId === section.id ? 'Show Less' : 'Read More'}
+                                            </button>
+                                        )}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 ))}
             </div>
-            <div className="flex flex-col gap-10 p-10 pl-20 bg-gray-200 place-content-center rounded-t-[1rem] rounded-b-[5rem] md:pl-5 md:w-[35%] lg:w-[50%]">
-                <h3 className="text-2xl font-bold text-indigo-600">About us</h3>
-                <h1 className="text-4xl font-bold">What make us the best academy online?</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravid risus commodo.</p>
-                <button className="w-[10rem] px-4 py-3 font-bold text-my-violet bg-white rounded-full transition-all hover:bg-indigo-600 hover:text-white">Discover More</button>
-            </div>
-        </div>
-    </section>
-}
+
+        </section>
+    );
+};
 
 export default ServicesSection;

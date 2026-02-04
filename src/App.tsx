@@ -17,12 +17,22 @@ export const AppContext = createContext<{
     setLevel: () => { },
 });
 
+const homePageItems = [
+    { id: 'home', label: 'Home' },
+    { id: 'services', label: 'Services' },
+    { id: 'courses', label: 'Courses' },
+    { id: 'team', label: 'Team' },
+    { id: 'events', label: 'Events' },
+    { id: 'contactus', label: 'Register Now!' },
+];
+
+
 export default function App() {
 
     return (
         // <AppContext.Provider value={ }>
-        <div className="relative">
-            <Navbar />
+        <div className="relative ">
+            <Navbar navItems={homePageItems} isShowSearch={true} />
             <HeroSection />
             <ServicesSection />
             <Courses />

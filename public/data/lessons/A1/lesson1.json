@@ -1,0 +1,542 @@
+{
+  "lessons": [
+    {
+      "id": "a1-l1-8f3b",
+      "course": "A1",
+      "lessonNumber": 1,
+      "title": "Greetings and Introductions",
+      "time": "42min",
+      "description": "Learn to greet, introduce yourself, ask and answer basic questions — all using real-life A1 German.",
+      "tags": ["vocabulary", "dialogue", "reading", "grammar"],
+      "completed": false,
+      "prevLessonId": null,
+      "nextLessonId": "a1-l2-9c4d",
+
+      "vocabulary": [
+        { "de": "Hallo", "en": "Hello", "category": "Interjections" },
+        { "de": "Guten Tag", "en": "Good day", "category": "Interjections" },
+        { "de": "Tschüss", "en": "Bye", "category": "Interjections" },
+        { "de": "Danke", "en": "Thank you", "category": "Interjections" },
+        {
+          "de": "Bitte",
+          "en": "Please / You're welcome",
+          "category": "Interjections"
+        },
+        { "de": "Ja", "en": "Yes", "category": "Adverbs" },
+        { "de": "Nein", "en": "No", "category": "Adverbs" },
+        { "de": "Ich", "en": "I", "category": "Pronouns" },
+        { "de": "du", "en": "you (informal)", "category": "Pronouns" },
+        { "de": "Sie", "en": "you (formal)", "category": "Pronouns" },
+        { "de": "er", "en": "he", "category": "Pronouns" },
+        { "de": "sie", "en": "she", "category": "Pronouns" },
+        { "de": "es", "en": "it", "category": "Pronouns" },
+        { "de": "wir", "en": "we", "category": "Pronouns" },
+        { "de": "ihr", "en": "you (plural informal)", "category": "Pronouns" },
+        { "de": "sie", "en": "they", "category": "Pronouns" },
+        { "de": "heißen", "en": "to be called", "category": "Verbs" },
+        { "de": "sein", "en": "to be", "category": "Verbs" },
+        { "de": "heiße", "en": "I am called", "category": "Verbs" },
+        { "de": "bin", "en": "am", "category": "Verbs" },
+        { "de": "gehen", "en": "to go", "category": "Verbs" },
+        { "de": "wohnen", "en": "to live", "category": "Verbs" },
+        { "de": "kommen", "en": "to come", "category": "Verbs" },
+        { "de": "sprechen", "en": "to speak", "category": "Verbs" },
+        { "de": "trinken", "en": "to drink", "category": "Verbs" },
+        { "de": "essen", "en": "to eat", "category": "Verbs" },
+        { "de": "mag", "en": "likes", "category": "Verbs" },
+        { "de": "Name", "en": "name", "category": "Nouns" },
+        { "de": "Freund", "en": "friend (m)", "category": "Nouns" },
+        { "de": "Freundin", "en": "friend (f)", "category": "Nouns" },
+        { "de": "Bruder", "en": "brother", "category": "Nouns" },
+        { "de": "Schwester", "en": "sister", "category": "Nouns" },
+        { "de": "Stadt", "en": "city", "category": "Nouns" },
+        { "de": "Wohnung", "en": "apartment", "category": "Nouns" },
+        { "de": "Jahr", "en": "year", "category": "Nouns" },
+        { "de": "Alter", "en": "age", "category": "Nouns" },
+        { "de": "Kino", "en": "cinema", "category": "Nouns" },
+        { "de": "Kaffee", "en": "coffee", "category": "Nouns" },
+        { "de": "Film", "en": "film", "category": "Nouns" },
+        { "de": "Tag", "en": "day", "category": "Nouns" },
+        { "de": "Woche", "en": "week", "category": "Nouns" },
+        { "de": "Junge", "en": "boy", "category": "Nouns" },
+        { "de": "Mädchen", "en": "girl", "category": "Nouns" },
+        { "de": "Haus", "en": "house", "category": "Nouns" },
+        { "de": "Straße", "en": "street", "category": "Nouns" },
+        { "de": "Land", "en": "country", "category": "Nouns" },
+        { "de": "Deutschland", "en": "Germany", "category": "Nouns" },
+        { "de": "Berlin", "en": "Berlin", "category": "Nouns" },
+        { "de": "gut", "en": "good", "category": "Adjectives" },
+        { "de": "schön", "en": "beautiful/nice", "category": "Adjectives" },
+        { "de": "alt", "en": "old", "category": "Adjectives" },
+        { "de": "jung", "en": "young", "category": "Adjectives" },
+        { "de": "neu", "en": "new", "category": "Adjectives" },
+        { "de": "klein", "en": "small", "category": "Adjectives" },
+        { "de": "groß", "en": "big", "category": "Adjectives" },
+        { "de": "viel", "en": "much/many", "category": "Adverbs" },
+        { "de": "oft", "en": "often", "category": "Adverbs" },
+        { "de": "heute", "en": "today", "category": "Adverbs" },
+        { "de": "morgen", "en": "tomorrow", "category": "Adverbs" },
+        { "de": "gestern", "en": "yesterday", "category": "Adverbs" },
+        { "de": "hier", "en": "here", "category": "Adverbs" },
+        { "de": "da", "en": "there", "category": "Adverbs" },
+        { "de": "aus", "en": "from", "category": "Prepositions" },
+        { "de": "in", "en": "in", "category": "Prepositions" },
+        { "de": "mit", "en": "with", "category": "Prepositions" },
+        { "de": "zu", "en": "to", "category": "Prepositions" },
+        { "de": "und", "en": "and", "category": "Conjunctions" },
+        { "de": "oder", "en": "or", "category": "Conjunctions" },
+        { "de": "aber", "en": "but", "category": "Conjunctions" },
+        { "de": "Wie", "en": "How", "category": "Interrogatives" },
+        { "de": "Was", "en": "What", "category": "Interrogatives" },
+        { "de": "Wer", "en": "Who", "category": "Interrogatives" },
+        { "de": "Wo", "en": "Where", "category": "Interrogatives" }
+      ],
+      "dialogue": [
+        {
+          "person": "A",
+          "phrases": [
+            {
+              "de": "**Hallo**! Wie **heißt** du?",
+              "en": "Hello! What’s your name?"
+            }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "Ich **heiße** Anna. Und du?",
+              "en": "My name is Anna. And you?"
+            }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            {
+              "de": "Ich bin **Lena**. **Freut mich**!",
+              "en": "I’m Lena. Nice to meet you!"
+            }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "**Freut mich** auch! **Woher** kommst du, Lena?",
+              "en": "Nice to meet you too! Where are you from, Lena?"
+            }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            {
+              "de": "Ich komme **aus** Spanien. Und du?",
+              "en": "I’m from Spain. And you?"
+            }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "Ich komme **aus** Deutschland.",
+              "en": "I’m from Germany."
+            },
+            { "de": "**Genau** aus Berlin!", "en": "Exactly from Berlin!" }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            { "de": "Oh, **Berlin**! **Schön**!", "en": "Oh, Berlin! Nice!" }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "**Danke**! **Sprichst** du **Deutsch**?",
+              "en": "Thanks! Do you speak German?"
+            }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            { "de": "Ja, ein **bisschen**.", "en": "Yes, a little." },
+            {
+              "de": "Ich **lerne** Deutsch **in der Schule**.",
+              "en": "I’m learning German at school."
+            }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "**Super**! Ich **lerne** Englisch.",
+              "en": "Great! I’m learning English."
+            }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            { "de": "**Wie alt** bist du?", "en": "How old are you?" }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "Ich bin **19** Jahre **alt**.",
+              "en": "I’m 19 years old."
+            },
+            { "de": "Und du?", "en": "And you?" }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [{ "de": "Ich bin **18**.", "en": "I’m 18." }]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "**Was machst** du **gerne**?",
+              "en": "What do you like to do?"
+            }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            {
+              "de": "Ich **höre** gerne **Musik**.",
+              "en": "I like listening to music."
+            },
+            { "de": "Und ich **lese** **Bücher**.", "en": "And I read books." }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            { "de": "**Ich spiele** **Fußball**!", "en": "I play football!" }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [{ "de": "**Echt**? **Toll**!", "en": "Really? Cool!" }]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            { "de": "Ja! **Jeden Samstag**.", "en": "Yes! Every Saturday." },
+            { "de": "**Magst** du **Sport**?", "en": "Do you like sports?" }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            { "de": "Nicht **so sehr**.", "en": "Not really." },
+            {
+              "de": "Aber ich **schwimme** **manchmal**.",
+              "en": "But I sometimes swim."
+            }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "**Gut**! **Wohnst** du **hier** in Berlin?",
+              "en": "Good! Do you live here in Berlin?"
+            }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            {
+              "de": "Nein, ich **wohne** in einer **WG**.",
+              "en": "No, I live in a shared apartment."
+            },
+            { "de": "In **Kreuzberg**.", "en": "In Kreuzberg." }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "Ah, **Kreuzberg**! **Schön** da!",
+              "en": "Ah, Kreuzberg! Nice there!"
+            }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            {
+              "de": "Ja! **Was isst** du **gerne**?",
+              "en": "Yes! What do you like to eat?"
+            }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "Ich **mag** **Pizza** und **Pasta**.",
+              "en": "I like pizza and pasta."
+            },
+            { "de": "Und **Apfelsaft**!", "en": "And apple juice!" }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            {
+              "de": "Ich **esse** **gerne** **Döner**!",
+              "en": "I like eating döner!"
+            }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "**Lecker**! **Hast** du **Hausaufgaben** heute?",
+              "en": "Yummy! Do you have homework today?"
+            }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            { "de": "Ja, **leider**.", "en": "Yes, unfortunately." },
+            {
+              "de": "Aber **nur** ein **bisschen**.",
+              "en": "But only a little."
+            }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "**Gut**! **Morgen** ist **Samstag**!",
+              "en": "Good! Tomorrow is Saturday!"
+            }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            {
+              "de": "Stimmt! **Was machst** du **am Wochenende**?",
+              "en": "True! What are you doing on the weekend?"
+            }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "Ich **treffe** Freunde **im Park**.",
+              "en": "I’m meeting friends in the park."
+            },
+            {
+              "de": "Und **abends**? **Kino**?",
+              "en": "And in the evening? Cinema?"
+            }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [
+            { "de": "**Ja**, gerne!", "en": "Yes, gladly!" },
+            { "de": "Um **acht Uhr**?", "en": "At eight o’clock?" }
+          ]
+        },
+        {
+          "person": "B",
+          "phrases": [
+            {
+              "de": "**Perfekt**! **Bis morgen**!",
+              "en": "Perfect! See you tomorrow!"
+            }
+          ]
+        },
+        {
+          "person": "A",
+          "phrases": [{ "de": "**Tschüss**, Anna!", "en": "Bye, Anna!" }]
+        }
+      ],
+      "grammar": {
+        "title": "A1 Grammar Focus: Present Tense & Basic Questions",
+        "sections": [
+          {
+            "heading": "1. Personal Pronouns",
+            "content": "German pronouns change based on who you're talking to:\n- **Ich** = I\n- **du** = you (informal, e.g., friends)\n- **Sie** = you (formal, e.g., teachers, strangers)\n- **er/sie/es** = he/she/it\n- **wir** = we\n- **ihr** = you (plural informal, e.g., friends)\n- **sie** = they"
+          },
+          {
+            "heading": "2. Verb 'sein' (to be)",
+            "content": "Used for identity, origin, and condition:\n- Ich **bin** Lena. (I am Lena.)\n- Du **bist** Tom. (You are Tom.)\n- Er **ist** Student. (He is a student.)\n- Wir **sind** hier. (We are here.)\n- Sie **sind** nett. (They are nice.)"
+          },
+          {
+            "heading": "3. Verb 'heißen' (to be called)",
+            "content": "Only used for names:\n- Ich **heiße** Anna. (My name is Anna.)\n- Wie **heißt** du? (What is your name?)\n→ Note: 'heißen' is irregular — no -e ending in 1st person!"
+          },
+          {
+            "heading": "4. Question Words",
+            "content": "Start questions with these words:\n- **Wer?** = Who?\n- **Was?** = What?\n- **Wo?** = Where?\n- **Wann?** = When?\n- **Warum?** = Why?\n- **Wie?** = How?"
+          },
+          {
+            "heading": "5. Prepositions: aus / in",
+            "content": "- **aus** + Dativ = from (a country/city): Ich komme **aus Berlin**.\n- **in** + Dativ = in (a city): Ich wohne **in München**.\n→ Use Dativ case after these prepositions!"
+          },
+          {
+            "heading": "6. Adjectives after 'sein'",
+            "content": "Adjectives stay in basic form after 'sein':\n- Ich bin **jung**. (I am young.)\n- Das ist **schön**. (That is nice.)\n- Berlin ist **groß**. (Berlin is big.)"
+          },
+          {
+            "heading": "7. Negation with 'nicht'",
+            "content": "Place 'nicht' at the end of the sentence or before the word you negate:\n- Ich bin **nicht** aus Paris.\n- Er ist **nicht** Student.\n- Ich heiße **nicht** Tom."
+          }
+        ]
+      },
+      "grammarQuiz": [
+        {
+          "section": "Personal Pronouns",
+          "questions": [
+            { "text": "______ bin Lena.", "answer": "Ich" },
+            { "text": "______ bist Tom?", "answer": "Du" },
+            { "text": "______ ist mein Bruder.", "answer": "Er" },
+            { "text": "______ sind Freunde.", "answer": "Wir" },
+            { "text": "______ seid ihr?", "answer": "Wer" }
+          ]
+        },
+        {
+          "section": "Verb 'sein'",
+          "questions": [
+            { "text": "Ich ______ Anna.", "answer": "bin" },
+            { "text": "Du ______ nett.", "answer": "bist" },
+            { "text": "Er ______ Student.", "answer": "ist" },
+            { "text": "Wir ______ in Berlin.", "answer": "sind" },
+            { "text": "Sie ______ Lehrer.", "answer": "sind" }
+          ]
+        },
+        {
+          "section": "Verb 'heißen'",
+          "questions": [
+            { "text": "Ich ______ Markus.", "answer": "heiße" },
+            { "text": "Wie ______ du?", "answer": "heißt" },
+            { "text": "Sie ______ Frau Schmidt.", "answer": "heißt" },
+            { "text": "Wir ______ die Müllers.", "answer": "heißen" },
+            { "text": "Wie ______ Ihr Hund?", "answer": "heißt" }
+          ]
+        },
+        {
+          "section": "Prepositions: aus / in",
+          "questions": [
+            { "text": "Ich komme ______ Deutschland.", "answer": "aus" },
+            { "text": "Sie wohnt ______ Hamburg.", "answer": "in" },
+            { "text": "Er kommt ______ der Schweiz.", "answer": "aus" },
+            { "text": "Wir leben ______ einer Stadt.", "answer": "in" },
+            { "text": "Anna ist ______ Berlin.", "answer": "aus" }
+          ]
+        },
+        {
+          "section": "Negation & Adjectives",
+          "questions": [
+            { "text": "Ich bin ______ aus Paris.", "answer": "nicht" },
+            { "text": "Das ist ______ gut.", "answer": "nicht" },
+            { "text": "Er ist ______ jung.", "answer": "alt" },
+            { "text": "Die Wohnung ist ______ klein.", "answer": "nicht" },
+            { "text": "Ich heiße ______ Tom.", "answer": "nicht" }
+          ]
+        }
+      ],
+      "reading": [
+        {
+          "address": "My Family",
+          "content": "Hallo! Ich heiße Sarah. Ich komme aus Österreich und wohne in Wien. Meine Familie ist klein: mein Vater, meine Mutter, mein Bruder und ich. Mein Vater heißt Paul und arbeitet als Arzt. Meine Mutter heißt Eva und ist Lehrerin. Mein Bruder Max ist 16 Jahre alt und geht zur Schule. Wir essen oft zusammen Abendessen. Am Sonntag backt meine Mutter Kuchen. Ich liebe meine Familie sehr!"
+        },
+        {
+          "address": "A Day at the Park",
+          "content": "Guten Tag! Heute ist Samstag und das Wetter ist schön. Ich gehe mit meinem Hund Bruno in den Park. Viele Kinder spielen Fußball. Einige Leute lesen Bücher oder trinken Kaffee. Ich setze mich auf eine Bank und sehe Enten im See. Bruno läuft und bellt. Später kaufe ich ein Eis. Es ist lecker! Um vier Uhr gehe ich nach Hause. Der Tag ist perfekt."
+        },
+        {
+          "address": "Learning German",
+          "content": "Hallo! Ich heiße Yuki und komme aus Japan. Ich lerne Deutsch seit drei Monaten. Jeden Tag übe ich neue Wörter und höre deutsche Musik. Manchmal schaue ich deutsche Filme mit Untertiteln. Meine Lieblingswörter sind „danke“, „bitte“ und „gut“. Ich möchte eines Tages in Deutschland arbeiten. Die Sprache ist nicht einfach, aber ich mache Fortschritte. Viel Erfolg an alle Deutschlerner!"
+        }
+      ],
+      "readingQuestions": {
+        "trueFalse": [
+          {
+            "question": "Sarah lives in Germany.",
+            "answer": false
+          },
+          {
+            "question": "Sarah's mother is a teacher.",
+            "answer": true
+          },
+          {
+            "question": "Yuki has been learning German for six months.",
+            "answer": false
+          }
+        ],
+        "multipleChoice": [
+          {
+            "question": "Where does Sarah live?",
+            "options": ["Berlin", "Munich", "Wien", "Hamburg"],
+            "correctIndex": 2
+          },
+          {
+            "question": "What does Yuki do to learn German?",
+            "options": [
+              "She writes essays every day",
+              "She listens to German music and watches films",
+              "She speaks only German at home",
+              "She teaches German online"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "question": "What does Sarah's mother bake on Sundays?",
+            "options": ["Bread", "Cookies", "Kuchen", "Pasta"],
+            "correctIndex": 2
+          }
+        ],
+        "shortAnswer": [
+          {
+            "question": "How old is Max?",
+            "answer": "16"
+          },
+          {
+            "question": "What is Sarah's father's job?",
+            "answer": "He is a doctor."
+          },
+          {
+            "question": "Where does Yuki come from?",
+            "answer": "Japan"
+          },
+          {
+            "question": "What does Bruno do in the park?",
+            "answer": "He runs and barks."
+          },
+          {
+            "question": "What time does the person go home from the park?",
+            "answer": "Four o'clock"
+          },
+          {
+            "question": "What are Yuki's favorite German words?",
+            "answer": "danke, bitte, gut"
+          }
+        ]
+      }
+    }
+  ]
+}
