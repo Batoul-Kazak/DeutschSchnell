@@ -48,6 +48,8 @@ const LessonView = () => {
                         {currentLesson.title}
                     </span>
                 </h1>
+                <img src={currentLesson.image} alt="lesson-image" className="w-full py-10 " />
+
 
                 <p className="mt-4 text-xl">{currentLesson.description}</p>
                 <VocabularySection wordsFilter={wordsFilter} setWordsFilter={setWordsFilter} filteredWords={filteredWords} />
