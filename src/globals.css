@@ -2,27 +2,24 @@
 @tailwind utilities;
 @tailwind components;
 
+/* @custom-variant dark (&:where(.dark, .dark *)); */
+
 :root {
   /* --amber-gold: #ffbe0bff; */
-  /* --blaze-my-orange: #fb5607ff; */
+  /* --blaze-dark-green: #fb5607ff; */
   /* --neon-pink: #ff006eff; */
-  /* --my-blue-my-violet: #8338ecff; */
-  /* --azure-my-blue: #3a86ffff; */
-
-  --my-blue-my-violet: #8338ecff;
-  --my-blue: #6ad9da;
-  --my-red: #da7b6a;
-  --my-yellow: #c9da6a;
+  /* --dark-blue-light-violet: #8338ecff; */
+  /* --azure-dark-blue: #3a86ffff; */
 
   /* --ink-black: #03071eff;
 --night-bordeaux: #370617ff;
 --black-cherry: #6a040fff;
 --oxblood: #9d0208ff;
 --brick-ember: #d00000ff;
---my-red-ochre: #dc2f02ff;
---cayenne-my-red: #e85d04ff;
+--dark-red-ochre: #dc2f02ff;
+--cayenne-dark-red: #e85d04ff;
 --deep-saffron: #f48c06ff;
---my-orange: #faa307ff;
+--dark-green: #faa307ff;
 --amber-flame: #ffba08ff; */
 }
 

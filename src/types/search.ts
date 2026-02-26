@@ -45,7 +45,7 @@ export const searchData: SearchItem[] = [
   },
   {
     type: 'event',
-    title: 'Speaking for Travelling',
+    title: 'Speaking for Traveling',
     excerpt: 'Practice real travel dialogues',
   },
   {

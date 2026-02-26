@@ -1,7 +1,7 @@
 
 
 import { useForm } from 'react-hook-form';
-import heroSectionBackground from "../../../public/images/banner-bg.jpg";
+import heroSectionBackground from "../../assets/images/banner-bg.jpg";
 import { useState } from 'react';
 
 const imageStyles = {
@@ -47,9 +47,9 @@ const Contactus = () => {
     };
 
     return (
-        <div id="contactus" className="relative h-[40rem]">
-            <div className="absolute flex top-0 bottom-0 left-0 h-[40rem] w-[65%] z-10 bg-gray-300 rounded-tr-full rounded-br-full">
-                <div className="flex p-10 pl-20 w-[30rem] flex-col gap-[3rem] place-content-center ">
+        <div id="contactus" className="relative flex md:pt-0 pt-10 gap-5 flex-col place-content-center md:text-base text-sm place-items-center h-[40rem] ">
+            <div className="absolute hidden md:flex top-0 bottom-0 left-0 h-[40rem] w-[65%] z-10 bg-gray-300 rounded-tr-full rounded-br-full">
+                <div className="flex p-10 lg:pl-20 md:pl-5 w-[30rem] flex-col gap-[3rem] place-content-center ">
                     <div>
                         <h2 className="p-5 font-bold text-indigo-600 uppercase">Contact Us</h2>
                         <h1 className="text-4xl font-bold ">Feel free to contact us anytime</h1>
@@ -60,23 +60,33 @@ const Contactus = () => {
                 </div>
             </div>
 
+            <div className='flex flex-col gap-5 px-6 md:hidden'>
+                <div className='text-center'>
+                    <h2 className="p-5 text-2xl font-bold text-indigo-600 uppercase">Contact Us</h2>
+                    <h1 className="text-4xl font-bold ">Feel free to contact us anytime</h1>
+                </div>
+                <p className="text-sm text-center text-gray-700">
+                    Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of charge.
+                </p>
+            </div>
+
             <div
-                className="absolute top-[20rem] rounded-3xl translate-y-[-50%] left-[50%]  z-20 w-[45%]"
+                className="md:absolute md:top-[20rem] sm:rounded-3xl rounded-xl  md:translate-y-[-50%] md:left-[50%] z-20 md:w-[45%] w-[90%]"
                 style={{ ...imageStyles, backgroundImage: `url(${heroSectionBackground})` }}
             >
-                <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full py-12 gap-6 p-[5rem] place-content-center">
-                    <div className='relative w-[30rem] h-[4rem]'>
+                <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col w-full py-12 gap-6 lg:p-[5rem] md:p-[3rem] sm:px-[2rem] sm:py-[4rem] p-[1rem] place-content-center">
+                    <div className='relative h-[4rem]'>
                         <input
                             {...register("name", { required: "Name is required" })}
                             placeholder="Your Name..."
-                            className={`p-2 pl-6 rounded-full absolute bg-inherit w-[26rem]
+                            className={`p-2 pl-6 md:rounded-full rounded-xl sm:rounded-2xl absolute bg-inherit w-full
                                 } text-white placeholder:text-white`}
                         />
                         {errors.name && (
                             <span className="absolute bottom-0 text-sm text-red-900 left-5">{errors.name.message}</span>
                         )}
                     </div>
-                    <div className='relative w-[30rem] h-[4rem]'>
+                    <div className='relative h-[4rem]'>
                         <input
                             {...register("email", {
                                 required: "Email is required",
@@ -87,20 +97,20 @@ const Contactus = () => {
                             })}
                             placeholder="Your Email"
                             type="email"
-                            className={`p-2 pl-6 rounded-full absolute bg-inherit w-[26rem]
+                            className={`p-2 pl-6 md:rounded-full rounded-xl sm:rounded-2xl absolute  bg-inherit w-full
                                 } placeholder:text-white`}
                         />
                         {errors.email && (
                             <span className="absolute bottom-0 text-sm text-red-900 left-5">{errors.email.message}</span>
                         )}
                     </div>
-                    <div className="w-[26rem]">
+                    <div className="">
                         <div className="relative w-full h-[8rem]">
                             <textarea
                                 style={{ resize: "none" }}
                                 {...register("message", { required: "Message is required", minLength: 10 })}
                                 placeholder="Your Message..."
-                                className="w-full h-full p-2 pl-6 rounded-xl bg-inherit placeholder:text-white"
+                                className="w-full h-full p-2 pl-6 rounded-xl sm:rounded-2xl bg-inherit placeholder:text-white"
                             />
                         </div>
 
@@ -119,7 +129,7 @@ const Contactus = () => {
                     <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="px-5 py-2 text-indigo-600 place-self-center bg-white rounded-full w-[50%] font-bold disabled:opacity-50"
+                        className="px-5 py-2 text-indigo-600 place-self-center bg-white md:rounded-full rounded-xl sm:rounded-2xl lg:w-[50%] md:w-[80%] w-full font-bold disabled:opacity-50"
                     >
                         {isSubmitting ? "Sending..." : "Send Message Now"}
                     </button>
@@ -129,7 +139,7 @@ const Contactus = () => {
                 {submitStatus !== 'idle' && (
                     <div
                         className={`p-3 rounded-lg text-center font-medium ${submitStatus === 'success'
-                            ? 'bg-my-violet/20 text-lime-200 border border-my-violet'
+                            ? 'bg-light-violet/20 text-lime-200 border border-light-violet'
                             : 'bg-red-100 text-red-900 border border-red-300'
                             }`}
                         style={{ width: '26rem', margin: '0 auto 1rem' }}

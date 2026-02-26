@@ -4,13 +4,13 @@ export default function VocabularySection({ wordsFilter, setWordsFilter, filtere
 
     return (
         <div id="vocabulary" className="flex flex-col w-full gap-5 mt-8">
-            <h2 className="text-3xl font-bold text-my-violet">Vocabulary you will learn:</h2>
-            <div className="flex w-full gap-5 py-2 font-bold rounded-lg text-my-violet place-content-center place-items-center">
+            <h2 className="text-3xl font-bold text-light-violet">Vocabulary you will learn:</h2>
+            <div className="flex w-full gap-5 py-2 font-bold rounded-lg text-light-violet place-content-center place-items-center">
                 {WORD_TYPES.map(({ key, label }) => (
                     <button
                         key={key}
                         onClick={() => setWordsFilter(key)}
-                        className={`px-4 py-1 rounded-full ${wordsFilter === key ? "bg-my-red text-white" : "bg-white text-black"
+                        className={`px-4 py-1 rounded-full ${wordsFilter === key ? "bg-dark-red text-white" : "bg-white text-black"
                             }`}
                     >
                         {label}
@@ -22,9 +22,9 @@ export default function VocabularySection({ wordsFilter, setWordsFilter, filtere
                     filteredWords.map((item, idx) => (
                         <div
                             key={idx}
-                            className="flex gap-5 px-2 py-1 text-white rounded-md shadow-lg bg-my-violet"
+                            className="flex gap-5 px-2 py-1 text-white rounded-md shadow-lg bg-light-violet"
                         >
-                            <span className="font-bold text-my-blue">{item.de}</span>
+                            <span className="font-bold text-dark-blue">{item.de}</span>
                             <span>{item.en}</span>
                         </div>
                     ))

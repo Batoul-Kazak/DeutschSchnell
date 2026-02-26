@@ -22,9 +22,9 @@ export default function Button({
     const baseClasses = "font-bold rounded-full transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
 
     const variants = {
-        primary: "bg-my-violet text-white hover:bg-my-orange focus:ring-my-red",
-        secondary: "bg-my-red text-white hover:bg-my-blue focus:ring-my-violet",
-        outline: "border-2 border-my-red text-my-red hover:bg-my-red/10 focus:ring-my-red",
+        primary: "bg-light-violet text-white hover:bg-dark-green focus:ring-dark-red",
+        secondary: "bg-dark-red text-white hover:bg-dark-blue focus:ring-light-violet",
+        outline: "border-2 border-dark-red text-dark-red hover:bg-dark-red/10 focus:ring-dark-red",
     };
 
     const sizes = {

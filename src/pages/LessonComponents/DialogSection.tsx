@@ -7,7 +7,7 @@
 //     return (
 //         <div>
 //             {!showQuestions && <div id="dialog" className="flex flex-col gap-5 pt-10 place-content-center place-items-center">
-//                 <h2 className="text-3xl font-bold text-my-violet">Dialogue</h2>
+//                 <h2 className="text-3xl font-bold text-light-violet">Dialogue</h2>
 //                 <div className="flex flex-col gap-5 sm:w-[80%]">
 //                     {currentLesson.map((item, i) => (
 //                         <div
@@ -18,13 +18,13 @@
 //                                 <div
 //                                     className={`w-[3rem] h-[3rem] ${item.person === "A"
 //                                         ? "border-l-rose-700"
-//                                         : "border-l-my-blue-700"
-//                                         } border-[10px] hover:scale-110 cursor-pointer transition duration-300 flex place-content-center place-items-center font-bold bg-my-red-500 rounded-full`}
+//                                         : "border-l-dark-blue-700"
+//                                         } border-[10px] hover:scale-110 cursor-pointer transition duration-300 flex place-content-center place-items-center font-bold bg-dark-red-500 rounded-full`}
 //                                 >
 //                                     {item.person}
 //                                 </div>
 //                                 <div
-//                                     className={`p-4 rounded-3xl hover:scale-105 transition duration-300 shadow-2xl ${item.person === 'A' ? "bg-my-red text-white" : "bg-my-yellow text-black"
+//                                     className={`p-4 rounded-3xl hover:scale-105 transition duration-300 shadow-2xl ${item.person === 'A' ? "bg-dark-red text-white" : "bg-dark-yellow text-black"
 //                                         }`}
 //                                 >
 //                                     <div className="text-xl">
@@ -38,13 +38,13 @@
 //                 </div>
 //             </div>}
 //             <button
-//                 className="text-xl text-my-violet"
+//                 className="text-xl text-light-violet"
 //                 onClick={() => setShowQuestions(prev => !prev)}
 //             >
 //                 {!showQuestions ? "Practice dialog" : "Close practice mode"}
 //             </button>
 //             {showQuestions && <div id="dialog" className="flex flex-col gap-5 pt-10 place-content-center place-items-center">
-//                 <h2 className="text-3xl font-bold text-my-violet">Dialogue</h2>
+//                 <h2 className="text-3xl font-bold text-light-violet">Dialogue</h2>
 //                 <div className="flex flex-col gap-5 sm:w-[80%]">
 //                     {currentLesson.map((item, i) => (
 //                         <div
@@ -55,13 +55,13 @@
 //                                 <div
 //                                     className={`w-[3rem] h-[3rem] ${item.person === "A"
 //                                         ? "border-l-rose-700"
-//                                         : "border-l-my-blue-700"
-//                                         } border-[10px] hover:scale-110 cursor-pointer transition duration-300 flex place-content-center place-items-center font-bold bg-my-red-500 rounded-full`}
+//                                         : "border-l-dark-blue-700"
+//                                         } border-[10px] hover:scale-110 cursor-pointer transition duration-300 flex place-content-center place-items-center font-bold bg-dark-red-500 rounded-full`}
 //                                 >
 //                                     {item.person}
 //                                 </div>
 //                                 <div
-//                                     className={`p-4 rounded-3xl hover:scale-105 transition duration-300 shadow-2xl ${item.person === 'A' ? "bg-my-red text-white" : "bg-my-yellow text-black"
+//                                     className={`p-4 rounded-3xl hover:scale-105 transition duration-300 shadow-2xl ${item.person === 'A' ? "bg-dark-red text-white" : "bg-dark-yellow text-black"
 //                                         }`}
 //                                 >
 //                                     <div className="text-xl">
@@ -110,7 +110,7 @@ export default function DialogSection({ currentLesson }) {
         <div>
             {!showQuestions && (
                 <div id="dialogue" className="flex flex-col gap-5 pt-10 place-content-center place-items-center">
-                    <h2 className="text-3xl font-bold text-my-violet">Dialogue</h2>
+                    <h2 className="text-3xl font-bold text-light-violet">Dialogue</h2>
                     <div className="flex flex-col gap-2 sm:w-[80%]">
                         {currentLesson.map((item: any, i: number) => (
                             <div
@@ -119,13 +119,13 @@ export default function DialogSection({ currentLesson }) {
                             >
                                 <div className="flex gap-2">
                                     <div
-                                        className={`w-[3rem] h-[3rem] ${item.person === "A" ? "border-l-rose-700" : "border-l-my-blue-700"
-                                            } border-[10px] hover:scale-110 cursor-pointer transition duration-300 flex place-content-center place-items-center font-bold bg-my-red-500 rounded-full`}
+                                        className={`w-[3rem] h-[3rem] ${item.person === "A" ? "border-l-rose-700" : "border-l-dark-blue-700"
+                                            } border-[10px] hover:scale-110 cursor-pointer transition duration-300 flex place-content-center place-items-center font-bold bg-dark-red-500 rounded-full`}
                                     >
                                         {item.person}
                                     </div>
                                     <div
-                                        className={`p-4 rounded-3xl hover:scale-105 transition duration-300 shadow-2xl ${item.person === 'A' ? "bg-my-red text-white" : "bg-my-yellow text-black"
+                                        className={`p-4 rounded-3xl hover:scale-105 transition duration-300 shadow-2xl ${item.person === 'A' ? "bg-dark-red text-white" : "bg-dark-yellow text-black"
                                             }`}
                                     >
                                         <div className="text-xl">
@@ -145,7 +145,7 @@ export default function DialogSection({ currentLesson }) {
             )}
 
             <button
-                className="text-xl text-my-violet"
+                className="text-xl text-light-violet"
                 onClick={() => {
                     setShowQuestions(prev => !prev);
                     setChecked(false);
@@ -157,7 +157,7 @@ export default function DialogSection({ currentLesson }) {
 
             {showQuestions && (
                 <div id="dialog" className="flex flex-col gap-5 pt-10 place-content-center place-items-center">
-                    <h2 className="text-3xl font-bold text-my-violet">Dialogue</h2>
+                    <h2 className="text-3xl font-bold text-light-violet">Dialogue</h2>
                     <div className="flex flex-col gap-5 sm:w-[80%]">
                         {currentLesson.map((item: any, i: number) => {
                             // Count how many blanks are before this item
@@ -174,13 +174,13 @@ export default function DialogSection({ currentLesson }) {
                                 >
                                     <div className="flex gap-2">
                                         <div
-                                            className={`w-[3rem] h-[3rem] ${item.person === "A" ? "border-l-rose-700" : "border-l-my-blue-700"
-                                                } border-[10px] hover:scale-110 cursor-pointer transition duration-300 flex place-content-center place-items-center font-bold bg-my-red-500 rounded-full`}
+                                            className={`w-[3rem] h-[3rem] ${item.person === "A" ? "border-l-rose-700" : "border-l-dark-blue-700"
+                                                } border-[10px] hover:scale-110 cursor-pointer transition duration-300 flex place-content-center place-items-center font-bold bg-dark-red-500 rounded-full`}
                                         >
                                             {item.person}
                                         </div>
                                         <div
-                                            className={`p-4 rounded-3xl hover:scale-105 transition duration-300 shadow-2xl ${item.person === 'A' ? "bg-my-red text-white" : "bg-my-yellow text-black"
+                                            className={`p-4 rounded-3xl hover:scale-105 transition duration-300 shadow-2xl ${item.person === 'A' ? "bg-dark-red text-white" : "bg-dark-yellow text-black"
                                                 }`}
                                         >
                                             <div className="text-xl">
@@ -219,7 +219,7 @@ export default function DialogSection({ currentLesson }) {
                     </div>
                     <button
                         onClick={handleCheck}
-                        className="px-4 py-2 text-white rounded-lg bg-my-violet hover:bg-my-red"
+                        className="px-4 py-2 text-white rounded-lg bg-light-violet hover:bg-dark-red"
                     >
                         Check Your Answers
                     </button>

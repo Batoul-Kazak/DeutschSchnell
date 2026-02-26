@@ -9,22 +9,25 @@ import NotFound from "./pages/NotFound.tsx";
 import LessonView from "./pages/LessonView.tsx";
 import SelectLevelInterface from "./pages/Test/SelectLevelInterface.tsx";
 import Tests from "./pages/Test/Test.tsx";
+import { ThemeProvider } from "./context/ThemeProvider.tsx";
 
 const queryClient = new QueryClient();
 
 
 createRoot(document.getElementById("root")!).render(
-    <QueryClientProvider client={queryClient}>
-        <StrictMode>
-            <BrowserRouter basename="/">
-                <Routes>
-                    <Route index path="/" Component={App} />
-                    <Route path="*" Component={NotFound} />
-                    <Route path="/courses/:courseId/:lessonId" Component={LessonView} />
-                    <Route path="/tests" Component={SelectLevelInterface} />
-                    <Route path="/tests/:level" Component={Tests} />
-                </Routes>
-            </BrowserRouter>
-        </StrictMode >
-    </QueryClientProvider>
+    <StrictMode>
+        <QueryClientProvider client={queryClient}>
+            <ThemeProvider>
+                <BrowserRouter basename="/">
+                    <Routes>
+                        <Route index path="/" Component={App} />
+                        <Route path="*" Component={NotFound} />
+                        <Route path="/courses/:courseId/:lessonId" Component={LessonView} />
+                        <Route path="/tests" Component={SelectLevelInterface} />
+                        <Route path="/tests/:level" Component={Tests} />
+                    </Routes>
+                </BrowserRouter>
+            </ThemeProvider>
+        </QueryClientProvider>
+    </StrictMode >
 );

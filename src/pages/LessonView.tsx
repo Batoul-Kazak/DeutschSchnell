@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import BackToTopButton from "../components/BackToTopButton/BackToTopButton";
+import BackToTopButton from "../components/JumpToTopButton/JumpToTopButton";
 import Navbar from "../components/Navbar/Navbar";
 import ReadingSection from "./LessonComponents/ReadingSection";
 import GrammarSection from "./LessonComponents/GrammarSection";
@@ -44,7 +44,7 @@ const LessonView = () => {
             <div className="relative p-4 pt-20 sm:p-10 place-content-center">
                 <h1 className="text-4xl">
                     Lesson {currentLesson.lessonNumber}:{" "}
-                    <span className="text-[2.4rem] text-my-red font-bold">
+                    <span className="text-[2.4rem] text-dark-red font-bold">
                         {currentLesson.title}
                     </span>
                 </h1>

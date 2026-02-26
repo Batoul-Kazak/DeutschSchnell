@@ -1,10 +1,9 @@
 
 import { useState } from "react";
 import { useCourses } from "../../hooks/useCourses";
-import { getCourseImage } from "../../utils/courseImage";
-import heroSectionBackground from "../../../public/images/banner-bg.jpg"
-import curve from "../../../public/images/contact-dec-01.png"
-import { Link } from "react-router-dom";
+import heroSectionBackground from "../../assets/images/banner-bg.jpg"
+import curve from "../../assets/images/contact-dec-01.png"
+import Course from "./Course";
 
 const imageStyles = {
     backgroundPosition: "center",
@@ -46,41 +45,18 @@ const Courses = () => {
         setSelectedCourse(level)
     }
 
-    return <section id="courses" className="flex flex-col gap-10 pt-20 pb-[15rem] cursor-pointer sm:px-10">
+    return <section id="courses" className="flex flex-col gap-10 pt-20 pb-[15rem] cursor-pointer  sm:px-10">
         <div className="flex flex-col gap-10 place-content-center place-items-center">
-            <h2 className="font-bold text-indigo-600 uppercase ">German Courses by Level</h2>
-            <h1 className="text-4xl font-bold text-gray-900">Lessons</h1>
-            <div className="flex justify-between gap-4 px-4 py-3 font-bold bg-gray-300 rounded-full sm:gap-10 md:px-8 sm:px-10">
-                {levels.map((level) => <button onClick={() => handleSelectLesson(level)} key={level} className={`text-xl ${selectedCourse === level ? "text-white bg-my-orange p-2 sm:px-5 rounded-full hover:text-white" : ""} transition-colors hover:text-indigo-600`}>{level}</button>)}
+            <h2 className="text-xl font-bold text-center uppercase md:text-3xl text-dark-violet dark:text-white">German Courses by Level</h2>
+            <h1 className="text-xl font-bold text-dark-violet md:text-3xl dark:text-light-violet">Lessons</h1>
+            <div className="flex gap-0 px-4 py-3 w-[80%]  font-bold bg-gray-300 dark:bg-gray-300/70 rounded-xl sm:rounded-full justify-evenly md:gap-8 lg:px-8 ">
+                {levels.map((level) => <button onClick={() => handleSelectLesson(level)} key={level} className={`sm:text-xl px-2 text-base ${selectedCourse === level ? "text-white bg-light-red  py-2 sm:px-5 sm:rounded-full rounded-xl hover:text-white" : ""} transition-colors dark:hover:text-white hover:text-indigo-600`}>{level}</button>)}
             </div>
-            <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 sm:grid-cols-2 md:grid-cols-2 px-15">
+            <div className="grid grid-cols-1 gap-10 lg:grid-cols-3 place-items-center place-content-center md:grid-cols-2 px-15">
                 {selectedCourseLessons.length > 0 && selectedCourseLessons.length > 0 && selectedCourseLessons.map((lesson: Lesson) => {
                     const lessonNumber = lesson.lessons.replace("Lesson ", "").trim();
-
                     return (
-                        <Link to={`/courses/${lesson.course}/${lessonNumber}`} key={lesson.id}>
-                            <div className="p-5 px-0 bg-gray-300 rounded-3xl w-full hover:scale-105 transition-transform duration-500 hover:shadow-[0_4px_12px_rgba(0.8,0.8,0.8,0.6)] shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
-                                <div className="relative">
-                                    {/* <div className="absolute w-full h-10 bg-indigo-600 z-2 -top-5"></div> */}
-                                    <img src={getCourseImage(selectedCourse)} alt={`German Course ${selectedCourse}`} className="object-cover z-5 rounded-3xl " />
-                                    <div className="absolute right-0 p-4 pl-6 font-bold text-white rounded-bl-full bg-my-violet -top-5">{lesson.time}</div>
-                                    <div className="absolute left-0 px-6 py-2 font-bold text-white rounded-tr-xl rounded-br-xl bg-my-red bottom-7">completed</div>
-                                </div>
-                                <div className="flex flex-col flex-wrap gap-2 px-4 py-5 md:px-7">
-                                    <h1 className="text-xl font-bold">{lesson.lessons}: <span className="text-indigo-600">{lesson.title}</span></h1>
-                                    {/* <div className="h-[1px] w-full bg-gray-700"></div> */}
-                                    <p className="pt-2 text-sm text-pretty">{lesson.description}</p>
-                                    <div className="flex flex-col gap-2 ">
-                                        <p className="font-bold text-gray-800">Skills you will learn:</p>
-                                        <p className="flex gap-2">{lesson.skills.map((skill: string) => <span key={skill} className="p-2 text-xs font-bold text-white transition-all rounded-full cursor-pointer hover:bg-white hover:shadow-lg hover:text-indigo-600 bg-my-red">{skill}</span>)}</p>
-                                    </div>100% Speak Confidently After 30 Lessons
-                                    <div className="flex flex-col gap-2 md:flex-row sm:flex-row">
-                                        <p className="font-bold text-gray-800">Tags:</p>
-                                        <p className="flex flex-wrap w-auto gap-2 ">{lesson.tags.map((tags: string) => <span className="p-2 text-xs font-bold text-white transition-all rounded-full cursor-pointer hover:bg-white hover:shadow-lg hover:text-indigo-600 bg-my-blue" key={tags}>{tags}</span>)}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </Link>
+                        <Course key={lesson.id} lesson={lesson} selectedCourse={selectedCourse} lessonNumber={lessonNumber} />
                     )
                 })}
             </div>

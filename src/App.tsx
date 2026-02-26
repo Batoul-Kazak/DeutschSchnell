@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
 import Team from "./components/Team/Team";
-import BackToTopButton from "./components/BackToTopButton/BackToTopButton";
+import BackToTopButton from "./components/JumpToTopButton/JumpToTopButton";
 
 export const AppContext = createContext<{
     level: string;
@@ -31,7 +31,7 @@ export default function App() {
 
     return (
         // <AppContext.Provider value={ }>
-        <div className="relative ">
+        <div className="relative dark:bg-dark-violet ">
             <Navbar navItems={homePageItems} isShowSearch={true} />
             <HeroSection />
             <ServicesSection />
@@ -46,7 +46,7 @@ export default function App() {
             {/* <LessonView /> */}
             <Footer />
             {/* <TabbedComponent /> */}
-            <BackToTopButton color="my-blue" />
+            <BackToTopButton color="dark-blue" />
         </div>
         // </AppContext.Provider>
     )

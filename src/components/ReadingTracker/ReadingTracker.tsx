@@ -21,7 +21,7 @@ export default function ReadingTracker() {
     return (
         <div className="fixed bottom-0 left-0 right-0 z-50 w-full h-2 overflow-hidden bg-gray-700 rounded-full">
             <div
-                className="h-full transition-all duration-100 ease-linear bg-my-red"
+                className="h-full transition-all duration-100 ease-linear bg-dark-red"
                 style={{ width: `${scrollPercent}%` }}
             />
         </div>

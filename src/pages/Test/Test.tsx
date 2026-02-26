@@ -47,7 +47,7 @@ export default function Tests() {
 
     if (isLoading) {
         return (
-            <div className="relative flex items-center justify-center min-h-screen overflow-hidden bg-my-yellow">
+            <div className="relative flex items-center justify-center min-h-screen overflow-hidden bg-dark-yellow">
                 {/* Background Image */}
                 <div
                     className="absolute inset-0 -z-20"
@@ -67,7 +67,7 @@ export default function Tests() {
                 <div className="flex flex-col items-center gap-6 px-6 text-center">
                     {/* Animated Spinner */}
                     <div className="relative">
-                        <div className="w-16 h-16 border-4 border-transparent rounded-full border-t-my-violet animate-spin"></div>
+                        <div className="w-16 h-16 border-4 border-transparent rounded-full border-t-light-violet animate-spin"></div>
                         <div className="absolute inset-0 w-16 h-16 border-4 border-transparent rounded-full opacity-50 border-b-white animate-spin"></div>
                     </div>
 
@@ -77,8 +77,8 @@ export default function Tests() {
                     </div>
 
                     {/* Subtle Pulse Bar (optional) */}
-                    <div className="w-32 h-1 overflow-hidden rounded-full bg-my-violet/30">
-                        <div className="w-1/3 h-full bg-my-violet animate-pulse"></div>
+                    <div className="w-32 h-1 overflow-hidden rounded-full bg-light-violet/30">
+                        <div className="w-1/3 h-full bg-light-violet animate-pulse"></div>
                     </div>
                 </div>
             </div>
@@ -101,20 +101,20 @@ export default function Tests() {
 
             }}>
                 <div className="w-full max-w-md p-8 py-12 text-center bg-white shadow-xl rounded-2xl">
-                    <h2 className="mb-4 text-4xl font-bold text-my-violet">{level} Test Completed!</h2>
-                    <h3 className='py-3 text-3xl text-my-red'>{feedback.title}</h3>
-                    <div className="mb-2 text-5xl font-bold text-my-blue">{score}%</div>
+                    <h2 className="mb-4 text-4xl font-bold text-light-violet">{level} Test Completed!</h2>
+                    <h3 className='py-3 text-3xl text-dark-red'>{feedback.title}</h3>
+                    <div className="mb-2 text-5xl font-bold text-dark-blue">{score}%</div>
                     <p className="mb-6 ">{earned} from {total} Question</p>
-                    <p className='pb-8 text-my-violet'>{feedback.message}</p>
+                    <p className='pb-8 text-light-violet'>{feedback.message}</p>
                     <button
                         onClick={reset}
-                        className="px-6 py-2 font-bold text-white transition rounded-full bg-my-violet hover:opacity-90"
+                        className="px-6 py-2 font-bold text-white transition rounded-full bg-light-violet hover:opacity-90"
                     >
                         Restart
                     </button>
                     <button
                         onClick={() => navigate('/')}
-                        className="px-6 py-2 ml-10 font-bold text-white transition rounded-full bg-my-violet hover:opacity-90"
+                        className="px-6 py-2 ml-10 font-bold text-white transition rounded-full bg-light-violet hover:opacity-90"
                     >
                         To Home Page
                     </button>
@@ -141,22 +141,22 @@ export default function Tests() {
                 <h1 className="flex items-center content-center gap-3 text-2xl font-bold text-violet-200">
                     <img src={deutschSchnellIcon} alt="logo" className="w-10 h-10" />
                     {level} German Test</h1>
-                <div className="px-4 py-2 font-mono font-bold text-white rounded-lg bg-my-red">
+                <div className="px-4 py-2 font-mono font-bold text-white rounded-lg bg-dark-red">
                     {formatTime(timeLeft)}
                 </div>
             </div>
-            <hr className="h-1 bg-my-violet" />
+            <hr className="h-1 bg-light-violet" />
 
             <div className="w-full mb-8 bg-gray-300 rounded-full">
                 <div
-                    className="transition-all duration-300 rounded-full bg-my-blue"
+                    className="transition-all duration-300 rounded-full bg-dark-blue"
                     style={{ width: `${(currentQuestionIndex / questions.length) * 100}%` }}
                 />
             </div>
 
             <div className="overflow-hidden rounded-2xl">
                 <div className="p-6">
-                    <h2 className="mb-6 text-xl font-semibold text-my-blue">
+                    <h2 className="mb-6 text-xl font-semibold text-dark-blue">
                         Question {currentQuestionIndex + 1} of {questions.length}
                     </h2>
                     <p className="mb-8 text-lg ">{currentQuestion?.text}</p>
@@ -168,9 +168,9 @@ export default function Tests() {
                                 ref={el => (answerRefs.current[index] = el)}
                                 data-answer-id={answer.id}
                                 onClick={() => handleAnswerSelect(answer.id)}
-                                className={`w-full text-left p-4 rounded-xl border-2 transition-all focus:outline-none focus:ring-2 focus:ring-my-violet ${selectedAnswerId === answer.id
-                                    ? 'border-my-blue bg-my-blue/10'
-                                    : 'border-gray-300 hover:border-my-blue/70'
+                                className={`w-full text-left p-4 rounded-xl border-2 transition-all focus:outline-none focus:ring-2 focus:ring-light-violet ${selectedAnswerId === answer.id
+                                    ? 'border-dark-blue bg-dark-blue/10'
+                                    : 'border-gray-300 hover:border-dark-blue/70'
                                     }`}
                             >
                                 {answer.text}
@@ -184,8 +184,8 @@ export default function Tests() {
                         onClick={goToPrevious}
                         disabled={currentQuestionIndex === 0}
                         className={`px-6 py-2 rounded-lg text-white font-bold ${currentQuestionIndex === 0
-                            ? 'bg-my-violet cursor-not-allowed'
-                            : 'bg-my-violet hover:bg-gray-500'
+                            ? 'bg-light-violet cursor-not-allowed'
+                            : 'bg-light-violet hover:bg-gray-500'
                             }`}
                     >
                         Previous
@@ -196,8 +196,8 @@ export default function Tests() {
                             onClick={handleSubmit}
                             disabled={!selectedAnswerId}
                             className={`px-6 py-2 rounded-lg font-bold ${!selectedAnswerId
-                                ? 'bg-my-blue/95 text-white cursor-not-allowed'
-                                : 'bg-my-blue text-white hover:opacity-90'
+                                ? 'bg-dark-blue/95 text-white cursor-not-allowed'
+                                : 'bg-dark-blue text-white hover:opacity-90'
                                 }`}
                         >
                             Finish
@@ -207,8 +207,8 @@ export default function Tests() {
                             onClick={goToNext}
                             disabled={!selectedAnswerId}
                             className={`px-6 py-2 font-bold rounded-lg ${!selectedAnswerId
-                                ? 'bg-my-blue/50  cursor-not-allowed'
-                                : 'bg-my-blue  hover:opacity-90'
+                                ? 'bg-dark-blue/50  cursor-not-allowed'
+                                : 'bg-dark-blue  hover:opacity-90'
                                 }`}
                         >
                             Next

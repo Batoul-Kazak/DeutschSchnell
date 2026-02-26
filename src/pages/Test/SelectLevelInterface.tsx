@@ -31,16 +31,16 @@ export default function SelectLevelInterface() {
 
     if (isLoading) {
         return (
-            <div className="flex items-center justify-center min-h-screen bg-my-yellow">
-                <div className="text-my-violet">Lädt Niveaus...</div>
+            <div className="flex items-center justify-center min-h-screen bg-dark-yellow">
+                <div className="text-light-violet">Lädt Niveaus...</div>
             </div>
         );
     }
 
     if (error || !data) {
         return (
-            <div className="flex items-center justify-center min-h-screen bg-my-yellow">
-                <div className="text-my-red">Fehler beim Laden der Testniveaus.</div>
+            <div className="flex items-center justify-center min-h-screen bg-dark-yellow">
+                <div className="text-dark-red">Fehler beim Laden der Testniveaus.</div>
             </div>
         );
     }
@@ -69,7 +69,7 @@ export default function SelectLevelInterface() {
 
             {/* Content container */}
             <div className="flex flex-col items-center justify-center min-h-screen p-4">
-                <div className="absolute top-0 left-0 w-full h-24 bg-my-violet opacity-10"></div>
+                <div className="absolute top-0 left-0 w-full h-24 bg-light-violet opacity-10"></div>
 
                 <div className="w-full max-w-4xl text-center">
                     <h2 className="max-w-md p-10 mx-auto mb-12 text-3xl text-white">
@@ -115,7 +115,7 @@ export default function SelectLevelInterface() {
                     </div>
                 </div>
 
-                <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-my-blue opacity-10 -z-10"></div>
+                <div className="absolute bottom-0 right-0 w-64 h-64 rounded-full bg-dark-blue opacity-10 -z-10"></div>
             </div>
         </div>
     );

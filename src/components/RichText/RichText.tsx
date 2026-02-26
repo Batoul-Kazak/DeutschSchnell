@@ -14,7 +14,7 @@ export default function RichText({
     text,
     replace = false,
     replacement = <span className="underline">_______</span>,
-    className = 'font-bold text-my-orange'
+    className = 'font-bold text-dark-green'
 }: RichTextProps) {
     if (replace) {
         const parts = text.split(/\*\*(.*?)\*\*/g);
