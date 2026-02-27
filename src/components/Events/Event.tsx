@@ -11,13 +11,12 @@ export default function Event({ item }: EventProps) {
             <div key={item.id} className="hidden gap-20 shadow-lg bg-gray-300/80 md:flex place-content-center place-items-center rounded-3xl">
                 <div className="relative h-[10rem] w-[13rem] ">
                     <div className="absolute w-[16rem] top-[50%] -left-10 translate-y-[-50%]">
-                        {/* <div className="h-[10rem] w-[30rem]"></div> */}
                         <img src={item.img} alt={item.skill} className="rounded-3xl w-[20rem] h-[16rem]  shadow-lg" />
                     </div>
                 </div>
                 <div className="flex flex-col gap-1">
                     <div className="px-5 py-1 mb-3 text-center text-indigo-600 bg-white rounded-full">Level: {item.level}</div>
-                    <p className="font-bold text-indigo-600">{item.skill}</p>
+                    <p className="font-bold text-light-violet">{item.skill}</p>
                 </div>
                 <div className="flex flex-col gap-1">
                     <p className="text-gray-500">Date:</p>
@@ -25,7 +24,7 @@ export default function Event({ item }: EventProps) {
                 </div>
                 <div className="flex flex-col gap-1">
                     <p className="text-gray-500">Duration:</p>
-                    <p className="font-bold text-my-orange">{item.duration}</p>
+                    <p className="font-bold text-dark-yellow">{item.duration}</p>
                 </div>
                 <div className="flex flex-col gap-1">
                     <p className="text-gray-500">Price:</p>
@@ -37,27 +36,26 @@ export default function Event({ item }: EventProps) {
                     </div>
                 </div>
             </div>
-            <div className='relative flex flex-col gap-2 px-10 bg-light-violet rounded-2xl md:hidden'>
+            <div className='relative flex flex-col gap-2 px-10 pb-10 bg-light-violet rounded-3xl md:hidden'>
                 <div className='h-[18rem]'></div>
                 <img src={item.img} alt={item.skill} className="rounded-3xl place-self-center rounded-tr-[10rem] rounded-tl-[10rem] absolute -translate-y-20 w-[80%] h-[20rem]  shadow-lg" />
                 <div className='grid grid-cols-1 gap-5 sm:grid-cols-2'>
                     <div className="flex flex-col gap-1 col-span-full">
-                        <div className="px-5 py-1 mb-3 text-center text-indigo-600 bg-white rounded-full">Level: {item.level}</div>
-                        <p className="font-bold text-white">{item.skill}</p>
+                        <div className="px-5 py-1 mb-3 font-bold text-center bg-white rounded-full text-light-violet">Level: {item.level}</div>
+                        <p className="text-gray-800 ">{item.skill}</p>
                     </div>
                     <div className="flex flex-col gap-1">
-                        <p className="text-white md:text-gray-500">Date:</p>
-                        <p className="font-bold text-dark-red">{item.date}</p>
+                        <p className="font-bold text-white md:text-gray-500">Date:</p>
+                        <p className="px-3 py-1 text-white border-2 border-white rounded-2xl bg-dark-red">{item.date}</p>
                     </div>
                     <div className="flex flex-col gap-1">
-                        <p className="text-white md:text-gray-500">Duration:</p>
-                        <p className="font-bold text-my-orange">{item.duration}</p>
+                        <p className="font-bold text-white md:text-gray-500">Duration:</p>
+                        <p className="px-3 py-1 text-white border-2 border-white rounded-2xl bg-dark-green">{item.duration}</p>
                     </div>
                     <div className="flex flex-col gap-1 col-span-full">
-                        <p className="text-white md:text-gray-500">Price:</p>
-                        <p className="font-bold text-dark-blue">${item.price}</p>
+                        <p className="font-bold text-white md:text-gray-500">Price:</p>
+                        <p className="px-3 py-1 text-white border-2 border-white rounded-2xl bg-dark-blue">${item.price}</p>
                     </div>
-
                 </div>
             </div>
         </div>

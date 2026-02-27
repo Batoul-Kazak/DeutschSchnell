@@ -2,9 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import { motion } from "framer-motion"
 import deutschSchnellIcon from "../../../../public/icons/deutschionary_logo.svg";
+import { useTheme } from '../../../context/ThemeProvider';
 
 
-const gradientColors = [
+const gradientDarkColors = [
     '#000000',
     '#222222',
     '#444444',
@@ -26,8 +27,32 @@ const gradientColors = [
     '#fff0b3'
 ];
 
+const gradientLightColors = [
+    '#999',
+    '#AAA',
+    '#BBB',
+    '#CCC',
+    '#880000',
+    '#aa0000',
+    '#cc0000',
+    '#e63900',
+    '#ff4500',
+    '#ff6300',
+    '#ff7700',
+    '#ff8c00',
+    '#ffa500',
+    '#ffb733',
+    '#ffc966',
+    '#ffd700',
+    '#ffe033',
+    '#ffea66',
+    '#fff0b3'
+];
+
 
 export default function Logo() {
+    const { theme } = useTheme();
+
     return (
         <div className="flex gap-4 hover:cursor-pointer" >
             <Link to="/">
@@ -42,7 +67,7 @@ export default function Logo() {
 
                     <span className="tracking-[-0.05em] " >
                         {Array.from("DeutschSchnell").map((char, index) => {
-                            const color = gradientColors[index % gradientColors.length];
+                            const color = theme === "dark" ? gradientLightColors[index % gradientLightColors.length] : gradientDarkColors[index % gradientDarkColors.length];;
 
                             return (
                                 <span

@@ -14,9 +14,9 @@ const events = [
 ]
 
 const Events = () => {
-    return <div id="events" className="flex flex-col gap-10 place-content-center place-items-center">
-        <h2 className="font-bold text-indigo-600 uppercase">Schedule</h2>
-        <h1 className="pb-20 text-4xl font-bold">Upcoming Events</h1>
+    return <div id="events" className="flex flex-col gap-10 dark:text-white place-content-center place-items-center">
+        <h2 className="text-2xl font-bold uppercase text-light-violet">Schedule</h2>
+        <h1 className="pb-20 text-4xl font-bold text-center">Upcoming Events</h1>
         <div className="flex flex-col gap-[7rem]">
             {events.map((item: EventProp) =>
                 <Event item={item} />

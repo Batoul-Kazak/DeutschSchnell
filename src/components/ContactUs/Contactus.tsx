@@ -51,10 +51,10 @@ const Contactus = () => {
             <div className="absolute hidden md:flex top-0 bottom-0 left-0 h-[40rem] w-[65%] z-10 bg-gray-300 rounded-tr-full rounded-br-full">
                 <div className="flex p-10 lg:pl-20 md:pl-5 w-[30rem] flex-col gap-[3rem] place-content-center ">
                     <div>
-                        <h2 className="p-5 font-bold text-indigo-600 uppercase">Contact Us</h2>
+                        <h2 className="p-5 font-bold uppercase text-light-violet">Contact Us</h2>
                         <h1 className="text-4xl font-bold ">Feel free to contact us anytime</h1>
                     </div>
-                    <p className="text-sm text-gray-700">
+                    <p className="text-sm text-gray-700 dark:text-gray-200">
                         Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of charge.
                     </p>
                 </div>
@@ -62,10 +62,10 @@ const Contactus = () => {
 
             <div className='flex flex-col gap-5 px-6 md:hidden'>
                 <div className='text-center'>
-                    <h2 className="p-5 text-2xl font-bold text-indigo-600 uppercase">Contact Us</h2>
-                    <h1 className="text-4xl font-bold ">Feel free to contact us anytime</h1>
+                    <h2 className="p-5 text-2xl font-bold uppercase text-light-violet">Contact Us</h2>
+                    <h1 className="text-4xl font-bold dark:text-white">Feel free to contact us anytime</h1>
                 </div>
-                <p className="text-sm text-center text-gray-700">
+                <p className="text-sm text-center text-gray-700 dark:text-gray-200">
                     Thank you for choosing our templates. We provide you best CSS templates at absolutely 100% free of charge.
                 </p>
             </div>
@@ -129,7 +129,7 @@ const Contactus = () => {
                     <button
                         type="submit"
                         disabled={isSubmitting}
-                        className="px-5 py-2 text-indigo-600 place-self-center bg-white md:rounded-full rounded-xl sm:rounded-2xl lg:w-[50%] md:w-[80%] w-full font-bold disabled:opacity-50"
+                        className="px-5 py-2 text-light-violet place-self-center bg-white md:rounded-full rounded-xl sm:rounded-2xl lg:w-[50%] md:w-[80%] w-full font-bold disabled:opacity-50"
                     >
                         {isSubmitting ? "Sending..." : "Send Message Now"}
                     </button>
