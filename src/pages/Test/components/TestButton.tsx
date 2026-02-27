@@ -5,7 +5,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
     children: React.ReactNode;
 }
 
-export default function Button({
+export default function TestButton({
     variant = 'nav-blue',
     className = '',
     disabled,

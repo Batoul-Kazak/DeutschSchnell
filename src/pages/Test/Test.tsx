@@ -4,6 +4,9 @@ import NotFound from '../NotFound';
 import { useTestLogic } from '../../hooks/useTestLogic';
 import deutschSchnellIcon from '../../../public/icons/deutschionary_logo.svg';
 import ThemeSwitcher from '../../components/ThemeSwitcher/ThemeSwitcher';
+import TestButton from './components/TestButton';
+import LoadingTest from './components/LoadingTest';
+import FinishedTest from './components/FinishedTest';
 
 export default function Tests() {
     const { level } = useParams<{ level: string }>();
@@ -48,35 +51,7 @@ export default function Tests() {
 
     if (isLoading) {
         return (
-            <div className="relative flex items-center justify-center min-h-screen overflow-hidden bg-dark-yellow">
-                <div
-                    className="absolute inset-0 -z-20"
-                    style={{
-                        backgroundImage: 'url(/images/C2.jpg)',
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center',
-                        backgroundRepeat: 'no-repeat',
-                        backgroundAttachment: 'fixed',
-                    }}
-                />
-
-                <div className="absolute inset-0 -z-10 bg-black/70"></div>
-
-                <div className="flex flex-col items-center gap-6 px-6 text-center">
-                    <div className="relative">
-                        <div className="w-16 h-16 border-4 border-transparent rounded-full border-t-light-violet animate-spin"></div>
-                        <div className="absolute inset-0 w-16 h-16 border-4 border-transparent rounded-full opacity-50 border-b-white animate-spin"></div>
-                    </div>
-
-                    <div className="text-xl font-bold tracking-wide text-white md:text-2xl">
-                        Loading {level} test...
-                    </div>
-
-                    <div className="w-32 h-1 overflow-hidden rounded-full bg-light-violet/30">
-                        <div className="w-1/3 h-full bg-light-violet animate-pulse"></div>
-                    </div>
-                </div>
-            </div>
+            <LoadingTest level={level} />
         );
     }
 
@@ -85,41 +60,11 @@ export default function Tests() {
     }
 
     if (isFinished) {
-        const { score, earned, total } = getResult();
-        return (
-            <div className="flex items-center justify-center min-h-screen p-4" style={{
-                backgroundImage: `url(/images/C2.jpg)`,
-                backgroundSize: 'cover',
-                backgroundPosition: 'center',
-                backgroundRepeat: 'no-repeat',
-                backgroundAttachment: 'fixed',
-
-            }}>
-                <div className="w-full max-w-md p-8 py-12 text-center bg-white shadow-xl rounded-2xl">
-                    <h2 className="mb-4 text-4xl font-bold text-light-violet">{level} Test Completed!</h2>
-                    <h3 className='py-3 text-3xl text-dark-red'>{feedback.title}</h3>
-                    <div className="mb-2 text-5xl font-bold text-dark-blue">{score}%</div>
-                    <p className="mb-6 ">{earned} from {total} Question</p>
-                    <p className='pb-8 text-light-violet'>{feedback.message}</p>
-                    <button
-                        onClick={reset}
-                        className="px-6 py-2 font-bold text-white transition rounded-full bg-light-violet hover:opacity-90"
-                    >
-                        Restart
-                    </button>
-                    <button
-                        onClick={() => navigate('/')}
-                        className="px-6 py-2 ml-10 font-bold text-white transition rounded-full bg-light-violet hover:opacity-90"
-                    >
-                        To Home Page
-                    </button>
-                </div>
-            </div>
-        );
+        <FinishedTest getResult={getResult} />
     }
 
     return (
-        <div className="min-h-screen p-4 overflow-y-auto text-sm bg-white sm:text-base dark:text-white text-light-violet dark:bg-gray-800 md:p-6 custom-scrollbar">
+        <div className="min-h-screen p-4 overflow-y-auto text-sm bg-gray-100 sm:text-base dark:text-white text-light-violet dark:bg-gray-800 md:p-6 custom-scrollbar">
             <div
                 className="absolute inset-0 -z-10"
                 style={{
@@ -133,13 +78,15 @@ export default function Tests() {
             <div className="absolute inset-0 -z-10 bg-black/70"></div>
 
             <div className="flex flex-col items-center justify-between gap-4 mb-6 md:flex-row">
-                <h1 className="flex items-center content-center gap-3 text-2xl font-bold text-violet-200">
+                <h1 className="flex items-center content-center gap-3 text-2xl font-bold text-light-violet dark:text-white">
                     <img src={deutschSchnellIcon} alt="logo" className="w-10 h-10" />
                     {level} German Test</h1>
                 <div className="px-4 py-2 font-mono font-bold text-white rounded-lg bg-dark-red dark:bg-light-red">
                     {formatTime(timeLeft)}
                 </div>
-                <ThemeSwitcher />
+                <div className='py-2 bg-black rounded-full dark:bg-light-yellow'>
+                    <ThemeSwitcher />
+                </div>
 
             </div>
             <hr className="h-1 bg-light-violet" />
@@ -149,7 +96,6 @@ export default function Tests() {
                     className="transition-all duration-300 rounded-full bg-dark-blue dark:bg-light-blue"
                     style={{ width: `${(currentQuestionIndex / questions.length) * 100}%` }}
                 />
-
             </div>
 
             <div className="overflow-hidden rounded-2xl">
@@ -169,7 +115,7 @@ export default function Tests() {
                                 onClick={() => handleAnswerSelect(answer.id)}
                                 className={`w-full text-left p-4 rounded-xl border-2 transition-all focus:outline-none focus:ring-2 focus:ring-light-violet 
                                     ${selectedAnswerId === answer.id
-                                        ? 'border-dark-blue dark:bg-light-violet bg-dark-violet/80'
+                                        ? 'border-dark-blue text-white bg-light-violet'
                                         : 'border-gray-300 dark:hover:border-light-blue/90 hover:border-dark-blue'
                                     }`}
                             >
@@ -180,39 +126,30 @@ export default function Tests() {
                 </div>
 
                 <div className="flex justify-between p-6 ">
-                    <button
+                    <TestButton
+                        variant="nav-violet"
                         onClick={goToPrevious}
                         disabled={currentQuestionIndex === 0}
-                        className={`sm:px-6 px-3 py-2 rounded-lg text-white font-bold ${currentQuestionIndex === 0
-                            ? 'bg-dark-violet/80 dark:bg-light-violet/80 cursor-not-allowed'
-                            : 'bg-dark-violet dark:bg-light-violet hover:bg-gray-200'
-                            }`}
                     >
                         Previous
-                    </button>
+                    </TestButton>
 
                     {currentQuestionIndex === questions.length - 1 ? (
-                        <button
+                        <TestButton
+                            variant="nav-blue"
                             onClick={handleSubmit}
                             disabled={!selectedAnswerId}
-                            className={`sm:px-6 px-3 py-2 rounded-lg font-bold ${!selectedAnswerId
-                                ? 'bg-dark-blue/80 dark:bg-light-blue/80  text-white cursor-not-allowed'
-                                : 'bg-dark-blue dark:bg-light-blue text-white hover:opacity-90'
-                                }`}
                         >
                             Finish
-                        </button>
+                        </TestButton>
                     ) : (
-                        <button
+                        <TestButton
+                            variant="nav-blue"
                             onClick={goToNext}
                             disabled={!selectedAnswerId}
-                            className={`sm:px-6 px-3 py-2 font-bold rounded-lg ${!selectedAnswerId
-                                ? 'bg-dark-blue/80 dark:bg-light-blue/80  cursor-not-allowed'
-                                : 'bg-dark-blue dark:bg-light-blue  hover:opacity-90'
-                                }`}
                         >
                             Next
-                        </button>
+                        </TestButton>
                     )}
                 </div>
             </div>
