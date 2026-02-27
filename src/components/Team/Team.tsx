@@ -18,7 +18,7 @@ const Team = () => {
         setCurrentTestimonial(prevIndex);
     }
 
-    return <div id="team" className="flex flex-col gap-10 place-content-center place-items-center">
+    return <div id="team" className="flex-col hidden gap-10 lg:flex place-content-center place-items-center">
         <div className="grid  lg:gap-10 md:w-auto w-[90%] gap-[40px] lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-1 place-content-center place-items-center">
             {TEAM_MEMBERS.map((member) => (
                 <TeamMember member={member} />

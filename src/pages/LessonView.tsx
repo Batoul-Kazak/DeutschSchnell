@@ -39,12 +39,14 @@ const LessonView = () => {
     if (!currentLesson) return <div className="p-10 text-yellow-300">Lesson not found. Check URL and db.json key.</div>;
 
     return (
-        <div className="relative flex flex-col gap-20 text-gray-800">
-            <Navbar navItems={lessonTags} isShowSearch={false} ><Timer /></Navbar>
+        <div className="relative flex flex-col gap-20 text-gray-800 dark:bg-gray-900 dark:text-white">
+            <Navbar navItems={lessonTags} isShowSearch={false} >
+                <Timer />
+            </Navbar>
             <div className="relative p-4 pt-20 sm:p-10 place-content-center">
                 <h1 className="text-4xl">
                     Lesson {currentLesson.lessonNumber}:{" "}
-                    <span className="text-[2.4rem] text-dark-red font-bold">
+                    <span className="text-[2.4rem] text-dark-red dark:text-light-red font-bold">
                         {currentLesson.title}
                     </span>
                 </h1>

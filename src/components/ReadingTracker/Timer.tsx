@@ -18,10 +18,13 @@ export default function Timer() {
 
     return (
         <div>
-            <div className="flex top-2 border-2 left-10 z-[1000] flex-col items-start w-full gap-2 p-3 bg-black/20 text-white  rounded-lg  backdrop-blur-sm">
+            <div className="sm:flex hidden top-2 border-2 left-10 z-[1000] flex-col items-start w-full gap-2 p-3 bg-black/20 text-white  rounded-lg  backdrop-blur-sm">
                 <div className="font-mono ">
                     ⏱ {formatTime(seconds)}
                 </div>
+            </div>
+            <div className='fixed left-0 flex w-full p-2 text-sm bottom-2 sm:hidden bg-dark-violet'>
+                ⏱ {formatTime(seconds)}
             </div>
         </div>
     )
