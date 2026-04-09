@@ -7,6 +7,7 @@ import ThemeSwitcher from '../../components/ThemeSwitcher/ThemeSwitcher';
 import TestButton from './components/TestButton';
 import LoadingTest from './components/LoadingTest';
 import FinishedTest from './components/FinishedTest';
+import { useEffect } from 'react';
 
 export default function Tests() {
     const { level } = useParams<{ level: string }>();
@@ -14,7 +15,7 @@ export default function Tests() {
 
     const { data, isLoading, error } = useQuery({
         queryKey: ['testData', level],
-        queryFn: () => fetch('/data/german-test.json').then(res => {
+        queryFn: () => fetch(`/data/tests/${level}.json`).then(res => {
             if (!res.ok) throw new Error('Failed to load test data');
             return res.json();
         }),
@@ -40,13 +41,17 @@ export default function Tests() {
         currentQuestion,
         selectedAnswerId,
         questions,
-    } = useTestLogic({ levelData: data?.[level], level });
+    } = useTestLogic({ levelData: data, level });
 
     const formatTime = (seconds: number): string => {
         const mins = Math.floor(seconds / 60);
         const secs = seconds % 60;
         return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
     };
+
+    useEffect(() => {
+        console.log(data);
+    })
 
 
     if (isLoading) {
@@ -56,11 +61,11 @@ export default function Tests() {
     }
 
     if (error || !data || !data[level]) {
-        return <NotFound message="Sorry the requested test in unavaliable for now, we are working on adding more tests!" link="tests" buttonText="Go Back to Tests Page" />;
+        return <NotFound message="Sorry the requested test in unavailable for now, we are working on adding more tests!" link="tests" buttonText="Go Back to Tests Page" />;
     }
 
     if (isFinished) {
-        <FinishedTest getResult={getResult} />
+        return <FinishedTest getResult={getResult} feedback={feedback} reset={reset} navigate={navigate} level={level} />
     }
 
     return (

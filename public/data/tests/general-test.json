@@ -1,0 +1,496 @@
+{
+  "General": {
+    "timeLimitMinutes": 60,
+    "questions": [
+      {
+        "id": "gen-q1",
+        "text": "Wie sagt man 'Hello' auf Deutsch?",
+        "answers": [
+          { "id": "a", "text": "Tschüss" },
+          { "id": "b", "text": "Hallo" },
+          { "id": "c", "text": "Danke" },
+          { "id": "d", "text": "Bitte" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "gen-q2",
+        "text": "Was ist 'der Apfel' auf Englisch?",
+        "answers": [
+          { "id": "a", "text": "Orange" },
+          { "id": "b", "text": "Banana" },
+          { "id": "c", "text": "Apple" },
+          { "id": "d", "text": "Grape" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 1
+      },
+      {
+        "id": "gen-q3",
+        "text": "Vervollständige: 'Ich ___ aus Deutschland.'",
+        "answers": [
+          { "id": "a", "text": "bin" },
+          { "id": "b", "text": "bist" },
+          { "id": "c", "text": "ist" },
+          { "id": "d", "text": "sind" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 1
+      },
+      {
+        "id": "gen-q4",
+        "text": "Welches Wort passt? 'Guten ___!' (am Morgen)",
+        "answers": [
+          { "id": "a", "text": "Abend" },
+          { "id": "b", "text": "Nacht" },
+          { "id": "c", "text": "Morgen" },
+          { "id": "d", "text": "Tag" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 1
+      },
+      {
+        "id": "gen-q5",
+        "text": "Was ist das Gegenteil von 'groß'?",
+        "answers": [
+          { "id": "a", "text": "lang" },
+          { "id": "b", "text": "klein" },
+          { "id": "c", "text": "alt" },
+          { "id": "d", "text": "neu" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "gen-q6",
+        "text": "Welcher Satz ist korrekt im Perfekt?",
+        "answers": [
+          { "id": "a", "text": "Ich habe gespielt." },
+          { "id": "b", "text": "Ich bin gespielt." },
+          { "id": "c", "text": "Ich habe spielen." },
+          { "id": "d", "text": "Ich spielte." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "gen-q7",
+        "text": "Was bedeutet 'möchten'?",
+        "answers": [
+          { "id": "a", "text": "must" },
+          { "id": "b", "text": "can" },
+          { "id": "c", "text": "would like" },
+          { "id": "d", "text": "should" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 2
+      },
+      {
+        "id": "gen-q8",
+        "text": "Vervollständige: 'Ich interessiere mich ___ Musik.'",
+        "answers": [
+          { "id": "a", "text": "für" },
+          { "id": "b", "text": "über" },
+          { "id": "c", "text": "mit" },
+          { "id": "d", "text": "an" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "gen-q9",
+        "text": "Welcher Satz verwendet den Dativ korrekt?",
+        "answers": [
+          { "id": "a", "text": "Ich helfe dem Mann." },
+          { "id": "b", "text": "Ich helfe den Mann." },
+          { "id": "c", "text": "Ich helfe der Mann." },
+          { "id": "d", "text": "Ich helfe das Mann." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "gen-q10",
+        "text": "Was bedeutet 'trotzdem'?",
+        "answers": [
+          { "id": "a", "text": "therefore" },
+          { "id": "b", "text": "however / nevertheless" },
+          { "id": "c", "text": "because" },
+          { "id": "d", "text": "although" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "gen-q11",
+        "text": "Vervollständige: 'Wenn ich Zeit ___, komme ich.'",
+        "answers": [
+          { "id": "a", "text": "habe" },
+          { "id": "b", "text": "hatte" },
+          { "id": "c", "text": "hätte" },
+          { "id": "d", "text": "haben" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "gen-q12",
+        "text": "Welches Verb ist trennbar?",
+        "answers": [
+          { "id": "a", "text": "verstehen" },
+          { "id": "b", "text": "besuchen" },
+          { "id": "c", "text": "aufstehen" },
+          { "id": "d", "text": "verkaufen" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 2
+      },
+      {
+        "id": "gen-q13",
+        "text": "Was ist die Präteritum-Form von 'sein'?",
+        "answers": [
+          { "id": "a", "text": "war" },
+          { "id": "b", "text": "ist" },
+          { "id": "c", "text": "gewesen" },
+          { "id": "d", "text": "wurde" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "gen-q14",
+        "text": "Welcher Satz ist im Passiv?",
+        "answers": [
+          { "id": "a", "text": "Der Brief wird geschrieben." },
+          { "id": "b", "text": "Er schreibt den Brief." },
+          { "id": "c", "text": "Er hat den Brief geschrieben." },
+          { "id": "d", "text": "Er schrieb den Brief." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "gen-q15",
+        "text": "Vervollständige: 'Je mehr, ___ besser.'",
+        "answers": [
+          { "id": "a", "text": "desto" },
+          { "id": "b", "text": "so" },
+          { "id": "c", "text": "wie" },
+          { "id": "d", "text": "als" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "gen-q16",
+        "text": "Was bedeutet 'sich beeilen'?",
+        "answers": [
+          { "id": "a", "text": "to relax" },
+          { "id": "b", "text": "to hurry" },
+          { "id": "c", "text": "to sleep" },
+          { "id": "d", "text": "to eat" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "gen-q17",
+        "text": "Welche Präposition verlangt den Genitiv?",
+        "answers": [
+          { "id": "a", "text": "wegen" },
+          { "id": "b", "text": "mit" },
+          { "id": "c", "text": "für" },
+          { "id": "d", "text": "ohne" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "gen-q18",
+        "text": "Vervollständige: 'Ich wünschte, ich ___ reich.'",
+        "answers": [
+          { "id": "a", "text": "bin" },
+          { "id": "b", "text": "war" },
+          { "id": "c", "text": "wäre" },
+          { "id": "d", "text": "werde" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 3
+      },
+      {
+        "id": "gen-q19",
+        "text": "Was bedeutet 'hingegen'?",
+        "answers": [
+          { "id": "a", "text": "therefore" },
+          { "id": "b", "text": "in contrast / however" },
+          { "id": "c", "text": "furthermore" },
+          { "id": "d", "text": "finally" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "gen-q20",
+        "text": "Welcher Satz ist eine korrekte Nominalisierung? 'Weil es regnete...'",
+        "answers": [
+          { "id": "a", "text": "Wegen des Regens..." },
+          { "id": "b", "text": "Trotz des Regens..." },
+          { "id": "c", "text": "Um des Regens..." },
+          { "id": "d", "text": "Für den Regen..." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "gen-q21",
+        "text": "Was bedeutet 'etwas ins Gewicht fallen'?",
+        "answers": [
+          { "id": "a", "text": "to be heavy" },
+          { "id": "b", "text": "to matter significantly" },
+          { "id": "c", "text": "to fall down" },
+          { "id": "d", "text": "to be light" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "gen-q22",
+        "text": "Vervollständige: '___ aller Kritik machte er weiter.'",
+        "answers": [
+          { "id": "a", "text": "Wegen" },
+          { "id": "b", "text": "Trotz" },
+          { "id": "c", "text": "Während" },
+          { "id": "d", "text": "Statt" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "gen-q23",
+        "text": "Was bedeutet 'sich einsetzen für'?",
+        "answers": [
+          { "id": "a", "text": "to sit down" },
+          { "id": "b", "text": "to advocate for" },
+          { "id": "c", "text": "to apply for" },
+          { "id": "d", "text": "to wait for" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "gen-q24",
+        "text": "Welcher Satz ist im Konjunktiv I?",
+        "answers": [
+          { "id": "a", "text": "Er sagt, er sei krank." },
+          { "id": "b", "text": "Er sagt, er ist krank." },
+          { "id": "c", "text": "Er sagte, er wäre krank." },
+          { "id": "d", "text": "Er ist krank." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "gen-q25",
+        "text": "Was bedeutet 'kontrovers'?",
+        "answers": [
+          { "id": "a", "text": "clear" },
+          { "id": "b", "text": "controversial" },
+          { "id": "c", "text": "boring" },
+          { "id": "d", "text": "simple" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "gen-q26",
+        "text": "Vervollständige: 'Es steht außer ___, dass...' ",
+        "answers": [
+          { "id": "a", "text": "Frage" },
+          { "id": "b", "text": "Zweifel" },
+          { "id": "c", "text": "Diskussion" },
+          { "id": "d", "text": "Kontrolle" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "gen-q27",
+        "text": "Was bedeutet 'die Kluft'?",
+        "answers": [
+          { "id": "a", "text": "the bridge" },
+          { "id": "b", "text": "the gap / divide" },
+          { "id": "c", "text": "the union" },
+          { "id": "d", "text": "the path" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "gen-q28",
+        "text": "Welches Wort ist ein Synonym für 'nachhaltig'?",
+        "answers": [
+          { "id": "a", "text": "kurzfristig" },
+          { "id": "b", "text": "dauerhaft" },
+          { "id": "c", "text": "schnell" },
+          { "id": "d", "text": "teuer" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "gen-q29",
+        "text": "Was bedeutet 'etwas zur Sprache bringen'?",
+        "answers": [
+          { "id": "a", "text": "to speak loudly" },
+          { "id": "b", "text": "to raise a topic" },
+          { "id": "c", "text": "to learn German" },
+          { "id": "d", "text": "to silence someone" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "gen-q30",
+        "text": "Vervollständige: 'Man sollte diese Chance nicht ___ Acht lassen.'",
+        "answers": [
+          { "id": "a", "text": "außer" },
+          { "id": "b", "text": "inner" },
+          { "id": "c", "text": "über" },
+          { "id": "d", "text": "unter" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "gen-q31",
+        "text": "Was bedeutet 'ambivalent'?",
+        "answers": [
+          { "id": "a", "text": "very happy" },
+          { "id": "b", "text": "having mixed feelings" },
+          { "id": "c", "text": "angry" },
+          { "id": "d", "text": "sure" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "gen-q32",
+        "text": "Welcher Satz verwendet 'geschweige denn' korrekt?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Er kann nicht lesen, geschweige denn schreiben."
+          },
+          {
+            "id": "b",
+            "text": "Er kann lesen, geschweige denn er kann schreiben."
+          },
+          { "id": "c", "text": "Geschweige denn er liest, schreibt er." },
+          { "id": "d", "text": "Er liest nicht, geschweige denn schreibt." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "gen-q33",
+        "text": "Was bedeutet 'kontraproduktiv'?",
+        "answers": [
+          { "id": "a", "text": "productive" },
+          { "id": "b", "text": "counterproductive" },
+          { "id": "c", "text": "useful" },
+          { "id": "d", "text": "fast" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "gen-q34",
+        "text": "Vervollständige: '___ man die Daten analysiert, erkennt man den Trend.'",
+        "answers": [
+          { "id": "a", "text": "Indem" },
+          { "id": "b", "text": "Ohne" },
+          { "id": "c", "text": "Statt" },
+          { "id": "d", "text": "Trotz" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "gen-q35",
+        "text": "Was bedeutet 'bedauerlicherweise'?",
+        "answers": [
+          { "id": "a", "text": "hopefully" },
+          { "id": "b", "text": "regrettably" },
+          { "id": "c", "text": "angrily" },
+          { "id": "d", "text": "quickly" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "gen-q36",
+        "text": "Welcher Satz ist stilistisch am besten (Nominalstil)?",
+        "answers": [
+          { "id": "a", "text": "Weil die Preise steigen, kaufen wir weniger." },
+          { "id": "b", "text": "Wegen steigender Preise kaufen wir weniger." },
+          {
+            "id": "c",
+            "text": "Obwohl die Preise steigen, kaufen wir weniger."
+          },
+          { "id": "d", "text": "Wenn die Preise steigen, kaufen wir weniger." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "gen-q37",
+        "text": "Was bedeutet 'die Skepsis'?",
+        "answers": [
+          { "id": "a", "text": "trust" },
+          { "id": "b", "text": "skepticism" },
+          { "id": "c", "text": "joy" },
+          { "id": "d", "text": "fear" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "gen-q38",
+        "text": "Vervollständige: 'Es bedarf ___ besonderen Anstrengung.'",
+        "answers": [
+          { "id": "a", "text": "einer" },
+          { "id": "b", "text": "eine" },
+          { "id": "c", "text": "einem" },
+          { "id": "d", "text": "eines" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "gen-q39",
+        "text": "Was bedeutet 'etwas auf die lange Bank schieben'?",
+        "answers": [
+          { "id": "a", "text": "to finish quickly" },
+          { "id": "b", "text": "to procrastinate" },
+          { "id": "c", "text": "to organize well" },
+          { "id": "d", "text": "to throw away" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "gen-q40",
+        "text": "Welcher Ausdruck ist am formellsten?",
+        "answers": [
+          { "id": "a", "text": "Wir bitten Sie nachdrücklich..." },
+          { "id": "b", "text": "Sie müssen jetzt..." },
+          { "id": "c", "text": "Könnten Sie vielleicht..." },
+          { "id": "d", "text": "Machen Sie mal..." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      }
+    ]
+  }
+}

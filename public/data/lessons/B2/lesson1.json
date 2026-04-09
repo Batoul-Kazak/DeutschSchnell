@@ -1,0 +1,508 @@
+{
+  "lessons": [
+    {
+      "id": "b2-l1-4e2c",
+      "course": "B2",
+      "lessonNumber": 1,
+      "image": "/images/B2-lesson1.jpg",
+      "title": "Debating Social Issues",
+      "time": "53min",
+      "description": "Engage in structured debates on topics like immigration or education, using nuanced arguments and counter-arguments in fluent German.",
+      "tags": ["society", "debate", "argumentation", "nuance"],
+      "completed": false,
+      "prevLessonId": "b1-l9-1d8f",
+      "nextLessonId": "b2-l2-9f6a",
+
+      "vocabulary": [
+        { "de": "die Gesellschaft", "en": "society", "category": "Nouns" },
+        { "de": "die Integration", "en": "integration", "category": "Nouns" },
+        { "de": "die Migration", "en": "migration", "category": "Nouns" },
+        {
+          "de": "die Chancengleichheit",
+          "en": "equal opportunity",
+          "category": "Nouns"
+        },
+        {
+          "de": "die Diskriminierung",
+          "en": "discrimination",
+          "category": "Nouns"
+        },
+        { "de": "die Vorurteile", "en": "prejudices", "category": "Nouns" },
+        {
+          "de": "der Zusammenhalt",
+          "en": "cohesion/solidarity",
+          "category": "Nouns"
+        },
+        { "de": "die Kluft", "en": "gap/divide", "category": "Nouns" },
+        { "de": "die Maßnahme", "en": "measure/action", "category": "Nouns" },
+        { "de": "die Folge", "en": "consequence", "category": "Nouns" },
+        { "de": "der Aspekt", "en": "aspect", "category": "Nouns" },
+        { "de": "die Perspektive", "en": "perspective", "category": "Nouns" },
+        { "de": "die Kontroverse", "en": "controversy", "category": "Nouns" },
+        { "de": "der Konsens", "en": "consensus", "category": "Nouns" },
+        { "de": "integrieren", "en": "to integrate", "category": "Verbs" },
+        { "de": "ausschließen", "en": "to exclude", "category": "Verbs" },
+        { "de": "fördern", "en": "to promote/support", "category": "Verbs" },
+        {
+          "de": "benachteiligen",
+          "en": "to disadvantage",
+          "category": "Verbs"
+        },
+        {
+          "de": "hinterfragen",
+          "en": "to question/challenge",
+          "category": "Verbs"
+        },
+        { "de": "bewirken", "en": "to effect/cause", "category": "Verbs" },
+        {
+          "de": "verschärfen",
+          "en": "to aggravate/intensify",
+          "category": "Verbs"
+        },
+        { "de": "lösen", "en": "to solve", "category": "Verbs" },
+        { "de": "abwägen", "en": "to weigh up", "category": "Verbs" },
+        {
+          "de": "befürworten",
+          "en": "to advocate/support",
+          "category": "Verbs"
+        },
+        { "de": "ablehnen", "en": "to reject", "category": "Verbs" },
+        {
+          "de": "gesellschaftlich",
+          "en": "societal",
+          "category": "Adjectives"
+        },
+        { "de": "kontrovers", "en": "controversial", "category": "Adjectives" },
+        { "de": "nachhaltig", "en": "sustainable", "category": "Adjectives" },
+        { "de": "dringend", "en": "urgent", "category": "Adjectives" },
+        { "de": "angemessen", "en": "appropriate", "category": "Adjectives" },
+        {
+          "de": "unverhältnismäßig",
+          "en": "disproportionate",
+          "category": "Adjectives"
+        },
+        { "de": "vielfältig", "en": "diverse", "category": "Adjectives" },
+        { "de": "einseitig", "en": "one-sided", "category": "Adjectives" },
+        { "de": "objektiv", "en": "objective", "category": "Adjectives" },
+        { "de": "subjektiv", "en": "subjective", "category": "Adjectives" },
+        { "de": "zweifellos", "en": "undoubtedly", "category": "Adverbs" },
+        {
+          "de": "gegebenenfalls",
+          "en": "if necessary/applicable",
+          "category": "Adverbs"
+        },
+        { "de": "grundsätzlich", "en": "in principle", "category": "Adverbs" },
+        {
+          "de": "hingegen",
+          "en": "however/in contrast",
+          "category": "Connectors"
+        },
+        { "de": "folglich", "en": "consequently", "category": "Connectors" },
+        { "de": "demzufolge", "en": "accordingly", "category": "Connectors" },
+        {
+          "de": "im Gegensatz dazu",
+          "en": "in contrast to that",
+          "category": "Phrases"
+        },
+        { "de": "darüber hinaus", "en": "furthermore", "category": "Phrases" },
+        {
+          "de": "es steht außer Frage",
+          "en": "it is beyond question",
+          "category": "Phrases"
+        },
+        {
+          "de": "ins Gewicht fallen",
+          "en": "to carry weight/matter",
+          "category": "Phrases"
+        }
+      ],
+
+      "dialogue": [
+        {
+          "personName": "Dr. Schmidt",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Herr Klein, **es steht außer Frage**, dass die **Integration** eine der größten **Herausforderungen** unserer Zeit ist.",
+              "en": "Mr. Klein, it is beyond question that integration is one of the greatest challenges of our time."
+            }
+          ]
+        },
+        {
+          "personName": "Herr Klein",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Da stimme ich Ihnen zu. **Allerdings** bin ich der Ansicht, dass die bisherigen **Maßnahmen** nicht ausreichen.",
+              "en": "I agree with you there. However, I am of the opinion that the measures taken so far are not sufficient."
+            }
+          ]
+        },
+        {
+          "personName": "Dr. Schmidt",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Wie meinen Sie das? **Fördern** wir nicht bereits Sprachkurse und Berufsprogramme?",
+              "en": "What do you mean by that? Are we not already promoting language courses and vocational programs?"
+            }
+          ]
+        },
+        {
+          "personName": "Herr Klein",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Ja, aber **einseitig**. **Im Gegensatz dazu** fehlen Angebote für den kulturellen Austausch auf Augenhöhe.",
+              "en": "Yes, but one-sidedly. In contrast to that, offers for cultural exchange on an equal footing are lacking."
+            }
+          ]
+        },
+        {
+          "personName": "Dr. Schmidt",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Das ist ein wichtiger Punkt. **Dennoch** darf man nicht vergessen, dass auch die Bereitschaft zur Anpassung seitens der Migranten **ins Gewicht fällt**.",
+              "en": "That is an important point. Nevertheless, one must not forget that the willingness to adapt on the part of migrants also carries weight."
+            }
+          ]
+        },
+        {
+          "personName": "Herr Klein",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "**Zweifellos**. Aber **grundsätzlich** führt Ausgrenzung eher zu **Vorurteilen** als zu Integration.",
+              "en": "Undoubtedly. But in principle, exclusion leads more to prejudices than to integration."
+            }
+          ]
+        },
+        {
+          "personName": "Dr. Schmidt",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Sie haben recht. Wir müssen **abwägen**: Wie schaffen wir **Chancengleichheit**, ohne die Identität der Aufnahmegesellschaft zu gefährden?",
+              "en": "You are right. We must weigh up: How do we create equal opportunity without endangering the identity of the host society?"
+            }
+          ]
+        },
+        {
+          "personName": "Herr Klein",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Indem wir **Vielfalt** als Stärke begreifen. **Darüber hinaus** sollten wir **Diskriminierung** auf dem Arbeitsmarkt härter sanktionieren.",
+              "en": "By understanding diversity as a strength. Furthermore, we should sanction discrimination in the labor market more harshly."
+            }
+          ]
+        },
+        {
+          "personName": "Dr. Schmidt",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Eine **kontroverse** Forderung. Würde das nicht Unternehmen **übermäßig belasten**?",
+              "en": "A controversial demand. Would that not overburden companies excessively?"
+            }
+          ]
+        },
+        {
+          "personName": "Herr Klein",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Nein, es würde sie fairer machen. **Folglich** wäre die **Gesellschaft** langfristig stabiler.",
+              "en": "No, it would make them fairer. Consequently, society would be more stable in the long term."
+            }
+          ]
+        },
+        {
+          "personName": "Dr. Schmidt",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Ich sehe Ihre Logik. Vielleicht sollten wir einen **Kompromiss** finden: Anreize statt nur Strafen.",
+              "en": "I see your logic. Perhaps we should find a compromise: Incentives instead of only penalties."
+            }
+          ]
+        },
+        {
+          "personName": "Herr Klein",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Dem kann ich **befürworten**. Ein Mix aus Förderung und Klarheit wäre **nachhaltig**.",
+              "en": "I can support that. A mix of support and clarity would be sustainable."
+            }
+          ]
+        },
+        {
+          "personName": "Dr. Schmidt",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Dann sind wir uns **einig**: Der Weg ist schwierig, aber notwendig.",
+              "en": "Then we agree: The path is difficult, but necessary."
+            }
+          ]
+        },
+        {
+          "personName": "Herr Klein",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Absolut. Es ist eine **gesellschafliche Pflicht**.",
+              "en": "Absolutely. It is a societal duty."
+            }
+          ]
+        }
+      ],
+
+      "grammar": {
+        "title": "B2 Grammar Focus: Nuanced Argumentation & Connectors",
+        "sections": [
+          {
+            "heading": "1. Advanced Connectors for Contrast",
+            "content": "Move beyond 'aber' and 'trotzdem':\n- **hingegen** (however/in contrast) - often used in written/formal German.\n  → *Er befürwortet den Plan; sie hingegen lehnt ihn ab.*\n- **im Gegensatz dazu** (in contrast to that).\n  → *Die Zahlen steigen. Im Gegensatz dazu sinkt die Zufriedenheit.*\n- **wohingegen** (whereas) - introduces a subordinate clause (verb at end).\n  → *Er ist optimistisch, wohingegen sie skeptisch ist.*"
+          },
+          {
+            "heading": "2. Connectors for Consequence",
+            "content": "Stronger alternatives to 'deshalb':\n- **folglich** (consequently) - logical conclusion.\n- **demzufolge** (accordingly).\n- **somit** (thus).\n- Structure: Connector + Verb + Subject.\n  → *Die Beweise fehlen. **Folglich** muss er freigesprochen werden.*"
+          },
+          {
+            "heading": "3. Expressing Certainty & Doubt",
+            "content": "Nuancing your stance:\n- **Es steht außer Frage, dass...** (It is beyond question that...)\n- **Zweifellos** (Undoubtedly).\n- **Es ist fraglich, ob...** (It is questionable whether...)\n- **Ich bezweifle, dass...** (I doubt that...)\n- Example: ***Es steht außer Frage, dass** Handeln nötig ist.*"
+          },
+          {
+            "heading": "4. Verbs with Prepositions (Advanced)",
+            "content": "Crucial for academic/professional debate:\n- **sich einsetzen für** (+ Acc): *Wir setzen uns für Gleichberechtigung ein.*\n- **beitragen zu** (+ Dat): *Das trägt zur Lösung bei.*\n- **führen zu** (+ Dat): *Das führt zu Problemen.*\n- **bestehen auf** (+ Dat): *Er besteht auf seinem Recht.*"
+          },
+          {
+            "heading": "5. Passive Voice with Modal Verbs",
+            "content": "Common in objective discussions:\n- Structure: Subject + Modal Verb + ... + Partizip II + werden.\n- Example: *Das Problem **muss gelöst werden**.* (The problem must be solved.)\n- Example: *Hier **könnte gehandelt werden**.* (Action could be taken here.)"
+          },
+          {
+            "heading": "6. Nominalization (Verbal Style to Noun Style)",
+            "content": "Turning verbs into nouns for formal style:\n- *weil es regnet* → *wegen des Regens*\n- *obwohl er krank war* → *trotz seiner Krankheit*\n- *damit wir sparen* → *zum Zweck der Einsparung*\n→ Makes text more concise and academic."
+          },
+          {
+            "heading": "7. Weighing Arguments",
+            "content": "Phrases for balanced debate:\n- **Etwas ins Gewicht fallen** (to carry weight/matter).\n- **Abwägen zwischen** (+ Dat) (to weigh up between).\n- **Der Aspekt X ist entscheidend** (Aspect X is decisive).\n- Example: *Dieses Argument **fällt schwer ins Gewicht**.*"
+          }
+        ]
+      },
+
+      "grammarQuiz": [
+        {
+          "section": "Contrast Connectors",
+          "questions": [
+            {
+              "text": "Synonym for 'aber' (formal): h______",
+              "answer": "hingegen"
+            },
+            {
+              "text": "Complete: Er arbeitet viel, ______ sie wenig.",
+              "answer": "wohingegen"
+            },
+            {
+              "text": "Phrase: Im ______ dazu (in contrast)",
+              "answer": "Gegensatz"
+            },
+            {
+              "text": "Does 'wohingegen' send verb to end? (yes/no)",
+              "answer": "yes"
+            },
+            {
+              "text": "Translate: 'on the other hand' (advanced)",
+              "answer": "hingegen/dagegen"
+            }
+          ]
+        },
+        {
+          "section": "Consequence Connectors",
+          "questions": [
+            { "text": "Logical result: f______", "answer": "folglich" },
+            { "text": "Accordingly: d______", "answer": "demzufolge" },
+            { "text": "Thus: s______", "answer": "somit" },
+            { "text": "Position of verb after 'folglich': ___", "answer": "2" },
+            { "text": "Translate: 'consequently'", "answer": "folglich" }
+          ]
+        },
+        {
+          "section": "Certainty & Doubt",
+          "questions": [
+            {
+              "text": "Phrase: Es steht außer ______ (Question)",
+              "answer": "Frage"
+            },
+            { "text": "Undoubtedly: z______", "answer": "zweifellos" },
+            {
+              "text": "It is questionable: Es ist f______",
+              "answer": "fraglich"
+            },
+            {
+              "text": "I doubt that: Ich b______, dass...",
+              "answer": "bezweifle"
+            },
+            { "text": "Opposite of 'sicherlich'", "answer": "zweifelhaft" }
+          ]
+        },
+        {
+          "section": "Verbs with Prepositions",
+          "questions": [
+            { "text": "sich einsetzen ______ (+Acc)", "answer": "für" },
+            { "text": "beitragen ______ (+Dat)", "answer": "zu" },
+            { "text": "führen ______ (+Dat)", "answer": "zu" },
+            { "text": "bestehen ______ (+Dat)", "answer": "auf" },
+            { "text": "warten ______ (+Dat)", "answer": "auf" }
+          ]
+        },
+        {
+          "section": "Nominalization",
+          "questions": [
+            {
+              "text": "weil es stark regnet → wegen des starken ______",
+              "answer": "Regens"
+            },
+            {
+              "text": "obwohl er krank ist → trotz seiner ______",
+              "answer": "Krankheit"
+            },
+            {
+              "text": "damit wir sparen → zum Zweck der ______",
+              "answer": "Einsparung"
+            },
+            {
+              "text": "Convert: 'weil die Preise steigen' → wegen der steigenden ______",
+              "answer": "Preise"
+            },
+            {
+              "text": "Is nominalization more formal or informal?",
+              "answer": "formal"
+            }
+          ]
+        }
+      ],
+
+      "reading": [
+        {
+          "address": "Die digitale Kluft",
+          "content": "In der modernen Gesellschaft wird der Zugang zu Technologie immer wichtiger. Dennoch besteht eine erhebliche digitale Kluft zwischen verschiedenen Bevölkerungsgruppen. Während junge Menschen selbstverständlich mit Smartphones aufwachsen, fühlen sich Ältere oft abgehängt. Dies führt nicht nur zu sozialer Isolation, sondern auch zu Benachteiligungen im Berufsleben. Es steht außer Frage, dass hier gehandelt werden muss. Einige Experten befürworten kostenlose Kurse für Senioren. Andere hingegen argumentieren, dass die Technik selbst intuitiver gestaltet werden müsse. Meiner Ansicht nach ist eine Kombination aus beidem notwendig, um Chancengleichheit herzustellen."
+        },
+        {
+          "address": "Migration und Arbeitsmarkt",
+          "content": "Die Debatte über Migration ist oft von Emotionen geprägt. Objektiv betrachtet fehlt es in vielen Branchen an Fachkräften. Folglich könnten Zuwanderer diese Lücken schließen. Allerdings ist die Anerkennung ausländischer Abschlüsse oft bürokratisch und langwierig. Das führt dazu, dass viele Akademiker in Jobs arbeiten, die unter ihrem Qualifikationsniveau liegen. Dies ist nicht nur unfair, sondern auch volkswirtschaftlich unsinnig. Um dies zu ändern, müssten die Verfahren beschleunigt und Sprachkurse berufsspezifisch angeboten werden. Nur so kann Integration nachhaltig gelingen."
+        },
+        {
+          "address": "Umweltschutz vs. Wirtschaftswachstum",
+          "content": "Ein klassischer Konflikt unserer Zeit ist der zwischen Ökologie und Ökonomie. Befürworter strenger Umweltauflagen warnen vor irreversiblen Schäden. Gegner hingegen fürchten den Verlust von Arbeitsplätzen. Es gilt, diese Interessen abzuwägen. Nachhaltiges Wirtschaften bedeutet nicht Verzicht, sondern Innovation. Unternehmen, die früh auf grüne Technologien setzen, werden langfristig wettbewerbsfähiger sein. Demzufolge sollte der Staat Anreize schaffen, statt nur Verbote auszusprechen. Ein Umdenken ist dringend erforderlich."
+        }
+      ],
+
+      "readingQuestions": {
+        "trueFalse": [
+          {
+            "question": "The digital gap only affects young people.",
+            "answer": false
+          },
+          {
+            "question": "Some experts suggest free courses for seniors.",
+            "answer": true
+          },
+          {
+            "question": "Foreign qualifications are easily recognized in Germany.",
+            "answer": false
+          },
+          {
+            "question": "Working below qualification level is economically sensible.",
+            "answer": false
+          },
+          {
+            "question": "Sustainable economy means giving up growth.",
+            "answer": false
+          }
+        ],
+        "multipleChoice": [
+          {
+            "question": "What is a consequence of the digital gap for older people?",
+            "options": [
+              "Better jobs",
+              "Social isolation",
+              "More free time",
+              "Cheaper phones"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "question": "What do opponents of strict environmental rules fear?",
+            "options": [
+              "Higher taxes",
+              "Job losses",
+              "Less innovation",
+              "More bureaucracy"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "question": "What is the problem with foreign degrees?",
+            "options": [
+              "They are worthless",
+              "Recognition is bureaucratic",
+              "No one has them",
+              "They are too easy"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "question": "What does the author suggest for environmental protection?",
+            "options": [
+              "Only bans",
+              "Ignore economy",
+              "Incentives",
+              "Stop industry"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "question": "What is necessary for integration in the labor market?",
+            "options": [
+              "Lower wages",
+              "Faster procedures & specific language courses",
+              "Less migration",
+              "More offices"
+            ],
+            "correctIndex": 1
+          }
+        ],
+        "shortAnswer": [
+          {
+            "question": "What grows up naturally with smartphones?",
+            "answer": "junge Menschen"
+          },
+          {
+            "question": "What must be created to ensure equal opportunity?",
+            "answer": "Chancengleichheit"
+          },
+          {
+            "question": "What is often emotional?",
+            "answer": "die Debatte über Migration"
+          },
+          {
+            "question": "What will be more competitive in the long term?",
+            "answer": "Unternehmen mit grünen Technologien"
+          },
+          {
+            "question": "What is urgently required?",
+            "answer": "ein Umdenken"
+          },
+          {
+            "question": "What falls heavily into weight (matters much)?",
+            "answer": "das Argument / die Digitalisierung"
+          }
+        ]
+      }
+    }
+  ]
+}

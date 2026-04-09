@@ -1,0 +1,367 @@
+{
+  "lessons": [
+    {
+      "id": "b2-l2-9f6a",
+      "course": "B2",
+      "lessonNumber": 2,
+      "image": "/images/B2-lesson2.jpg",
+      "title": "Formal Writing",
+      "time": "30min",
+      "description": "Write formal emails, complaints, and applications with appropriate structure, tone, and standard phrases for professional contexts.",
+      "tags": ["letters", "formal", "writing", "business"],
+      "completed": false,
+      "prevLessonId": "b2-l1-4e2c",
+      "nextLessonId": "b2-l3-2d1b",
+
+      "vocabulary": [
+        { "de": "die Beschwerde", "en": "complaint", "category": "Nouns" },
+        { "de": "die Anfrage", "en": "inquiry", "category": "Nouns" },
+        { "de": "die Bestätigung", "en": "confirmation", "category": "Nouns" },
+        { "de": "die Frist", "en": "deadline/period", "category": "Nouns" },
+        { "de": "die Kündigung", "en": "termination/cancellation", "category": "Nouns" },
+        { "de": "die Rechnung", "en": "invoice/bill", "category": "Nouns" },
+        { "de": "der Betrag", "en": "amount", "category": "Nouns" },
+        { "de": "die Erstattung", "en": "refund/reimbursement", "category": "Nouns" },
+        { "de": "die Mängel", "en": "defects/flaws", "category": "Nouns" },
+        { "de": "die Entschädigung", "en": "compensation", "category": "Nouns" },
+        { "de": "das Anliegen", "en": "concern/matter", "category": "Nouns" },
+        { "de": "die Bezugnahme", "en": "reference", "category": "Nouns" },
+        { "de": "anfragen", "en": "to inquire", "category": "Verbs" },
+        { "de": "beschweren", "en": "to complain", "category": "Verbs" },
+        { "de": "kündigen", "en": "to terminate/cancel", "category": "Verbs" },
+        { "de": "erstattten", "en": "to refund", "category": "Verbs" },
+        { "de": "überweisen", "en": "to transfer (money)", "category": "Verbs" },
+        { "de": "beantragen", "en": "to apply for/request", "category": "Verbs" },
+        { "de": "mitteilen", "en": "to inform/notify", "category": "Verbs" },
+        { "de": "auffordern", "en": "to demand/request formally", "category": "Verbs" },
+        { "de": "prüfen", "en": "to check/examine", "category": "Verbs" },
+        { "de": "korrigieren", "en": "to correct", "category": "Verbs" },
+        { "de": "verzögern", "en": "to delay", "category": "Verbs" },
+        { "de": "verbindlich", "en": "binding", "category": "Adjectives" },
+        { "de": "fristgerecht", "en": "within the deadline", "category": "Adjectives" },
+        { "de": "mangelhaft", "en": "defective", "category": "Adjectives" },
+        { "de": "unzureichend", "en": "insufficient", "category": "Adjectives" },
+        { "de": "höflich", "en": "polite", "category": "Adjectives" },
+        { "de": "dringend", "en": "urgent", "category": "Adjectives" },
+        { "de": "angemessen", "en": "appropriate", "category": "Adjectives" },
+        { "de": "bedauerlicherweise", "en": "regrettably", "category": "Adverbs" },
+        { "de": "hiermit", "en": "hereby", "category": "Adverbs" },
+        { "de": "beiliegend", "en": "enclosed/attached", "category": "Adverbs" },
+        { "de": "zeitnah", "en": "promptly", "category": "Adverbs" },
+        { "de": "gegebenenfalls", "en": "if applicable", "category": "Adverbs" },
+        { "de": "betreffs", "en": "regarding", "category": "Prepositions" },
+        { "de": "zugunsten", "en": "in favor of", "category": "Prepositions" },
+        { "de": "seitens", "en": "on the part of", "category": "Prepositions" },
+        { "de": "Sehr geehrte Damen und Herren", "en": "Dear Sir or Madam", "category": "Phrases" },
+        { "de": "mit freundlichen Grüßen", "en": "Sincerely", "category": "Phrases" },
+        { "de": "ich bitte um", "en": "I request", "category": "Phrases" },
+        { "de": "ich möchte mich beschweren", "en": "I would like to complain", "category": "Phrases" },
+        { "de": "ich erwarte", "en": "I expect", "category": "Phrases" },
+        { "de": "bis zum ...", "en": "by ... (date)", "category": "Phrases" }
+      ],
+
+      "dialogue": [
+        {
+          "personName": "Frau Bauer",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Herr Müller, haben Sie das Schreiben an den Kunden schon **verfasst**?",
+              "en": "Ms. Bauer, have you already drafted the letter to the customer?"
+            }
+          ]
+        },
+        {
+          "personName": "Herr Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Ja, fast. Ich bin mir nur unsicher bezüglich des **Tons**. Soll ich **direkt** sein oder eher **diplomatisch**?",
+              "en": "Yes, almost. I am just unsure about the tone. Should I be direct or rather diplomatic?"
+            }
+          ]
+        },
+        {
+          "personName": "Frau Bauer",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Da es eine **Beschwerde** ist, müssen wir **bestimmt** auftreten, aber stets **höflich** bleiben.",
+              "en": "Since it is a complaint, we must appear firm, but always remain polite."
+            }
+          ]
+        },
+        {
+          "personName": "Herr Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Verstehe. Soll ich eine **Frist** setzen?",
+              "en": "I see. Should I set a deadline?"
+            }
+          ]
+        },
+        {
+          "personName": "Frau Bauer",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Unbedingt. Schreiben Sie: 'Wir bitten um **Erstattung** **bis zum** 30. des Monats.'",
+              "en": "Absolutely. Write: 'We request reimbursement by the 30th of the month.'"
+            }
+          ]
+        },
+        {
+          "personName": "Herr Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Und wie formuliere ich die **Drohung** einer rechtlichen Schritte?",
+              "en": "And how do I formulate the threat of legal steps?"
+            }
+          ]
+        },
+        {
+          "personName": "Frau Bauer",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Nicht zu aggressiv. Schreiben Sie: '**Gegebenenfalls** sehen wir uns gezwungen, weitere Maßnahmen zu ergreifen.'",
+              "en": "Not too aggressive. Write: 'If necessary, we will feel compelled to take further measures.'"
+            }
+          ]
+        },
+        {
+          "personName": "Herr Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Das klingt **professionell**. Soll ich auch die **Rechnungsnummer** im **Betreff** nennen?",
+              "en": "That sounds professional. Should I also mention the invoice number in the subject line?"
+            }
+          ]
+        },
+        {
+          "personName": "Frau Bauer",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Ja, das ist essenziell für die **Zuordnung**. 'Ihr Zeichen' oder 'Unsere Referenz' nicht vergessen.",
+              "en": "Yes, that is essential for allocation. Do not forget 'Your Reference' or 'Our Reference'."
+            }
+          ]
+        },
+        {
+          "personName": "Herr Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Alles klar. Ich werde den Entwurf **zeitnah** fertigstellen und Ihnen zur **Prüfung** vorlegen.",
+              "en": "All right. I will finish the draft promptly and submit it to you for review."
+            }
+          ]
+        },
+        {
+          "personName": "Frau Bauer",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Perfekt. Achten Sie auch auf die **Grußformel**. Bei unbekanntem Empfänger immer 'Damen und Herren'.",
+              "en": "Perfect. Also pay attention to the salutation. Always 'Ladies and Gentlemen' for unknown recipients."
+            }
+          ]
+        },
+        {
+          "personName": "Herr Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Selbstverständlich. Vielen Dank für die **Hinweise**!",
+              "en": "Of course. Thank you very much for the tips!"
+            }
+          ]
+        }
+      ],
+
+      "grammar": {
+        "title": "B2 Grammar Focus: Formal Register & Nominalization",
+        "sections": [
+          {
+            "heading": "1. The Passive Voice in Formal Writing",
+            "content": "Passive voice creates objectivity and distance:\n- **Vorgangspassiv** (Process): *Der Antrag **wird geprüft**.* (The application is being checked.)\n- **Zustandspassiv** (State): *Der Antrag **ist geprüft**.* (The application is checked/done.)\n- Use passive to avoid blaming specific people: *Es wurde ein Fehler festgestellt* (instead of 'You made a mistake')."
+          },
+          {
+            "heading": "2. Konjunktiv II for Politeness",
+            "content": "Essential for requests and complaints:\n- *Ich **hätte** gerne...* (I would like...)\n- *Könnten Sie mir...?* (Could you...?)\n- *Es **wäre** hilfreich, wenn...* (It would be helpful if...)\n- *Wir **bitten** Sie höflichst...* (We kindly ask you...)"
+          },
+          {
+            "heading": "3. Nominalization (Verbal Style → Noun Style)",
+            "content": "Turning sentences into compact noun phrases (typical for B2/C1):\n- *weil es Verspätungen gibt* → *wegen **Verspätungen***\n- *obwohl er krank war* → *trotz **seiner Krankheit***\n- *damit wir sparen* → *zum **Zweck der Einsparung***\n- *indem man vergleicht* → *durch **Vergleich**"*
+          },
+          {
+            "heading": "4. Prepositions with Genitive",
+            "content": "Common in formal letters:\n- **wegen** (+ Gen): *Wegen **des Fehlers**...* (Because of the error...)\n- **trotz** (+ Gen): *Trotz **Ihrer Zusage**...* (Despite your assurance...)\n- **während** (+ Gen): *Während **der Prüfung**...* (During the inspection...)\n- **anstatt/statt** (+ Gen): *Statt **einer Antwort**...* (Instead of an answer...)"
+          },
+          {
+            "heading": "5. Fixed Phrases for Letters",
+            "content": "Standard building blocks:\n- **Opening**: *Hiermit möchte ich mich beschweren...* (Hereby I would like to complain...)\n- **Reference**: *Bezugnehmend auf Ihr Schreiben vom...* (Referring to your letter of...)\n- **Request**: *Ich bitte um Überprüfung...* (I request a check...)\n- **Deadline**: *Ich erwarte Ihre Antwort bis zum...* (I expect your answer by...)\n- **Closing**: *Für Rückfragen stehe ich gerne zur Verfügung.* (I am available for questions.)"
+          },
+          {
+            "heading": "6. Connectors for Logic",
+            "content": "Structuring arguments clearly:\n- **folglich** (consequently)\n- **demnach** (accordingly)\n- **hingegen** (however/in contrast)\n- **des Weiteren** (furthermore)\n- Example: *Die Ware war beschädigt. **Folglich** bitte ich um Erstattung.*"
+          },
+          {
+            "heading": "7. Adverbs for Tone",
+            "content": "Modifying the strength of statements:\n- **bedauerlicherweise** (regrettably) - softens bad news.\n- **ausdrücklich** (explicitly) - adds emphasis.\n- **zeitnah** (promptly) - professional way to say 'fast'.\n- **hiermit** (hereby) - makes statement official."
+          }
+        ]
+      },
+
+      "grammarQuiz": [
+        {
+          "section": "Passive Voice",
+          "questions": [
+            { "text": "Convert to Passive: 'Man prüft den Fall.' → Der Fall ______.", "answer": "wird geprüft" },
+            { "text": "Convert to Passive: 'Sie haben das Paket gesendet.' → Das Paket ______.", "answer": "wurde gesendet" },
+            { "text": "State Passive: 'Die Tür ist geöffnet.' (Open state) → Correct? (yes/no)", "answer": "yes" },
+            { "text": "Why use passive in complaints? (Objectivity/Blame)", "answer": "Objectivity" },
+            { "text": "Form: werden + ______", "answer": "Partizip II" }
+          ]
+        },
+        {
+          "section": "Politeness (Konjunktiv II)",
+          "questions": [
+            { "text": "Polite: Ich ______ gerne eine Rückerstattung. (haben)", "answer": "hätte" },
+            { "text": "Polite: ______ Sie mir helfen? (können)", "answer": "Könnten" },
+            { "text": "Polite: Es ______ nett, wenn... (sein)", "answer": "wäre" },
+            { "text": "Formal request: Wir ______ Sie höflichst... (bitten)", "answer": "bitten" },
+            { "text": "Is 'Ich will' polite? (yes/no)", "answer": "no" }
+          ]
+        },
+        {
+          "section": "Nominalization",
+          "questions": [
+            { "text": "weil es regnet → wegen des ______", "answer": "Regens" },
+            { "text": "obwohl er krank ist → trotz seiner ______", "answer": "Krankheit" },
+            { "text": "damit wir sparen → zum Zweck der ______", "answer": "Einsparung" },
+            { "text": "indem man vergleicht → durch ______", "answer": "Vergleich" },
+            { "text": "Convert: 'weil die Preise steigen' → wegen der steigenden ______", "answer": "Preise" }
+          ]
+        },
+        {
+          "section": "Genitive Prepositions",
+          "questions": [
+            { "text": "______ des Fehlers (because of)", "answer": "Wegen" },
+            { "text": "______ Ihrer Hilfe (despite)", "answer": "Trotz" },
+            { "text": "______ der Pause (during)", "answer": "Während" },
+            { "text": "______ einer Antwort (instead of)", "answer": "Statt" },
+            { "text": "Case after 'wegen': ______", "answer": "Genitive" }
+          ]
+        },
+        {
+          "section": "Formal Phrases",
+          "questions": [
+            { "text": "Translate: 'hereby'", "answer": "hiermit" },
+            { "text": "Translate: 'promptly'", "answer": "zeitnah" },
+            { "text": "Translate: 'regrettably'", "answer": "bedauerlicherweise" },
+            { "text": "Salutation for unknown person: Sehr geehrte ______ und ______", "answer": "Damen Herren" },
+            { "text": "Closing: Mit freundlichen ______", "answer": "Grüßen" }
+          ]
+        }
+      ],
+
+      "reading": [
+        {
+          "address": "Beschwerde über mangelhafte Dienstleistung",
+          "content": "Sehr geehrte Damen und Herren,\nhiermit möchte ich mich ausdrücklich über die Dienstleistung Ihres Unternehmens vom 12.05.2024 beschweren. Bedauerlicherweise war das gelieferte Produkt mangelhaft. Trotz mehrfacher telefonischer Kontakte wurde das Problem nicht gelöst. Wegen dieser Unannehmlichkeiten bitte ich um eine sofortige Erstattung des Betrags in Höhe von 150 Euro. Ich erwarte Ihre Rückmeldung bis zum 30.05.2024. Gegebenenfalls sehe ich mich gezwungen, einen Anwalt einzuschalten. Für Rückfragen stehe ich gerne zur Verfügung.\nMit freundlichen Grüßen\nMax Mustermann"
+        },
+        {
+          "address": "Anfrage bezüglich Geschäftsbedingungen",
+          "content": "Sehr geehrter Herr Weber,\nbezugnehmend auf unser Gespräch vom letzten Woche möchte ich mich nach den aktuellen Konditionen erkundigen. Insbesondere interessiert mich, ob eine Verlängerung der Garantie möglich ist. Des Weiteren bitte ich um Zusendung der detaillierten Preisliste. Es wäre hilfreich, wenn Sie uns diese Unterlagen zeitnah zukommen lassen könnten, da wir die Entscheidung bis Ende des Monats treffen müssen. Vielen Dank im Voraus für Ihre Mühe.\nMit freundlichen Grüßen\nJulia Klein\nGeschäftsleitung"
+        },
+        {
+          "address": "Kündigung des Vertrags",
+          "content": "Sehr geehrte Damen und Herren,\nhiermit kündige ich meinen Vertrag mit der Nummer 12345 fristgerecht zum nächstmöglichen Termin. Bitte bestätigen Sie mir den Erhalt dieser Kündigung sowie das Beendigungsdatum schriftlich. Überweisen Sie eventuelle Guthaben auf mein bekanntes Konto. Sollten noch offene Forderungen bestehen, teilen Sie mir diese bitte umgehend mit. Ich danke Ihnen für die bisherige Zusammenarbeit.\nMit freundlichen Grüßen\nThomas Schmidt"
+        }
+      ],
+
+      "readingQuestions": {
+        "trueFalse": [
+          {
+            "question": "The customer complains about a product delivered on May 12th.",
+            "answer": true
+          },
+          {
+            "question": "The customer has not tried to contact the company before.",
+            "answer": false
+          },
+          {
+            "question": "Julia Klein needs the documents by the end of the month.",
+            "answer": true
+          },
+          {
+            "question": "Thomas Schmidt wants to extend his contract.",
+            "answer": false
+          },
+          {
+            "question": "The first letter threatens legal action.",
+            "answer": true
+          }
+        ],
+        "multipleChoice": [
+          {
+            "question": "What does the first writer request?",
+            "options": ["A new product", "A refund", "A discount", "An apology"],
+            "correctIndex": 1
+          },
+          {
+            "question": "What is the deadline in the first letter?",
+            "options": ["May 12th", "May 20th", "May 30th", "June 1st"],
+            "correctIndex": 2
+          },
+          {
+            "question": "What does Julia Klein specifically ask for?",
+            "options": ["A meeting", "A price list", "A job", "A discount"],
+            "correctIndex": 1
+          },
+          {
+            "question": "How does Thomas Schmidt want the cancellation confirmed?",
+            "options": ["By phone", "By email only", "In writing", "He doesn't need confirmation"],
+            "correctIndex": 2
+          },
+          {
+            "question": "What tone is used in all three letters?",
+            "options": ["Informal", "Aggressive", "Formal", "Emotional"],
+            "correctIndex": 2
+          }
+        ],
+        "shortAnswer": [
+          {
+            "question": "What word is used to mean 'hereby'?",
+            "answer": "hiermit"
+          },
+          {
+            "question": "What amount is requested in the first letter?",
+            "answer": "150 Euro"
+          },
+          {
+            "question": "What might the first writer do if there is no response?",
+            "answer": "einen Anwalt einschalten"
+          },
+          {
+            "question": "When must the decision be made in the second letter?",
+            "answer": "bis Ende des Monats"
+          },
+          {
+            "question": "What contract number is mentioned?",
+            "answer": "12345"
+          },
+          {
+            "question": "What does the third writer thank for?",
+            "answer": "die bisherige Zusammenarbeit"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import BackToTopButton from "../components/JumpToTopButton/JumpToTopButton";
 import Navbar from "../components/Navbar/Navbar";
@@ -20,7 +20,7 @@ const LessonView = () => {
     const { data: rawData, isLoading, error } = useQuery({
         queryKey: ["lesson", courseId, lessonId],
         queryFn: async () => {
-            const res = await fetch("/data/lessons/A1/lesson1.json");
+            const res = await fetch(`/data/lessons/${courseId}/lesson${lessonId}.json`);
             if (!res.ok) throw new Error(`HTTP ${res.status}: Failed to load lesson`);
             return res.json();
         },
@@ -33,6 +33,9 @@ const LessonView = () => {
     );
     const { filteredWords, flattenedDialogue } = useLessonData(currentLesson, wordsFilter);
 
+    useEffect(() => {
+        console.log(lessonId);
+    }, []);
 
     if (isLoading) return <div className="p-10 text-center">Loading lesson...</div>;
     if (error) return <div className="p-10 text-red-500">❌ {error.message}</div>;

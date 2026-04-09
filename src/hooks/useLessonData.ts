@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 type Word = { de: string; en: string; category: string };
-type DialogueLine = { person: string; de: string; en: string };
+type DialogueLine = { personID: string; personName: string; de: string; en: string };
 
 type Lesson = {
   vocabulary: Word[];
-  dialogue: Array<{ person: string; phrases: Array<{ de: string; en: string }> }>;
+  dialogue: Array<{ personID: string; personName: string; phrases: Array<{ de: string; en: string }> }>;
 };
 
 export const useLessonData = (currentLesson: Lesson | null, wordsFilter: string) => {
@@ -22,7 +22,7 @@ export const useLessonData = (currentLesson: Lesson | null, wordsFilter: string)
     const flatDialog: DialogueLine[] = [];
     currentLesson.dialogue.forEach((entry) =>
       entry.phrases.forEach((phrase) =>
-        flatDialog.push({ person: entry.person, de: phrase.de, en: phrase.en })
+        flatDialog.push({ personID: entry.personID, personName: entry.personName, de: phrase.de, en: phrase.en })
       )
     );
     setFlattenedDialogue(flatDialog);

@@ -92,18 +92,21 @@
         { "de": "Wer", "en": "Who", "category": "Interrogatives" },
         { "de": "Wo", "en": "Where", "category": "Interrogatives" }
       ],
+
       "dialogue": [
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             {
               "de": "**Hallo**! Wie **heißt** du?",
-              "en": "Hello! What’s your name?"
+              "en": "Hello! What's your name?"
             }
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "Ich **heiße** Anna. Und du?",
@@ -112,16 +115,18 @@
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             {
               "de": "Ich bin **Lena**. **Freut mich**!",
-              "en": "I’m Lena. Nice to meet you!"
+              "en": "I'm Lena. Nice to meet you!"
             }
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "**Freut mich** auch! **Woher** kommst du, Lena?",
@@ -130,32 +135,36 @@
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             {
               "de": "Ich komme **aus** Spanien. Und du?",
-              "en": "I’m from Spain. And you?"
+              "en": "I'm from Spain. And you?"
             }
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "Ich komme **aus** Deutschland.",
-              "en": "I’m from Germany."
+              "en": "I'm from Germany."
             },
             { "de": "**Genau** aus Berlin!", "en": "Exactly from Berlin!" }
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             { "de": "Oh, **Berlin**! **Schön**!", "en": "Oh, Berlin! Nice!" }
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "**Danke**! **Sprichst** du **Deutsch**?",
@@ -164,46 +173,52 @@
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             { "de": "Ja, ein **bisschen**.", "en": "Yes, a little." },
             {
               "de": "Ich **lerne** Deutsch **in der Schule**.",
-              "en": "I’m learning German at school."
+              "en": "I'm learning German at school."
             }
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "**Super**! Ich **lerne** Englisch.",
-              "en": "Great! I’m learning English."
+              "en": "Great! I'm learning English."
             }
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             { "de": "**Wie alt** bist du?", "en": "How old are you?" }
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "Ich bin **19** Jahre **alt**.",
-              "en": "I’m 19 years old."
+              "en": "I'm 19 years old."
             },
             { "de": "Und du?", "en": "And you?" }
           ]
         },
         {
-          "person": "A",
-          "phrases": [{ "de": "Ich bin **18**.", "en": "I’m 18." }]
+          "personID": "A",
+          "personName": "Lena",
+          "phrases": [{ "de": "Ich bin **18**.", "en": "I'm 18." }]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "**Was machst** du **gerne**?",
@@ -212,7 +227,8 @@
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             {
               "de": "Ich **höre** gerne **Musik**.",
@@ -222,24 +238,28 @@
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             { "de": "**Ich spiele** **Fußball**!", "en": "I play football!" }
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [{ "de": "**Echt**? **Toll**!", "en": "Really? Cool!" }]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             { "de": "Ja! **Jeden Samstag**.", "en": "Yes! Every Saturday." },
             { "de": "**Magst** du **Sport**?", "en": "Do you like sports?" }
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             { "de": "Nicht **so sehr**.", "en": "Not really." },
             {
@@ -249,7 +269,8 @@
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "**Gut**! **Wohnst** du **hier** in Berlin?",
@@ -258,7 +279,8 @@
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             {
               "de": "Nein, ich **wohne** in einer **WG**.",
@@ -268,7 +290,8 @@
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "Ah, **Kreuzberg**! **Schön** da!",
@@ -277,7 +300,8 @@
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             {
               "de": "Ja! **Was isst** du **gerne**?",
@@ -286,7 +310,8 @@
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "Ich **mag** **Pizza** und **Pasta**.",
@@ -296,7 +321,8 @@
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             {
               "de": "Ich **esse** **gerne** **Döner**!",
@@ -305,7 +331,8 @@
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "**Lecker**! **Hast** du **Hausaufgaben** heute?",
@@ -314,7 +341,8 @@
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             { "de": "Ja, **leider**.", "en": "Yes, unfortunately." },
             {
@@ -324,7 +352,8 @@
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "**Gut**! **Morgen** ist **Samstag**!",
@@ -333,7 +362,8 @@
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             {
               "de": "Stimmt! **Was machst** du **am Wochenende**?",
@@ -342,11 +372,12 @@
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "Ich **treffe** Freunde **im Park**.",
-              "en": "I’m meeting friends in the park."
+              "en": "I'm meeting friends in the park."
             },
             {
               "de": "Und **abends**? **Kino**?",
@@ -355,14 +386,16 @@
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [
             { "de": "**Ja**, gerne!", "en": "Yes, gladly!" },
-            { "de": "Um **acht Uhr**?", "en": "At eight o’clock?" }
+            { "de": "Um **acht Uhr**?", "en": "At eight o'clock?" }
           ]
         },
         {
-          "person": "B",
+          "personID": "B",
+          "personName": "Anna",
           "phrases": [
             {
               "de": "**Perfekt**! **Bis morgen**!",
@@ -371,10 +404,12 @@
           ]
         },
         {
-          "person": "A",
+          "personID": "A",
+          "personName": "Lena",
           "phrases": [{ "de": "**Tschüss**, Anna!", "en": "Bye, Anna!" }]
         }
       ],
+
       "grammar": {
         "title": "A1 Grammar Focus: Present Tense & Basic Questions",
         "sections": [

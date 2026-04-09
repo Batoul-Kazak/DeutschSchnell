@@ -1,0 +1,530 @@
+{
+  "lessons": [
+    {
+      "id": "b1-l1-9d6e",
+      "course": "B1",
+      "lessonNumber": 1,
+      "image": "/images/B1-lesson1.jpg",
+      "title": "Expressing Opinions",
+      "time": "47min",
+      "description": "Give clear opinions using connectors like 'deshalb', 'trotzdem', and 'meiner Meinung nach' in debates and written arguments.",
+      "tags": ["opinions", "connectors", "debate", "writing"],
+      "completed": false,
+      "prevLessonId": "a2-l8-1f3b",
+      "nextLessonId": "b1-l2-2c5f",
+
+      "vocabulary": [
+        { "de": "die Meinung", "en": "opinion", "category": "Nouns" },
+        {
+          "de": "der Standpunkt",
+          "en": "standpoint/viewpoint",
+          "category": "Nouns"
+        },
+        {
+          "de": "die Argumentation",
+          "en": "argumentation",
+          "category": "Nouns"
+        },
+        { "de": "der Vorteil", "en": "advantage", "category": "Nouns" },
+        { "de": "der Nachteil", "en": "disadvantage", "category": "Nouns" },
+        { "de": "die Entscheidung", "en": "decision", "category": "Nouns" },
+        { "de": "die Diskussion", "en": "discussion", "category": "Nouns" },
+        { "de": "die Debatte", "en": "debate", "category": "Nouns" },
+        { "de": "das Thema", "en": "topic/subject", "category": "Nouns" },
+        { "de": "die Zustimmung", "en": "agreement", "category": "Nouns" },
+        {
+          "de": "die Ablehnung",
+          "en": "rejection/disagreement",
+          "category": "Nouns"
+        },
+        { "de": "meinen", "en": "to be of the opinion", "category": "Verbs" },
+        { "de": "glauben", "en": "to believe/think", "category": "Verbs" },
+        { "de": "finden", "en": "to find/think", "category": "Verbs" },
+        { "de": "diskutieren", "en": "to discuss", "category": "Verbs" },
+        { "de": "zustimmen", "en": "to agree", "category": "Verbs" },
+        {
+          "de": "widersprechen",
+          "en": "to contradict/disagree",
+          "category": "Verbs"
+        },
+        { "de": "überzeugen", "en": "to convince", "category": "Verbs" },
+        { "de": "bezweifeln", "en": "to doubt", "category": "Verbs" },
+        { "de": "behaupten", "en": "to claim", "category": "Verbs" },
+        { "de": "wichtig", "en": "important", "category": "Adjectives" },
+        { "de": "richtig", "en": "correct/right", "category": "Adjectives" },
+        { "de": "falsch", "en": "wrong/false", "category": "Adjectives" },
+        { "de": "nötig", "en": "necessary", "category": "Adjectives" },
+        {
+          "de": "sinnvoll",
+          "en": "sensible/meaningful",
+          "category": "Adjectives"
+        },
+        { "de": "unnötig", "en": "unnecessary", "category": "Adjectives" },
+        { "de": "klar", "en": "clear", "category": "Adjectives" },
+        { "de": "unsicher", "en": "uncertain", "category": "Adjectives" },
+        { "de": "einig", "en": "agreed/united", "category": "Adjectives" },
+        {
+          "de": "deshalb",
+          "en": "therefore/that's why",
+          "category": "Connectors"
+        },
+        { "de": "deswegen", "en": "because of that", "category": "Connectors" },
+        { "de": "darum", "en": "that's why", "category": "Connectors" },
+        {
+          "de": "trotzdem",
+          "en": "nevertheless/despite that",
+          "category": "Connectors"
+        },
+        { "de": "dennoch", "en": "nonetheless", "category": "Connectors" },
+        {
+          "de": "allerdings",
+          "en": "however/however",
+          "category": "Connectors"
+        },
+        {
+          "de": "einerseits",
+          "en": "on the one hand",
+          "category": "Connectors"
+        },
+        {
+          "de": "andererseits",
+          "en": "on the other hand",
+          "category": "Connectors"
+        },
+        {
+          "de": "zusammenfassend",
+          "en": "in summary",
+          "category": "Connectors"
+        },
+        {
+          "de": "meiner Meinung nach",
+          "en": "in my opinion",
+          "category": "Phrases"
+        },
+        {
+          "de": "ich bin der Ansicht",
+          "en": "I am of the view",
+          "category": "Phrases"
+        },
+        { "de": "ich stimme zu", "en": "I agree", "category": "Phrases" },
+        {
+          "de": "ich bin dagegen",
+          "en": "I am against it",
+          "category": "Phrases"
+        },
+        {
+          "de": "das sehe ich anders",
+          "en": "I see that differently",
+          "category": "Phrases"
+        },
+        {
+          "de": "da hast du recht",
+          "en": "you are right there",
+          "category": "Phrases"
+        },
+        {
+          "de": "das ist ein guter Punkt",
+          "en": "that is a good point",
+          "category": "Phrases"
+        }
+      ],
+
+      "dialogue": [
+        {
+          "personName": "Sarah",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Hast du den Artikel über das **Tempolimit** gelesen?",
+              "en": "Have you read the article about the speed limit?"
+            }
+          ]
+        },
+        {
+          "personName": "Michael",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Ja. **Meiner Meinung nach** ist eine allgemeine Geschwindigkeitsbegrenzung **sinnvoll**.",
+              "en": "Yes. In my opinion, a general speed limit makes sense."
+            }
+          ]
+        },
+        {
+          "personName": "Sarah",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Wirklich? **Ich bin da anderer Ansicht**. Das schränkt die Freiheit ein.",
+              "en": "Really? I am of a different view on that. That restricts freedom."
+            }
+          ]
+        },
+        {
+          "personName": "Michael",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Ich verstehe deinen Punkt, **aber** denk an die Umwelt. **Deshalb** halte ich es für nötig.",
+              "en": "I understand your point, but think about the environment. That's why I consider it necessary."
+            }
+          ]
+        },
+        {
+          "personName": "Sarah",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "**Einerseits** hast du recht beim Klimaschutz. **Andererseits** sind die Autos heute viel sicherer.",
+              "en": "On the one hand you are right about climate protection. On the other hand, cars are much safer today."
+            }
+          ]
+        },
+        {
+          "personName": "Michael",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Sicherheit ist wichtig, **trotzdem** verursachen hohe Geschwindigkeiten viele Unfälle.",
+              "en": "Safety is important, nevertheless high speeds cause many accidents."
+            }
+          ]
+        },
+        {
+          "personName": "Sarah",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Das ist ein gutes Argument. **Allerdings** gibt es auf dem Land kaum Alternativen zum Auto.",
+              "en": "That is a good argument. However, in rural areas there are hardly any alternatives to the car."
+            }
+          ]
+        },
+        {
+          "personName": "Michael",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Stimmt. **Deswegen** sollte man den öffentlichen Verkehr besser ausbauen.",
+              "en": "True. That's why we should expand public transport better."
+            }
+          ]
+        },
+        {
+          "personName": "Sarah",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Da bin ich ganz deiner Meinung. Ein Tempolimit allein löst das Problem nicht.",
+              "en": "There I am completely of your opinion. A speed limit alone does not solve the problem."
+            }
+          ]
+        },
+        {
+          "personName": "Michael",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Genau. Wir brauchen eine **kombinierte Lösung**. Was hältst du von Elektroautos?",
+              "en": "Exactly. We need a combined solution. What do you think of electric cars?"
+            }
+          ]
+        },
+        {
+          "personName": "Sarah",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Ich finde sie gut, **aber** sie sind noch zu teuer für viele Menschen.",
+              "en": "I find them good, but they are still too expensive for many people."
+            }
+          ]
+        },
+        {
+          "personName": "Michael",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Das stimmt leider. **Dennoch** wird die Technik bald billiger.",
+              "en": "Unfortunately that's true. Nonetheless, the technology will soon become cheaper."
+            }
+          ]
+        },
+        {
+          "personName": "Sarah",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Hoffentlich! **Zusammenfassend** sind wir uns also einig: Wir brauchen mehr als nur ein Limit.",
+              "en": "Hopefully! In summary, we agree then: We need more than just a limit."
+            }
+          ]
+        },
+        {
+          "personName": "Michael",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Absolut. Es war eine gute Diskussion!",
+              "en": "Absolutely. It was a good discussion!"
+            }
+          ]
+        }
+      ],
+
+      "grammar": {
+        "title": "B1 Grammar Focus: Connectors & Opinion Phrases",
+        "sections": [
+          {
+            "heading": "1. Expressing Opinion (Subjective)",
+            "content": "Common phrases to start an opinion:\n- **Meiner Meinung nach** + Verb... (In my opinion...)\n  → *Meiner Meinung nach ist das wichtig.*\n- **Ich bin der Ansicht, dass**... (I am of the view that...)\n- **Ich finde/glaube/meine, dass**... (I find/believe/think that...)\n→ Note: 'Meiner Meinung nach' does NOT require 'dass' and the verb comes immediately after."
+          },
+          {
+            "heading": "2. Causal Connectors (Cause → Effect)",
+            "content": "Words that explain 'why' something happens (Position 1):\n- **deshalb** (therefore)\n- **deswegen** (because of that)\n- **darum** (that's why)\n- Structure: Connector + Verb + Subject.\n  → *Es regnet. **Deshalb bleibe** ich zu Hause.*"
+          },
+          {
+            "heading": "3. Adversative Connectors (Contrast)",
+            "content": "Words that express 'despite' or 'however':\n- **trotzdem** / **dennoch** (nevertheless/despite that)\n- **allerdings** (however/however)\n- Structure: Connector + Verb + Subject.\n  → *Er ist krank. **Trotzdem geht** er zur Arbeit.*"
+          },
+          {
+            "heading": "4. Two-Sided Arguments",
+            "content": "Used to weigh pros and cons:\n- **einerseits** ... **andererseits** (on the one hand ... on the other hand)\n- Example: ***Einerseits** ist das Auto schnell, **andererseits** ist es teuer.*\n→ Often used with 'aber' or 'doch' in the second part for emphasis."
+          },
+          {
+            "heading": "5. Agreeing and Disagreeing",
+            "content": "Useful phrases for discussions:\n- Agreement: **Da stimme ich zu.** / **Das sehe ich auch so.**\n- Partial Agreement: **Das ist richtig, aber...**\n- Disagreement: **Da bin ich anderer Meinung.** / **Das sehe ich anders.**\n- Strong Disagreement: **Das kann ich nicht bestätigen.**"
+          },
+          {
+            "heading": "6. Word Order with Connectors",
+            "content": "Most connectors (deshalb, trotzdem, allerdings) occupy **Position 1**.\n- The conjugated verb must be in **Position 2**.\n- The subject follows the verb (Position 3).\n- Incorrect: *Deshalb ich gehe...* \n- Correct: *Deshalb **gehe** ich...*"
+          },
+          {
+            "heading": "7. Summary Connectors",
+            "content": "To conclude an argument:\n- **zusammenfassend** (in summary)\n- **folglich** (consequently)\n- **letztendlich** (ultimately)\n- Example: ***Zusammenfassend lässt sich sagen**, dass...* (In summary, it can be said that...)"
+          }
+        ]
+      },
+
+      "grammarQuiz": [
+        {
+          "section": "Opinion Phrases",
+          "questions": [
+            {
+              "text": "Translate: 'In my opinion'",
+              "answer": "Meiner Meinung nach"
+            },
+            {
+              "text": "Complete: Ich bin der ______, dass...",
+              "answer": "Ansicht"
+            },
+            {
+              "text": "Which verb fits: Ich ______, dass das falsch ist. (glauben/meinen)",
+              "answer": "glaube"
+            },
+            {
+              "text": "Correct order: nach / Meinung / meiner",
+              "answer": "Meiner Meinung nach"
+            },
+            {
+              "text": "Translate: 'I am of the view'",
+              "answer": "Ich bin der Ansicht"
+            }
+          ]
+        },
+        {
+          "section": "Causal Connectors",
+          "questions": [
+            { "text": "Synonym for 'deshalb'", "answer": "deswegen" },
+            {
+              "text": "Complete: Es ist spät, ______ gehe ich.",
+              "answer": "deshalb"
+            },
+            {
+              "text": "Verb position after 'darum': Position ___",
+              "answer": "2"
+            },
+            { "text": "Translate: 'because of that'", "answer": "deswegen" },
+            {
+              "text": "Correct: Darum ich lerne / Darum lerne ich",
+              "answer": "Darum lerne ich"
+            }
+          ]
+        },
+        {
+          "section": "Contrast Connectors",
+          "questions": [
+            { "text": "Translate: 'nevertheless'", "answer": "trotzdem" },
+            { "text": "Synonym for 'trotzdem'", "answer": "dennoch" },
+            {
+              "text": "Complete: Er hat keine Zeit. ______ hilft er.",
+              "answer": "Trotzdem"
+            },
+            {
+              "text": "Translate: 'however' (restrictive)",
+              "answer": "allerdings"
+            },
+            {
+              "text": "Does 'allerdings' trigger verb position 2? (yes/no)",
+              "answer": "yes"
+            }
+          ]
+        },
+        {
+          "section": "Two-Sided Arguments",
+          "questions": [
+            { "text": "Pair: Einerseits ... ______", "answer": "andererseits" },
+            { "text": "Translate: 'on the one hand'", "answer": "einerseits" },
+            {
+              "text": "Translate: 'on the other hand'",
+              "answer": "andererseits"
+            },
+            {
+              "text": "Complete: ______ ist es teuer, andererseits ist es gut.",
+              "answer": "Einerseits"
+            },
+            {
+              "text": "Do these connectors trigger verb position 2? (yes/no)",
+              "answer": "yes"
+            }
+          ]
+        },
+        {
+          "section": "Agree/Disagree",
+          "questions": [
+            { "text": "Translate: 'I agree'", "answer": "Ich stimme zu" },
+            {
+              "text": "Translate: 'I see that differently'",
+              "answer": "Das sehe ich anders"
+            },
+            {
+              "text": "Complete: Da bin ich anderer ______.",
+              "answer": "Meinung"
+            },
+            {
+              "text": "Translate: 'You are right there'",
+              "answer": "Da hast du recht"
+            },
+            {
+              "text": "Phrase for disagreement: Das ______ ich anders.",
+              "answer": "sehe"
+            }
+          ]
+        }
+      ],
+
+      "reading": [
+        {
+          "address": "Sollten Handys in der Schule verboten werden?",
+          "content": "Dies ist ein aktuelles Thema. Einerseits sagen viele Lehrer, dass Handys den Unterricht stören. Die Schüler schreiben Nachrichten statt zuzuhören. Deshalb wollen sie ein Verbot. Andererseits argumentieren Eltern, dass Handys für die Sicherheit wichtig sind. Wenn ein Notfall passiert, können Kinder sofort anrufen. Meiner Meinung nach ist ein komplettes Verbot falsch. Man sollte Handys erlauben, aber nur in den Pausen. So hat man beide Vorteile: Ruhe im Unterricht und Sicherheit für die Kinder."
+        },
+        {
+          "address": "Homeoffice: Fluch oder Segen?",
+          "content": "Seit der Pandemie arbeiten viele Menschen von zu Hause. Befürworter sagen, dass man Zeit spart, weil man nicht pendeln muss. Außerdem kann man sich die Zeit selbst einteilen. Das ist besonders für Familien gut. Allerdings fühlen sich manche Mitarbeiter einsam. Der Kontakt zu Kollegen fehlt. Deswegen schlagen Experten vor, ein Modell zu mischen. Zwei Tage im Büro, drei Tage zu Hause. Ich bin der Ansicht, dass diese Lösung am sinnvollsten ist. So bleibt der soziale Kontakt, aber man hat auch Flexibilität."
+        },
+        {
+          "address": "Ist Fleischkonsum noch zeitgemäß?",
+          "content": "Immer mehr Menschen essen kein Fleisch mehr. Sie finden, dass Massentierhaltung grausam ist. Zudem schadet die Produktion dem Klima. Deshalb entscheiden sie sich für eine vegetarische Ernährung. Trotzdem essen die meisten Deutschen immer noch täglich Fleisch. Sie argumentieren, dass Fleisch gesund sei und Tradition habe. Ich glaube, dass man nicht komplett verzichten muss, aber den Konsum reduzieren sollte. Wer weniger Fleisch isst, tut etwas Gutes für die Umwelt und seine Gesundheit."
+        }
+      ],
+
+      "readingQuestions": {
+        "trueFalse": [
+          {
+            "question": "The author supports a complete ban on phones in schools.",
+            "answer": false
+          },
+          {
+            "question": "Parents argue that phones are important for safety.",
+            "answer": true
+          },
+          {
+            "question": "Working from home saves commuting time.",
+            "answer": true
+          },
+          {
+            "question": "Experts suggest working only from home.",
+            "answer": false
+          },
+          {
+            "question": "Most Germans have stopped eating meat completely.",
+            "answer": false
+          }
+        ],
+        "multipleChoice": [
+          {
+            "question": "What is the proposed solution for phones in school?",
+            "options": [
+              "Total ban",
+              "Allowed only in breaks",
+              "Allowed always",
+              "Only for teachers"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "question": "What is a disadvantage of Homeoffice mentioned?",
+            "options": [
+              "Too much noise",
+              "Loneliness",
+              "Too much travel",
+              "High costs"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "question": "What model do experts suggest for work?",
+            "options": ["100% Office", "100% Home", "Hybrid model", "No work"],
+            "correctIndex": 2
+          },
+          {
+            "question": "Why do some people stop eating meat?",
+            "options": [
+              "It is too expensive",
+              "Animal welfare and climate",
+              "They dislike the taste",
+              "Religious reasons"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "question": "What is the author's opinion on meat?",
+            "options": [
+              "Eat more",
+              "Ban it completely",
+              "Reduce consumption",
+              "Ignore the issue"
+            ],
+            "correctIndex": 2
+          }
+        ],
+        "shortAnswer": [
+          {
+            "question": "Who argues that phones disturb the lesson?",
+            "answer": "Lehrer"
+          },
+          {
+            "question": "What can children do in an emergency with a phone?",
+            "answer": "sofort anrufen"
+          },
+          {
+            "question": "What do people save when working from home?",
+            "answer": "Zeit (Pendelzeit)"
+          },
+          {
+            "question": "How many days at home are suggested in the hybrid model?",
+            "answer": "drei Tage"
+          },
+          {
+            "question": "What harms the climate according to the text?",
+            "answer": "Fleischproduktion / Massentierhaltung"
+          },
+          {
+            "question": "What tradition do meat-eaters mention?",
+            "answer": "Fleisch essen ist Tradition"
+          }
+        ]
+      }
+    }
+  ]
+}

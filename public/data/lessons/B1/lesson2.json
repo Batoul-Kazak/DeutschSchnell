@@ -1,0 +1,512 @@
+{
+  "lessons": [
+    {
+      "id": "b1-l2-2c5f",
+      "course": "B1",
+      "lessonNumber": 2,
+      "image": "/images/B1-lesson2.jpg",
+      "title": "Work and Careers",
+      "time": "29min",
+      "description": "Discuss professions, job applications, and workplace routines using formal and informal registers appropriate for German-speaking environments.",
+      "tags": ["jobs", "professional", "applications", "register"],
+      "completed": false,
+      "prevLessonId": "b1-l1-9d6e",
+      "nextLessonId": "b1-l3-6a1d",
+
+      "vocabulary": [
+        { "de": "der Beruf", "en": "profession/job", "category": "Nouns" },
+        { "de": "die Karriere", "en": "career", "category": "Nouns" },
+        { "de": "die Bewerbung", "en": "application", "category": "Nouns" },
+        { "de": "der Lebenslauf", "en": "CV/resume", "category": "Nouns" },
+        { "de": "das Anschreiben", "en": "cover letter", "category": "Nouns" },
+        {
+          "de": "das Vorstellungsgespräch",
+          "en": "job interview",
+          "category": "Nouns"
+        },
+        {
+          "de": "die Stelle",
+          "en": "position/job opening",
+          "category": "Nouns"
+        },
+        {
+          "de": "die Arbeitsstelle",
+          "en": "workplace/job",
+          "category": "Nouns"
+        },
+        { "de": "der Arbeitgeber", "en": "employer", "category": "Nouns" },
+        { "de": "der Arbeitnehmer", "en": "employee", "category": "Nouns" },
+        { "de": "der Kollege", "en": "colleague (male)", "category": "Nouns" },
+        {
+          "de": "die Kollegin",
+          "en": "colleague (female)",
+          "category": "Nouns"
+        },
+        {
+          "de": "der Vorgesetzte",
+          "en": "supervisor/boss",
+          "category": "Nouns"
+        },
+        { "de": "das Gehalt", "en": "salary", "category": "Nouns" },
+        { "de": "der Lohn", "en": "wages", "category": "Nouns" },
+        { "de": "die Erfahrung", "en": "experience", "category": "Nouns" },
+        {
+          "de": "die Qualifikation",
+          "en": "qualification",
+          "category": "Nouns"
+        },
+        { "de": "die Fähigkeit", "en": "skill/ability", "category": "Nouns" },
+        {
+          "de": "die Ausbildung",
+          "en": "training/apprenticeship",
+          "category": "Nouns"
+        },
+        {
+          "de": "das Studium",
+          "en": "university studies",
+          "category": "Nouns"
+        },
+        { "de": "bewerben", "en": "to apply", "category": "Verbs" },
+        { "de": "einstellen", "en": "to hire", "category": "Verbs" },
+        { "de": "kündigen", "en": "to quit/terminate", "category": "Verbs" },
+        { "de": "befördern", "en": "to promote", "category": "Verbs" },
+        { "de": "verhandeln", "en": "to negotiate", "category": "Verbs" },
+        { "de": "leiten", "en": "to lead/manage", "category": "Verbs" },
+        { "de": "unterstützen", "en": "to support", "category": "Verbs" },
+        { "de": "erstellen", "en": "to create/draft", "category": "Verbs" },
+        { "de": "teilnehmen", "en": "to participate", "category": "Verbs" },
+        { "de": "erledigen", "en": "to complete/handle", "category": "Verbs" },
+        {
+          "de": "verantwortlich",
+          "en": "responsible",
+          "category": "Adjectives"
+        },
+        { "de": "zuverlässig", "en": "reliable", "category": "Adjectives" },
+        { "de": "flexibel", "en": "flexible", "category": "Adjectives" },
+        { "de": "motiviert", "en": "motivated", "category": "Adjectives" },
+        { "de": "qualifiziert", "en": "qualified", "category": "Adjectives" },
+        { "de": "geeignet", "en": "suitable", "category": "Adjectives" },
+        { "de": "formell", "en": "formal", "category": "Adjectives" },
+        { "de": "informell", "en": "informal", "category": "Adjectives" },
+        { "de": "höflich", "en": "polite", "category": "Adjectives" },
+        {
+          "de": "pünktlich",
+          "en": "on time/punctual",
+          "category": "Adjectives"
+        },
+        {
+          "de": "selbstständig",
+          "en": "independent",
+          "category": "Adjectives"
+        },
+        { "de": "teamfähig", "en": "team-oriented", "category": "Adjectives" },
+        {
+          "de": "belastbar",
+          "en": "resilient/stress-resistant",
+          "category": "Adjectives"
+        },
+        { "de": "derzeit", "en": "currently", "category": "Adverbs" },
+        { "de": "künftig", "en": "in the future", "category": "Adverbs" },
+        { "de": "beruflich", "en": "professionally", "category": "Adverbs" },
+        { "de": "privat", "en": "privately", "category": "Adverbs" },
+        { "de": "vollzeitig", "en": "full-time", "category": "Adverbs" },
+        { "de": "teilzeitig", "en": "part-time", "category": "Adverbs" }
+      ],
+
+      "dialogue": [
+        {
+          "personName": "Herr Weber",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Guten Morgen, Frau Müller. Haben Sie einen Moment **Zeit**?",
+              "en": "Good morning, Ms. Müller. Do you have a moment?"
+            }
+          ]
+        },
+        {
+          "personName": "Frau Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Guten Morgen, ja natürlich. Worüber möchten Sie **sprechen**?",
+              "en": "Good morning, yes of course. What would you like to talk about?"
+            }
+          ]
+        },
+        {
+          "personName": "Herr Weber",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Es geht um Ihre **Karriere**. Wir sind sehr zufrieden mit Ihrer **Arbeit** im letzten Jahr.",
+              "en": "It's about your career. We are very satisfied with your work last year."
+            }
+          ]
+        },
+        {
+          "personName": "Frau Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Das freut mich zu hören. Ich habe auch viel **Erfahrung** gesammelt.",
+              "en": "I'm glad to hear that. I also gained a lot of experience."
+            }
+          ]
+        },
+        {
+          "personName": "Herr Weber",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Genau. **Deshalb** möchten wir Sie zum Teamleiter **befördern**. Sind Sie **interessiert**?",
+              "en": "Exactly. That's why we would like to promote you to team leader. Are you interested?"
+            }
+          ]
+        },
+        {
+          "personName": "Frau Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Wow, das ist eine große **Ehre**! Aber wäre ich dafür **geeignet**?",
+              "en": "Wow, that is a great honor! But would I be suitable for that?"
+            }
+          ]
+        },
+        {
+          "personName": "Herr Weber",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Absolut. Sie sind **zuverlässig** und **teamfähig**. Das ist genau, was wir brauchen.",
+              "en": "Absolutely. You are reliable and team-oriented. That is exactly what we need."
+            }
+          ]
+        },
+        {
+          "personName": "Frau Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Vielen Dank! Gibt es auch eine **Gehaltserhöhung**?",
+              "en": "Thank you very much! Is there also a salary increase?"
+            }
+          ]
+        },
+        {
+          "personName": "Herr Weber",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Selbstverständlich. Wir können das nächste Woche **verhandeln**. Wie sieht es mit **Zeit** aus?",
+              "en": "Of course. We can negotiate that next week. How does time look?"
+            }
+          ]
+        },
+        {
+          "personName": "Frau Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Dienstvormittag passt mir gut. Ich werde mich vorher gut **vorbereiten**.",
+              "en": "Tuesday morning suits me well. I will prepare well beforehand."
+            }
+          ]
+        },
+        {
+          "personName": "Herr Weber",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Perfekt. Und bitte erstellen Sie einen kurzen **Plan** für das neue Projekt.",
+              "en": "Perfect. And please create a short plan for the new project."
+            }
+          ]
+        },
+        {
+          "personName": "Frau Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Mache ich. Vielen Dank für das **Vertrauen**, Herr Weber.",
+              "en": "I will do that. Thank you for the trust, Mr. Weber."
+            }
+          ]
+        },
+        {
+          "personName": "Herr Weber",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Gerne. Wir schätzen Ihre **Arbeit** sehr. Bis Dienstag!",
+              "en": "You're welcome. We appreciate your work very much. See you Tuesday!"
+            }
+          ]
+        },
+        {
+          "personName": "Frau Müller",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Bis Dienstag, auf Wiedersehen!",
+              "en": "See you Tuesday, goodbye!"
+            }
+          ]
+        }
+      ],
+
+      "grammar": {
+        "title": "B1 Grammar Focus: Formal vs. Informal Register & Prepositions",
+        "sections": [
+          {
+            "heading": "1. Formal vs. Informal Address",
+            "content": "In professional contexts, distinguishing between 'Sie' (formal) and 'du' (informal) is crucial.\n- **Formal (Sie):** Used with bosses, clients, strangers, and in interviews.\n  → *Könnten Sie mir helfen?* (Could you help me?)\n  → *Haben Sie Erfahrung?*\n- **Informal (du):** Used with close colleagues (after agreement), friends, family.\n  → *Kannst du mir helfen?*\n  → *Hast du Erfahrung?*\n→ Tip: Always wait for the senior person to offer the 'du'."
+          },
+          {
+            "heading": "2. Polite Requests (Konjunktiv II)",
+            "content": "To sound professional, use the subjunctive form for requests:\n- **Könnten** Sie...? (Could you...?) instead of *Können Sie...*\n- **Würden** Sie...? (Would you...?)\n- **Hätten** Sie Zeit...? (Would you have time...?)\n- Example: ***Könnten** Sie mir den Bericht senden?* (Much more polite than *Senden Sie mir...*)"
+          },
+          {
+            "heading": "3. Prepositions for Jobs",
+            "content": "Common prepositions used in CVs and interviews:\n- **als** + Job Title: *Ich arbeite **als** Ingenieur.* (I work as an engineer.)\n- **bei** + Company: *Ich bin **bei** Siemens angestellt.* (I am employed at Siemens.)\n- **für** + Purpose/Company: *Ich arbeite **für** eine NGO.*\n- **in** + Department/Field: *Sie arbeitet **in** der Marketingabteilung.*"
+          },
+          {
+            "heading": "4. Verbs with Prepositions",
+            "content": "Important collocations for applications:\n- **sich bewerben um** + Accusative: *Ich bewerbe mich **um die Stelle**.*\n- **teilnehmen an** + Dative: *Er nimmt **an der Schulung** teil.*\n- **verantwortlich sein für** + Accusative: *Sie ist **für das Projekt** verantwortlich.*\n- **sich interessieren für** + Accusative: *Wir interessieren uns **für diese Position**.*"
+          },
+          {
+            "heading": "5. Describing Skills (Adjectives)",
+            "content": "Use specific adjectives to describe professional qualities:\n- **teamfähig** (good team player)\n- **belastbar** (resilient under stress)\n- **selbstständig** (able to work independently)\n- **zuverlässig** (reliable)\n- Structure: *Ich bin ein **teamfähiger** Mitarbeiter.* (Adjective ending applies!)"
+          },
+          {
+            "heading": "6. Talking about the Future",
+            "content": "Discussing career goals:\n- **werden** + Infinitive (Futur I): *Ich **werde** nächstes Jahr **studieren**.*\n- **planen** + zu + Infinitive: *Ich **plane**, die Führungskraft zu **werden**.*\n- **möchten** + Infinitive: *Ich **möchte** mehr Verantwortung **übernehmen**.*"
+          },
+          {
+            "heading": "7. Connectors in Professional Contexts",
+            "content": "Structuring arguments in cover letters or meetings:\n- **zudem** / **außerdem** (furthermore/additionally)\n- **daher** / **deshalb** (therefore)\n- **obwohl** (although) -> Verb at end.\n  → ***Obwohl** ich wenig Erfahrung habe, bin ich motiviert.*"
+          }
+        ]
+      },
+
+      "grammarQuiz": [
+        {
+          "section": "Formal vs. Informal",
+          "questions": [
+            {
+              "text": "Formal: ______ Sie mir helfen? (können)",
+              "answer": "Könnten"
+            },
+            { "text": "Informal: ______ du Zeit? (haben)", "answer": "Hast" },
+            {
+              "text": "Formal: Haben ______ Erfahrung? (Sie/du)",
+              "answer": "Sie"
+            },
+            {
+              "text": "Polite request: ______ Sie das senden? (würden)",
+              "answer": "Würden"
+            },
+            {
+              "text": "Informal: Kannst ______ das machen? (du/Sie)",
+              "answer": "du"
+            }
+          ]
+        },
+        {
+          "section": "Prepositions",
+          "questions": [
+            {
+              "text": "Ich arbeite ______ Ingenieur. (als/wie)",
+              "answer": "als"
+            },
+            {
+              "text": "Sie ist ______ Siemens tätig. (bei/in)",
+              "answer": "bei"
+            },
+            {
+              "text": "Er bewirbt sich ______ die Stelle. (um/für)",
+              "answer": "um"
+            },
+            {
+              "text": "Wir nehmen ______ dem Meeting teil. (an/auf)",
+              "answer": "an"
+            },
+            {
+              "text": "Sie ist ______ das Budget verantwortlich. (für/mit)",
+              "answer": "für"
+            }
+          ]
+        },
+        {
+          "section": "Professional Adjectives",
+          "questions": [
+            { "text": "Opposite of 'unzuverlässig'", "answer": "zuverlässig" },
+            { "text": "Able to work in a team: ______", "answer": "teamfähig" },
+            { "text": "Able to handle stress: ______", "answer": "belastbar" },
+            {
+              "text": "Working without supervision: ______",
+              "answer": "selbstständig"
+            },
+            {
+              "text": "Synonym for 'flexibel' in context of time",
+              "answer": "flexibel"
+            }
+          ]
+        },
+        {
+          "section": "Sentence Structure",
+          "questions": [
+            {
+              "text": "Correct: Obwohl ich müde bin, / Obwohl bin ich müde,",
+              "answer": "Obwohl ich müde bin,"
+            },
+            {
+              "text": "Complete: Ich plane, ______ Leiter zu werden.",
+              "answer": "Team"
+            },
+            {
+              "text": "Future: Ich ______ nächstes Jahr befördert werden.",
+              "answer": "werde"
+            },
+            {
+              "text": "Polite: Hätten Sie ______ Zeit?",
+              "answer": "vielleicht/einen Moment"
+            },
+            {
+              "text": "Preposition: Interesse ______ (an/für) + Dat",
+              "answer": "an"
+            }
+          ]
+        },
+        {
+          "section": "Vocabulary in Context",
+          "questions": [
+            {
+              "text": "Document listing work history: ______",
+              "answer": "Lebenslauf"
+            },
+            {
+              "text": "Meeting for a job: ______",
+              "answer": "Vorstellungsgespräch"
+            },
+            { "text": "Money earned monthly: ______", "answer": "Gehalt" },
+            {
+              "text": "To stop working at a company: ______",
+              "answer": "kündigen"
+            },
+            { "text": "To move up in position: ______", "answer": "befördern" }
+          ]
+        }
+      ],
+
+      "reading": [
+        {
+          "address": "Mein Weg zur Managerin",
+          "content": "Als ich mein Studium abgeschlossen habe, wusste ich nicht genau, was ich machen wollte. Zuerst habe ich als Assistentin bei einer kleinen Firma gearbeitet. Die Arbeit war interessant, aber das Gehalt war niedrig. Nach zwei Jahren habe ich mich bei einem großen Konzern beworben. Das Vorstellungsgespräch war schwierig, aber ich war gut vorbereitet. Heute leite ich ein Team von zehn Personen. Ich bin sehr stolz auf meine Karriere. Allerdings muss ich oft Überstunden machen. Trotzdem möchte ich nicht tauschen, denn die Verantwortung macht mir Spaß."
+        },
+        {
+          "address": "Bewerbungstipps für Absolventen",
+          "content": "Der erste Eindruck zählt. Achten Sie darauf, dass Ihr Lebenslauf fehlerfrei ist. Viele Bewerber machen den Fehler, zu viele Informationen zu schreiben. Bleiben Sie klar und strukturiert. Im Anschreiben sollten Sie erklären, warum Sie genau zu dieser Firma passen. Nutzen Sie formelle Sprache, aber seien Sie nicht zu steif. Zeigen Sie Motivation! Wenn Sie zum Gespräch eingeladen werden, kommen Sie pünktlich. Kleiden Sie sich angemessen. Und vergessen Sie nicht: Stellen Sie auch selbst Fragen. Das zeigt Interesse."
+        },
+        {
+          "address": "Homeoffice vs. Büro",
+          "content": "Die Diskussion über den richtigen Arbeitsort dauert an. Einige Mitarbeiter fühlen sich im Homeoffice produktiver. Sie haben keine Ablenkung durch Kollegen und sparen Pendelzeit. Andere vermissen den sozialen Kontakt. Der Chef meiner Abteilung sagt, dass Innovation nur im persönlichen Austausch entsteht. Deshalb fordern viele Firmen jetzt eine Rückkehr ins Büro. Ich persönlich finde eine Mischung am besten. Zwei Tage Büro für Meetings, drei Tage Zuhause für konzentriertes Arbeiten. So hat man die Vorteile von beiden Welten."
+        }
+      ],
+
+      "readingQuestions": {
+        "trueFalse": [
+          {
+            "question": "The narrator started as a manager immediately after university.",
+            "answer": false
+          },
+          {
+            "question": "The narrator currently leads a team of ten people.",
+            "answer": true
+          },
+          {
+            "question": "The text advises writing as much information as possible in the CV.",
+            "answer": false
+          },
+          {
+            "question": "Asking questions in an interview shows interest.",
+            "answer": true
+          },
+          {
+            "question": "The author of the third text prefers 100% Homeoffice.",
+            "answer": false
+          }
+        ],
+        "multipleChoice": [
+          {
+            "question": "Why did the narrator leave the first job?",
+            "options": [
+              "Too much stress",
+              "Low salary",
+              "Bad boss",
+              "Long commute"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "question": "What is a common mistake in applications mentioned?",
+            "options": [
+              "Too short",
+              "Too many errors",
+              "Too much information",
+              "Wrong photo"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "question": "What should you wear to an interview?",
+            "options": [
+              "Casual clothes",
+              "Sportswear",
+              "Appropriate/Formal attire",
+              "Anything comfortable"
+            ],
+            "correctIndex": 2
+          },
+          {
+            "question": "What does the boss believe creates innovation?",
+            "options": ["Silence", "Emails", "Personal exchange", "Homeoffice"],
+            "correctIndex": 2
+          },
+          {
+            "question": "What is the ideal model for the author?",
+            "options": ["Full Office", "Full Home", "Hybrid model", "No work"],
+            "correctIndex": 2
+          }
+        ],
+        "shortAnswer": [
+          {
+            "question": "What did the narrator study?",
+            "answer": "Not specified (implied general degree)"
+          },
+          {
+            "question": "How many years did she work as an assistant?",
+            "answer": "zwei Jahre"
+          },
+          {
+            "question": "What document must be error-free?",
+            "answer": "Lebenslauf"
+          },
+          {
+            "question": "What saves time in Homeoffice?",
+            "answer": "Pendelzeit (commuting)"
+          },
+          {
+            "question": "How many days at home are suggested?",
+            "answer": "drei Tage"
+          },
+          {
+            "question": "What makes the narrator happy despite overtime?",
+            "answer": "die Verantwortung"
+          }
+        ]
+      }
+    }
+  ]
+}

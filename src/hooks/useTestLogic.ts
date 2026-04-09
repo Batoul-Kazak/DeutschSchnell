@@ -181,10 +181,14 @@ export const useTestLogic = ({ levelData, level }: UseTestLogicProps) => {
         window.location.reload();
     };
 
-    const getResult = () => {
-        if (!levelData) return { score: 0, earned: 0, total: 0 };
+     const getResult = () => {
+        if (!levelData || !levelData.questions) {
+            return { score: 0, earned: 0, total: 0 };
+        }
+        
         let totalMarks = 0;
         let earnedMarks = 0;
+        
         levelData.questions.forEach(q => {
             const qMarks = q.marks ?? 1;
             totalMarks += qMarks;
@@ -192,17 +196,18 @@ export const useTestLogic = ({ levelData, level }: UseTestLogicProps) => {
                 earnedMarks += qMarks;
             }
         });
+        
         const score = totalMarks > 0 ? Math.round((earnedMarks / totalMarks) * 100) : 0;
         return { score, earned: earnedMarks, total: totalMarks };
     };
 
-      const getFeedback = (score: number) => {
+    const getFeedback = (score: number) => {
         return scoreFeedback.find(
             range => score >= range.min && score <= range.max
         ) || scoreFeedback[0];
     };
 
-    const { score } = getResult();
+   const { score } = levelData ? getResult() : { score: 0, earned: 0, total: 0 };
     const feedback = getFeedback(score);
 
     return {

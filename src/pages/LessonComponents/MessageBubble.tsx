@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import RichText from "../../components/RichText/RichText";
 
 export default function MessageBubble({
@@ -17,7 +18,11 @@ export default function MessageBubble({
     checked?: boolean;
     correctAnswers?: string[];
 }) {
-    const isPersonA = item.person === "A";
+    const isPersonA = item.personID === "A";
+
+    useEffect(() => {
+        console.log(item);
+    }, []);
 
     return (
         <div className={`flex  ${isPersonA ? "place-self-start" : "place-self-end"}`}>
@@ -27,7 +32,7 @@ export default function MessageBubble({
                     ${!isPractice ? "hidden sm:flex" : "flex"} 
                     place-content-center place-items-center font-bold 
                     bg-dark-red-500 rounded-full hover:scale-110 transition duration-300 cursor-pointer`}>
-                    {item.person}
+                    {item.personName}
                 </div>
 
                 <div className={`p-2 px-3 sm:p-4 rounded-xl sm:rounded-2xl md:rounded-3xl hover:scale-105 

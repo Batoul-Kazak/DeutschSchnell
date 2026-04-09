@@ -1,0 +1,379 @@
+{
+  "B2": {
+    "timeLimitMinutes": 60,
+    "questions": [
+      {
+        "id": "b2-q1",
+        "text": "Welcher Satz ist eine korrekte Nominalisierung von: 'Weil es stark regnete, fiel das Spiel aus.'?",
+        "answers": [
+          { "id": "a", "text": "Wegen des starken Regens fiel das Spiel aus." },
+          { "id": "b", "text": "Trotz des starken Regens fiel das Spiel aus." },
+          { "id": "c", "text": "Um den starken Regen fiel das Spiel aus." },
+          { "id": "d", "text": "Durch den starken Regen fiel das Spiel aus." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "b2-q2",
+        "text": "Was bedeutet 'hingegen' im Satz: 'Er mag Kaffee; sie hingegen trinkt nur Tee.'?",
+        "answers": [
+          { "id": "a", "text": "therefore" },
+          { "id": "b", "text": "however / in contrast" },
+          { "id": "c", "text": "furthermore" },
+          { "id": "d", "text": "consequently" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q3",
+        "text": "Vervollständige: '___ der hohen Kosten müssen wir das Projekt verschieben.'",
+        "answers": [
+          { "id": "a", "text": "Trotz" },
+          { "id": "b", "text": "Wegen" },
+          { "id": "c", "text": "Während" },
+          { "id": "d", "text": "Statt" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q4",
+        "text": "Welcher Satz verwendet das Passiv mit Modalverb korrekt?",
+        "answers": [
+          { "id": "a", "text": "Das Formular muss ausgefüllt werden." },
+          { "id": "b", "text": "Das Formular muss werden ausgefüllt." },
+          { "id": "c", "text": "Das Formular wird müssen ausgefüllt." },
+          { "id": "d", "text": "Das Formular hat ausgefüllt werden müssen." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "b2-q5",
+        "text": "Was bedeutet 'etwas ins Gewicht fallen'?",
+        "answers": [
+          { "id": "a", "text": "to be very heavy physically" },
+          { "id": "b", "text": "to carry weight / to matter significantly" },
+          { "id": "c", "text": "to fall down accidentally" },
+          { "id": "d", "text": "to be unimportant" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q6",
+        "text": "Welcher Connector passt? 'Die Lage ist ernst; ___ ist sofortiges Handeln erforderlich.'",
+        "answers": [
+          { "id": "a", "text": "hingegen" },
+          { "id": "b", "text": "folglich" },
+          { "id": "c", "text": "obwohl" },
+          { "id": "d", "text": "einerseits" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q7",
+        "text": "Vervollständige: 'Es steht außer ___, dass wir uns ändern müssen.'",
+        "answers": [
+          { "id": "a", "text": "Frage" },
+          { "id": "b", "text": "Zweifel" },
+          { "id": "c", "text": "Diskussion" },
+          { "id": "d", "text": "Kontrolle" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b2-q8",
+        "text": "Welches Verb passt? 'Wir müssen die Vor- und Nachteile ___.'",
+        "answers": [
+          { "id": "a", "text": "wiegen" },
+          { "id": "b", "text": "abwägen" },
+          { "id": "c", "text": "bewerten" },
+          { "id": "d", "text": "schätzen" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q9",
+        "text": "Was bedeutet 'bedauerlicherweise'?",
+        "answers": [
+          { "id": "a", "text": "hopefully" },
+          { "id": "b", "text": "regrettably" },
+          { "id": "c", "text": "surprisingly" },
+          { "id": "d", "text": "obviously" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "b2-q10",
+        "text": "Welcher Satz ist im Konjunktiv II der Vergangenheit?",
+        "answers": [
+          { "id": "a", "text": "Ich hätte das machen sollen." },
+          { "id": "b", "text": "Ich habe das machen sollen." },
+          { "id": "c", "text": "Ich würde das machen sollen." },
+          { "id": "d", "text": "Ich machte das sollen." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "b2-q11",
+        "text": "Vervollständige: '___ seines Alters arbeitet er noch immer Vollzeit.'",
+        "answers": [
+          { "id": "a", "text": "Wegen" },
+          { "id": "b", "text": "Trotz" },
+          { "id": "c", "text": "Während" },
+          { "id": "d", "text": "Ohne" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q12",
+        "text": "Was bedeutet 'sich einsetzen für'?",
+        "answers": [
+          { "id": "a", "text": "to sit down for" },
+          { "id": "b", "text": "to advocate for / to commit oneself to" },
+          { "id": "c", "text": "to apply for" },
+          { "id": "d", "text": "to wait for" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q13",
+        "text": "Welcher Satz ist stilistisch am besten (nominalisiert)?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Weil die Preise steigen, kaufen die Leute weniger."
+          },
+          {
+            "id": "b",
+            "text": "Wegen steigender Preise kaufen die Leute weniger."
+          },
+          {
+            "id": "c",
+            "text": "Obwohl die Preise steigen, kaufen die Leute weniger."
+          },
+          {
+            "id": "d",
+            "text": "Wenn die Preise steigen, kaufen die Leute weniger."
+          }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "b2-q14",
+        "text": "Was passt nicht? (Thema: Argumentation)",
+        "answers": [
+          { "id": "a", "text": "befürworten" },
+          { "id": "b", "text": "widersprechen" },
+          { "id": "c", "text": "einwenden" },
+          { "id": "d", "text": "schlafen" }
+        ],
+        "correctAnswerId": "d",
+        "marks": 1
+      },
+      {
+        "id": "b2-q15",
+        "text": "Vervollständige: 'Man sollte diese Möglichkeit nicht ___ Acht lassen.'",
+        "answers": [
+          { "id": "a", "text": "außer" },
+          { "id": "b", "text": "inner" },
+          { "id": "c", "text": "über" },
+          { "id": "d", "text": "unter" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b2-q16",
+        "text": "Was bedeutet 'unverhältnismäßig'?",
+        "answers": [
+          { "id": "a", "text": "proportional" },
+          { "id": "b", "text": "disproportionate" },
+          { "id": "c", "text": "reasonable" },
+          { "id": "d", "text": "equal" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q17",
+        "text": "Welcher Satz verwendet 'wohingegen' korrekt?",
+        "answers": [
+          { "id": "a", "text": "Er arbeitet viel, wohingegen sie faul ist." },
+          { "id": "b", "text": "Wohingegen er arbeitet, ist sie faul." },
+          { "id": "c", "text": "Er arbeitet viel wohingegen sie ist faul." },
+          { "id": "d", "text": "Wohingegen er arbeitet viel, sie ist faul." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "b2-q18",
+        "text": "Was ist die Bedeutung von 'hiermit'?",
+        "answers": [
+          { "id": "a", "text": "hereby" },
+          { "id": "b", "text": "herein" },
+          { "id": "c", "text": "with this hand" },
+          { "id": "d", "text": "from now on" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 1
+      },
+      {
+        "id": "b2-q19",
+        "text": "Vervollständige: 'Es gilt, diese Interessen ___.'",
+        "answers": [
+          { "id": "a", "text": "zu wiegen" },
+          { "id": "b", "text": "abzuwägen" },
+          { "id": "c", "text": "einzuwägen" },
+          { "id": "d", "text": "vorzuwägen" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "b2-q20",
+        "text": "Welches Wort ist ein Synonym für 'dringend'?",
+        "answers": [
+          { "id": "a", "text": "langsam" },
+          { "id": "b", "text": "eilig" },
+          { "id": "c", "text": "spät" },
+          { "id": "d", "text": "ruhig" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "b2-q21",
+        "text": "Was bedeutet 'beitragen zu' (+ Dativ)?",
+        "answers": [
+          { "id": "a", "text": "to subtract from" },
+          { "id": "b", "text": "to contribute to" },
+          { "id": "c", "text": "to take away from" },
+          { "id": "d", "text": "to compare with" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q22",
+        "text": "Welcher Satz ist korrekt (Genitiv)?",
+        "answers": [
+          { "id": "a", "text": "Während des Sommers reisen wir viel." },
+          { "id": "b", "text": "Während dem Sommer reisen wir viel." },
+          { "id": "c", "text": "Während den Sommer reisen wir viel." },
+          { "id": "d", "text": "Während die Sommer reisen wir viel." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b2-q23",
+        "text": "Was bedeutet 'kontrovers'?",
+        "answers": [
+          { "id": "a", "text": "agreed upon" },
+          { "id": "b", "text": "controversial" },
+          { "id": "c", "text": "clear" },
+          { "id": "d", "text": "boring" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "b2-q24",
+        "text": "Vervollständige: '___ man die Daten analysiert, erkennt man den Trend.'",
+        "answers": [
+          { "id": "a", "text": "Indem" },
+          { "id": "b", "text": "Ohne" },
+          { "id": "c", "text": "Statt" },
+          { "id": "d", "text": "Trotz" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "b2-q25",
+        "text": "Welches Adjektiv beschreibt eine Lösung, die lange hält?",
+        "answers": [
+          { "id": "a", "text": "kurzfristig" },
+          { "id": "b", "text": "nachhaltig" },
+          { "id": "c", "text": "sofortig" },
+          { "id": "d", "text": "temporär" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q26",
+        "text": "Was bedeutet 'gegebenenfalls'?",
+        "answers": [
+          { "id": "a", "text": "never" },
+          { "id": "b", "text": "if applicable / if necessary" },
+          { "id": "c", "text": "always" },
+          { "id": "d", "text": "definitely" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q27",
+        "text": "Welcher Satz drückt eine starke Vermutung aus?",
+        "answers": [
+          { "id": "a", "text": "Er könnte krank sein." },
+          { "id": "b", "text": "Er dürfte krank sein." },
+          { "id": "c", "text": "Er kann krank sein." },
+          { "id": "d", "text": "Er muss krank gewesen sein." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "b2-q28",
+        "text": "Vervollständige: 'Wir sehen uns gezwungen, weitere Schritte ___.'",
+        "answers": [
+          { "id": "a", "text": "zu machen" },
+          { "id": "b", "text": "zu ergreifen" },
+          { "id": "c", "text": "zu tun" },
+          { "id": "d", "text": "zu gehen" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "b2-q29",
+        "text": "Was bedeutet 'die Kluft'?",
+        "answers": [
+          { "id": "a", "text": "the bridge" },
+          { "id": "b", "text": "the gap / divide" },
+          { "id": "c", "text": "the connection" },
+          { "id": "d", "text": "the solution" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "b2-q30",
+        "text": "Welcher Satz ist formell korrekt?",
+        "answers": [
+          { "id": "a", "text": "Wir wollen, dass ihr das macht." },
+          { "id": "b", "text": "Wir bitten Sie, dies zu erledigen." },
+          { "id": "c", "text": "Macht das mal schnell." },
+          { "id": "d", "text": "Ihr müsst das machen." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      }
+    ]
+  }
+}

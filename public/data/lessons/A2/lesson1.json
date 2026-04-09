@@ -1,0 +1,425 @@
+{
+  "lessons": [
+    {
+      "id": "a2-l1-5e7b",
+      "course": "A2",
+      "lessonNumber": 1,
+      "image": "/images/A2-lesson1.jpg",
+      "title": "Describing People",
+      "time": "39min",
+      "description": "Describe people's appearance and personality using adjectives, correct adjective endings, and comparative forms like 'größer' or 'sympathischer'.",
+      "tags": ["adjectives", "appearance", "personality", "grammar"],
+      "completed": false,
+      "prevLessonId": "a1-l6-2a8d",
+      "nextLessonId": "a2-l2-6f1c",
+
+      "vocabulary": [
+        { "de": "groß", "en": "tall/big", "category": "Adjectives" },
+        { "de": "klein", "en": "small/short", "category": "Adjectives" },
+        { "de": "schlank", "en": "slim", "category": "Adjectives" },
+        { "de": "dick", "en": "thick/fat", "category": "Adjectives" },
+        { "de": "hübsch", "en": "pretty", "category": "Adjectives" },
+        { "de": "hässlich", "en": "ugly", "category": "Adjectives" },
+        { "de": "jung", "en": "young", "category": "Adjectives" },
+        { "de": "alt", "en": "old", "category": "Adjectives" },
+        { "de": "freundlich", "en": "friendly", "category": "Adjectives" },
+        { "de": "nett", "en": "nice", "category": "Adjectives" },
+        { "de": "ernst", "en": "serious", "category": "Adjectives" },
+        { "de": "lustig", "en": "funny", "category": "Adjectives" },
+        { "de": "intelligent", "en": "intelligent", "category": "Adjectives" },
+        { "de": "fleißig", "en": "hardworking", "category": "Adjectives" },
+        { "de": "faul", "en": "lazy", "category": "Adjectives" },
+        { "de": "geduldig", "en": "patient", "category": "Adjectives" },
+        { "de": "nervös", "en": "nervous", "category": "Adjectives" },
+        { "de": "ruhig", "en": "quiet/calm", "category": "Adjectives" },
+        { "de": "laut", "en": "loud", "category": "Adjectives" },
+        { "de": "die Haare", "en": "hair", "category": "Nouns" },
+        { "de": "die Augen", "en": "eyes", "category": "Nouns" },
+        { "de": "die Nase", "en": "nose", "category": "Nouns" },
+        { "de": "der Mund", "en": "mouth", "category": "Nouns" },
+        { "de": "das Gesicht", "en": "face", "category": "Nouns" },
+        { "de": "die Statur", "en": "build/stature", "category": "Nouns" },
+        { "de": "die Größe", "en": "height/size", "category": "Nouns" },
+        { "de": "das Aussehen", "en": "appearance", "category": "Nouns" },
+        { "de": "der Charakter", "en": "character", "category": "Nouns" },
+        {
+          "de": "die Persönlichkeit",
+          "en": "personality",
+          "category": "Nouns"
+        },
+        { "de": "aussehen", "en": "to look (appear)", "category": "Verbs" },
+        { "de": "beschreiben", "en": "to describe", "category": "Verbs" },
+        { "de": "tragen", "en": "to wear", "category": "Verbs" },
+        { "de": "haben", "en": "to have", "category": "Verbs" },
+        { "de": "sein", "en": "to be", "category": "Verbs" },
+        { "de": "wirken", "en": "to seem", "category": "Verbs" },
+        { "de": "blond", "en": "blond", "category": "Adjectives" },
+        { "de": "braun", "en": "brown", "category": "Adjectives" },
+        { "de": "schwarz", "en": "black", "category": "Adjectives" },
+        { "de": "rot", "en": "red", "category": "Adjectives" },
+        { "de": "grau", "en": "gray", "category": "Adjectives" },
+        { "de": "blau", "en": "blue", "category": "Adjectives" },
+        { "de": "grün", "en": "green", "category": "Adjectives" },
+        { "de": "lang", "en": "long", "category": "Adjectives" },
+        { "de": "kurz", "en": "short", "category": "Adjectives" },
+        { "de": "lockig", "en": "curly", "category": "Adjectives" },
+        { "de": "glatt", "en": "straight/smooth", "category": "Adjectives" },
+        { "de": "der Bart", "en": "beard", "category": "Nouns" },
+        { "de": "die Brille", "en": "glasses", "category": "Nouns" },
+        { "de": "der Pullover", "en": "sweater", "category": "Nouns" },
+        { "de": "die Jeans", "en": "jeans", "category": "Nouns" },
+        { "de": "das Hemd", "en": "shirt", "category": "Nouns" },
+        { "de": "der Rock", "en": "skirt", "category": "Nouns" },
+        { "de": "das Kleid", "en": "dress", "category": "Nouns" },
+        { "de": "die Schuhe", "en": "shoes", "category": "Nouns" },
+        { "de": "modern", "en": "modern", "category": "Adjectives" },
+        { "de": "altmodisch", "en": "old-fashioned", "category": "Adjectives" },
+        { "de": "elegant", "en": "elegant", "category": "Adjectives" },
+        {
+          "de": "sportlich",
+          "en": "athletic/sporty",
+          "category": "Adjectives"
+        },
+        { "de": "ähnlich", "en": "similar", "category": "Adjectives" },
+        { "de": "anders", "en": "different", "category": "Adjectives" },
+        { "de": "genauso", "en": "exactly the same", "category": "Adverbs" },
+        { "de": "nicht so", "en": "not so", "category": "Adverbs" },
+        { "de": "viel", "en": "much", "category": "Adverbs" },
+        { "de": "ein bisschen", "en": "a little bit", "category": "Adverbs" }
+      ],
+
+      "dialogue": [
+        {
+          "person": "Lisa",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Hast du den **neuen Kollegen** gesehen?",
+              "en": "Have you seen the new colleague?"
+            }
+          ]
+        },
+        {
+          "person": "Markus",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Ja, heute Morgen. **Wie findest** du ihn?",
+              "en": "Yes, this morning. What do you think of him?"
+            }
+          ]
+        },
+        {
+          "person": "Lisa",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Er ist **sehr sympathisch**. Und er sieht **gut aus**.",
+              "en": "He is very likeable. And he looks good."
+            }
+          ]
+        },
+        {
+          "person": "Markus",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Findest du? Ich finde ihn **ein bisschen zu ernst**.",
+              "en": "Do you think so? I find him a bit too serious."
+            }
+          ]
+        },
+        {
+          "person": "Lisa",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Vielleicht ist er nur **nervös**. Er ist **größer** als du, oder?",
+              "en": "Maybe he's just nervous. He is taller than you, right?"
+            }
+          ]
+        },
+        {
+          "person": "Markus",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Ja, er ist **ziemlich groß**. Und er hat **lange, braune Haare**.",
+              "en": "Yes, he is quite tall. And he has long, brown hair."
+            }
+          ]
+        },
+        {
+          "person": "Lisa",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Stimmt. Und er **trägt** immer **elegante Kleidung**.",
+              "en": "True. And he always wears elegant clothes."
+            }
+          ]
+        },
+        {
+          "person": "Markus",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Ich finde dich **sportlicher**. Du trägst lieber **Jeans und Pullover**.",
+              "en": "I find you more sporty. You prefer wearing jeans and sweaters."
+            }
+          ]
+        },
+        {
+          "person": "Lisa",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Ja, das ist **bequemer**. Ist der neue Kollege **freundlich**?",
+              "en": "Yes, that is more comfortable. Is the new colleague friendly?"
+            }
+          ]
+        },
+        {
+          "person": "Markus",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Ja, er ist **sehr höflich**. Aber er spricht **leiser** als die anderen.",
+              "en": "Yes, he is very polite. But he speaks quieter than the others."
+            }
+          ]
+        },
+        {
+          "person": "Lisa",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Vielleicht ist er **schüchtern**. Ich möchte ihn **kennenlernen**.",
+              "en": "Maybe he is shy. I would like to get to know him."
+            }
+          ]
+        },
+        {
+          "person": "Markus",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Kein Problem. Wir essen **mittags zusammen**. Komm doch mit!",
+              "en": "No problem. We eat lunch together. Come along!"
+            }
+          ]
+        },
+        {
+          "person": "Lisa",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Gerne! Ist er **älter** oder **jünger** als wir?",
+              "en": "Gladly! Is he older or younger than us?"
+            }
+          ]
+        },
+        {
+          "person": "Markus",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Ich glaube, er ist **genauso alt** wie ich. **Etwa dreißig**.",
+              "en": "I think he is exactly as old as me. About thirty."
+            }
+          ]
+        },
+        {
+          "person": "Lisa",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Perfekt. Dann haben wir **viel gemeinsam**.",
+              "en": "Perfect. Then we have a lot in common."
+            }
+          ]
+        }
+      ],
+
+      "grammar": {
+        "title": "A2 Grammar Focus: Adjective Endings & Comparatives",
+        "sections": [
+          {
+            "heading": "1. Adjective Endings (Nominative)",
+            "content": "Adjectives change based on the article and gender:\n- **Der** (m): der groß**e** Mann\n- **Die** (f): die klein**e** Frau\n- **Das** (n): das jung**e** Kind\n- **Die** (pl): die nett**en** Leute\n→ After definite articles (der/die/das), add -e (singular) or -en (plural)."
+          },
+          {
+            "heading": "2. Adjective Endings (Indefinite)",
+            "content": "With ein/eine/kein:\n- **Ein** (m): ein groß**er** Mann\n- **Eine** (f): eine klein**e** Frau\n- **Ein** (n): ein jung**es** Kind\n→ Notice the -er ending for masculine nouns!"
+          },
+          {
+            "heading": "3. Comparative Forms",
+            "content": "To compare two things, add **-er** to the adjective:\n- groß → größ**er** (tall → taller)\n- klein → klein**er** (small → smaller)\n- jung → jüng**er** (young → younger)\n- alt → äl**ter** (old → older)\n→ Use 'als' (than): Er ist größer **als** ich."
+          },
+          {
+            "heading": "4. Superlative Forms",
+            "content": "To express the highest degree:\n- Form: am **-sten**\n- groß → am größ**ten**\n- klein → am klein**sten**\n- Example: Er ist **am größten** in der Klasse."
+          },
+          {
+            "heading": "5. Irregular Comparatives",
+            "content": "Some adjectives change their vowel or form:\n- gut → besser → am besten (good → better → best)\n- viel → mehr → am meisten (much → more → most)\n- gern → lieber → am liebsten (like → prefer → like most)"
+          },
+          {
+            "heading": "6. Equality Comparison",
+            "content": "To say two things are the same:\n- Structure: **so** [adjective] **wie**\n- Example: Er ist **so groß wie** ich. (He is as tall as me.)\n- Example: Sie ist **genauso alt wie** du. (She is exactly as old as you.)"
+          },
+          {
+            "heading": "7. Describing Appearance",
+            "content": "Common verbs for description:\n- **sein** + Adj: Er **ist** groß. (He is tall.)\n- **haben** + Noun: Sie **hat** blaue Augen. (She has blue eyes.)\n- **aussehen**: Sie **sieht** müde **aus**. (She looks tired.)\n- **tragen**: Er **trägt** eine Brille. (He wears glasses.)"
+          }
+        ]
+      },
+
+      "grammarQuiz": [
+        {
+          "section": "Adjective Endings (Definite)",
+          "questions": [
+            { "text": "Der groß____ Mann.", "answer": "e" },
+            { "text": "Die klein____ Frau.", "answer": "e" },
+            { "text": "Das jung____ Kind.", "answer": "e" },
+            { "text": "Die nett____ Leute.", "answer": "en" },
+            { "text": "Der alt____ Tisch.", "answer": "e" }
+          ]
+        },
+        {
+          "section": "Adjective Endings (Indefinite)",
+          "questions": [
+            { "text": "Ein groß____ Mann.", "answer": "er" },
+            { "text": "Eine klein____ Frau.", "answer": "e" },
+            { "text": "Ein jung____ Kind.", "answer": "es" },
+            { "text": "Kein nett____ Kollege.", "answer": "er" },
+            { "text": "Eine schön____ Blume.", "answer": "e" }
+          ]
+        },
+        {
+          "section": "Comparatives",
+          "questions": [
+            { "text": "groß → ______", "answer": "größer" },
+            { "text": "alt → ______", "answer": "älter" },
+            { "text": "jung → ______", "answer": "jünger" },
+            { "text": "lang → ______", "answer": "länger" },
+            { "text": "stark → ______", "answer": "stärker" }
+          ]
+        },
+        {
+          "section": "Comparisons with 'als' & 'wie'",
+          "questions": [
+            { "text": "Er ist größer ______ ich.", "answer": "als" },
+            { "text": "Sie ist so alt ______ du.", "answer": "wie" },
+            { "text": "Das ist besser ______ das.", "answer": "als" },
+            { "text": "Er ist genauso schnell ______ sie.", "answer": "wie" },
+            { "text": "Ich bin älter ______ mein Bruder.", "answer": "als" }
+          ]
+        },
+        {
+          "section": "Irregular Forms",
+          "questions": [
+            { "text": "gut → ______ (comparative)", "answer": "besser" },
+            { "text": "viel → ______ (comparative)", "answer": "mehr" },
+            { "text": "gern → ______ (comparative)", "answer": "lieber" },
+            { "text": "gut → am ______ (superlative)", "answer": "besten" },
+            { "text": "gern → am ______ (superlative)", "answer": "liebsten" }
+          ]
+        }
+      ],
+
+      "reading": [
+        {
+          "address": "Meine beste Freundin",
+          "content": "Meine beste Freundin heißt Clara. Sie ist 25 Jahre alt und arbeitet als Grafikerin. Clara ist kleiner als ich, aber sie hat längere Haare. Ihre Haare sind blond und lockig. Sie hat blaue Augen und eine kleine Nase. Clara ist sehr freundlich und lustig. Sie trägt gerne moderne Kleidung, oft Jeans und bunte Pullover. Wir sind genauso alt, aber sie sieht jünger aus. Sie ist sportlicher als ich und geht jeden Tag joggen. Ich mag sie sehr, weil sie immer geduldig ist."
+        },
+        {
+          "address": "Ein neuer Nachbar",
+          "content": "Herr Müller ist neu in unserem Haus. Er ist ein älterer Herr, etwa siebzig Jahre alt. Er ist klein und ein bisschen dick. Er hat graue, kurze Haare und trägt immer eine Brille. Herr Müller ist sehr ruhig und ernst. Er spricht leiser als die anderen Nachbarn. Aber er ist sehr hilfsbereit. Yesterday hat er mir geholfen, die schweren Taschen zu tragen. Er trägt oft einen dunklen Anzug und einen Hut. Ich finde ihn ein bisschen altmodisch, aber sehr nett."
+        },
+        {
+          "address": "Zwei Brüder",
+          "content": "Tom und Max sind Brüder. Tom ist der ältere Bruder, er ist 28. Max ist 24. Tom ist größer und stärker als Max. Er hat braune Haare und einen Bart. Max hat blonde, kurze Haare und ist schlanker. Tom arbeitet als Ingenieur, er ist sehr fleißig und ernst. Max ist Student, er ist lustiger und entspannter. Tom trägt lieber elegante Hemden, Max trägt lieber T-Shirts und Sneaker. Aber beide sind sehr intelligent und freundlich. Sie sehen sich nicht sehr ähnlich, aber sie haben denselben Charakter."
+        }
+      ],
+
+      "readingQuestions": {
+        "trueFalse": [
+          {
+            "question": "Clara is older than the narrator.",
+            "answer": false
+          },
+          {
+            "question": "Herr Müller wears glasses.",
+            "answer": true
+          },
+          {
+            "question": "Tom is younger than Max.",
+            "answer": false
+          },
+          {
+            "question": "Clara has straight hair.",
+            "answer": false
+          },
+          {
+            "question": "Max is slimmer than Tom.",
+            "answer": true
+          }
+        ],
+        "multipleChoice": [
+          {
+            "question": "What is Clara's job?",
+            "options": ["Teacher", "Graphic Designer", "Engineer", "Student"],
+            "correctIndex": 1
+          },
+          {
+            "question": "How old is Herr Müller approximately?",
+            "options": ["50", "60", "70", "80"],
+            "correctIndex": 2
+          },
+          {
+            "question": "What does Tom wear preferably?",
+            "options": ["T-Shirts", "Jeans", "Elegant shirts", "Sneakers"],
+            "correctIndex": 2
+          },
+          {
+            "question": "Who is sportier?",
+            "options": ["The narrator", "Clara", "Herr Müller", "Tom"],
+            "correctIndex": 1
+          },
+          {
+            "question": "What color are Max's hair?",
+            "options": ["Brown", "Black", "Gray", "Blond"],
+            "correctIndex": 3
+          }
+        ],
+        "shortAnswer": [
+          {
+            "question": "How old is Clara?",
+            "answer": "25 Jahre alt"
+          },
+          {
+            "question": "What does Herr Müller often wear on his head?",
+            "answer": "einen Hut"
+          },
+          {
+            "question": "What is Tom's profession?",
+            "answer": "Ingenieur"
+          },
+          {
+            "question": "Who is more relaxed, Tom or Max?",
+            "answer": "Max"
+          },
+          {
+            "question": "What color are Clara's eyes?",
+            "answer": "blau"
+          },
+          {
+            "question": "Are the brothers similar in appearance?",
+            "answer": "Nein, sie sehen sich nicht sehr ähnlich."
+          }
+        ]
+      }
+    }
+  ]
+}

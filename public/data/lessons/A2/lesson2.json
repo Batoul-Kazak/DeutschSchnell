@@ -1,0 +1,434 @@
+{
+  "lessons": [
+    {
+      "id": "a2-l2-6f1c",
+      "course": "A2",
+      "lessonNumber": 2,
+      "image": "/images/A2-lesson2.jpg",
+      "title": "Past Tense: Regular Verbs",
+      "time": "55min",
+      "description": "Form the simple past (Präteritum) of regular verbs and narrate past events like 'Ich arbeitete' or 'Wir wanderten' in writing.",
+      "tags": ["grammar", "past", "verbs", "narration"],
+      "completed": false,
+      "prevLessonId": "a2-l1-5e7b",
+      "nextLessonId": "a2-l3-3d4e",
+
+      "vocabulary": [
+        { "de": "gestern", "en": "yesterday", "category": "Adverbs" },
+        {
+          "de": "vorgestern",
+          "en": "day before yesterday",
+          "category": "Adverbs"
+        },
+        { "de": "letzte Woche", "en": "last week", "category": "Adverbs" },
+        { "de": "letztes Jahr", "en": "last year", "category": "Adverbs" },
+        { "de": "damals", "en": "back then", "category": "Adverbs" },
+        { "de": "früher", "en": "earlier/formerly", "category": "Adverbs" },
+        { "de": "arbeiten", "en": "to work", "category": "Verbs" },
+        { "de": "lernen", "en": "to learn/study", "category": "Verbs" },
+        { "de": "machen", "en": "to do/make", "category": "Verbs" },
+        { "de": "spielen", "en": "to play", "category": "Verbs" },
+        { "de": "kaufen", "en": "to buy", "category": "Verbs" },
+        { "de": "besuchen", "en": "to visit", "category": "Verbs" },
+        { "de": "fragen", "en": "to ask", "category": "Verbs" },
+        { "de": "antworten", "en": "to answer", "category": "Verbs" },
+        { "de": "wohnen", "en": "to live/reside", "category": "Verbs" },
+        { "de": "reisen", "en": "to travel", "category": "Verbs" },
+        { "de": "wandern", "en": "to hike", "category": "Verbs" },
+        { "de": "kochen", "en": "to cook", "category": "Verbs" },
+        { "de": "putzen", "en": "to clean", "category": "Verbs" },
+        { "de": "tanzen", "en": "to dance", "category": "Verbs" },
+        { "de": "lachen", "en": "to laugh", "category": "Verbs" },
+        { "de": "sagen", "en": "to say", "category": "Verbs" },
+        { "de": "hören", "en": "to hear/listen", "category": "Verbs" },
+        { "de": "glauben", "en": "to believe", "category": "Verbs" },
+        { "de": "lieben", "en": "to love", "category": "Verbs" },
+        { "de": "leben", "en": "to be alive/live", "category": "Verbs" },
+        { "de": "das Wochenende", "en": "weekend", "category": "Nouns" },
+        { "de": "der Urlaub", "en": "vacation", "category": "Nouns" },
+        {
+          "de": "die Ferien",
+          "en": "holidays/school break",
+          "category": "Nouns"
+        },
+        { "de": "die Geschichte", "en": "story/history", "category": "Nouns" },
+        { "de": "die Erinnerung", "en": "memory", "category": "Nouns" },
+        { "de": "das Ereignis", "en": "event", "category": "Nouns" },
+        { "de": "der Tag", "en": "day", "category": "Nouns" },
+        { "de": "die Nacht", "en": "night", "category": "Nouns" },
+        { "de": "müde", "en": "tired", "category": "Adjectives" },
+        { "de": "glücklich", "en": "happy", "category": "Adjectives" },
+        { "de": "traurig", "en": "sad", "category": "Adjectives" },
+        { "de": "langweilig", "en": "boring", "category": "Adjectives" },
+        { "de": "interessant", "en": "interesting", "category": "Adjectives" },
+        { "de": "schön", "en": "beautiful/nice", "category": "Adjectives" },
+        { "de": "schlecht", "en": "bad", "category": "Adjectives" },
+        { "de": "gut", "en": "good", "category": "Adjectives" },
+        { "de": "pünktlich", "en": "on time", "category": "Adjectives" },
+        { "de": "spät", "en": "late", "category": "Adjectives" },
+        { "de": "früh", "en": "early", "category": "Adjectives" },
+        { "de": "dann", "en": "then", "category": "Adverbs" },
+        { "de": "danach", "en": "afterwards", "category": "Adverbs" },
+        { "de": "zuerst", "en": "first/at first", "category": "Adverbs" },
+        { "de": "schließlich", "en": "finally", "category": "Adverbs" },
+        { "de": "plötzlich", "en": "suddenly", "category": "Adverbs" },
+        { "de": "oft", "en": "often", "category": "Adverbs" },
+        { "de": "manchmal", "en": "sometimes", "category": "Adverbs" },
+        { "de": "nie", "en": "never", "category": "Adverbs" },
+        { "de": "immer", "en": "always", "category": "Adverbs" }
+      ],
+
+      "dialogue": [
+        {
+          "person": "Anna",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Hallo Tom! **Wie war** dein **Wochenende**?",
+              "en": "Hello Tom! How was your weekend?"
+            }
+          ]
+        },
+        {
+          "person": "Tom",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Es war **sehr schön**, danke! Ich **besuchte** meine Oma.",
+              "en": "It was very nice, thanks! I visited my grandma."
+            }
+          ]
+        },
+        {
+          "person": "Anna",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Oh, toll! **Wohnt** sie noch im Dorf?",
+              "en": "Oh, great! Does she still live in the village?"
+            }
+          ]
+        },
+        {
+          "person": "Tom",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Ja. Wir **wanderten** am Samstag im Wald. Das Wetter **war** perfekt.",
+              "en": "Yes. We hiked in the forest on Saturday. The weather was perfect."
+            }
+          ]
+        },
+        {
+          "person": "Anna",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Das klingt entspannend. Und am Sonntag?",
+              "en": "That sounds relaxing. And on Sunday?"
+            }
+          ]
+        },
+        {
+          "person": "Tom",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Am Sonntag **kochte** meine Oma einen großen Kuchen. Wir **aßen** zusammen.",
+              "en": "On Sunday my grandma baked a big cake. We ate together."
+            }
+          ]
+        },
+        {
+          "person": "Anna",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Lecker! Ich **arbeitete** das ganze Wochenende. Mein Projekt **war** sehr stressig.",
+              "en": "Yummy! I worked the whole weekend. My project was very stressful."
+            }
+          ]
+        },
+        {
+          "person": "Tom",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Oh nein! **Musstest** du viel **lernen**?",
+              "en": "Oh no! Did you have to study a lot?"
+            }
+          ]
+        },
+        {
+          "person": "Anna",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Ja, ich **lernte** für die Prüfung und **schrieb** einen langen Bericht.",
+              "en": "Yes, I studied for the exam and wrote a long report."
+            }
+          ]
+        },
+        {
+          "person": "Tom",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Das ist viel Arbeit. Aber jetzt bist du fertig, oder?",
+              "en": "That is a lot of work. But now you are finished, right?"
+            }
+          ]
+        },
+        {
+          "person": "Anna",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Fast. Heute **arbeitete** ich nur bis mittags. Dann **ging** ich ins Kino.",
+              "en": "Almost. Today I only worked until noon. Then I went to the cinema."
+            }
+          ]
+        },
+        {
+          "person": "Tom",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Welchen Film **sahst** du?",
+              "en": "Which film did you see?"
+            }
+          ]
+        },
+        {
+          "person": "Anna",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Einen Comedy-Film. Ich **lachte** sehr viel. Es war lustig!",
+              "en": "A comedy film. I laughed a lot. It was funny!"
+            }
+          ]
+        },
+        {
+          "person": "Tom",
+          "personID": "B",
+          "phrases": [
+            {
+              "de": "Super! Nächste Woche **haben** wir wieder frei. Wollen wir etwas **unternehmen**?",
+              "en": "Great! Next week we are off again. Do we want to do something?"
+            }
+          ]
+        },
+        {
+          "person": "Anna",
+          "personID": "A",
+          "phrases": [
+            {
+              "de": "Gerne! Vielleicht **reisen** wir kurz weg?",
+              "en": "Gladly! Maybe we travel away for a short trip?"
+            }
+          ]
+        }
+      ],
+
+      "grammar": {
+        "title": "A2 Grammar Focus: Präteritum (Simple Past) for Regular Verbs",
+        "sections": [
+          {
+            "heading": "1. When to use Präteritum",
+            "content": "In spoken German, people often use Perfekt. However, **Präteritum** is used for:\n- Narrating stories (books, news).\n- Written reports (emails, essays).\n- The verbs 'sein' (was/were) and 'haben' (had) are common in speech too.\n- Example: 'Es **war** einmal...' (Once upon a time...)"
+          },
+          {
+            "heading": "2. Forming Regular Präteritum",
+            "content": "Take the verb stem + specific endings:\n- Stem: mach-en → mach\n- Endings:\n  - ich: -te (machte)\n  - du: -test (machtest)\n  - er/sie/es: -te (machte)\n  - wir: -ten (machten)\n  - ihr: -tet (machtet)\n  - sie/Sie: -ten (machten)"
+          },
+          {
+            "heading": "3. Verbs ending in -t, -d, -m, -n",
+            "content": "If the stem ends in -t, -d, -m, or -n, add an extra **'e'** before the ending for pronunciation:\n- arbeiten (stem: arbeit) → ich arbeit**ete**, du arbeit**etest**\n- reden (stem: red) → er red**ete**\n- atmen (stem: atm) → wir atm**eten**\n- öffnen (stem: öffn) → sie öffnet**en**"
+          },
+          {
+            "heading": "4. Important Irregular Verbs: Sein & Haben",
+            "content": "These must be memorized as they are very common:\n- **Sein** (to be): ich war, du warst, er war, wir waren, ihr wart, sie waren.\n- **Haben** (to have): ich hatte, du hattest, er hatte, wir hatten, ihr hattet, sie hatten."
+          },
+          {
+            "heading": "5. Time Expressions in the Past",
+            "content": "Common markers for Präteritum:\n- **gestern** (yesterday)\n- **vorgestern** (day before yesterday)\n- **letzte Woche** (last week)\n- **im letzten Jahr** (last year)\n- **damals** (back then)\n- **früher** (in the past/formerly)"
+          },
+          {
+            "heading": "6. Sentence Structure",
+            "content": "Standard word order applies:\n- Subject + Verb (Past) + Object/Time.\n- Example: 'Ich **spielte** gestern Fußball.'\n- With time first: 'Gestern **spielte** ich Fußball.' (Verb stays in position 2)."
+          },
+          {
+            "heading": "7. Negation in the Past",
+            "content": "Use 'nicht' to negate:\n- Place 'nicht' usually at the end or before the specific element being negated.\n- Example: 'Ich **arbeitete** gestern **nicht**.' (I did not work yesterday.)\n- Example: 'Er **kam** **nicht** pünktlich.' (He did not come on time.)"
+          }
+        ]
+      },
+
+      "grammarQuiz": [
+        {
+          "section": "Regular Endings",
+          "questions": [
+            { "text": "ich machte (machen)", "answer": "correct" },
+            { "text": "du spieltest (spielen)", "answer": "correct" },
+            { "text": "er kaufte (kaufen)", "answer": "correct" },
+            { "text": "wir lernten (lernen)", "answer": "correct" },
+            { "text": "ihr arbeitetet (arbeiten)", "answer": "correct" }
+          ]
+        },
+        {
+          "section": "Stems with -t/-d",
+          "questions": [
+            { "text": "ich arbeit____ (arbeiten)", "answer": "ete" },
+            { "text": "du red____ (reden)", "answer": "etest" },
+            { "text": "er wart____ (warten)", "answer": "ete" },
+            { "text": "wir öffn____ (öffnen)", "answer": "eten" },
+            { "text": "sie bad____ (baden)", "answer": "eten" }
+          ]
+        },
+        {
+          "section": "Sein & Haben",
+          "questions": [
+            { "text": "ich ______ (sein)", "answer": "war" },
+            { "text": "du ______ (haben)", "answer": "hattest" },
+            { "text": "er ______ (sein)", "answer": "war" },
+            { "text": "wir ______ (haben)", "answer": "hatten" },
+            { "text": "sie ______ (sein)", "answer": "waren" }
+          ]
+        },
+        {
+          "section": "Complete the Sentence",
+          "questions": [
+            {
+              "text": "Gestern ______ ich Fußball. (spielen)",
+              "answer": "spielte"
+            },
+            { "text": "Wir ______ nach Berlin. (reisen)", "answer": "reisten" },
+            { "text": "Er ______ eine Pizza. (kaufen)", "answer": "kaufte" },
+            { "text": "Ihr ______ laut. (lachen)", "answer": "lachtet" },
+            {
+              "text": "Sie ______ den ganzen Tag. (schlafen - irregular hint: schlief)",
+              "answer": "schliefen"
+            }
+          ]
+        },
+        {
+          "section": "Time Expressions",
+          "questions": [
+            { "text": "Translate: 'last week'", "answer": "letzte Woche" },
+            { "text": "Translate: 'yesterday'", "answer": "gestern" },
+            { "text": "Translate: 'back then'", "answer": "damals" },
+            { "text": "Translate: 'last year'", "answer": "letztes Jahr" },
+            {
+              "text": "Translate: 'day before yesterday'",
+              "answer": "vorgestern"
+            }
+          ]
+        }
+      ],
+
+      "reading": [
+        {
+          "address": "Ein tolles Wochenende",
+          "content": "Letztes Wochenende war fantastisch. Am Samstag morning stand ich früh auf. Ich frühstückte mit meiner Familie. Danach fuhren wir zum See. Das Wetter war sonnig und warm. Wir schwammen im Wasser und spielten Volleyball am Strand. Mittags aßen wir Sandwiches. Am Abend grillten mein Vater und ich Würstchen. Es schmeckte lecker. Sonntag schlief ich lange. Dann las ich ein Buch und hörte Musik. Es war sehr erholsam."
+        },
+        {
+          "address": "Meine Schulzeit",
+          "content": "Früher wohnte ich in einer kleinen Stadt. Ich ging dort zur Schule. Meine Lehrer waren streng, aber nett. Ich lernte viel Deutsch und Mathe. Meine Freunde und ich spielten oft Fußball in der Pause. Damals hatte ich kurze Haare und trug eine Brille. Jeden Tag radelte ich zur Schule. Im Sommer reisten wir oft nach Italien. Ich liebte diese Zeit sehr. Heute vermisse ich meine alten Freunde manchmal."
+        },
+        {
+          "address": "Der gestrige Tag",
+          "content": "Gestern war ein stressiger Tag. Ich arbeitete von acht Uhr morgens bis sechs Uhr abends im Büro. Viele Kollegen waren krank, also musste ich viel machen. Mittags aße ich schnell einen Salat. Nach der Arbeit ging ich einkaufen. Ich kaufte Brot, Milch und Obst. Zu Hause kochte ich Nudeln mit Tomatensoße. Danach sah ich eine Serie im Fernsehen. Um elf Uhr ging ich ins Bett. Ich war sehr müde."
+        }
+      ],
+
+      "readingQuestions": {
+        "trueFalse": [
+          {
+            "question": "The family went to the mountains last weekend.",
+            "answer": false
+          },
+          {
+            "question": "The narrator wore glasses in the past.",
+            "answer": true
+          },
+          {
+            "question": "Yesterday the narrator worked until 8 PM.",
+            "answer": false
+          },
+          {
+            "question": "They traveled to Italy often in the summer.",
+            "answer": true
+          },
+          {
+            "question": "The narrator cooked pizza yesterday evening.",
+            "answer": false
+          }
+        ],
+        "multipleChoice": [
+          {
+            "question": "What did they do at the lake?",
+            "options": [
+              "Fished",
+              "Swam and played volleyball",
+              "Boated",
+              "Slept"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "question": "How did the narrator go to school in the past?",
+            "options": ["By bus", "By car", "By bike", "On foot"],
+            "correctIndex": 2
+          },
+          {
+            "question": "Why was yesterday stressful?",
+            "options": [
+              "The boss was angry",
+              "Many colleagues were sick",
+              "The computer broke",
+              "It was too hot"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "question": "What did the narrator eat for lunch yesterday?",
+            "options": ["Pizza", "Soup", "Salad", "Sandwich"],
+            "correctIndex": 2
+          },
+          {
+            "question": "What did the family eat at the lake?",
+            "options": ["Grilled sausages", "Fish", "Pasta", "Ice cream"],
+            "correctIndex": 0
+          }
+        ],
+        "shortAnswer": [
+          {
+            "question": "When did the narrator wake up on Saturday?",
+            "answer": "früh (early)"
+          },
+          {
+            "question": "Where did the narrator live in the past?",
+            "answer": "in einer kleinen Stadt"
+          },
+          {
+            "question": "What did the narrator buy after work?",
+            "answer": "Brot, Milch und Obst"
+          },
+          {
+            "question": "What did the narrator watch in the evening?",
+            "answer": "eine Serie"
+          },
+          {
+            "question": "Who grilled the sausages?",
+            "answer": "mein Vater und ich"
+          },
+          {
+            "question": "How did the narrator feel at the end of the day?",
+            "answer": "sehr müde"
+          }
+        ]
+      }
+    }
+  ]
+}

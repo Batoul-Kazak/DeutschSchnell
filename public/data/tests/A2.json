@@ -1,0 +1,307 @@
+{
+  "A2": {
+    "timeLimitMinutes": 35,
+    "questions": [
+      {
+        "id": "a2-q1",
+        "text": "Welcher Satz ist korrekt im Perfekt?",
+        "answers": [
+          { "id": "a", "text": "Ich habe gestern ins Kino gegangen." },
+          { "id": "b", "text": "Ich bin gestern ins Kino gegangen." },
+          { "id": "c", "text": "Ich gehe gestern ins Kino." },
+          { "id": "d", "text": "Ich ging gestern ins Kino." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a2-q2",
+        "text": "Was bedeutet 'trotzdem'?",
+        "answers": [
+          { "id": "a", "text": "However" },
+          { "id": "b", "text": "Therefore" },
+          { "id": "c", "text": "Because" },
+          { "id": "d", "text": "Although" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 1
+      },
+      {
+        "id": "a2-q3",
+        "text": "Vervollständige: 'Wenn ich Zeit ___, helfe ich dir.'",
+        "answers": [
+          { "id": "a", "text": "habe" },
+          { "id": "b", "text": "hatte" },
+          { "id": "c", "text": "haben" },
+          { "id": "d", "text": "hätte" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q4",
+        "text": "Welches ist kein Modalverb?",
+        "answers": [
+          { "id": "a", "text": "können" },
+          { "id": "b", "text": "müssen" },
+          { "id": "c", "text": "wollen" },
+          { "id": "d", "text": "gehen" }
+        ],
+        "correctAnswerId": "d",
+        "marks": 2
+      },
+      {
+        "id": "a2-q5",
+        "text": "Wie sagt man 'I would like to order a coffee'?",
+        "answers": [
+          { "id": "a", "text": "Ich möchte einen Kaffee bestellen." },
+          { "id": "b", "text": "Ich will einen Kaffee bestellen." },
+          { "id": "c", "text": "Ich bestelle einen Kaffee." },
+          { "id": "d", "text": "Ich nehme einen Kaffee." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q6",
+        "text": "Welcher Satz verwendet den Dativ korrekt?",
+        "answers": [
+          { "id": "a", "text": "Ich gebe der Frau das Buch." },
+          { "id": "b", "text": "Ich gebe die Frau das Buch." },
+          { "id": "c", "text": "Ich gebe den Frau das Buch." },
+          { "id": "d", "text": "Ich gebe das Frau das Buch." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "a2-q7",
+        "text": "Was ist die Vergangenheitsform von 'sehen'?",
+        "answers": [
+          { "id": "a", "text": "sah" },
+          { "id": "b", "text": "gesehen" },
+          { "id": "c", "text": "sieht" },
+          { "id": "d", "text": "sehen" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q8",
+        "text": "Welche Präposition passt? 'Ich interessiere mich ___ Musik.'",
+        "answers": [
+          { "id": "a", "text": "für" },
+          { "id": "b", "text": "über" },
+          { "id": "c", "text": "mit" },
+          { "id": "d", "text": "von" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q9",
+        "text": "Was bedeutet 'sich beeilen'?",
+        "answers": [
+          { "id": "a", "text": "to rest" },
+          { "id": "b", "text": "to hurry up" },
+          { "id": "c", "text": "to complain" },
+          { "id": "d", "text": "to decide" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a2-q10",
+        "text": "Welcher Satz ist höflich?",
+        "answers": [
+          { "id": "a", "text": "Gib mir das Buch!" },
+          { "id": "b", "text": "Kannst du mir das Buch geben?" },
+          { "id": "c", "text": "Du gibst mir das Buch." },
+          { "id": "d", "text": "Ich will das Buch." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a2-q11",
+        "text": "Vervollständige: 'Er hat sich ___ den Film angesehen.'",
+        "answers": [
+          { "id": "a", "text": "an" },
+          { "id": "b", "text": "auf" },
+          { "id": "c", "text": "bei" },
+          { "id": "d", "text": "—" }
+        ],
+        "correctAnswerId": "d",
+        "marks": 3
+      },
+      {
+        "id": "a2-q12",
+        "text": "Was ist kein Trennbares Verb?",
+        "answers": [
+          { "id": "a", "text": "anrufen" },
+          { "id": "b", "text": "verstehen" },
+          { "id": "c", "text": "aufstehen" },
+          { "id": "d", "text": "mitnehmen" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "a2-q13",
+        "text": "Wie sagt man 'I have been living here since 2020'?",
+        "answers": [
+          { "id": "a", "text": "Ich wohne hier seit 2020." },
+          { "id": "b", "text": "Ich habe hier seit 2020 gewohnt." },
+          { "id": "c", "text": "Ich wohnte hier seit 2020." },
+          { "id": "d", "text": "Ich lebe hier von 2020." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q14",
+        "text": "Welches Wort ist feminin?",
+        "answers": [
+          { "id": "a", "text": "der Tisch" },
+          { "id": "b", "text": "das Fenster" },
+          { "id": "c", "text": "die Tür" },
+          { "id": "d", "text": "der Stuhl" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 2
+      },
+      {
+        "id": "a2-q15",
+        "text": "Was passt? 'Ich freue mich ___ das Wochenende.'",
+        "answers": [
+          { "id": "a", "text": "auf" },
+          { "id": "b", "text": "für" },
+          { "id": "c", "text": "über" },
+          { "id": "d", "text": "an" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q16",
+        "text": "Welcher Satz ist im Konjunktiv II?",
+        "answers": [
+          { "id": "a", "text": "Ich gehe ins Kino." },
+          { "id": "b", "text": "Ich ginge ins Kino." },
+          { "id": "c", "text": "Ich ging ins Kino." },
+          { "id": "d", "text": "Ich bin ins Kino gegangen." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "a2-q17",
+        "text": "Was bedeutet 'aussehen'?",
+        "answers": [
+          { "id": "a", "text": "to look out" },
+          { "id": "b", "text": "to appear / to look like" },
+          { "id": "c", "text": "to exit" },
+          { "id": "d", "text": "to watch" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a2-q18",
+        "text": "Welche Antwort ist falsch? (zu: 'Wohin gehst du?')",
+        "answers": [
+          { "id": "a", "text": "Ich gehe in die Schule." },
+          { "id": "b", "text": "Zum Bahnhof." },
+          { "id": "c", "text": "Ich gehe spazieren." },
+          { "id": "d", "text": "Nach Hause." }
+        ],
+        "correctAnswerId": "c",
+        "marks": 3
+      },
+      {
+        "id": "a2-q19",
+        "text": "Vervollständige: 'Je mehr ich lerne, ___ besser spreche ich Deutsch.'",
+        "answers": [
+          { "id": "a", "text": "desto" },
+          { "id": "b", "text": "so" },
+          { "id": "c", "text": "wie" },
+          { "id": "d", "text": "als" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "a2-q20",
+        "text": "Was ist typisch für eine deutsche Begrüßung unter Freunden?",
+        "answers": [
+          { "id": "a", "text": "Drei Küsse auf die Wange" },
+          { "id": "b", "text": "Handschlag oder Umarmung" },
+          { "id": "c", "text": "Verbeugung" },
+          { "id": "d", "text": "Nicken ohne Blickkontakt" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a2-q21",
+        "text": "Welcher Satz ist korrekt? (Präposition mit Dativ)",
+        "answers": [
+          { "id": "a", "text": "Ich fahre mit dem Auto." },
+          { "id": "b", "text": "Ich fahre mit den Auto." },
+          { "id": "c", "text": "Ich fahre mit das Auto." },
+          { "id": "d", "text": "Ich fahre mit der Auto." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "a2-q22",
+        "text": "Was bedeutet 'der Vorschlag'?",
+        "answers": [
+          { "id": "a", "text": "The problem" },
+          { "id": "b", "text": "The solution" },
+          { "id": "c", "text": "The suggestion" },
+          { "id": "d", "text": "The decision" }
+        ],
+        "correctAnswerId": "c",
+        "marks": 1
+      },
+      {
+        "id": "a2-q23",
+        "text": "Vervollständige: 'Hast du Lust, ___ Kino zu gehen?'",
+        "answers": [
+          { "id": "a", "text": "im" },
+          { "id": "b", "text": "ins" },
+          { "id": "c", "text": "zum" },
+          { "id": "d", "text": "nach" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "a2-q24",
+        "text": "Welches Adjektiv beschreibt eine Person, die viel arbeitet?",
+        "answers": [
+          { "id": "a", "text": "faul" },
+          { "id": "b", "text": "fleißig" },
+          { "id": "c", "text": "lustig" },
+          { "id": "d", "text": "traurig" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "a2-q25",
+        "text": "Was ist die richtige Pluralform von 'das Kind'?",
+        "answers": [
+          { "id": "a", "text": "Kinds" },
+          { "id": "b", "text": "Kinder" },
+          { "id": "c", "text": "Känden" },
+          { "id": "d", "text": "Kinden" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      }
+    ]
+  }
+}

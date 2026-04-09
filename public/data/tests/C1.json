@@ -1,0 +1,406 @@
+{
+  "C1": {
+    "timeLimitMinutes": 70,
+    "questions": [
+      {
+        "id": "c1-q1",
+        "text": "Welcher Satz ist die stilistisch beste Nominalisierung von: 'Obwohl er sehr müde war, arbeitete er weiter.'?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Trotz seiner großen Müdigkeit arbeitete er weiter."
+          },
+          {
+            "id": "b",
+            "text": "Wegen seiner großen Müdigkeit arbeitete er weiter."
+          },
+          {
+            "id": "c",
+            "text": "Anstatt seiner großen Müdigkeit arbeitete er weiter."
+          },
+          {
+            "id": "d",
+            "text": "Durch seine große Müdigkeit arbeitete er weiter."
+          }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "c1-q2",
+        "text": "Was bedeutet die Redewendung 'ins Schwarze treffen'?",
+        "answers": [
+          { "id": "a", "text": "to hit a black object" },
+          {
+            "id": "b",
+            "text": "to be exactly right / hit the nail on the head"
+          },
+          { "id": "c", "text": "to make a mistake" },
+          { "id": "d", "text": "to act in the dark" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q3",
+        "text": "Vervollständige: '___ aller Bemühungen konnte das Problem nicht gelöst werden.'",
+        "answers": [
+          { "id": "a", "text": "Ungeachtet" },
+          { "id": "b", "text": "Angesichts" },
+          { "id": "c", "text": "Zuliebe" },
+          { "id": "d", "text": "Behufs" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "c1-q4",
+        "text": "Welcher Satz verwendet den Konjunktiv II der Vergangenheit korrekt?",
+        "answers": [
+          { "id": "a", "text": "Ich hätte das früher wissen sollen." },
+          { "id": "b", "text": "Ich habe das früher wissen sollen." },
+          { "id": "c", "text": "Ich würde das früher gewusst haben." },
+          { "id": "d", "text": "Ich wäre das früher wissen." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "c1-q5",
+        "text": "Was bedeutet 'etwas zur Sprache bringen'?",
+        "answers": [
+          { "id": "a", "text": "to speak loudly" },
+          {
+            "id": "b",
+            "text": "to raise a topic / bring something up for discussion"
+          },
+          { "id": "c", "text": "to learn a language" },
+          { "id": "d", "text": "to silence someone" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q6",
+        "text": "Welcher Connector passt? 'Die Theorie klingt plausibel; ___ fehlt es an empirischen Beweisen.'",
+        "answers": [
+          { "id": "a", "text": "folglich" },
+          { "id": "b", "text": "indes" },
+          { "id": "c", "text": "demnach" },
+          { "id": "d", "text": "somit" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "c1-q7",
+        "text": "Vervollständige: 'Es liegt ___ Hand, dass diese Maßnahme notwendig ist.'",
+        "answers": [
+          { "id": "a", "text": "in der" },
+          { "id": "b", "text": "auf der" },
+          { "id": "c", "text": "an der" },
+          { "id": "d", "text": "bei der" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "c1-q8",
+        "text": "Was bedeutet 'sich etwas zu eigen machen'?",
+        "answers": [
+          { "id": "a", "text": "to own something physically" },
+          {
+            "id": "b",
+            "text": "to adopt/make something one's own (idea/habit)"
+          },
+          { "id": "c", "text": "to steal something" },
+          { "id": "d", "text": "to borrow something" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "c1-q9",
+        "text": "Welches Wort ist ein Synonym für 'kumulieren'?",
+        "answers": [
+          { "id": "a", "text": "verteilen" },
+          { "id": "b", "text": "häufen / ansammeln" },
+          { "id": "c", "text": "reduzieren" },
+          { "id": "d", "text": "teilen" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q10",
+        "text": "Welcher Satz ist grammatikalisch und stilistisch korrekt (Passiversatz)?",
+        "answers": [
+          { "id": "a", "text": "Das lässt sich leicht erklären." },
+          { "id": "b", "text": "Das wird sich leicht erklären." },
+          { "id": "c", "text": "Das kann sich leicht erklären." },
+          { "id": "d", "text": "Das hat sich leicht erklärt." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "c1-q11",
+        "text": "Vervollständige: '___ man die Komplexität des Problems, wird die Lösung schwierig.'",
+        "answers": [
+          { "id": "a", "text": "Bedingt durch" },
+          { "id": "b", "text": "Angesichts" },
+          { "id": "c", "text": "In Anbetracht" },
+          { "id": "d", "text": "Aufgrund" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      },
+      {
+        "id": "c1-q12",
+        "text": "Was bedeutet 'kontraproduktiv'?",
+        "answers": [
+          { "id": "a", "text": "highly productive" },
+          { "id": "b", "text": "counterproductive" },
+          { "id": "c", "text": "unrelated" },
+          { "id": "d", "text": "efficient" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "c1-q13",
+        "text": "Welcher Satz verwendet 'geschweige denn' korrekt?",
+        "answers": [
+          {
+            "id": "a",
+            "text": "Er kann nicht laufen, geschweige denn rennen."
+          },
+          {
+            "id": "b",
+            "text": "Er kann laufen, geschweige denn er kann rennen."
+          },
+          { "id": "c", "text": "Geschweige denn er läuft, kann er rennen." },
+          { "id": "d", "text": "Er läuft nicht, geschweige denn rennt er." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "c1-q14",
+        "text": "Was bedeutet 'etwas auf die lange Bank schieben'?",
+        "answers": [
+          { "id": "a", "text": "to put something on a long bench" },
+          {
+            "id": "b",
+            "text": "to procrastinate / delay something indefinitely"
+          },
+          { "id": "c", "text": "to prioritize something" },
+          { "id": "d", "text": "to finish something quickly" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q15",
+        "text": "Vervollständige: 'Dies steht ___ Widerspruch zu den bisherigen Erkenntnissen.'",
+        "answers": [
+          { "id": "a", "text": "im" },
+          { "id": "b", "text": "am" },
+          { "id": "c", "text": "zum" },
+          { "id": "d", "text": "beim" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "c1-q16",
+        "text": "Welches Verb passt? 'Die Regierung muss die Konsequenzen ihres Handelns ___.'",
+        "answers": [
+          { "id": "a", "text": "tragen" },
+          { "id": "b", "text": "übernehmen" },
+          { "id": "c", "text": "machen" },
+          { "id": "d", "text": "halten" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q17",
+        "text": "Was bedeutet 'ambivalent'?",
+        "answers": [
+          { "id": "a", "text": "very clear" },
+          { "id": "b", "text": "having mixed feelings / contradictory" },
+          { "id": "c", "text": "extremely positive" },
+          { "id": "d", "text": "neutral" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q18",
+        "text": "Welcher Satz ist eine korrekte Umformung ins Passiv? 'Man sollte die Regeln beachten.'",
+        "answers": [
+          { "id": "a", "text": "Die Regeln sollten beachtet werden." },
+          { "id": "b", "text": "Die Regeln würden beachtet werden." },
+          { "id": "c", "text": "Die Regeln haben beachtet werden sollen." },
+          { "id": "d", "text": "Die Regeln sind zu beachten gewesen." }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "c1-q19",
+        "text": "Vervollständige: '___ dieser Tatsache müssen wir unsere Strategie ändern.'",
+        "answers": [
+          { "id": "a", "text": "Ob" },
+          { "id": "b", "text": "Angesichts" },
+          { "id": "c", "text": "Trotz" },
+          { "id": "d", "text": "Statt" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q20",
+        "text": "Was bedeutet 'etwas unterstreichen' im übertragenen Sinne?",
+        "answers": [
+          { "id": "a", "text": "to draw a line under something" },
+          { "id": "b", "text": "to emphasize / highlight" },
+          { "id": "c", "text": "to cancel something" },
+          { "id": "d", "text": "to hide something" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q21",
+        "text": "Welches Wort passt? 'Seine Argumentation war ___ schlüssig.'",
+        "answers": [
+          { "id": "a", "text": "höchst" },
+          { "id": "b", "text": "sehr" },
+          { "id": "c", "text": "viel" },
+          { "id": "d", "text": "groß" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "c1-q22",
+        "text": "Was bedeutet 'die Diskrepanz'?",
+        "answers": [
+          { "id": "a", "text": "the agreement" },
+          { "id": "b", "text": "the discrepancy / divergence" },
+          { "id": "c", "text": "the similarity" },
+          { "id": "d", "text": "the connection" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q23",
+        "text": "Vervollständige: 'Er tat so, ___ er nichts davon wüsste.'",
+        "answers": [
+          { "id": "a", "text": "als ob" },
+          { "id": "b", "text": "wie wenn" },
+          { "id": "c", "text": "obwohl" },
+          { "id": "d", "text": "da" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "c1-q24",
+        "text": "Welcher Ausdruck ist formell am geeignetsten für einen Briefbeginn?",
+        "answers": [
+          { "id": "a", "text": "Hi, ich schreibe wegen..." },
+          { "id": "b", "text": "Hiermit möchte ich mich bezüglich... melden." },
+          { "id": "c", "text": "Ich will euch sagen, dass..." },
+          { "id": "d", "text": "Moin, es geht um..." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q25",
+        "text": "Was bedeutet 'sich in Geduld fassen'?",
+        "answers": [
+          { "id": "a", "text": "to lose patience" },
+          { "id": "b", "text": "to be patient / exercise patience" },
+          { "id": "c", "text": "to write a poem" },
+          { "id": "d", "text": "to wait angrily" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q26",
+        "text": "Welcher Satz verwendet 'nicht nur..., sondern auch...' korrekt?",
+        "answers": [
+          { "id": "a", "text": "Er ist nicht nur klug, sondern auch fleißig." },
+          { "id": "b", "text": "Er ist nicht nur klug, aber auch fleißig." },
+          {
+            "id": "c",
+            "text": "Nicht nur er ist klug, sondern auch er ist fleißig."
+          },
+          {
+            "id": "d",
+            "text": "Er ist nicht nur klug, sondern auch ist er fleißig."
+          }
+        ],
+        "correctAnswerId": "a",
+        "marks": 2
+      },
+      {
+        "id": "c1-q27",
+        "text": "Was bedeutet 'essenziell'?",
+        "answers": [
+          { "id": "a", "text": "optional" },
+          { "id": "b", "text": "essential / crucial" },
+          { "id": "c", "text": "delicious" },
+          { "id": "d", "text": "secondary" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 1
+      },
+      {
+        "id": "c1-q28",
+        "text": "Vervollständige: 'Es bedarf ___ besonderen Anstrengung, dies zu erreichen.'",
+        "answers": [
+          { "id": "a", "text": "einer" },
+          { "id": "b", "text": "eine" },
+          { "id": "c", "text": "einem" },
+          { "id": "d", "text": "eines" }
+        ],
+        "correctAnswerId": "a",
+        "marks": 3
+      },
+      {
+        "id": "c1-q29",
+        "text": "Was bedeutet 'die Skepsis'?",
+        "answers": [
+          { "id": "a", "text": "trust" },
+          { "id": "b", "text": "skepticism / doubt" },
+          { "id": "c", "text": "joy" },
+          { "id": "d", "text": "certainty" }
+        ],
+        "correctAnswerId": "b",
+        "marks": 2
+      },
+      {
+        "id": "c1-q30",
+        "text": "Welcher Satz drückt eine höfliche, aber bestimmte Forderung aus?",
+        "answers": [
+          { "id": "a", "text": "Sie müssen das sofort machen!" },
+          {
+            "id": "b",
+            "text": "Wir bitten Sie nachdrücklich, dies umgehend zu erledigen."
+          },
+          { "id": "c", "text": "Könnten Sie das vielleicht mal machen?" },
+          { "id": "d", "text": "Machen Sie das jetzt." }
+        ],
+        "correctAnswerId": "b",
+        "marks": 3
+      }
+    ]
+  }
+}

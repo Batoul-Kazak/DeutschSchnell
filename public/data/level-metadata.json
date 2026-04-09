@@ -38,5 +38,13 @@
     "timeMinutes": 75,
     "questionCount": 40,
     "color": "#6A1B9A"
+  },
+  "General": {
+    "label": "All Levels",
+    "title": "General Test",
+    "description": "Mixed questions from A1 to C1 to test your fluency level",
+    "timeMinutes": 60,
+    "questionCount": 40,
+    "color": "#9C27B0"
   }
 }

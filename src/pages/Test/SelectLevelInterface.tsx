@@ -52,7 +52,6 @@ export default function SelectLevelInterface() {
 
     return (
         <div className="relative min-h-screen">
-            {/* Background image with fixed attachment */}
             <div
                 className="fixed inset-0 -z-10"
                 style={{
@@ -64,10 +63,8 @@ export default function SelectLevelInterface() {
                 }}
             />
 
-            {/* Dark overlay */}
             <div className="fixed inset-0 -z-10 bg-black/50"></div>
 
-            {/* Content container */}
             <div className="flex flex-col items-center justify-center min-h-screen p-4">
                 <div className="absolute top-0 left-0 w-full h-24 bg-light-violet opacity-10"></div>
 

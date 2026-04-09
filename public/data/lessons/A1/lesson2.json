@@ -1,0 +1,485 @@
+{
+  "lessons": [
+    {
+      "id": "a1-l2-9c4d",
+      "course": "A1",
+      "lessonNumber": 2,
+      "image": "/images/A1-lesson2.jpg",
+      "title": "Numbers and Basic Questions",
+      "time": "37min",
+      "description": "Master numbers 0–100, phone numbers, prices, and form basic questions using 'wie', 'wo', and 'was' in real-life situations.",
+      "tags": ["numbers", "grammar", "questions", "listening"],
+      "completed": false,
+      "prevLessonId": "a1-l1-8f3b",
+      "nextLessonId": "a1-l3-7d2a",
+
+      "vocabulary": [
+        { "de": "null", "en": "zero", "category": "Numbers" },
+        { "de": "eins", "en": "one", "category": "Numbers" },
+        { "de": "zwei", "en": "two", "category": "Numbers" },
+        { "de": "drei", "en": "three", "category": "Numbers" },
+        { "de": "vier", "en": "four", "category": "Numbers" },
+        { "de": "fünf", "en": "five", "category": "Numbers" },
+        { "de": "sechs", "en": "six", "category": "Numbers" },
+        { "de": "sieben", "en": "seven", "category": "Numbers" },
+        { "de": "acht", "en": "eight", "category": "Numbers" },
+        { "de": "neun", "en": "nine", "category": "Numbers" },
+        { "de": "zehn", "en": "ten", "category": "Numbers" },
+        { "de": "elf", "en": "eleven", "category": "Numbers" },
+        { "de": "zwölf", "en": "twelve", "category": "Numbers" },
+        { "de": "zwanzig", "en": "twenty", "category": "Numbers" },
+        { "de": "dreißig", "en": "thirty", "category": "Numbers" },
+        { "de": "vierzig", "en": "forty", "category": "Numbers" },
+        { "de": "fünfzig", "en": "fifty", "category": "Numbers" },
+        { "de": "hundert", "en": "one hundred", "category": "Numbers" },
+        { "de": "wie viel", "en": "how much", "category": "Interrogatives" },
+        { "de": "wie viele", "en": "how many", "category": "Interrogatives" },
+        { "de": "wie alt", "en": "how old", "category": "Interrogatives" },
+        {
+          "de": "wie teuer",
+          "en": "how expensive",
+          "category": "Interrogatives"
+        },
+        { "de": "Telefonnummer", "en": "phone number", "category": "Nouns" },
+        { "de": "Preis", "en": "price", "category": "Nouns" },
+        { "de": "Euro", "en": "euro", "category": "Nouns" },
+        { "de": "Cent", "en": "cent", "category": "Nouns" },
+        { "de": "Geld", "en": "money", "category": "Nouns" },
+        { "de": "Rechnung", "en": "bill/receipt", "category": "Nouns" },
+        { "de": "kosten", "en": "to cost", "category": "Verbs" },
+        { "de": "zahlen", "en": "to pay", "category": "Verbs" },
+        { "de": "fragen", "en": "to ask", "category": "Verbs" },
+        { "de": "antworten", "en": "to answer", "category": "Verbs" },
+        { "de": "verstehen", "en": "to understand", "category": "Verbs" },
+        { "de": "wiederholen", "en": "to repeat", "category": "Verbs" },
+        { "de": "langsam", "en": "slowly", "category": "Adverbs" },
+        { "de": "schnell", "en": "quickly", "category": "Adverbs" },
+        { "de": "bitte", "en": "please", "category": "Interjections" },
+        {
+          "de": "entschuldigung",
+          "en": "excuse me",
+          "category": "Interjections"
+        },
+        { "de": "noch einmal", "en": "one more time", "category": "Adverbs" },
+        { "de": "das", "en": "that", "category": "Pronouns" },
+        { "de": "dies", "en": "this", "category": "Pronouns" },
+        { "de": "welche", "en": "which", "category": "Interrogatives" },
+        { "de": "warum", "en": "why", "category": "Interrogatives" },
+        { "de": "wann", "en": "when", "category": "Interrogatives" },
+        { "de": "woher", "en": "where from", "category": "Interrogatives" },
+        { "de": "wohin", "en": "where to", "category": "Interrogatives" },
+        { "de": "zählen", "en": "to count", "category": "Verbs" },
+        { "de": "rechnen", "en": "to calculate", "category": "Verbs" },
+        { "de": "Zahl", "en": "number", "category": "Nouns" },
+        { "de": "Summe", "en": "sum/total", "category": "Nouns" },
+        { "de": "billig", "en": "cheap", "category": "Adjectives" },
+        { "de": "teuer", "en": "expensive", "category": "Adjectives" },
+        { "de": "genau", "en": "exactly", "category": "Adverbs" },
+        { "de": "ungefähr", "en": "approximately", "category": "Adverbs" },
+        { "de": "plus", "en": "plus", "category": "Conjunctions" },
+        { "de": "minus", "en": "minus", "category": "Conjunctions" },
+        { "de": "ist gleich", "en": "equals", "category": "Verbs" },
+        { "de": "Prozent", "en": "percent", "category": "Nouns" },
+        { "de": "Rabatt", "en": "discount", "category": "Nouns" },
+        { "de": "Angebot", "en": "offer/sale", "category": "Nouns" },
+        { "de": "Kasse", "en": "cashier", "category": "Nouns" },
+        { "de": "Wechselgeld", "en": "change (money)", "category": "Nouns" }
+      ],
+
+      "dialogue": [
+        {
+          "personID": "A",
+          "personName": "Verkäufer",
+          "phrases": [
+            {
+              "de": "Guten Tag! **Kann** ich Ihnen **helfen**?",
+              "en": "Good day! Can I help you?"
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Kunde",
+          "phrases": [
+            {
+              "de": "Ja, bitte. **Wie viel kostet** das?",
+              "en": "Yes, please. How much does that cost?"
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Verkäufer",
+          "phrases": [
+            {
+              "de": "Das **kostet** **fünfzehn Euro**.",
+              "en": "That costs fifteen euros."
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Kunde",
+          "phrases": [
+            { "de": "Und **dieses** hier?", "en": "And this one here?" }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Verkäufer",
+          "phrases": [
+            {
+              "de": "Das ist **acht Euro** und **fünfzig Cent**.",
+              "en": "That is eight euros and fifty cents."
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Kunde",
+          "phrases": [
+            {
+              "de": "**Wie viel** sind **zwei** davon?",
+              "en": "How much are two of those?"
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Verkäufer",
+          "phrases": [
+            {
+              "de": "**Zwei mal** acht Euro fünfzig... das sind **siebzehn Euro**.",
+              "en": "Two times eight fifty... that is seventeen euros."
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Kunde",
+          "phrases": [
+            {
+              "de": "Okay. **Kann** ich mit **Karte zahlen**?",
+              "en": "Okay. Can I pay by card?"
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Verkäufer",
+          "phrases": [
+            {
+              "de": "Ja, natürlich. **Oder** bar?",
+              "en": "Yes, of course. Or cash?"
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Kunde",
+          "phrases": [
+            {
+              "de": "Bar, bitte. **Haben** Sie **Wechselgeld**?",
+              "en": "Cash, please. Do you have change?"
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Verkäufer",
+          "phrases": [
+            {
+              "de": "Ja, kein Problem. **Hier**, bitte. **Danke**!",
+              "en": "Yes, no problem. Here you go. Thank you!"
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Kunde",
+          "phrases": [
+            {
+              "de": "**Entschuldigung**, **wie ist** Ihre **Telefonnummer**?",
+              "en": "Excuse me, what is your phone number?"
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Verkäufer",
+          "phrases": [
+            {
+              "de": "Meine Nummer? **Null drei null**, **achtundvierzig**, **neunundzwanzig**, **sechsunddreißig**.",
+              "en": "My number? Zero three zero, forty-eight, twenty-nine, thirty-six."
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Kunde",
+          "phrases": [
+            {
+              "de": "**Können** Sie das **noch einmal wiederholen**? **Langsam**, bitte.",
+              "en": "Can you repeat that one more time? Slowly, please."
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Verkäufer",
+          "phrases": [
+            {
+              "de": "Gerne: **Null**... **drei**... **null**... **achtundvierzig**...",
+              "en": "Gladly: Zero... three... zero... forty-eight..."
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Kunde",
+          "phrases": [
+            {
+              "de": "**Danke**! Und **wie alt sind** Sie?",
+              "en": "Thanks! And how old are you?"
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Verkäufer",
+          "phrases": [
+            {
+              "de": "Ich bin **achtundzwanzig** Jahre **alt**. Und Sie?",
+              "en": "I am twenty-eight years old. And you?"
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Kunde",
+          "phrases": [
+            {
+              "de": "Ich bin **dreiunddreißig**. **Schönen Tag** noch!",
+              "en": "I am thirty-three. Have a nice day!"
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Verkäufer",
+          "phrases": [
+            {
+              "de": "**Ihnen** auch! **Auf Wiedersehen**!",
+              "en": "You too! Goodbye!"
+            }
+          ]
+        }
+      ],
+
+      "grammar": {
+        "title": "A1 Grammar Focus: Numbers & Question Formation",
+        "sections": [
+          {
+            "heading": "1. Numbers 0-20",
+            "content": "Learn the basic numbers:\n- 0: null, 1: eins, 2: zwei, 3: drei, 4: vier, 5: fünf\n- 6: sechs, 7: sieben, 8: acht, 9: neun, 10: zehn\n- 11: elf, 12: zwölf, 13: dreizehn, 14: vierzehn, 15: fünfzehn\n- 16: sechzehn, 17: siebzehn, 18: achtzehn, 19: neunzehn, 20: zwanzig"
+          },
+          {
+            "heading": "2. Numbers 20-100",
+            "content": "German numbers follow a pattern:\n- 20: zwanzig, 30: dreißig, 40: vierzig, 50: fünfzig\n- For numbers like 21-29: say the unit FIRST, then 'und', then the ten\n  → 21: einundzwanzig, 24: vierundzwanzig, 35: fünfunddreißig\n- 100: hundert"
+          },
+          {
+            "heading": "3. Asking Questions: W-Words",
+            "content": "German question words always start with 'W':\n- **Wie?** = How? / Wie viel? = How much?\n- **Was?** = What?\n- **Wo?** = Where? / Woher? = Where from? / Wohin? = Where to?\n- **Wer?** = Who?\n- **Wann?** = When?\n- **Warum?** = Why?\n- **Welche?** = Which?"
+          },
+          {
+            "heading": "4. Verb Position in Questions",
+            "content": "In questions, the conjugated verb comes FIRST:\n- Statement: Du **kommst** aus Berlin. (You come from Berlin.)\n- Question: **Kommst** du aus Berlin? (Do you come from Berlin?)\n- Statement: Das **kostet** zehn Euro.\n- Question: **Wie viel kostet** das?"
+          },
+          {
+            "heading": "5. Prices & Currency",
+            "content": "- Use 'kosten' (to cost) for prices: Das **kostet** fünf Euro.\n- Currency: Euro (no plural 's'), Cent\n- Format: 15,50 € = fünfzehn Euro fünfzig\n- Question: **Wie viel kostet** das? / **Was kostet** das?"
+          },
+          {
+            "heading": "6. Phone Numbers in German",
+            "content": "- Say numbers individually or in pairs\n- 'null' for zero\n- Example: 030 48 29 36 → 'null drei null, achtundvierzig, neunundzwanzig, sechsunddreißig'\n- Question: **Wie ist** Ihre Telefonnummer? / **Was ist** Ihre Nummer?"
+          },
+          {
+            "heading": "7. Polite Requests",
+            "content": "- **Kann** ich...? = Can I...?\n- **Können** Sie...? = Can you...? (formal)\n- Add 'bitte' for politeness: **Können** Sie das **bitte wiederholen**?\n- 'noch einmal' = one more time, 'langsam' = slowly"
+          }
+        ]
+      },
+
+      "grammarQuiz": [
+        {
+          "section": "Numbers 0-20",
+          "questions": [
+            { "text": "Write in German: 7", "answer": "sieben" },
+            { "text": "Write in German: 12", "answer": "zwölf" },
+            { "text": "Write in German: 15", "answer": "fünfzehn" },
+            { "text": "Write in German: 0", "answer": "null" },
+            { "text": "Write in German: 20", "answer": "zwanzig" }
+          ]
+        },
+        {
+          "section": "Numbers 20-100",
+          "questions": [
+            { "text": "Write in German: 21", "answer": "einundzwanzig" },
+            { "text": "Write in German: 35", "answer": "fünfunddreißig" },
+            { "text": "Write in German: 48", "answer": "achtundvierzig" },
+            { "text": "Write in German: 100", "answer": "hundert" },
+            { "text": "Write in German: 50", "answer": "fünfzig" }
+          ]
+        },
+        {
+          "section": "Question Words",
+          "questions": [
+            { "text": "______ heißt du? (What)", "answer": "Wie" },
+            { "text": "______ kommst du her? (Where from)", "answer": "Woher" },
+            { "text": "______ kostet das? (How much)", "answer": "Wie viel" },
+            { "text": "______ ist das? (Who)", "answer": "Wer" },
+            { "text": "______ machst du das? (Why)", "answer": "Warum" }
+          ]
+        },
+        {
+          "section": "Verb Position",
+          "questions": [
+            { "text": "______ du aus Berlin? (kommen)", "answer": "Kommst" },
+            { "text": "Wie viel ______ das? (kosten)", "answer": "kostet" },
+            {
+              "text": "______ Sie das bitte wiederholen? (können)",
+              "answer": "Können"
+            },
+            { "text": "Was ______ du? (machen)", "answer": "machst" },
+            { "text": "Wo ______ du? (wohnen)", "answer": "wohnst" }
+          ]
+        },
+        {
+          "section": "Prices & Phone Numbers",
+          "questions": [
+            {
+              "text": "Write in German: €12.50",
+              "answer": "zwölf Euro fünfzig"
+            },
+            {
+              "text": "Question for price: ______ ______ das?",
+              "answer": "Wie viel kostet"
+            },
+            { "text": "Say this number: 030", "answer": "null drei null" },
+            {
+              "text": "Question for phone: Wie ______ Ihre Telefonnummer?",
+              "answer": "ist"
+            },
+            {
+              "text": "Polite request: ______ Sie bitte langsam?",
+              "answer": "Sprechen"
+            }
+          ]
+        }
+      ],
+
+      "reading": [
+        {
+          "address": "Im Supermarkt",
+          "content": "Hallo! Ich bin im Supermarkt. Ich kaufe Brot, Milch und Äpfel. Das Brot kostet zwei Euro fünfzig. Die Milch kostet eins Euro zwanzig. Die Äpfel kosten drei Euro. Wie viel ist das zusammen? Zwei Euro fünfzig plus eins Euro zwanzig plus drei Euro... das sind sechs Euro siebzig. Ich zahle mit Karte. Der Verkäufer gibt mir die Rechnung. Danke und auf Wiedersehen!"
+        },
+        {
+          "address": "Eine neue Telefonnummer",
+          "content": "Guten Tag! Mein Name ist Tom. Ich habe eine neue Telefonnummer. Meine Nummer ist: null eins fünf eins, siebenundachtzig, zweiundvierzig, null drei. Bitte schreiben Sie das auf! Ich rufe Sie morgen an. Wann? Um vier Uhr. Wo? In Berlin. Wie ist Ihre Nummer? Bitte sagen Sie sie langsam. Danke!"
+        },
+        {
+          "address": "Fragen und Antworten",
+          "content": "Hallo! Ich lerne Deutsch. Ich habe viele Fragen. Wie heißt du? Wie alt bist du? Wo wohnst du? Was machst du gerne? Wie viel kostet dein Kaffee? Meine Antworten: Ich heiße Lena. Ich bin zwanzig Jahre alt. Ich wohne in München. Ich lese gerne Bücher und trinke Kaffee. Mein Kaffee kostet drei Euro fünfzig. Und du? Bitte antworte!"
+        }
+      ],
+
+      "readingQuestions": {
+        "trueFalse": [
+          {
+            "question": "The bread costs €2.50 in the supermarket text.",
+            "answer": true
+          },
+          {
+            "question": "Tom's phone number ends with 'null drei'.",
+            "answer": true
+          },
+          {
+            "question": "Lena is thirty years old.",
+            "answer": false
+          },
+          {
+            "question": "The total in the supermarket is €7.20.",
+            "answer": false
+          },
+          {
+            "question": "Lena likes drinking coffee.",
+            "answer": true
+          }
+        ],
+        "multipleChoice": [
+          {
+            "question": "What does the person buy in the supermarket?",
+            "options": [
+              "Bread, milk, apples",
+              "Bread, cheese, water",
+              "Milk, eggs, bananas",
+              "Apples, juice, bread"
+            ],
+            "correctIndex": 0
+          },
+          {
+            "question": "What time does Tom want to call?",
+            "options": [
+              "At 3 o'clock",
+              "At 4 o'clock",
+              "At 5 o'clock",
+              "Tomorrow morning"
+            ],
+            "correctIndex": 1
+          },
+          {
+            "question": "How much does Lena's coffee cost?",
+            "options": ["€2.50", "€3.00", "€3.50", "€4.00"],
+            "correctIndex": 2
+          },
+          {
+            "question": "Where does Lena live?",
+            "options": ["Berlin", "Hamburg", "München", "Wien"],
+            "correctIndex": 2
+          },
+          {
+            "question": "How does the person pay in the supermarket?",
+            "options": ["With cash", "With card", "With phone", "With check"],
+            "correctIndex": 1
+          }
+        ],
+        "shortAnswer": [
+          {
+            "question": "What is the total price in the supermarket text?",
+            "answer": "sechs Euro siebzig"
+          },
+          {
+            "question": "What is Tom's new phone number?",
+            "answer": "null eins fünf eins, siebenundachtzig, zweiundvierzig, null drei"
+          },
+          {
+            "question": "How old is Lena?",
+            "answer": "zwanzig"
+          },
+          {
+            "question": "What does Lena like to do?",
+            "answer": "lesen und Kaffee trinken"
+          },
+          {
+            "question": "What does the person ask at the end of Lena's text?",
+            "answer": "Und du? Bitte antworte!"
+          },
+          {
+            "question": "What does the seller give after payment?",
+            "answer": "die Rechnung"
+          }
+        ]
+      }
+    }
+  ]
+}
