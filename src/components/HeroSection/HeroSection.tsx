@@ -1,6 +1,6 @@
 
-import heroSectionBackground from "../../assets/images/banner-bg.jpg"
-import heroSectionDarkBackground from "../../assets/images/banner-bg-dark.png"
+import heroSectionBackground from "../../../../public/images/banner-bg.jpg"
+import heroSectionDarkBackground from "../../../public/images/banner-bg-dark.png"
 import { KeyboardArrowLeft, KeyboardArrowRight } from "@mui/icons-material"
 
 import img1 from "../../assets/images/banner-item-01.jpg"

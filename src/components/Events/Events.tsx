@@ -19,7 +19,7 @@ const Events = () => {
         <h1 className="pb-20 text-4xl font-bold text-center">Upcoming Events</h1>
         <div className="flex flex-col gap-[7rem]">
             {events.map((item: EventProp) =>
-                <Event item={item} />
+                <Event key={item.id} item={item} />
             )}
         </div>
     </div>
