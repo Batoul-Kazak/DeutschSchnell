@@ -1,1 +1,1 @@
-# Deutschinoary
+# Deutschschnell
