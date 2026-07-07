@@ -14,7 +14,7 @@ export default function GrammarSection({ currentLesson }) {
                         {currentLesson.grammar.sections.map((section, idx) => (
                             <div
                                 key={idx}
-                                className="p-6 border-l-4 shadow-sm bg-gradient-to-r from-light-violet/10 to-white rounded-2xl border-light-violet"
+                                className="p-6 border-l-4 shadow-sm bg-gradient-to-r dark:from-light-violet/20 dark:to-black/5 from-light-violet/10 to-white rounded-2xl border-light-violet"
                             >
                                 <h3 className="flex items-center gap-2 text-xl font-bold text-light-violet">
                                     <span className="flex items-center justify-center w-8 h-8 text-sm text-white rounded-full bg-light-violet">
@@ -22,7 +22,7 @@ export default function GrammarSection({ currentLesson }) {
                                     </span>
                                     {section.heading}
                                 </h3>
-                                <p className="mt-3 leading-relaxed text-gray-800 whitespace-pre-line">
+                                <p className="mt-3 leading-relaxed text-gray-800 dark:text-white whitespace-pre-line">
                                     <RichText text={section.content} className="text-dark-red" />
                                 </p>
                             </div>
@@ -50,9 +50,9 @@ export default function GrammarSection({ currentLesson }) {
                                                 return (
                                                     <div
                                                         key={qIdx}
-                                                        className="p-5 transition border bg-white/90 rounded-xl border-light-violet/30 hover:shadow-md"
+                                                        className="p-5 transition border bg-white/10  rounded-xl border-light-violet/30 hover:shadow-md"
                                                     >
-                                                        <p className="mb-3 text-gray-800">{blankedText}</p>
+                                                        <p className="mb-3 text-gray-800 dark:text-white">{blankedText}</p>
                                                         <div className="flex gap-2">
                                                             <input
                                                                 type="text"
