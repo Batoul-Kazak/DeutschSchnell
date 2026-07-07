@@ -1,7 +1,7 @@
 
 
 import { useForm } from 'react-hook-form';
-import heroSectionBackground from "../../assets/images/banner-bg.jpg";
+import heroSectionBackground from "/public/images/banner-bg.jpg";
 import { useState } from 'react';
 
 const imageStyles = {
@@ -48,7 +48,7 @@ const Contactus = () => {
 
     return (
         <div id="contactus" className="relative flex md:pt-0 pt-10 gap-5 flex-col place-content-center md:text-base text-sm place-items-center h-[40rem] ">
-            <div className="absolute hidden md:flex top-0 bottom-0 left-0 h-[40rem] w-[65%] z-10 bg-gray-300 rounded-tr-full rounded-br-full">
+            <div className="absolute hidden md:flex top-0 bottom-0 left-0 h-[40rem] w-[65%] z-10 bg-gray-300 dark:bg-gray-700 rounded-tr-full rounded-br-full">
                 <div className="flex p-10 lg:pl-20 md:pl-5 w-[30rem] flex-col gap-[3rem] place-content-center ">
                     <div>
                         <h2 className="p-5 font-bold uppercase text-light-violet">Contact Us</h2>

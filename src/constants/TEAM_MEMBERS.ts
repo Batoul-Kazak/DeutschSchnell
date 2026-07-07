@@ -1,8 +1,8 @@
 
-import memberImg_1 from "../assets/images/member-01.jpg"
-import memberImg_2 from "../assets/images/member-02.jpg"
-import memberImg_3 from "../assets/images/member-03.jpg"
-import memberImg_4 from "../assets/images/member-04.jpg"
+import memberImg_1 from "/public/images/member-01.jpg"
+import memberImg_2 from "/public/images/member-02.jpg"
+import memberImg_3 from "/public/images/member-03.jpg"
+import memberImg_4 from "/public/images/member-04.jpg"
 
 export const TEAM_MEMBERS = [
     {

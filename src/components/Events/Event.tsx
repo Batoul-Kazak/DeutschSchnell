@@ -8,7 +8,7 @@ interface EventProps {
 export default function Event({ item }: EventProps) {
     return (
         <div>
-            <div key={item.id} className="hidden gap-20 shadow-lg bg-gray-300/80 md:flex place-content-center place-items-center rounded-3xl">
+            <div key={item.id} className="hidden gap-20 shadow-lg bg-gray-300/80 dark:bg-gray-700 md:flex place-content-center place-items-center rounded-3xl">
                 <div className="relative h-[10rem] w-[13rem] ">
                     <div className="absolute w-[16rem] top-[50%] -left-10 translate-y-[-50%]">
                         <img src={item.img} alt={item.skill} className="rounded-3xl w-[20rem] h-[16rem]  shadow-lg" />

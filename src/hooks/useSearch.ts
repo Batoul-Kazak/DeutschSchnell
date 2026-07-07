@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { scroller } from 'react-scroll';
+// import { useNavigate } from 'react-router-dom';
 import { SearchItem } from './../types/Search';
 import { searchData } from './../../public/data/SearchData';
 
@@ -8,7 +7,7 @@ export function useSearch() {
   const [query, setQuery] = useState<string>('');
   const [results, setResults] = useState<SearchItem[]>([]);
   const [showResults, setShowResults] = useState<boolean>(false);
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const searchRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -63,40 +62,7 @@ export function useSearch() {
     setShowResults(true);
   }, [query]);
 
-  const handleSelect = (item: SearchItem) => {
-    setQuery('');
-    setShowResults(false);
-
-    switch (item.type) {
-      case 'lesson':
-        navigate(`/courses/${item.id}`);
-        break;
-      case 'page':
-        navigate(item.route);
-        break;
-      case 'event':
-        scroller.scrollTo('events', {
-          duration: 800,
-          smooth: 'easeInOutQuart',
-          offset: -80,
-        });
-        break;
-      case 'instructor':
-        scroller.scrollTo('team', {
-          duration: 800,
-          smooth: 'easeInOutQuart',
-          offset: -80,
-        });
-        break;
-      case 'faq':
-        scroller.scrollTo('faq', {
-          duration: 800,
-          smooth: 'easeInOutQuart',
-          offset: -80,
-        });
-        break;
-    }
-  };
+  
 
   return {
     query,
@@ -105,6 +71,6 @@ export function useSearch() {
     showResults,
     setShowResults,
     searchRef,
-    handleSelect,
+    // handleSelect,
   };
 }

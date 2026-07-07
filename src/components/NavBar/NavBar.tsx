@@ -6,12 +6,53 @@ import SideBar from './components/SideBar';
 import HamburgerIcon from './components/HamburgerIcon/HamburgerIcon';
 import SearchBar from './components/SearchBar';
 import ThemeSwitcher from '../ThemeSwitcher/ThemeSwitcher';
+import { scroller } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
+import { SearchItem } from '../../types/search';
+
 
 export default function Navbar({ navItems, isShowSearch, children = <div></div> }) {
     const [activeLink, setActiveLink] = useState<string>('');
     const [isFixed, setIsFixed] = useState<boolean>(false);
-    const { query, setQuery, results, showResults, setShowResults, searchRef, handleSelect } = useSearch();
+    const { query, setQuery, results, showResults, setShowResults, searchRef } = useSearch();
     const [isHamburgerIconOpen, setHamburgerIconOpen] = useState(false);
+      const navigate = useNavigate();
+
+
+    const handleSelect = (item: SearchItem) => {
+    setQuery('');
+    setShowResults(false);
+
+    switch (item.type) {
+      case 'lesson':
+        navigate(`/courses/${item.id}`);
+        break;
+      case 'page':
+        navigate(item.route);
+        break;
+      case 'event':
+        scroller.scrollTo('events', {
+          duration: 800,
+          smooth: 'easeInOutQuart',
+          offset: -80,
+        });
+        break;
+      case 'instructor':
+        scroller.scrollTo('team', {
+          duration: 800,
+          smooth: 'easeInOutQuart',
+          offset: -80,
+        });
+        break;
+      case 'faq':
+        scroller.scrollTo('faq', {
+          duration: 800,
+          smooth: 'easeInOutQuart',
+          offset: -80,
+        });
+        break;
+    }
+  };
 
     useEffect(() => {
         const handleScroll = () => setIsFixed(window.scrollY > 300);

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 export default function Course({ lesson, selectedCourse, lessonNumber }) {
 
     const getCourseImage = (courseLevel: string) => {
-        return `/src/assets/images/${courseLevel}.jpg`;
+        return `/public/images/${courseLevel}.jpg`;
     }
 
     useEffect(() => {

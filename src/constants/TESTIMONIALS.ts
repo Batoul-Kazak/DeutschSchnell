@@ -1,9 +1,9 @@
 
-import student_1 from "../assets/images/student1.png"
-import student_2 from "../assets/images/student2.png"
-import student_3 from "../assets/images/student3.png"
-import student_4 from "../assets/images/student4.png"
-import student_5 from "../assets/images/student5.png"
+import student_1 from "/public/images/student1.png"
+import student_2 from "/public/images/student2.png"
+import student_3 from "/public/images/student3.png"
+import student_4 from "/public/images/student4.png"
+import student_5 from "/public/images/student5.png"
 
 
 export const TESTIMONIALS = [

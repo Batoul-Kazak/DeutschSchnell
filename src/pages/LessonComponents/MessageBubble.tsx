@@ -25,8 +25,8 @@ export default function MessageBubble({
     }, []);
 
     return (
-        <div className={`flex  ${isPersonA ? "place-self-start" : "place-self-end"}`}>
-            <div className="flex gap-2">
+        <div className={`flex  min-w-[40%] ${isPersonA ? "place-self-start" : "place-self-end"}`}>
+            <div className="flex gap-2 min-w-[100%]">
                 <div className={`w-[3rem] h-[3rem] border-[10px] 
                     ${isPersonA ? "border-l-rose-700" : "border-l-dark-blue-700"} 
                     ${!isPractice ? "hidden sm:flex" : "flex"} 
@@ -35,10 +35,10 @@ export default function MessageBubble({
                     {item.personName}
                 </div>
 
-                <div className={`p-2 px-3 sm:p-4 rounded-xl sm:rounded-2xl md:rounded-3xl hover:scale-105 
+                <div className={`p-2 px-3 min-w-[100%] sm:p-4 rounded-xl sm:rounded-2xl md:rounded-3xl hover:scale-105 
                     transition duration-300 shadow-2xl max-w-[170px] sm:max-w-[200px]
                     ${isPersonA
-                        ? "bg-dark-red dark:bg-light-red text-white place-self-start"
+                        ? "bg-dark-red dark:bg-light-red  text-white place-self-start"
                         : "bg-dark-yellow dark:bg-light-yellow text-black place-self-end"}`}>
 
                     <div className="text-sm sm:text-base md:text-xl">

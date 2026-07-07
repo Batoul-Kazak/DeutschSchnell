@@ -1,13 +1,13 @@
 import { createContext, useRef, useState } from "react";
-import Contactus from "./components/ContactUs/Contactus";
-import Courses from "./components/Courses/Courses";
-import Events from "./components/Events/Events";
-import Footer from "./components/Footer/Footer";
-import Navbar from "./components/Navbar/Navbar";
+import Navbar from "./components/NavBar/NavBar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import ServicesSection from "./components/ServicesSection/ServicesSection";
+import Courses from "./components/Courses/Courses";
 import Team from "./components/Team/Team";
-import BackToTopButton from "./components/JumpToTopButton/JumpToTopButton";
+import Events from "./components/Events/Events";
+import Contactus from "./components/ContactUs/Contactus";
+import Footer from "./components/Footer/Footer";
+import JumpToTopButton from "./components/JumpToTopButton/JumpToTopButton";
 
 export const AppContext = createContext<{
     level: string;
@@ -30,7 +30,6 @@ const homePageItems = [
 export default function App() {
 
     return (
-        // <AppContext.Provider value={ }>
         <div className="relative dark:bg-dark-violet ">
             <Navbar navItems={homePageItems} isShowSearch={true} />
             <HeroSection />
@@ -46,8 +45,7 @@ export default function App() {
             {/* <LessonView /> */}
             <Footer />
             {/* <TabbedComponent /> */}
-            <BackToTopButton color="dark-blue" />
+            <JumpToTopButton />
         </div>
-        // </AppContext.Provider>
     )
 }

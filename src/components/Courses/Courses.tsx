@@ -1,8 +1,8 @@
 
 import { useState } from "react";
 import { useCourses } from "../../hooks/useCourses";
-import heroSectionBackground from "../../assets/images/banner-bg.jpg"
-import curve from "../../assets/images/contact-dec-01.png"
+import heroSectionBackground from "../../../public/images/banner-bg.jpg"
+import curve from "../../../public/images/contact-dec-01.png"
 import Course from "./Course";
 
 const imageStyles = {

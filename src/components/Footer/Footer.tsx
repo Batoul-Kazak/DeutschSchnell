@@ -1,4 +1,4 @@
-import heroSectionBackground from "../../assets/images/banner-bg.jpg"
+import heroSectionBackground from "/public/images/banner-bg.jpg"
 
 const imageStyles = {
     backgroundPosition: "center",
