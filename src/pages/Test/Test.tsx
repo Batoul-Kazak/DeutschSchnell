@@ -175,9 +175,11 @@ import LoadingTest from './components/LoadingTest';
 import FinishedTest from './components/FinishedTest';
 import { useEffect, useMemo } from 'react';
 
-export default function Tests() {
-    const { level } = useParams<{ level: string }>();
+export default function Tests({level: propLevel}) {
     const navigate = useNavigate();
+    const params = useParams<{ level: string }>();
+
+    const level = propLevel || params.level;
 
     const { data, isLoading, error } = useQuery({
         queryKey: ['testData', level],

@@ -16,8 +16,14 @@ import NotFound from "./NotFound";
 import Loading from "./Loading";
 import Navbar from "../components/NavBar/NavBar";
 
-const LessonView = () => {
-    const { courseId, lessonId } = useParams<{ courseId: string; lessonId: string }>();
+const LessonView = ({lessonId: propLessonId, courseId: propCourseId}) => {
+    const params = useParams<{ courseId: string; lessonId: string }>();
+
+    const courseId = propCourseId || params.courseId;
+    const lessonId = propLessonId || params.lessonId;
+
+    if(!lessonId || !courseId) return <NotFound />
+
     const [wordsFilter, setWordsFilter] = useState("all");
 
     const { data: rawData, isLoading, error } = useQuery({
@@ -35,10 +41,6 @@ const LessonView = () => {
         (lesson: any) => lesson.lessonNumber === Number(lessonId)
     );
     const { filteredWords, flattenedDialogue } = useLessonData(currentLesson, wordsFilter);
-
-    useEffect(() => {
-        console.log(lessonId);
-    }, []);
 
     if (isLoading) return <Loading />;
     if (error || !currentLesson) return <NotFound

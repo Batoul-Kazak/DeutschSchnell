@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 // import { useNavigate } from 'react-router-dom';
-import { SearchItem } from './../types/Search';
+import { SearchItem } from '../types/Search';
 import { searchData } from './../../public/data/SearchData';
 
 export function useSearch() {
