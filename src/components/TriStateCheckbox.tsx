@@ -17,29 +17,29 @@ const TriStateCheckbox = ({
 
   const colorMap = {
     violet: {
-      true: 'bg-light-green border-light-green',
+      true: 'bg-dark-green border-dark-green',
       false: 'bg-dark-red border-dark-red',
-      unanswered: 'border-dark-violet hover:border-light-violet'
+      unanswered: 'border-dark-violet dark:border-light-violet hover:border-light-violet'
     },
     blue: {
       true: 'bg-light-green border-light-green',
       false: 'bg-dark-red border-dark-red',
-      unanswered: 'border-dark-blue hover:border-light-blue'
+      unanswered: 'border-dark-blue dark:border-light-blue hover:border-light-blue'
     },
     green: {
-      true: 'bg-light-green border-light-green',
+      true: 'bg-dark-green border-dark-green',
       false: 'bg-dark-red border-dark-red',
-      unanswered: 'border-dark-green hover:border-light-green'
+      unanswered: 'border-dark-green dark:border-light-green hover:border-light-green'
     },
     red: {
-      true: 'bg-light-green border-light-green',
+      true: 'bg-dark-green border-dark-green',
       false: 'bg-dark-red border-dark-red',
-      unanswered: 'border-dark-red hover:border-light-red'
+      unanswered: 'border-dark-red dark:border-light-red hover:border-light-red'
     },
     yellow: {
-      true: 'bg-light-green border-light-green',
+      true: 'bg-dark-green border-dark-green',
       false: 'bg-dark-red border-dark-red',
-      unanswered: 'border-dark-yellow hover:border-light-yellow'
+      unanswered: 'border-dark-yellow dark:border-light-yellow hover:border-light-yellow'
     }
   };
 
@@ -71,6 +71,12 @@ const TriStateCheckbox = ({
 
   return (
     <label className="flex items-center gap-3 cursor-pointer">
+      
+      {label && (
+        <span className="text-sm text-gray-700 dark:text-gray-300 select-none">
+          {label}
+        </span>
+      )}
       <div className="relative">
         <button
           type="button"
@@ -83,11 +89,6 @@ const TriStateCheckbox = ({
           {renderIcon()}
         </button>
       </div>
-      {label && (
-        <span className="text-sm text-gray-700 dark:text-gray-300 select-none">
-          {label}
-        </span>
-      )}
     </label>
   );
 };

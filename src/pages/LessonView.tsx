@@ -71,7 +71,7 @@ const LessonView = ({lessonId: propLessonId, courseId: propCourseId}) => {
 
                 <p className="mt-4 text-xl">{currentLesson.description}</p>
                 <VocabularySection wordsFilter={wordsFilter} setWordsFilter={setWordsFilter} filteredWords={filteredWords} />
-                <DialogSection currentLesson={flattenedDialogue} />
+                <DialogSection currentLesson={flattenedDialogue} lessonId={lessonId} />
                 <ReadingSection currentLesson={currentLesson} />
                 <GrammarSection currentLesson={currentLesson} />
                 <div className="flex justify-between w-full p-10 px-10 place-self-center">

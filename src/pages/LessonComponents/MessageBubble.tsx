@@ -48,7 +48,9 @@ export default function MessageBubble({
                                 replace={true}
                                 replacement={(match, matchIndex) => {
                                     const idx = globalIndex + matchIndex;
-                                    const userValue = userAnswers?.[idx] || '';
+
+                                    const answerKey = `dialogue_${idx}`;
+                                    const userValue = userAnswers?.[answerKey] || '';
                                     const correct = correctAnswers?.[idx];
                                     const isCorrect = userValue.trim().toLowerCase() === correct?.trim().toLowerCase();
 

@@ -1,10 +1,16 @@
 import { useMemo, useState } from "react";
 import MessageBubble from "./MessageBubble";
+import { useDeutschSchnell } from "../../context/DeutschSchnellProvider";
 
-export default function DialogSection({ currentLesson }) {
+export default function DialogSection({ currentLesson, lessonId }) {
+    const {setAnswer, userLessons} = useDeutschSchnell();
+
     const [showQuestions, setShowQuestions] = useState(false);
-    const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
+    // const [userAnswers, setUserAnswers] = useState<Record<string, string>>({});
     const [checked, setChecked] = useState(false);
+
+    const lessonData = userLessons[lessonId];
+    const userAnswers = lessonData?.answers || {};
 
     const correctAnswers = useMemo(() => {
         const answers: string[] = [];
@@ -26,13 +32,14 @@ export default function DialogSection({ currentLesson }) {
     }, [currentLesson]);
 
     const handleInputChange = (index: number, value: string) => {
-        setUserAnswers(prev => ({ ...prev, [index]: value }));
+        // setUserAnswers(prev => ({ ...prev, [index]: value }));
+        setAnswer(lessonId, `dialogue_${index}`, value);
     };
 
     const togglePractice = () => {
         setShowQuestions(prev => !prev);
         setChecked(false);
-        setUserAnswers({});
+        // setUserAnswers({});
     };
 
     return (

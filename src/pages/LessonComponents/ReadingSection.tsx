@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import TriStateCheckbox from '../../components/TriStateCheckbox';
 
 export default function ReadingSection({ currentLesson }) {
     const [showQuestions, setShowQuestions] = useState(false);
@@ -43,7 +44,8 @@ export default function ReadingSection({ currentLesson }) {
                                             <div className="flex items-center justify-center w-6 h-6 mt-1 border-2 rounded-full border-dark-red">
                                                 <span className="text-xs font-bold text-dark-red">{i + 1}</span>
                                             </div>
-                                            <p>{q.question}</p>
+                                            {/* <p>{q.question}</p> */}
+                                            <TriStateCheckbox label={q.question} onChange={() => {}} />
                                         </div>
                                     ))}
                                 </div>
