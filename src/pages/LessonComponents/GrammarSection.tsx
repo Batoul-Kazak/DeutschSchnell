@@ -1,8 +1,18 @@
 import { useState } from "react";
 import RichText from "../../components/RichText/RichText";
+import { useDeutschSchnell } from "../../context/DeutschSchnellProvider";
 
-export default function GrammarSection({ currentLesson }) {
+export default function GrammarSection({ currentLesson, lessonId }) {
+    const { setAnswer, userLessons } = useDeutschSchnell();
     const [showQuestions, setShowQuestions] = useState(false);
+
+    const lessonData = userLessons[lessonId];
+    const userAnswers = lessonData?.answers || {};
+
+    const handleGrammarChange = (groupIdx, qIdx, value) => {
+        const key = `grammar_${groupIdx}_${qIdx}`;
+        setAnswer(lessonId, key, value);
+    };
 
     return (
         <div id="grammar">
@@ -46,6 +56,9 @@ export default function GrammarSection({ currentLesson }) {
                                         <h3 className="mb-4 text-xl font-bold text-dark-red">{group.section}</h3>
                                         <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
                                             {group.questions.map((q, qIdx) => {
+
+                                                const asnwerKey = `grammar_${groupIdx}_${qIdx}`;
+                                                const currentValue = userAnswers[asnwerKey] || "";
                                                 const blankedText = q.text.replace("______", "__________");
                                                 return (
                                                     <div
@@ -56,10 +69,13 @@ export default function GrammarSection({ currentLesson }) {
                                                         <div className="flex gap-2">
                                                             <input
                                                                 type="text"
+                                                                value={currentValue}
+                                                                onChange={(e) => handleGrammarChange(groupIdx, qIdx, e.target.value)}
                                                                 placeholder="Your answer..."
                                                                 className="flex-1 px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-dark-red"
                                                             />
                                                             <button
+                                                                onChange={() => handleGrammarChange(groupIdx, qIdx, q.answer)}
                                                                 className="px-3 py-2 text-sm text-white transition rounded-lg bg-light-violet hover:bg-dark-red"
                                                             >
                                                                 Show Answer

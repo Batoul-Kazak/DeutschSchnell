@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import TriStateCheckbox from '../../components/TriStateCheckbox';
+import { useDeutschSchnell } from '../../context/DeutschSchnellProvider';
 
-export default function ReadingSection({ currentLesson }) {
+export default function ReadingSection({ currentLesson, lessonId }) {
+    const {setAnswer, userLessons} = useDeutschSchnell();
     const [showQuestions, setShowQuestions] = useState(false);
+
+    const lessonData = userLessons[lessonId];
+    const userAnswers = lessonData?.answers || {};
+
+    const handleAnswerChange = (questionType, questionIndex, value) => {
+        const key = `${questionType}-${questionIndex}`;
+        setAnswer(lessonId, key, value);
+    }
 
     return (
         <div id='reading'>
@@ -45,7 +55,8 @@ export default function ReadingSection({ currentLesson }) {
                                                 <span className="text-xs font-bold text-dark-red">{i + 1}</span>
                                             </div>
                                             {/* <p>{q.question}</p> */}
-                                            <TriStateCheckbox label={q.question} onChange={() => {}} />
+                                            <TriStateCheckbox value={userAnswers[`tf_${i}`] || "unanswered"}
+                                             onChange={(value) => handleAnswerChange('tf', i, value)} label={q.question} />
                                         </div>
                                     ))}
                                 </div>
@@ -62,14 +73,17 @@ export default function ReadingSection({ currentLesson }) {
                                                 <span className="mr-2 font-bold text-light-violet">{i + 1}.</span> {q.question}
                                             </p>
                                             <div className="grid grid-cols-1 gap-3 md:grid-cols-2">
-                                                {q.options.map((option, idx) => (
+                                                {q.options.map((option, idx) => {
+                                                const isSelected = userAnswers[`mc_${i}`] === option;
+                                                return (
                                                     <button
                                                         key={idx}
+                                                        onClick={() => handleAnswerChange('mc', i, option)}
                                                         className="p-3 text-left transition rounded-lg bg-white/80 hover:bg-dark-yellow"
                                                     >
                                                         {option}
                                                     </button>
-                                                ))}
+                                                )})}
                                             </div>
                                         </div>
                                     ))}
@@ -88,6 +102,8 @@ export default function ReadingSection({ currentLesson }) {
                                                 <span className="mr-2 font-bold text-dark-green">{i + 1}.</span> {q.question}
                                             </p>
                                             <textarea
+                                                value={userAnswers[`sa_${i}`] || ""}
+                                                onChange={(e) => handleAnswerChange('sa', i, e.target.value)}
                                                 placeholder="Write your answer here..."
                                                 className="w-full p-3 border border-gray-300 rounded-lg bg-white/80 focus:outline-none focus:ring-2 focus:ring-dark-red"
                                                 rows={2}

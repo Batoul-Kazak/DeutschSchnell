@@ -3,15 +3,16 @@ import React, { useState } from 'react';
 const TriStateCheckbox = ({ 
   label, 
   onChange,
+  value = "unanswered",
   colorScheme = 'violet' 
 }) => {
-  const [answer, setAnswer] = useState('unanswered');
+  // const [answer, setAnswer] = useState('unanswered');
 
   const handleClick = () => {
     const states = ['unanswered', 'true', 'false'];
-    const currentIndex = states.indexOf(answer);
+    const currentIndex = states.indexOf(value);
     const nextAnswer = states[(currentIndex + 1) % states.length];
-    setAnswer(nextAnswer);
+    // setAnswer(nextAnswer);
     if (onChange) onChange(nextAnswer);
   };
 
@@ -46,14 +47,14 @@ const TriStateCheckbox = ({
   const colors = colorMap[colorScheme] || colorMap.violet;
 
   const renderIcon = () => {
-    if (answer === 'true') {
+    if (value === 'true') {
       return (
         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
         </svg>
       );
     }
-    if (answer === 'false') {
+    if (value === 'false') {
       return (
         <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
@@ -64,8 +65,8 @@ const TriStateCheckbox = ({
   };
 
   const getColorClass = () => {
-    if (answer === 'true') return colors.true;
-    if (answer === 'false') return colors.false;
+    if (value === 'true') return colors.true;
+    if (value === 'false') return colors.false;
     return colors.unanswered;
   };
 

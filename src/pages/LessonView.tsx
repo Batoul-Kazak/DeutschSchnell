@@ -72,8 +72,8 @@ const LessonView = ({lessonId: propLessonId, courseId: propCourseId}) => {
                 <p className="mt-4 text-xl">{currentLesson.description}</p>
                 <VocabularySection wordsFilter={wordsFilter} setWordsFilter={setWordsFilter} filteredWords={filteredWords} />
                 <DialogSection currentLesson={flattenedDialogue} lessonId={lessonId} />
-                <ReadingSection currentLesson={currentLesson} />
-                <GrammarSection currentLesson={currentLesson} />
+                <ReadingSection currentLesson={currentLesson} lessonId={lessonId} />
+                <GrammarSection currentLesson={currentLesson} lessonId={lessonId} />
                 <div className="flex justify-between w-full p-10 px-10 place-self-center">
                     <Button variant="secondary">
                         <Link to={`/courses/${courseId?.toString()}/${Number(lessonId) - 1 > 0 ? Number(lessonId) - 1 : lessonId}`}>
