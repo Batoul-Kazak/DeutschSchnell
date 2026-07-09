@@ -1,0 +1,54 @@
+{
+  "quizTitle": "A1 Quiz 5",
+  "course": "A1",
+  "questions": [
+    {
+      "id": 1,
+      "type": "reading",
+      "question": "What is the main idea of the text?",
+      "text": "Hello! My name is Maria. I am from Spain. I live in Madrid with my family. I have two brothers and one sister. We speak Spanish at home.",
+      "options": [
+        "Maria lives in Barcelona",
+        "Maria has three siblings",
+        "Maria speaks French",
+        "Maria lives alone"
+      ],
+      "correctAnswer": 1
+    },
+    {
+      "id": 2,
+      "type": "flashcard",
+      "front": "der Hund",
+      "back": "the dog",
+      "example": "Der Hund ist groß."
+    },
+    {
+      "id": 3,
+      "type": "matching",
+      "instruction": "Match the questions with the answers",
+      "pairs": [
+        { "left": "Wie heißt du?", "right": "Ich heiße Anna." },
+        { "left": "Woher kommst du?", "right": "Ich komme aus Deutschland." },
+        { "left": "Wie alt bist du?", "right": "Ich bin zwanzig Jahre alt." }
+      ]
+    },
+    {
+      "id": 4,
+      "type": "fillBlank",
+      "sentence": "Ich ___ aus Frankreich.",
+      "answer": "komme",
+      "hint": "Verb: kommen (to come)"
+    },
+    {
+      "id": 5,
+      "type": "writing",
+      "prompt": "Write a short greeting message (2-3 sentences) introducing yourself.",
+      "expectedLength": { "min": 20, "max": 100 },
+      "rubric": [
+        "Uses greeting words",
+        "Includes name",
+        "Mentions origin or age"
+      ]
+    }
+  ]
+}

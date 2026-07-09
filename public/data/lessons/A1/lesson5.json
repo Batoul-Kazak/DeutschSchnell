@@ -1,0 +1,379 @@
+{
+  "lessons": [
+    {
+      "id": "a1-l5-7d2e",
+      "course": "A1",
+      "lessonNumber": 5,
+      "image": "/images/A1-lesson.jpg",
+      "title": "Numbers, Time, and Daily Routine",
+      "time": "45min",
+      "description": "Learn to count, tell time, and describe your daily schedule using basic A1 German.",
+      "tags": ["vocabulary", "dialogue", "reading", "grammar"],
+      "completed": false,
+      "prevLessonId": "a1-l2-9c4d",
+      "nextLessonId": "a1-l4-5f8a",
+
+      "vocabulary": [
+        { "de": "eins", "en": "one", "category": "Numbers" },
+        { "de": "zwei", "en": "two", "category": "Numbers" },
+        { "de": "drei", "en": "three", "category": "Numbers" },
+        { "de": "vier", "en": "four", "category": "Numbers" },
+        { "de": "fünf", "en": "five", "category": "Numbers" },
+        { "de": "sechs", "en": "six", "category": "Numbers" },
+        { "de": "sieben", "en": "seven", "category": "Numbers" },
+        { "de": "acht", "en": "eight", "category": "Numbers" },
+        { "de": "neun", "en": "nine", "category": "Numbers" },
+        { "de": "zehn", "en": "ten", "category": "Numbers" },
+        { "de": "elf", "en": "eleven", "category": "Numbers" },
+        { "de": "zwölf", "en": "twelve", "category": "Numbers" },
+        { "de": "dreißig", "en": "thirty", "category": "Numbers" },
+        { "de": "Uhr", "en": "o'clock", "category": "Nouns" },
+        { "de": "Stunde", "en": "hour", "category": "Nouns" },
+        { "de": "Minute", "en": "minute", "category": "Nouns" },
+        { "de": "Morgen", "en": "morning", "category": "Nouns" },
+        { "de": "Mittag", "en": "noon", "category": "Nouns" },
+        { "de": "Abend", "en": "evening", "category": "Nouns" },
+        { "de": "Nacht", "en": "night", "category": "Nouns" },
+        { "de": "Tag", "en": "day", "category": "Nouns" },
+        { "de": "Woche", "en": "week", "category": "Nouns" },
+        { "de": "Montag", "en": "Monday", "category": "Nouns" },
+        { "de": "Dienstag", "en": "Tuesday", "category": "Nouns" },
+        { "de": "Mittwoch", "en": "Wednesday", "category": "Nouns" },
+        { "de": "Donnerstag", "en": "Thursday", "category": "Nouns" },
+        { "de": "Freitag", "en": "Friday", "category": "Nouns" },
+        { "de": "Samstag", "en": "Saturday", "category": "Nouns" },
+        { "de": "Sonntag", "en": "Sunday", "category": "Nouns" },
+        { "de": "aufstehen", "en": "to get up", "category": "Verbs" },
+        { "de": "frühstücken", "en": "to have breakfast", "category": "Verbs" },
+        { "de": "arbeiten", "en": "to work", "category": "Verbs" },
+        { "de": "lernen", "en": "to learn/study", "category": "Verbs" },
+        { "de": "essen", "en": "to eat", "category": "Verbs" },
+        { "de": "schlafen", "en": "to sleep", "category": "Verbs" },
+        { "de": "beginnen", "en": "to begin", "category": "Verbs" },
+        { "de": "enden", "en": "to end", "category": "Verbs" },
+        { "de": "früh", "en": "early", "category": "Adjectives" },
+        { "de": "spät", "en": "late", "category": "Adjectives" },
+        { "de": "täglich", "en": "daily", "category": "Adjectives" },
+        { "de": "um", "en": "at (time)", "category": "Prepositions" },
+        { "de": "von", "en": "from", "category": "Prepositions" },
+        { "de": "bis", "en": "until/to", "category": "Prepositions" }
+      ],
+
+      "dialogue": [
+        {
+          "personID": "A",
+          "personName": "Markus",
+          "phrases": [
+            {
+              "de": "**Guten Morgen**! **Wie spät** ist es?",
+              "en": "Good morning! What time is it?"
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Julia",
+          "phrases": [
+            {
+              "de": "Es ist **acht Uhr**.",
+              "en": "It's eight o'clock."
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Markus",
+          "phrases": [
+            {
+              "de": "Oh, ich muss **los**! Ich **stehe** immer um **sieben Uhr** **auf**.",
+              "en": "Oh, I have to go! I always get up at seven o'clock."
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Julia",
+          "phrases": [
+            {
+              "de": "Ich stehe um **halb acht** auf.",
+              "en": "I get up at half past seven."
+            },
+            {
+              "de": "Dann **frühstücke** ich.",
+              "en": "Then I have breakfast."
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Markus",
+          "phrases": [
+            {
+              "de": "Was **isst** du zum Frühstück?",
+              "en": "What do you eat for breakfast?"
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Julia",
+          "phrases": [
+            {
+              "de": "Ich esse **Brot** mit **Käse** und trinke **Kaffee**.",
+              "en": "I eat bread with cheese and drink coffee."
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Markus",
+          "phrases": [
+            {
+              "de": "Und wann **beginnt** deine Arbeit?",
+              "en": "And when does your work start?"
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Julia",
+          "phrases": [
+            {
+              "de": "Ich arbeite **von neun bis fünf**.",
+              "en": "I work from nine to five."
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Markus",
+          "phrases": [
+            {
+              "de": "Das ist **lang**! Ich arbeite nur **bis drei**.",
+              "en": "That's long! I only work until three."
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Julia",
+          "phrases": [
+            {
+              "de": "Glücklich! Was machst du am **Nachmittag**?",
+              "en": "Lucky! What do you do in the afternoon?"
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Markus",
+          "phrases": [
+            {
+              "de": "Ich **lerne** Deutsch **von vier bis sechs**.",
+              "en": "I study German from four to six."
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Julia",
+          "phrases": [
+            {
+              "de": "**Super**! Und am **Abend**?",
+              "en": "Great! And in the evening?"
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Markus",
+          "phrases": [
+            {
+              "de": "Am Abend **koche** ich und sehe **Fernsehen**.",
+              "en": "In the evening I cook and watch TV."
+            },
+            {
+              "de": "Um **zehn Uhr** gehe ich **schlafen**.",
+              "en": "At ten o'clock I go to sleep."
+            }
+          ]
+        },
+        {
+          "personID": "B",
+          "personName": "Julia",
+          "phrases": [
+            {
+              "de": "Ich gehe erst um **elf** schlafen.",
+              "en": "I only go to sleep at eleven."
+            }
+          ]
+        },
+        {
+          "personID": "A",
+          "personName": "Markus",
+          "phrases": [
+            {
+              "de": "Das ist **spät**! Gute Nacht!",
+              "en": "That's late! Good night!"
+            }
+          ]
+        }
+      ],
+
+      "grammar": {
+        "title": "A1 Grammar Focus: Telling Time & Separable Verbs",
+        "sections": [
+          {
+            "heading": "1. Numbers 1-20",
+            "content": "Basic counting:\n- 1 = eins, 2 = zwei, 3 = drei, 4 = vier, 5 = fünf\n- 6 = sechs, 7 = sieben, 8 = acht, 9 = neun, 10 = zehn\n- 11 = elf, 12 = zwölf, 13 = dreizehn, 14 = vierzehn, 15 = fünfzehn\n- 16 = sechzehn, 17 = siebzehn, 18 = achtzehn, 19 = neunzehn, 20 = zwanzig"
+          },
+          {
+            "heading": "2. Telling Time",
+            "content": "- **Es ist ... Uhr** = It is ... o'clock\n  - Es ist **acht Uhr**. (It is 8:00)\n- **halb** = half past\n  - Es ist **halb neun**. (It is 8:30 / half past eight)\n- **viertel** = quarter\n  - Es ist **viertel nach acht**. (It is 8:15)\n  - Es ist **viertel vor neun**. (It is 8:45)"
+          },
+          {
+            "heading": "3. Days of the Week",
+            "content": "- Montag (Monday)\n- Dienstag (Tuesday)\n- Mittwoch (Wednesday)\n- Donnerstag (Thursday)\n- Freitag (Friday)\n- Samstag (Saturday)\n- Sonntag (Sunday)\n→ All days are masculine: **der** Montag"
+          },
+          {
+            "heading": "4. Separable Verbs",
+            "content": "Some verbs split in sentences:\n- **aufstehen** (to get up)\n  - Ich **stehe** um sieben Uhr **auf**. (I get up at 7.)\n- **fernsehen** (to watch TV)\n  - Ich **sehe** abends **fern**. (I watch TV in the evenings.)\n- The prefix goes to the end!"
+          },
+          {
+            "heading": "5. Prepositions of Time: von ... bis",
+            "content": "Use 'von ... bis' for time ranges:\n- Ich arbeite **von** neun **bis** fünf. (I work from 9 to 5.)\n- Der Kurs ist **von** Montag **bis** Freitag. (The course is from Monday to Friday.)"
+          },
+          {
+            "heading": "6. Using 'um' for Specific Times",
+            "content": "Use 'um' + time for specific clock times:\n- Ich stehe **um** sieben Uhr auf. (I get up at 7.)\n- Wir essen **um** zwölf Uhr. (We eat at 12.)"
+          }
+        ]
+      },
+      "grammarQuiz": [
+        {
+          "section": "Numbers",
+          "questions": [
+            { "text": "5 + 3 = ______", "answer": "acht" },
+            { "text": "10 - 2 = ______", "answer": "acht" },
+            { "text": "12 + 1 = ______", "answer": "dreizehn" },
+            { "text": "20 - 5 = ______", "answer": "fünfzehn" },
+            { "text": "7 + 4 = ______", "answer": "elf" }
+          ]
+        },
+        {
+          "section": "Telling Time",
+          "questions": [
+            { "text": "8:00 = Es ist ______ Uhr.", "answer": "acht" },
+            { "text": "8:30 = Es ist ______ neun.", "answer": "halb" },
+            { "text": "9:15 = Es ist viertel ______ neun.", "answer": "nach" },
+            { "text": "9:45 = Es ist viertel ______ zehn.", "answer": "vor" },
+            { "text": "12:00 = Es ist ______ Uhr.", "answer": "zwölf" }
+          ]
+        },
+        {
+          "section": "Days of the Week",
+          "questions": [
+            { "text": "Der Tag nach Montag ist ______.", "answer": "Dienstag" },
+            { "text": "Der Tag vor Freitag ist ______.", "answer": "Donnerstag" },
+            { "text": "Das Wochenende beginnt am ______.", "answer": "Samstag" },
+            { "text": "Der erste Tag der Woche ist ______.", "answer": "Montag" },
+            { "text": "Der letzte Tag der Woche ist ______.", "answer": "Sonntag" }
+          ]
+        },
+        {
+          "section": "Separable Verbs",
+          "questions": [
+            { "text": "Ich ______ um 7 Uhr ______. (aufstehen)", "answer": "stehe ... auf" },
+            { "text": "Wir ______ abends ______. (fernsehen)", "answer": "sehen ... fern" },
+            { "text": "Er ______ um 10 Uhr ______. (schlafen gehen)", "answer": "geht ... schlafen" },
+            { "text": "Sie ______ um 8 Uhr ______. (anfangen)", "answer": "fängt ... an" },
+            { "text": "Ich ______ um 6 Uhr ______. (aufhören)", "answer": "höre ... auf" }
+          ]
+        },
+        {
+          "section": "Prepositions: um / von ... bis",
+          "questions": [
+            { "text": "Ich arbeite ______ neun ______ fünf.", "answer": "von ... bis" },
+            { "text": "Der Kurs beginnt ______ acht Uhr.", "answer": "um" },
+            { "text": "Wir essen ______ zwölf Uhr.", "answer": "um" },
+            { "text": "Ich lerne ______ Montag ______ Freitag.", "answer": "von ... bis" },
+            { "text": "Ich schlafe ______ zehn Uhr.", "answer": "um" }
+          ]
+        }
+      ],
+      "reading": [
+        {
+          "address": "My Daily Schedule",
+          "content": "Hallo! Ich heiße Thomas und bin 25 Jahre alt. Jeden Tag stehe ich um sechs Uhr auf. Dann dusche ich und frühstücke. Um sieben Uhr fahre ich zur Arbeit. Ich arbeite von acht bis vier Uhr. Nach der Arbeit gehe ich ins Fitnessstudio. Am Abend koche ich Essen und sehe fern. Um zehn Uhr gehe ich schlafen. Am Wochenende schlafe ich länger. Samstags treffe ich Freunde. Sonntags mache ich nichts!"
+        },
+        {
+          "address": "A Student's Day",
+          "content": "Guten Tag! Ich bin Lisa, Studentin in Berlin. Ich stehe um halb acht auf. Mein Unterricht beginnt um neun Uhr. Ich habe vier Stunden: Deutsch, Mathematik, Geschichte und Sport. Mittags esse ich in der Mensa. Nachmittags lerne ich in der Bibliothek von zwei bis fünf. Abends treffe ich meine Freundin Anna. Wir trinken Kaffee und sprechen Deutsch. Um elf Uhr gehe ich schlafen."
+        },
+        {
+          "address": "Weekend Plans",
+          "content": "Heute ist Freitag! Am Wochenende habe ich keine Arbeit. Samstagmorgen schlafe ich bis zehn Uhr. Dann frühstücke ich mit meiner Familie. Nachmittags gehe ich einkaufen. Abends sehe ich einen Film im Kino. Sonntag ist mein Ruhetag. Ich lese ein Buch und höre Musik. Um acht Uhr abends bereite ich mich auf die neue Woche vor. Montag beginnt um sieben Uhr!"
+        }
+      ],
+      "readingQuestions": {
+        "trueFalse": [
+          {
+            "question": "Thomas gets up at 7 o'clock.",
+            "answer": false
+          },
+          {
+            "question": "Lisa has four classes.",
+            "answer": true
+          },
+          {
+            "question": "On Sunday, the person works all day.",
+            "answer": false
+          }
+        ],
+        "multipleChoice": [
+          {
+            "question": "What time does Thomas go to sleep?",
+            "options": ["9 o'clock", "10 o'clock", "11 o'clock", "8 o'clock"],
+            "correctIndex": 1
+          },
+          {
+            "question": "Where does Lisa study in the afternoon?",
+            "options": ["At home", "In the park", "In the library", "At a café"],
+            "correctIndex": 2
+          },
+          {
+            "question": "What does the person do on Saturday evening?",
+            "options": ["Reads a book", "Goes shopping", "Watches a film", "Meets friends"],
+            "correctIndex": 2
+          }
+        ],
+        "shortAnswer": [
+          {
+            "question": "How old is Thomas?",
+            "answer": "25"
+          },
+          {
+            "question": "What time does Lisa get up?",
+            "answer": "Half past seven"
+          },
+          {
+            "question": "What does Thomas do after work?",
+            "answer": "He goes to the fitness studio."
+          },
+          {
+            "question": "Who does Lisa meet in the evening?",
+            "answer": "Her friend Anna"
+          },
+          {
+            "question": "What day is the person's rest day?",
+            "answer": "Sunday"
+          },
+          {
+            "question": "What time does the new week start on Monday?",
+            "answer": "Seven o'clock"
+          }
+        ]
+      }
+    }
+  ]
+}
