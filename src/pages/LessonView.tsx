@@ -9,7 +9,7 @@ import DialogSection from "./LessonComponents/DialogSection";
 import VocabularySection from "./LessonComponents/VocabularySection";
 import { useLessonData } from "../hooks/useLessonData";
 import { lessonTags } from "../constants/lessonView";
-import Button from "../components/Button/Button";
+import Button from "../components/Button";
 import ReadingTracker from "../components/ReadingTracker/ReadingTracker";
 import Timer from "../components/ReadingTracker/Timer";
 import NotFound from "./NotFound";

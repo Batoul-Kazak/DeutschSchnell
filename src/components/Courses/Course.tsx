@@ -13,7 +13,7 @@ export default function Course({ lesson, selectedCourse, lessonNumber }) {
     }, [])
 
     return (
-        <Link to={`/courses/${lesson.course}/${lessonNumber}`} key={lesson.id}>
+        <Link to={`/courses/${lesson.course}`} key={lesson.id}>
             <div className="p-5 px-0 dark:bg-gray-300/50 bg-gray-300 rounded-3xl place-self-center  md:hover:scale-105 transition-transform duration-500 hover:shadow-[0_4px_12px_rgba(0.8,0.8,0.8,0.6)] shadow-[0_4px_12px_rgba(0,0,0,0.4)]">
                 <div className="relative">
                     {/* <div className="absolute w-full h-10 bg-indigo-600 z-2 -top-5"></div> */}
