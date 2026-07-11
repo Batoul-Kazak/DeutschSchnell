@@ -14,7 +14,16 @@ interface PracticeTest {
   type: 'quiz';
 }
 
-type Material = Lesson | PracticeTest;
+interface PositionedItem extends Material {
+  x: number;
+  y: number;
+}
+
+interface Material {
+  id: string; 
+  title: string;
+  type: 'lesson' | 'quiz';
+}
 
 interface PositionedItem extends Material {
   x: number;
@@ -25,7 +34,6 @@ const CourseMaterials: React.FC = () => {
   const navigate = useNavigate();
   const { courseId } = useParams<{ courseId: string }>();
   
-  // State to hold fetched materials
   const [materials, setMaterials] = useState<Material[]>([]);
   const [loading, setLoading] = useState(true);
 
@@ -36,14 +44,12 @@ const CourseMaterials: React.FC = () => {
     const fetchMaterials = async () => {
       setLoading(true);
       try {
-        // Fetch the manifest file for the specific course
         const response = await fetch(`/data/lessons/${courseId}/manifest.json`);
         if (!response.ok) throw new Error('Failed to load course data');
         const data = await response.json();
         setMaterials(data);
       } catch (error) {
         console.error('Error loading course materials:', error);
-        // Fallback to empty array or error state
         setMaterials([]);
       } finally {
         setLoading(false);
@@ -53,7 +59,7 @@ const CourseMaterials: React.FC = () => {
     fetchMaterials();
   }, [courseId]);
 
-  // --- Random Walk Algorithm (Same as before, but depends on fetched materials) ---
+  // Random Walk Algorithm 
   const positionedItems = useMemo(() => {
     if (materials.length === 0) return [];
 
@@ -118,10 +124,16 @@ const CourseMaterials: React.FC = () => {
 
   const handleItemClick = (item: Material) => {
     if (courseId) {
-      // Navigate to /courses/{courseId}/{itemId}
       navigate(`/courses/${encodeURIComponent(courseId)}/${item.type}/${item.id}`);
     }
   };
+
+  function getMaterialName(id: string)
+  {
+    if(id.startsWith('l')) return `Lesson ${id.replace('l', '')}`;
+    if(id.startsWith('q')) return `Practice Quiz ${id.replace('q', '')}`;
+    return id;
+  }
 
   const handleFinalClick = () => {
     if (courseId) {
@@ -158,7 +170,7 @@ const CourseMaterials: React.FC = () => {
             />
           </svg>
 
-          {positionedItems.map((item) => (
+          {positionedItems.map((item: PositionedItem) => (
             <div
               key={item.id}
               className="absolute transform -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300 hover:scale-110 z-10 group"
@@ -168,11 +180,11 @@ const CourseMaterials: React.FC = () => {
               <div className={`
                 flex items-center justify-center text-white font-bold text-lg shadow-md
                 ${item.type === 'lesson' 
-                  ? 'w-14 h-14 bg-blue-500 rounded-lg hover:bg-blue-600' 
-                  : 'w-14 h-14 bg-orange-500 rounded-full hover:bg-orange-600'
+                  ? 'px-4 py-3 text-[16px] bg-blue-500 rounded-lg hover:bg-blue-600' 
+                  : 'px-4 py-2 text-[12px] bg-orange-500 rounded-full hover:bg-orange-600'
                 }
               `}>
-                {item.id}
+                {getMaterialName(item.id)}
               </div>
               
               <div className="absolute top-full mt-2 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-20">
