@@ -1,10 +1,11 @@
+import Title from "../../components/Title";
 import { WORD_TYPES } from "../../constants/lessonView"
 
 export default function VocabularySection({ wordsFilter, setWordsFilter, filteredWords }) {
 
     return (
         <div id="vocabulary" className="flex flex-col w-full gap-5 mt-8">
-            <h2 className="text-3xl font-bold text-light-violet">Vocabulary you will learn:</h2>
+            <Title title="Vocabulary You will Learn" number="01" />
             <div className="flex flex-wrap w-full gap-5 py-2 font-bold rounded-lg text-light-violet place-content-center place-items-center">
                 {WORD_TYPES.map(({ key, label }) => (
                     <button
@@ -22,9 +23,9 @@ export default function VocabularySection({ wordsFilter, setWordsFilter, filtere
                     filteredWords.map((item, idx) => (
                         <div
                             key={idx}
-                            className="flex gap-5 px-2 py-1 text-white rounded-md shadow-lg bg-light-violet"
+                            className="flex gap-5 px-2 py-1 text-white rounded-md shadow-lg dark:bg-dark-violet bg-light-blue"
                         >
-                            <span className="font-bold text-dark-red">{item.de}</span>
+                            <span className="font-bold dark:text-light-red text-dark-red">{item.de}</span>
                             <span>{item.en}</span>
                         </div>
                     ))

@@ -16,6 +16,9 @@ import CourseContent from "./pages/LessonComponents/CourseContent.tsx";
 import TestPage from "./pages/TestPage.tsx";
 import { DeutschSchnellProvider } from "./context/DeutschSchnellProvider.tsx";
 import CourseContentSwitcher from "./pages/CourseContentSwitcher.tsx";
+import Lesson_ from "./pages/Lesson_.tsx";
+import Quiz_ from "./pages/Quiz_.tsx";
+import Lesson__ from "./pages/Lesson__.tsx";
 
 const queryClient = new QueryClient();
 
@@ -39,6 +42,9 @@ createRoot(document.getElementById("root")!).render(
 
                         <Route path="*" Component={NotFound} />
                         <Route path="/test-page" Component={TestPage} />
+                        <Route path="/q" Component={Quiz_} />
+                        <Route path="/l" Component={Lesson_} />
+                        <Route path="/ll" Component={Lesson__} />
                     </Routes>
                 </BrowserRouter>
             </ThemeProvider>

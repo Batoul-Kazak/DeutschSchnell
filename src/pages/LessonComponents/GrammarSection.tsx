@@ -1,6 +1,8 @@
 import { useState } from "react";
 import RichText from "../../components/RichText/RichText";
 import { useDeutschSchnell } from "../../context/DeutschSchnellProvider";
+import Title from "../../components/Title";
+import Button from "../../components/Button/Button";
 
 export default function GrammarSection({ currentLesson, lessonId }) {
     const { setAnswer, userLessons } = useDeutschSchnell();
@@ -18,7 +20,7 @@ export default function GrammarSection({ currentLesson, lessonId }) {
         <div id="grammar">
             {currentLesson?.grammar && (
                 <div className="flex flex-col gap-10 pt-10">
-                    <h2 className="text-3xl font-bold text-light-violet">Grammar Lesson</h2>
+                    <Title title="Grammar" number="04" />
 
                     <div className="space-y-6">
                         {currentLesson.grammar.sections.map((section, idx) => (
@@ -88,9 +90,9 @@ export default function GrammarSection({ currentLesson, lessonId }) {
                                     </div>
                                 ))}
                                 <div className="flex justify-center">
-                                    <button className="px-8 py-3 font-bold text-white transition transform rounded-full shadow-lg bg-dark-red hover:bg-dark-green hover:scale-105">
+                                    <Button className="px-8 py-3 font-bold text-white transition transform rounded-full shadow-lg bg-light-violet hover:bg-dark-violet hover:scale-105">
                                         Check All Answers
-                                    </button>
+                                    </Button>
                                 </div>
                             </div>
                         </div>

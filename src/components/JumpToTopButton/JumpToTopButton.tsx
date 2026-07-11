@@ -7,19 +7,20 @@ const JumpToTopButton = ({ color = "bg-light-violet" }) => {
 
     useEffect(() => {
         const toggleArrowState = () => {
-            if (window.scrollY > 300) {
+            const scrollPosition = window.scrollY;
+            const windowHeight = window.innerHeight;
+            const docHeight = document.documentElement.scrollHeight;
+
+            if (scrollPosition > 300) {
                 setIsVisible(true);
             } else {
                 setIsVisible(false);
             }
 
-            // 1/2 from viewport y
-            if (window.scrollY > 300 && window.scrollY < 5000) {
+            if (scrollPosition < (docHeight / 2)) {
                 setIconDirection("down");
-                // console.log("UUUUUPPP")
-            } else if (window.scrollY > 300) {
+            } else {
                 setIconDirection("up");
-                // console.log("DOWWWWNN");
             }
         };
 
@@ -36,7 +37,7 @@ const JumpToTopButton = ({ color = "bg-light-violet" }) => {
 
     function scrollToBottom() {
         window.scrollTo({
-            top: 100,
+            top: document.documentElement.scrollHeight,
             behavior: 'smooth'
         });
     };
@@ -44,11 +45,11 @@ const JumpToTopButton = ({ color = "bg-light-violet" }) => {
     return (
         isVisible && (
             <button
-                onClick={iconDirection == "up" ? scrollToTop : scrollToBottom}
-                aria-label="Back to top"
-                className={`fixed w-16 h-16 text-lg font-bold z-[1000] text-white transition-all duration-300 border-4 bg-dark-blue border-white rounded-full shadow-lg bg-dark-blue-600 ${color} bottom-6 right-6 hover:bg-dark-blue-700 focus:outline-none focus:ring-2 focus:ring-dark-blue-500`}
+                onClick={iconDirection === "up" ? scrollToTop : scrollToBottom}
+                aria-label={iconDirection === "up" ? "Back to top" : "Go to bottom"}
+                className={`fixed w-16 h-16 text-lg font-bold z-[1000] text-white transition-all duration-300 border-4 border-white rounded-full shadow-lg ${color} bottom-6 right-6 hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-dark-blue`}
             >
-                {iconDirection == "up" ? <ArrowUpward /> : <ArrowDownward />}
+                {iconDirection === "up" ? <ArrowUpward /> : <ArrowDownward />}
             </button>
         )
     );

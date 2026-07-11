@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import MessageBubble from "./MessageBubble";
 import { useDeutschSchnell } from "../../context/DeutschSchnellProvider";
+import Title from "../../components/Title";
 
 export default function DialogSection({ currentLesson, lessonId }) {
     const {setAnswer, userLessons} = useDeutschSchnell();
@@ -45,7 +46,7 @@ export default function DialogSection({ currentLesson, lessonId }) {
     return (
         <div id="dialogue">
             <div className="flex flex-col gap-5 pt-10 text-xs sm:text-sm md:text-base place-content-center place-items-center">
-                <h2 className="text-3xl font-bold text-light-violet">Dialogue</h2>
+               <Title title="Dialog" number="02" />
                 <div className="flex flex-col w-full gap-2 md:px-[80px]">
                     {currentLesson.map((item: any, i: number) => {
                         const globalIndex = blankCounts.slice(0, i).reduce((a, b) => a + b, 0);

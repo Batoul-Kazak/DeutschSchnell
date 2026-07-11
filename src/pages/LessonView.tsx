@@ -15,7 +15,18 @@ import Timer from "../components/ReadingTracker/Timer";
 import NotFound from "./NotFound";
 import Loading from "./Loading";
 import Navbar from "../components/NavBar/NavBar";
+import LearningPoints from "../components/LearningPoints";
+import Breadcrumb from "../components/Breadcrumb";
+import Container from "../components/Container";
 // import manifest all lessons to see number of lessons and quizzes for each course
+
+const items = [
+    "Self-introduction using 'Ich bin...' and 'Mein Name ist...'",
+    "Basic greetings: 'Hallo', 'Guten Tag', 'Auf Wiedersehen'",
+    "Simple question formation with 'Wer bist du?'",
+    "Numbers from 1 to 20",
+    "Present tense conjugation of 'sein' (to be)"
+];
 
 const LessonView = ({ lessonId: propLessonId, courseId: propCourseId }) => {
     const params = useParams<{ courseId: string; lessonId: string }>();
@@ -99,20 +110,30 @@ const LessonView = ({ lessonId: propLessonId, courseId: propCourseId }) => {
     }
 
     return (
-        <div className="relative flex flex-col gap-20 text-gray-800 dark:bg-gray-900 dark:text-white">
+        <div className="relative flex flex-col gap-2 text-gray-800 dark:bg-gray-900 dark:text-white">
             <Navbar navItems={lessonTags} isShowSearch={false} >
                 <Timer />
             </Navbar>
-            <div className="relative p-4 pt-20 sm:p-10 place-content-center">
-                <h1 className="text-4xl">
+            
+            <Container className="relative place-content-center" >
+                <Breadcrumb 
+                    items={[
+                        { label: 'Courses', href: '/courses' },
+                        { label: courseId, href: `/courses/${courseId}` },
+                        { label: `Lesson ${lessonId.replace('l', '')}`, href: `/courses/${courseId}/lesson/${lessonId.replace('l', '')}` }
+                    ]} 
+                />
+
+                <h1 className="text-4xl py-6">
                     Lesson {currentLesson.lessonNumber}:{" "}
                     <span className="text-[2.4rem] text-dark-red dark:text-light-red font-bold">
                         {currentLesson.title}
                     </span>
                 </h1>
-                <img src={currentLesson.image} alt="lesson-image" className="w-full py-10 " />
-
                 <p className="mt-4 text-xl">{currentLesson.description}</p>
+                <img src={currentLesson.image} alt="lesson-image" className="w-full py-10 " />
+                <LearningPoints items={items} />
+
                 <VocabularySection wordsFilter={wordsFilter} setWordsFilter={setWordsFilter} filteredWords={filteredWords} />
                 <DialogSection currentLesson={flattenedDialogue} lessonId={lessonId} />
                 <ReadingSection currentLesson={currentLesson} lessonId={lessonId} />
@@ -133,7 +154,7 @@ const LessonView = ({ lessonId: propLessonId, courseId: propCourseId }) => {
                     <Button
                         variant="secondary"
                         onClick={nextAction?.type === 'course' ? () => navigate(`/courses/${nextAction.target}`) : undefined}
-                    >
+                        >
                         {nextAction?.type === 'quiz' ? (
                             <Link to={`/courses/${courseId}/quiz/${nextAction.target.replace('q', '')}`}>
                                 Take Quiz 
@@ -145,8 +166,9 @@ const LessonView = ({ lessonId: propLessonId, courseId: propCourseId }) => {
                         )}
                     </Button>
 
-                </div>
+                {/* </div> */}
             </div>
+            </Container>
             <ReadingTracker />
             <BackToTopButton />
         </div>
