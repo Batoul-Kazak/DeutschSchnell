@@ -1,14 +1,13 @@
 [
-  { "id": 1, "title": "Introduction", "type": "lesson" },
-  { "id": 2, "title": "Basics Quiz", "type": "quiz" },
-  { "id": 3, "title": "Core Concepts", "type": "lesson" },
-  { "id": 4, "title": "Core Concepts", "type": "quiz" },
-  { "id": 5, "title": "Core Concepts", "type": "lesson" },
-  { "id": 6, "title": "Core Concepts", "type": "quiz" },
-  { "id": 7, "title": "Core Concepts", "type": "lesson" },
-  { "id": 8, "title": "Core Concepts", "type": "quiz" },
-  { "id": 9, "title": "Core Concepts", "type": "lesson" },
-  { "id": 10, "title": "Core Concepts", "type": "quiz" }
-  
+  { "id": "l1", "title": "Introduction", "type": "lesson" },
+  { "id": "q1", "title": "Basics Quiz", "type": "quiz" },
+  { "id": "l2", "title": "Core Concepts", "type": "lesson" },
+  { "id": "q2", "title": "Core Concepts", "type": "quiz" },
+  { "id": "l3", "title": "Core Concepts", "type": "lesson" },
+  { "id": "q3", "title": "Core Concepts", "type": "quiz" },
+  { "id": "l4", "title": "Core Concepts", "type": "lesson" },
+  { "id": "q4", "title": "Core Concepts", "type": "quiz" },
+  { "id": "l5", "title": "Core Concepts", "type": "lesson" },
+  { "id": "q5", "title": "Core Concepts", "type": "quiz" }
 ]
 

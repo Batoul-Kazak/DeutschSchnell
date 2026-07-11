@@ -12,7 +12,7 @@ const CourseContentSwitcher: React.FC = () => {
   const itemNumber = parseInt(itemId, 10);
 
   if (type === 'quiz') {
-    return <Quiz course={courseId} quizNumber={itemNumber} />;
+    return <Quiz course={courseId} quizId={itemId} />;
   } else {
 
     return <LessonView courseId={courseId} lessonId={itemId} />;

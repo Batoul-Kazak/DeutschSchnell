@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { useQuery } from '@tanstack/react-query';
+import LoadingTest from '../Test/components/LoadingTest';
+import NotFound from '../NotFound';
+import { useParams } from 'react-router-dom';
 
 interface ReadingQuestion {
   id: number;
@@ -54,17 +57,12 @@ interface QuizData {
   questions: Question[];
 }
 
-const fetchQuiz = async (course: string, quizNumber: number): Promise<QuizData> => {
-  const response = await fetch(`/data/lessons/${course}/quiz${quizNumber}.json`);
-  if (!response.ok) throw new Error('Failed to fetch quiz');
-  return response.json();
-};
 
-export default function Quiz({ course = 'A1', quizNumber = 1 }: { course?: string; quizNumber?: number }) {
-  const { data, isLoading, error } = useQuery({
-    queryKey: ['quiz', course, quizNumber],
-    queryFn: () => fetchQuiz(course, quizNumber),
-  });
+
+export default function Quiz({ course = 'A1', quizId : propQuizId }: { course?: string; quizId?: string }) {
+  const params = useParams<{courseId: string, itemId: string}>();
+  const quizId = propQuizId || params.itemId || 'q1';
+  const fileNum = quizId?.replace('q', '');
 
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
@@ -76,8 +74,20 @@ export default function Quiz({ course = 'A1', quizNumber = 1 }: { course?: strin
   const [submitted, setSubmitted] = useState(false);
   const [score, setScore] = useState(0);
 
-  if (isLoading) return <div className="text-dark-violet">Loading...</div>;
-  if (error) return <div className="text-light-red">Error loading quiz</div>;
+async function fetchQuiz(course: string, itemId: string): Promise<QuizData> {
+  const num = itemId.replace('q', '');
+  const response = await fetch(`/data/lessons/${course}/quiz${num}.json`);
+  if (!response.ok) throw new Error('Failed to fetch quiz');
+  return response.json();
+};
+
+  const { data, isLoading, error } = useQuery({
+    queryKey: ['quiz', course, quizId],
+    queryFn: () => fetchQuiz(course, quizId),
+  });
+
+  if (isLoading) return <LoadingTest level={course} />;
+  if (error) return <NotFound message={`Error Loading ${course} Quiz, Page Not Found`} />;
   if (!data) return null;
 
   const currentQuestion = data.questions[currentQuestionIndex];
