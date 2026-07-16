@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { CoursesLessonsInitialState } from "../constants/CoursesMaterials";
+import { userDataExample } from "../constants";
 
 export const DeutschSchnellContext = createContext(undefined);
 
@@ -21,6 +22,7 @@ export function DeutschSchnellProvider({ children }) {
         const saved = localStorage.getItem("deutschSchnell_progress");
         return saved ? JSON.parse(saved) : CoursesLessonsInitialState;
     });
+    // const [userAnswers, setUserAnswers] = useState(userDataExample);
 
     const setAnswer = (lessonId: string, questionId: string, value: AnswerValue) => {
         setUserLessons((prev) => {

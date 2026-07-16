@@ -1,4 +1,4 @@
 
-import heroSectionImage_ from "./../../public/images//iewek-gnos-hhUx08PuYpc-unsplash.jpg"
+import heroSectionImage_ from "./../../public/images//banner-bg.jpg"
 
 export const heroSectionImage = heroSectionImage_ 

@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 import MessageBubble from "./MessageBubble";
 import { useDeutschSchnell } from "../../context/DeutschSchnellProvider";
 import Title from "../../components/Title";
+import Button from "../../components/Button/Button";
 
 export default function DialogSection({ currentLesson, lessonId }) {
     const {setAnswer, userLessons} = useDeutschSchnell();
@@ -66,15 +67,17 @@ export default function DialogSection({ currentLesson, lessonId }) {
                 </div>
             </div>
 
-            <button className="pt-5 text-sm sm:text-xl text-light-violet" onClick={togglePractice}>
+           <div className="flex gap-10 pt-10">
+             <button className="pt-5 text-sm sm:text-xl text-light-violet" onClick={togglePractice}>
                 {!showQuestions ? "Practice dialog" : "Close practice mode"}
             </button>
 
             {showQuestions && (
-                <button onClick={() => setChecked(true)} className="px-4 py-2 text-white rounded-lg bg-light-violet hover:bg-dark-red">
+                <Button onClick={() => setChecked(true)} className="px-4 py-2 text-white  bg-light-violet hover:bg-dark-violet">
                     Check Your Answers
-                </button>
+                </Button>
             )}
+           </div>
         </div>
     );
 }

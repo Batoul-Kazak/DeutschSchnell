@@ -27,7 +27,7 @@ const homePageItems = [
 ];
 
 
-export default function App() {
+export default function HomePage() {
 
     return (
         <div className="relative dark:bg-dark-violet ">

@@ -1,4 +1,4 @@
-import App from "./App.tsx";
+import App from "./HomePage.tsx";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
@@ -19,6 +19,8 @@ import CourseContentSwitcher from "./pages/CourseContentSwitcher.tsx";
 import Lesson_ from "./pages/Lesson_.tsx";
 import Quiz_ from "./pages/Quiz_.tsx";
 import Lesson__ from "./pages/Lesson__.tsx";
+import HomePage from "./HomePage.tsx";
+import AdminDashboard from "./pages/AdminDashboard.tsx";
 
 const queryClient = new QueryClient();
 
@@ -30,7 +32,7 @@ createRoot(document.getElementById("root")!).render(
             <ThemeProvider>
                 <BrowserRouter basename="/">
                     <Routes>
-                        <Route index path="/" Component={App} />
+                        <Route index path="/" Component={HomePage} />
                         <Route path="/courses/:courseId:contentId" Component={CourseContent} />
 
                         <Route path="/courses/:courseId" Component={CourseMaterials} />
@@ -45,6 +47,7 @@ createRoot(document.getElementById("root")!).render(
                         <Route path="/q" Component={Quiz_} />
                         <Route path="/l" Component={Lesson_} />
                         <Route path="/ll" Component={Lesson__} />
+                        <Route path="/admin/dashboard" Component={AdminDashboard} />
                     </Routes>
                 </BrowserRouter>
             </ThemeProvider>
