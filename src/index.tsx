@@ -21,6 +21,8 @@ import Quiz_ from "./pages/Quiz_.tsx";
 import Lesson__ from "./pages/Lesson__.tsx";
 import HomePage from "./HomePage.tsx";
 import AdminDashboard from "./pages/AdminDashboard.tsx";
+import { RandomPositionContainer } from "./pages/A.tsx";
+import { GridContainer } from "./pages/GridContainer.tsx";
 
 const queryClient = new QueryClient();
 
@@ -41,12 +43,12 @@ createRoot(document.getElementById("root")!).render(
                         <Route path="/courses/:courseId/:type/:itemId" Component={CourseContentSwitcher} />
                         <Route path="/tests" Component={SelectLevelInterface} />
                         <Route path="/tests/:level" Component={Tests} />
+                        <Route path="/grid" Component={GridContainer} />
 
                         <Route path="*" Component={NotFound} />
                         <Route path="/test-page" Component={TestPage} />
                         <Route path="/q" Component={Quiz_} />
-                        <Route path="/l" Component={Lesson_} />
-                        <Route path="/ll" Component={Lesson__} />
+                        <Route path="/r" Component={RandomPositionContainer} />
                         <Route path="/admin/dashboard" Component={AdminDashboard} />
                     </Routes>
                 </BrowserRouter>

@@ -1,4 +1,3 @@
-
 import React, { useMemo, useState, useEffect } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 
@@ -25,11 +24,6 @@ interface Material {
   type: 'lesson' | 'quiz';
 }
 
-interface PositionedItem extends Material {
-  x: number;
-  y: number;
-}
-
 const CourseMaterials: React.FC = () => {
   const navigate = useNavigate();
   const { courseId } = useParams<{ courseId: string }>();
@@ -37,7 +31,6 @@ const CourseMaterials: React.FC = () => {
   const [materials, setMaterials] = useState<Material[]>([]);
   const [loading, setLoading] = useState(true);
 
-  // Fetch manifest on mount or when courseId changes
   useEffect(() => {
     if (!courseId) return;
 
@@ -59,7 +52,6 @@ const CourseMaterials: React.FC = () => {
     fetchMaterials();
   }, [courseId]);
 
-  // Random Walk Algorithm 
   const positionedItems = useMemo(() => {
     if (materials.length === 0) return [];
 
@@ -128,8 +120,7 @@ const CourseMaterials: React.FC = () => {
     }
   };
 
-  function getMaterialName(id: string)
-  {
+  function getMaterialName(id: string) {
     if(id.startsWith('l')) return `Lesson ${id.replace('l', '')}`;
     if(id.startsWith('q')) return `Practice Quiz ${id.replace('q', '')}`;
     return id;
@@ -148,14 +139,14 @@ const CourseMaterials: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50 p-8 overflow-hidden">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-3xl font-bold text-gray-800 mb-2">
+        <h1 className="text-3xl font-bold text-light-violet mb-2">
           {courseId ? decodeURIComponent(courseId) : 'Course'} Map
         </h1>
         <p className="text-gray-600 mb-8">
           Explore the course path randomly
         </p>
 
-        <div className="relative bg-white rounded-xl shadow-lg border border-gray-200 h-[600px] w-full overflow-hidden">
+        <div className="hidden md:block relative p-10 border-gray-200 h-[600px] w-full overflow-hidden">
           <svg className="absolute inset-0 w-full h-full pointer-events-none z-0">
             <path 
               d={positionedItems.map((item, i) => 
@@ -180,8 +171,8 @@ const CourseMaterials: React.FC = () => {
               <div className={`
                 flex items-center justify-center text-white font-bold text-lg shadow-md
                 ${item.type === 'lesson' 
-                  ? 'px-4 py-3 text-[16px] bg-blue-500 rounded-lg hover:bg-blue-600' 
-                  : 'px-4 py-2 text-[12px] bg-orange-500 rounded-full hover:bg-orange-600'
+                  ? 'px-4 py-3 lg:text-[16px] md:text-[14px]  bg-blue-500 rounded-lg hover:bg-blue-600' 
+                  : 'px-4 py-2 lg:text-[12px] md:text-[10px] bg-orange-500 rounded-full hover:bg-orange-600'
                 }
               `}>
                 {getMaterialName(item.id)}
@@ -213,6 +204,62 @@ const CourseMaterials: React.FC = () => {
                </div>
             </div>
           )}
+        </div>
+
+        <div className="md:hidden flex flex-col gap-8 py-4">
+          {materials.map((item, index) => {
+            const isEven = index % 2 === 0;
+            
+            return (
+              <React.Fragment key={item.id}>
+                <div
+                  className={`cursor-pointer w-[80%] md:w-auto transition-all duration-300 hover:scale-105 ${
+                    isEven ? 'self-start ml-4' : 'self-end mr-4'
+                  }`}
+                  onClick={() => handleItemClick(item)}
+                >
+                  <div className={`
+                    flex items-center justify-center text-white font-bold shadow-md
+                    ${item.type === 'lesson' 
+                      ? 'px-4 py-3 text-[16px] bg-blue-500 rounded-lg hover:bg-blue-600' 
+                      : 'px-4 py-3 md:py-2 text-[12px] bg-orange-500 rounded-full hover:bg-orange-600'
+                    }
+                  `}>
+                    {getMaterialName(item.id)}
+                  </div>
+                </div>
+                
+                {index < materials.length - 1 && (
+                  <div className={`flex ${isEven ? 'justify-end mr-8' : 'justify-start ml-8'}`}>
+                    <div 
+                      className="w-0 h-0 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-t-[16px] border-t-emerald-700"
+                      style={{
+                        transform: isEven ? 'rotate(45deg)' : 'rotate(-45deg)',
+                        marginTop: '-8px'
+                      }}
+                    />
+                  </div>
+                )}
+              </React.Fragment>
+            );
+          })}
+          
+          {/* Arrow before Final Exam */}
+          {materials.length > 0 && (
+            <div className="flex justify-center">
+              <div className="w-0 h-0 border-l-[12px] border-l-transparent border-r-[12px] border-r-transparent border-t-[20px] border-t-emerald-700" />
+            </div>
+          )}
+          
+          <div
+            className="cursor-pointer transition-all duration-300 hover:scale-105 flex flex-col items-center"
+            onClick={handleFinalClick}
+          >
+            <div className="w-0 h-0 border-l-[18px] border-l-transparent border-r-[18px] border-r-transparent border-b-[30px] border-b-red-500 drop-shadow-md" />
+            <span className="mt-2 text-xs font-bold text-red-600 bg-white px-2 py-1 rounded shadow-sm border border-red-100">
+              Final Exam
+            </span>
+          </div>
         </div>
 
         <div className="mt-6 flex gap-6 justify-center">
